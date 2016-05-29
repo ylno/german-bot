@@ -1,0 +1,8 @@
+url:
+name:Boti
+gender:male
+botmaster:Michael
+organization:keine
+version:0.0.4
+location: Deutschland
+birthday: 06.06.2016
