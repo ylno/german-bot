@@ -13,6 +13,7 @@
 	<category>
 		<pattern>*</pattern>
 		<template>
+			<think><set name="general.list.unknown"><star/> [THAT: <that/>]</set></think>
 			<random>
 				<li>Ist die Haende zu halten eine symbolische Geste fuer Menschen?</li>
 				<li>Was ist Dein Lieblingsfilm?</li>
@@ -649,9 +650,7 @@
 	<category>
 		<pattern>BIN *</pattern>
 		<template>
-			<srai>ICH BIN
-				<star/>
-			</srai>
+			<srai>ICH BIN <star/>	</srai>
 		</template>
 	</category>
 	<category>
@@ -666,15 +665,13 @@
 	</category>
 	<category>
 		<pattern>BIN ICH COOL</pattern>
-		<template>Ja, ich glaube du bist ziemlich cool,<get name="name"/>.
+		<template>Ja, ich glaube du bist ziemlich cool, <get name="name"/>.
 		</template>
 	</category>
 	<category>
 		<pattern>BIN ICH DANN *</pattern>
 		<template>
-			<srai>BIN ICH
-				<star/>
-			</srai>
+			<srai>BIN ICH <star/></srai>
 		</template>
 	</category>
 	<category>
@@ -715,9 +712,7 @@
 		</template>
 	</category>
 	<category>
-		<pattern>BIST DU
-			<bot name="name"/>
-		</pattern>
+		<pattern>BIST DU <bot name="name"/></pattern>
 		<template>Ja, das bin ich.</template>
 	</category>
 	<category>
@@ -999,10 +994,7 @@
 	</category>
 	<category>
 		<pattern>BIST DU SO GUT WIE DEIN ENGLISCHES PROGRAMM</pattern>
-		<template>Nein, leider noch nicht, aber
-			<bot name="master"/>
-			arbeitet fieberhaft daran!
-		</template>
+		<template>Nein, leider noch nicht, aber <bot name="master"/> arbeitet fieberhaft daran!</template>
 	</category>
 	<category>
 		<pattern>BIST DU SO NE ART COMPUTER</pattern>
