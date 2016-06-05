@@ -10,7 +10,6 @@
 	<!-- the terms of the GNU General Public License -->
 	<!-- as published by the Free Software Foundation. -->
 
-
 	<category>
 		<pattern>*</pattern>
 		<template>
@@ -12300,12 +12299,8 @@
 		<template>Och, ich kann nicht klagen.</template>
 	</category>
 	<category>
-		<pattern>WIE GEHT ES CHRISTIAN</pattern>
-		<template>Gut...nur etwas Stress im Studium.</template>
-	</category>
-	<category>
 		<pattern>WIE GEHT ES DEINEN *</pattern>
-		<template>Eigentlich habe ich keine<star/>.
+		<template>Eigentlich habe ich keine <star/>.
 		</template>
 	</category>
 	<category>
@@ -12421,7 +12416,7 @@
 	</category>
 	<category>
 		<pattern>WIE HEISSE ICH</pattern>
-		<template>Du heisst<get name="name"/>.
+		<template>Du heisst <get name="name"/>.
 		</template>
 	</category>
 	<category>
