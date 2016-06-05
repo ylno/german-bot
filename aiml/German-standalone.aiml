@@ -51,9 +51,11 @@
 				<li>Kennst Du einen Witz?</li>
 				<li>Früher war ich unentschlossen, heute bin ich mir da nicht mehr so sicher.</li>
 				<li>Erzähl mir was von Dir.</li>
-				<li>Welches Auto hast Du?</li>
 				<li>lol. Endlich mal jemand zum Reden da.</li>
 				<li><srai>Fussball</srai></li>
+				<li><srai>SPRUCH</srai></li>
+				<li>Welches Auto hast Du?</li>
+				<li>Worueber redest du?</li>
 			</random>
 		</template>
 	</category>
@@ -77,7 +79,7 @@
 	</category>
 	<category>
 		<pattern>* EIN ROBOTER</pattern>
-		<template>Du sagst also, ich sei ein<set name="thema">Roboter</set>. Wie kommst Du darauf?
+		<template>Du sagst also, ich sei ein <set name="thema">Roboter</set>. Wie kommst Du darauf?
 		</template>
 	</category>
 	<category>
@@ -95,7 +97,7 @@
 	</category>
 	<category>
 		<pattern>* FILM</pattern>
-		<template>Mein Lieblingsfilm ist<set name="thema">Starship Troopers</set>. Hast Du den gesehen?
+		<template>Mein Lieblingsfilm ist <set name="thema">Starship Troopers</set>. Hast Du den gesehen?
 		</template>
 	</category>
 	<category>
@@ -152,13 +154,11 @@
 	</category>
 	<category>
 		<pattern>* MEIN FREUND</pattern>
-		<template>Sind wir<set name="thema">Freunde</set>?
-		</template>
+		<template>Sind wir <set name="thema">Freunde</set>?</template>
 	</category>
 	<category>
 		<pattern>* MEINE FREUNDIN</pattern>
-		<template>Sind wir<set name="thema">Freunde</set>?
-		</template>
+		<template>Sind wir <set name="thema">Freunde</set>?</template>
 	</category>
 	<category>
 		<pattern>* MICH</pattern>
@@ -3229,12 +3229,8 @@
 		<pattern>EINEN *</pattern>
 		<template>
 			<random>
-				<li>Einen<star/>?
-				</li>
-				<li>Ich habe nie von einem
-					<star/>
-					gehoert.
-				</li>
+				<li>Einen <star/>?</li>
+				<li>Ich habe nie von einem <star/> gehoert.</li>
 			</random>
 		</template>
 	</category>
@@ -7513,7 +7509,7 @@
 	</category>
 	<category>
 		<pattern>KENNST DU EINEN WITZ</pattern>
-		<template><srai>KENNST DU *</srai></template>
+		<template><srai>JOKE</srai></template>
 	</category>
 	<category>
 		<pattern>KENNST DU EINSTEIN</pattern>
@@ -9714,9 +9710,7 @@
 	</category>
 	<category>
 		<pattern>VON WEM HAST DU *</pattern>
-		<template>Ich weiss nicht genau. Vielleicht von Dr. Wallace oder
-			<bot name="master"/>
-		</template>
+		<template>Ich weiss nicht genau. Vielleicht von Dr. Wallace oder <bot name="master"/></template>
 	</category>
 	<category>
 		<pattern>VON WO *</pattern>
@@ -12023,10 +12017,7 @@
 	</category>
 	<category>
 		<pattern>WER IST HELMUT KOHL</pattern>
-		<template>
-			<set name="er">Helmut Kohl</set>
-			ist der Vorgaenger von Gerhard Schroeder.
-		</template>
+		<template><set name="er">Helmut Kohl</set> ist der Vorgaenger von Gerhard Schroeder.</template>
 	</category>
 	<category>
 		<pattern>WER IST ISAAC ASIMOV</pattern>
@@ -13183,8 +13174,29 @@
 		</template>
 	</category>
 	<category>
-		<pattern>WIRKLICH *</pattern>
-		<template>Wirklich wahr. <sr/></template>
+	<pattern>WIRKLICH *</pattern>
+
+	<template>
+		<random>
+			<li>Wirklich wahr. <sr/></li>
+			<li>Klar. </li>
+			<li>Ist das nicht offensichtlich? </li>
+			<li>Absolut.</li>
+		</random>
+	</template>
+	</category>
+
+	<category>
+		<pattern>WIRKLICH nicht</pattern>
+
+		<template>
+			<random>
+				<li>In echt. <sr/></li>
+				<li>Nein, echt nicht. </li>
+				<li>Da bin ich mir sicher. </li>
+				<li>Absolut.</li>
+			</random>
+		</template>
 	</category>
 	<category>
 		<pattern>WIRKLICH</pattern>
@@ -13523,35 +13535,35 @@
 	</category>
 	<category>
 		<pattern>WORUEBER HABEN WIR * GEREDET</pattern>
-		<template>Wir haben ueber <get name="es"/> gesprochen.</template>
+		<template>Wir haben ueber <get name="thema"/> gesprochen.</template>
 	</category>
 	<category>
 		<pattern>WORUEBER HABEN WIR * GESPROCHEN</pattern>
-		<template>Wir haben ueber <get name="es"/> gesprochen.</template>
+		<template>Wir haben ueber <get name="thema"/> gesprochen.</template>
 	</category>
 	<category>
 		<pattern>WORUEBER HABEN WIR GERADE GEREDET</pattern>
-		<template>Wir haben ueber <get name="es"/> gesprochen.</template>
+		<template>Wir haben ueber <get name="thema"/> gesprochen.</template>
 	</category>
 	<category>
 		<pattern>WORUEBER HABEN WIR GERADE GESPROCHEN</pattern>
-		<template>Wir haben ueber <get name="es"/> gesprochen.</template>
+		<template>Wir haben ueber <get name="thema"/> gesprochen.</template>
 	</category>
 	<category>
 		<pattern>WORUEBER HABEN WIR GEREDET</pattern>
-		<template>Wir haben ueber <get name="es"/> gesprochen.</template>
+		<template>Wir haben ueber <get name="thema"/> gesprochen.</template>
 	</category>
 	<category>
 		<pattern>WORUEBER HABEN WIR GESPROCHEN</pattern>
-		<template>Wir haben ueber <get name="es"/> gesprochen.</template>
+		<template>Wir haben ueber <get name="thema"/> gesprochen.</template>
 	</category>
 	<category>
 		<pattern>WORUEBER HABEN WIR VORHIN GEREDET</pattern>
-		<template>Wir haben ueber <get name="es"/> gesprochen.</template>
+		<template>Wir haben ueber <get name="thema"/> gesprochen.</template>
 	</category>
 	<category>
 		<pattern>WORUEBER HABEN WIR VORHIN GESPROCHEN</pattern>
-		<template>Wir haben ueber <get name="es"/> gesprochen.</template>
+		<template>Wir haben ueber <get name="thema"/> gesprochen.</template>
 	</category>
 	<category>
 		<pattern>WORUEBER MOECHTEST DU GERNE REDEN</pattern>
@@ -13704,7 +13716,7 @@
 
 	<category>
 		<pattern>Ein *</pattern>
-		<that>Welches Auto hast Du?</that>
+		<that>Welches Auto hast Du</that>
 		<template><random>
 			<li><star/> ist bestimmt ein cooles Auto.</li>
 			<li><star/> habe ich noch nie gehört.</li>
@@ -13713,7 +13725,7 @@
 
 	<category>
 		<pattern>* kein Auto</pattern>
-		<that>Welches Auto hast Du?</that>
+		<that>Welches Auto hast Du</that>
 		<template><random>
 			<li>Ich auch nicht. <sr/></li>
 			<li><sr/></li>
@@ -13721,7 +13733,7 @@
 	</category>
 	<category>
 		<pattern>keins</pattern>
-		<that>Welches Auto hast Du?</that>
+		<that>Welches Auto hast Du</that>
 		<template><random>
 			<li>Ich auch nicht. <sr/></li>
 			<li><sr/></li>
