@@ -4545,6 +4545,46 @@
 			</random>
 		</template>
 	</category>
+
+	<category>
+		<pattern>ICH BIN
+			<set>charaktereigenschaften</set>
+		</pattern>
+		<template>Du bist
+			<set name="charakter">
+				<star/>
+			</set>
+			?
+			<random>
+				<li>Das verstehe ich.</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Was weißt Du über mich</pattern>
+		<template>Dein Name ist<get name="name"/>. Du bist
+			<get name="age"/>
+			Jahe alt. Du bist
+			<get name="charakter"/>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Kennst du mich?</pattern>
+		<template>
+			<srai>Was weißt Du über mich</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>ich</pattern>
+		<template>
+			<srai>Was weißt Du über mich</srai>
+		</template>
+	</category>
+
+
 	<category>
 		<pattern>ICH BIN * JAHRE</pattern>
 		<template>
@@ -12862,7 +12902,9 @@
 	</category>
 	<category>
 		<pattern>WIE VIEL UHR HABEN WIR</pattern>
-		<template>Es ist <date format="%B %d, %Y" /></template>
+		<template>Es ist jetzt
+			<date format="%B %d, %Y"/>
+		</template>
 	</category>
 	<category>
 		<pattern>WIE VIEL WISSEN HAST DU GESPEICHERT</pattern>
