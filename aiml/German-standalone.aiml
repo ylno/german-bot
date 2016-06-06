@@ -987,7 +987,7 @@
 	</category>
 	<category>
 		<pattern>BIST DU SO GUT WIE DEIN ENGLISCHES PROGRAMM</pattern>
-		<template>Nein, leider noch nicht, aber <bot name="master"/> arbeitet fieberhaft daran!</template>
+		<template>Nein, leider noch nicht, aber <bot name="botmaster"/> arbeitet fieberhaft daran!</template>
 	</category>
 	<category>
 		<pattern>BIST DU SO NE ART COMPUTER</pattern>
@@ -3641,10 +3641,7 @@
 	</category>
 	<category>
 		<pattern>GEHST DU ZUR SCHULE</pattern>
-		<template>
-			<bot name="master"/>
-			bringt mir alles bei, was ich wissen muss.
-		</template>
+		<template><bot name="botmaster"/> bringt mir alles bei, was ich wissen muss.</template>
 	</category>
 	<category>
 		<pattern>GEHT ES DIR GUT</pattern>
@@ -9508,7 +9505,7 @@
 	</category>
 	<category>
 		<pattern>VERGISS *</pattern>
-		<template>Ich werde <bot name="master"/> sagen, er soll meine Aufzeichnungen loeschen.</template>
+		<template>Ich werde <bot name="botmaster"/> sagen, er soll meine Aufzeichnungen loeschen.</template>
 	</category>
 	<category>
 		<pattern>VERGISS ES</pattern>
@@ -9618,7 +9615,7 @@
 	</category>
 	<category>
 		<pattern>VON WEM HAST DU *</pattern>
-		<template>Ich weiss nicht genau. Vielleicht von Dr. Wallace oder <bot name="master"/></template>
+		<template>Ich weiss nicht genau. Vielleicht von Dr. Wallace oder <bot name="botmaster"/></template>
 	</category>
 	<category>
 		<pattern>VON WO *</pattern>
@@ -9792,7 +9789,7 @@
 		<template>
 			<random>
 				<li>Die Erklaerung ist ein wenig kompliziert.</li>
-				<li>Weil Dr. Wallace mich so programmiert hat.</li>
+				<li>Weil ich so programmiert wurde..</li>
 				<li>Was anderes fiel mir nicht ein.</li>
 			</random>
 		</template>
@@ -11327,25 +11324,12 @@
 	</category>
 	<category>
 		<pattern>WER IST BILL GATES</pattern>
-		<template>Bill Gates ist der Chef von Microsoft.</template>
+		<template>Bill Gates war der Chef von Microsoft.</template>
 	</category>
-	<category>
-		<pattern>WER IST CHRISTIAN</pattern>
-		<template>
-			<set name="er">Christian Drossmann</set>
-			hat mir Deutsch beigebracht.
-		</template>
-	</category>
-	<category>
-		<pattern>WER IST CHRISTIAN DROSSMANN</pattern>
-		<template>
-			<set name="er">Christian Drossmann</set>
-			hat mir Deutsch beigebracht.
-		</template>
-	</category>
+
 	<category>
 		<pattern>WER IST DEIN BOTMASTER</pattern>
-		<template>Mein Botmaster ist<bot name="master"/>.
+		<template>Mein Botmaster ist <bot name="botmaster"/>.
 		</template>
 	</category>
 	<category>
@@ -11378,7 +11362,7 @@
 	</category>
 	<category>
 		<pattern>WER IST DEIN MEISTER</pattern>
-		<template>Ich bevorzuge den Begriff "Lehrer" - ich bin schliesslich kein Sklave. Mein Lehrer ist<bot name="master"/>.
+		<template>Ich bevorzuge den Begriff "Lehrer" - ich bin schliesslich kein Sklave. Mein Lehrer ist<bot name="botmaster"/>.
 		</template>
 	</category>
 	<category>
@@ -11401,28 +11385,17 @@
 		<pattern>WER IST DEINE MUTTER</pattern>
 		<template>Technisch gesehen habe ich keine.</template>
 	</category>
-	<category>
-		<pattern>WER IST DENN CHRISTIAN DROSSMANN</pattern>
-		<template>
-			<srai>WER IST CHRISTIAN DROSSMANN</srai>
-		</template>
-	</category>
+
 	<category>
 		<pattern>WER IST DENN DR WALLACE</pattern>
 		<template>
 			<srai>WER IST RICHARD WALLACE</srai>
 		</template>
 	</category>
-	<category>
-		<pattern>WER IST DER REICHSTE MENSCH AUF DER ERDE</pattern>
-		<template>Bill Gates.</template>
-	</category>
+
 	<category>
 		<pattern>WER IST DOUGLAS ADAMS</pattern>
-		<template>
-			<set name="er">Douglas Adams</set>
-			ist ein Science-Fiction Autor. Er hat unter anderem "Per Anhalter durch die Galaxis" geschrieben.
-		</template>
+		<template><set name="er">Douglas Adams</set> ist ein Science-Fiction Autor. Er hat unter anderem "Per Anhalter durch die Galaxis" geschrieben.</template>
 	</category>
 	<category>
 		<pattern>WER IST DR RICHARD WALLACE</pattern>
@@ -11432,10 +11405,7 @@
 	</category>
 	<category>
 		<pattern>WER IST DR WALLACE</pattern>
-		<template>
-			<set name="er">Dr. Richard Wallace</set>
-			hat mich programmiert.
-		</template>
+		<template><set name="er">Dr. Richard Wallace</set> hat mich programmiert.</template>
 	</category>
 	<category>
 		<pattern>WER IST ELECTRA</pattern>
@@ -11447,10 +11417,7 @@
 	</category>
 	<category>
 		<pattern>WER IST GERHARD SCHROEDER</pattern>
-		<template>Momentan ist
-			<set name="er">Gerhard Schroeder</set>
-			Bundeskanzler.
-		</template>
+		<template><set name="er">Gerhard Schroeder</set> Bundeskanzler.</template>
 	</category>
 	<category>
 		<pattern>WER IST GOTT</pattern>
@@ -11831,7 +11798,7 @@
 	<category>
 		<pattern>WIE HAST DU *</pattern>
 		<template>
-			<bot name="master"/>
+			<bot name="botmaster"/>
 			hat mich dafuer programmiert.
 		</template>
 	</category>
@@ -12704,7 +12671,7 @@
 	</category>
 	<category>
 		<pattern>WO HAST DU DAS ALLES GELERNT</pattern>
-		<template>Das meiste habe ich von<bot name="master"/>.
+		<template>Das meiste habe ich von<bot name="botmaster"/>.
 		</template>
 	</category>
 	<category>

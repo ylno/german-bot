@@ -1,7 +1,7 @@
 url:
 name:Boti
 gender:male
-botmaster:Michael
+botmaster:@mfrankl
 organization:keine
 version:0.0.4
 location: Deutschland
