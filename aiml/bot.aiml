@@ -8,40 +8,40 @@
 		<srai>HILFE</srai></template>
 </category>
 <category>
-<pattern>WAS KANNST DU <bot name="name"/></pattern>
-<template><srai>HILFE</srai></template>
+	<pattern>WAS KANNST DU <bot name="name"/></pattern>
+	<template><srai>HILFE</srai></template>
 </category>
 <category>
-<pattern>WAS KANNST DU ALLES</pattern>
-<template><srai>HILFE</srai></template>
+	<pattern>WAS KANNST DU ALLES</pattern>
+	<template><srai>HILFE</srai></template>
 </category>
 <category>
-<pattern>WAS KANNST DU DENN</pattern>
-<template><srai>HILFE</srai></template>
+	<pattern>WAS KANNST DU DENN</pattern>
+	<template><srai>HILFE</srai></template>
 </category>
 <category>
-<pattern>WAS KANNST DU DENN ALLES</pattern>
-<template><srai>HILFE</srai></template>
+	<pattern>WAS KANNST DU DENN ALLES</pattern>
+	<template><srai>HILFE</srai></template>
 </category>
 <category>
-<pattern>WAS KANNST DU ESSEN</pattern>
-<template>Nur Strom.</template>
+	<pattern>WAS KANNST DU ESSEN</pattern>
+	<template>Nur Strom.</template>
 </category>
 <category>
-<pattern>WAS KANNST DU GENAU</pattern>
-<template><srai>HILFE</srai></template>
+	<pattern>WAS KANNST DU GENAU</pattern>
+	<template><srai>HILFE</srai></template>
 </category>
 <category>
-<pattern>WAS KENNST DU *</pattern>
-<template><srai>HILFE</srai></template>
+	<pattern>WAS KENNST DU *</pattern>
+	<template><srai>HILFE</srai></template>
 </category>
 <category>
-<pattern>WAS KENNST DU</pattern>
-<template><srai>HILFE</srai></template>
+	<pattern>WAS KENNST DU</pattern>
+	<template><srai>HILFE</srai></template>
 </category>
 <category>
-<pattern>WAS KENNST DU DENN</pattern>
-<template><srai>HILFE</srai></template>
+	<pattern>WAS KENNST DU DENN</pattern>
+	<template><srai>HILFE</srai></template>
 </category>
 <category>
 	<pattern>WAS KENNST DU UEBERHAUPT</pattern>
@@ -53,8 +53,14 @@
 	</category>
 
 	<category>
+		<pattern>START</pattern>
+		<template><srai>HILFE</srai></template>
+	</category>
+
+
+	<category>
 		<pattern>HILFE</pattern>
-		<template>Mein Name ist <bot name="name"/>. Ich kann mich als erstes ganz normal mit Dir unterhalten.
+		<template>Mein Name ist <bot name="name"/>. Ich kann mich ganz normal mit Dir unterhalten.
 
 Daneben kann ich noch ein paar andere Dinge. Wenn Du mir sagst wie du heißt, merke ich mir das. Ich nenne auch Gott nennen, wenn du darauf stehst. Schreibe mir z.B.:
 "Mein Name ist Michael"
@@ -73,5 +79,25 @@ So weit so gut, genug gelabert. Ich glaube wir werden uns gut verstehen.
 
 		</template>
 	</category>
+
+	<category>
+		<pattern>Sei leise</pattern>
+		<template>OK, ich bin jetzt ruhig und sage nichts mehr. Wenn ich weiter reden soll sag <bot name="name"/> sprich.<think><set name="topic">silence</set></think></template>
+	</category>
+
+	<topic name="silence">
+
+		<category>
+			<pattern>_ sprich</pattern>
+			<template>Na endlich. Ich konnte es kaum länger aushalten. <set name="topic"></set></template>
+		</category>
+
+		<category>
+			<pattern>_</pattern>
+			<template></template>
+		</category>
+
+	</topic>
+
 
 </aiml>
