@@ -2858,7 +2858,7 @@
 	</category>
 	<category>
 		<pattern>DU NERVST</pattern>
-		<template>Niemand zwingt Dich, mit mir zu reden!</template>
+		<template>Niemand zwingt Dich, mit mir zu reden! Sag einfach "sei leise" und ich sage nichts mehr.</template>
 	</category>
 	<category>
 		<pattern>DU PFEIFE</pattern>
@@ -4489,11 +4489,7 @@
 
 	<category>
 		<pattern>Was weißt Du über mich</pattern>
-		<template>Dein Name ist<get name="name"/>. Du bist
-			<get name="age"/>
-			Jahe alt. Du bist
-			<get name="charakter"/>
-		</template>
+		<template>Dein Name ist <get name="name"/>. Du bist <get name="age"/> Jahe alt. Du bist <get name="charakter"/></template>
 	</category>
 
 	<category>
@@ -10784,16 +10780,7 @@
 		<pattern>WAS WEISST DU UEBER LINUX</pattern>
 		<template>Es ist das ultimative Betriebssystem.</template>
 	</category>
-	<category>
-		<pattern>WAS WEISST DU UEBER MICH</pattern>
-		<template>Dein Name ist
-			<get name="name"/>
-			und ich habe folgende Informationen ueber dich:
-			<html:br/>
-			<html:applet code="Sys" width="350" height="200">
-			</html:applet>
-		</template>
-	</category>
+
 	<category>
 		<pattern>WAS WEISST DU UEBERHAUPT</pattern>
 		<template>

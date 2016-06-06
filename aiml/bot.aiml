@@ -85,6 +85,18 @@ So weit so gut, genug gelabert. Ich glaube wir werden uns gut verstehen.
 		<template>OK, ich bin jetzt ruhig und sage nichts mehr. Wenn ich weiter reden soll sag <bot name="name"/> sprich.<think><set name="topic">silence</set></think></template>
 	</category>
 
+
+	<category>
+		<pattern>Sei ruhig</pattern>
+		<template><srai>Sei leise</srai></template>
+	</category>
+
+	<category>
+		<pattern>Halts maul</pattern>
+		<template>Ganz schön ruppig. <srai>Sei leise</srai></template>
+	</category>
+
+
 	<topic name="silence">
 
 		<category>
