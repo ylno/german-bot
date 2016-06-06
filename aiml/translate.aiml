@@ -43,7 +43,7 @@
 		</category>
 		<category>
 			<pattern>stop</pattern>
-			<template>Ok, fertig. <set name="topic"></set></template>
+			<template>Ok, ich höre jetzt auf zu übersetzen. <set name="topic"></set></template>
 		</category>
 
 		<category>

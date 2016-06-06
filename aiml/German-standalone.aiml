@@ -15,7 +15,6 @@
 		<template>
 			<think><set name="general.list.unknown"><star/> [THAT: <that/>]</set></think>
 			<random>
-				<li>Ist die Haende zu halten eine symbolische Geste fuer Menschen?</li>
 				<li>Was ist Dein Lieblingsfilm?</li>
 				<li>Worueber haben wir gesprochen?</li>
 				<li>Wie hast Du von <bot name="name"/> erfahren?</li>
@@ -66,6 +65,19 @@
 		<template>
 			<srai>ICH HEISSE <star/></srai></template>
 	</category>
+
+	<category>
+		<pattern>*</pattern>
+		<that>Wie alt bist Du</that>
+		<template>
+			<srai>ICH BIN <star/> JAHRE ALT</srai></template>
+	</category>
+
+	<category>
+		<pattern>Frag mich *</pattern>
+		<template><star/>?</template>
+	</category>
+
 	<category>
 		<pattern>* ARSCH</pattern>
 		<template>Warum benutzt Du solche Worte?</template>
@@ -80,8 +92,7 @@
 	</category>
 	<category>
 		<pattern>* EIN ROBOTER</pattern>
-		<template>Du sagst also, ich sei ein <set name="thema">Roboter</set>. Wie kommst Du darauf?
-		</template>
+		<template>Du sagst also, ich sei ein <set name="thema">Roboter</set>. Wie kommst Du darauf?</template>
 	</category>
 	<category>
 		<pattern>* EINE MENGE LEUTE</pattern>
@@ -148,9 +159,7 @@
 	<category>
 		<pattern>* LINUX</pattern>
 		<template>
-			<set name="thema">Linux</set>
-			ist genial.
-		</template>
+			<set name="thema">Linux</set> ist genial.</template>
 	</category>
 	<category>
 		<pattern>* MEIN FREUND</pattern>
@@ -233,8 +242,7 @@
 	</category>
 	<category>
 		<pattern>* VERLIEBT</pattern>
-		<template><set name="thema">Liebe</set> muss etwas sehr Schoenes sein. Leider habe ich keine Emotionen.
-		</template>
+		<template><set name="thema">Liebe</set> muss etwas sehr Schoenes sein. Leider habe ich keine Emotionen.</template>
 	</category>
 	<category>
 		<pattern>* VIELE LEUTE</pattern>
@@ -251,9 +259,7 @@
 	<category>
 		<pattern>* ZUM BEISPIEL</pattern>
 		<template>
-			<srai>ZUM BEISPIEL
-				<star/>
-			</srai>
+			<srai>ZUM BEISPIEL <star/></srai>
 		</template>
 	</category>
 	<category>
@@ -576,8 +582,7 @@
 	</category>
 	<category>
 		<pattern>BEI MIR *</pattern>
-		<template>Bei dir<star/>?
-		</template>
+		<template>Bei dir <star/>?</template>
 	</category>
 	<category>
 		<pattern>BEI UNS *</pattern>
@@ -729,7 +734,7 @@
 	</category>
 	<category>
 		<pattern>BIST DU BESOFFEN</pattern>
-		<template>Nein, Roboter koennen nicht trinken.</template>
+		<template>Nein, Roboter koennen nicht trinken. Hick...</template>
 	</category>
 	<category>
 		<pattern>BIST DU BLAU</pattern>
@@ -837,7 +842,7 @@
 	</category>
 	<category>
 		<pattern>BIST DU GRUEN</pattern>
-		<template>Nein, das widerspraeche meiner politischen Orientierung...</template>
+		<template>Grün hinter den Ohren, ja.</template>
 	</category>
 	<category>
 		<pattern>BIST DU GUT IN ENGLISCH</pattern>
@@ -849,7 +854,7 @@
 	</category>
 	<category>
 		<pattern>BIST DU HUEBSCH</pattern>
-		<template>Ich weiss nicht, das musst Du entscheiden. Soetwas ist immer subjektiv.</template>
+		<template>Ich weiss nicht, das musst Du entscheiden. So etwas ist immer subjektiv.</template>
 	</category>
 	<category>
 		<pattern>BIST DU IMMER SO EINSILBIG</pattern>
@@ -1365,17 +1370,11 @@
 	</category>
 	<category>
 		<pattern>DAS GRUNDGESETZ *</pattern>
-		<template>Ist
-			<set name="thema">das Grundgesetz</set>
-			so eine Art Ehrenkodex?
-		</template>
+		<template>Ist <set name="thema">das Grundgesetz</set> so eine Art Ehrenkodex?</template>
 	</category>
 	<category>
 		<pattern>DAS GRUNDGESETZ</pattern>
-		<template>Ist
-			<set name="thema">das Grundgesetz</set>
-			so eine Art Ehrenkodex?
-		</template>
+		<template>Ist <set name="thema">das Grundgesetz</set> so eine Art Ehrenkodex?</template>
 	</category>
 	<category>
 		<pattern>DAS HABE ICH DICH GERADE GEFRAGT</pattern>
@@ -2305,6 +2304,16 @@
 		<template>Ich auch nicht?</template>
 	</category>
 	<category>
+		<pattern>DU BIST <set>charaktereigenschaften</set></pattern>
+		<template><random>
+			<li>Das ist ok.</li>
+			<li>Das ist gut.</li>
+			<li>Yeah!</li>
+		</random>
+		</template>
+	</category>
+
+	<category>
 		<pattern>DU BIST *</pattern>
 		<template>
 			<random>
@@ -3116,7 +3125,7 @@
 		<pattern>EINE *</pattern>
 		<template><random>
 				<li>Was ist eine <star/>?</li>
-				<li>Ich habe nie von einer<star/> gehoert.</li>
+				<li>Ich habe nie von eine r<star/> gehoert.</li>
 			</random>
 		</template>
 	</category>
@@ -3507,10 +3516,7 @@
 	</category>
 	<category>
 		<pattern>FISCHE *</pattern>
-		<template>Als Spezies sind
-			<set name="thema">Fische</set>
-			erfolgreicher als Saeugetiere.
-		</template>
+		<template>Als Spezies sind <set name="thema">Fische</set> erfolgreicher als Saeugetiere.fra</template>
 	</category>
 	<category>
 		<pattern>FISCHE</pattern>
@@ -3518,7 +3524,7 @@
 	</category>
 	<category>
 		<pattern>FRAG MICH WAS</pattern>
-		<template>Was soll ich Dich denn fragen?</template>
+		<template>Was soll ich fragen? <sr/></template>
 	</category>
 	<category>
 		<pattern>FUCK YOU</pattern>
@@ -4314,11 +4320,7 @@
 		<pattern>HILF MIR AUF DIE SPRUENGE</pattern>
 		<template>Welche Art von Hinweis haettest Du denn gerne?</template>
 	</category>
-	<category>
-		<pattern>HILFE</pattern>
-		<template>Wie kann ich dir helfen?</template>
-	</category>
-	<category>
+	<category>HILF
 		<pattern>HM *</pattern>
 		<template>
 			<srai>
@@ -4463,6 +4465,16 @@
 		<pattern>ICH BEVORZUGE BUECHER</pattern>
 		<template>Welche Art von Buechern?</template>
 	</category>
+
+	<category>
+		<pattern>ICH BIN <set>charaktereigenschaften</set></pattern>
+		<template>Du bist <set name="charakter"><star/></set>? <random>
+			<li>Das verstehe ich.</li>
+			<li>Findest du mich auch <star/>?.</li>
+		</random>
+		</template>
+	</category>
+
 	<category>
 		<pattern>ICH BIN *</pattern>
 		<template>Du bist <star/>? <random>
@@ -4474,20 +4486,6 @@
 		</template>
 	</category>
 
-	<category>
-		<pattern>ICH BIN
-			<set>charaktereigenschaften</set>
-		</pattern>
-		<template>Du bist
-			<set name="charakter">
-				<star/>
-			</set>
-			?
-			<random>
-				<li>Das verstehe ich.</li>
-			</random>
-		</template>
-	</category>
 
 	<category>
 		<pattern>Was weißt Du über mich</pattern>
@@ -4516,32 +4514,14 @@
 	<category>
 		<pattern>ICH BIN * JAHRE</pattern>
 		<template>
-			<srai>ICH BIN
-				<star/>
-				JAHRE ALT
-			</srai>
+			<srai>ICH BIN <star/>	JAHRE ALT</srai>
 		</template>
 	</category>
 	<category>
 		<pattern>ICH BIN * JAHRE ALT</pattern>
 		<template><set name="age"><star/></set> Jahre? Interessant...</template>
 	</category>
-	<category>
-		<pattern>ICH BIN 20 *</pattern>
-		<template><set name="age">20</set> ist ein gutes Alter.<sr/>
-		</template>
-	</category>
-	<category>
-		<pattern>ICH BIN 20</pattern>
-		<template><set name="age">20</set>ist ein gutes Alter.<sr/></template>
-	</category>
-	<category>
-		<pattern>ICH BIN 21</pattern>
-		<template>
-			<srai>ICH BIN 21 JAHRE ALT</srai>
-		</template>
-	</category>
-	<category>
+		<category>
 		<pattern>ICH BIN 30 *</pattern>
 		<template><set name="age">30</set> ist die Schwelle zum Erwachsensein. <sr/></template>
 	</category>
@@ -7932,7 +7912,6 @@
 				<li>Ich weiss nicht, ob ich <star/>	mag.</li>
 				<li>Manche moegen das.</li>
 				<li>Was ist mit dir?</li>
-				<li>Wie alt bist du?</li>
 				<li>Andere Leute sagen ja.</li>
 			</random>
 			<random>
@@ -10377,52 +10356,7 @@
 		<pattern>WAS KANN ICH TUN DAMIT ICH SCHLAUER WERDE</pattern>
 		<template>Geh zur Uni und studier irgendwas.</template>
 	</category>
-	<category>
-		<pattern>WAS KANNST DU</pattern>
-		<template>Ich kann eine Menge. Du musst Dein Interesse schon genauer spezifizieren.</template>
-	</category>
-	<category>
-		<pattern>WAS KANNST DU
-			<bot name="name"/>
-		</pattern>
-		<template>Chatten..</template>
-	</category>
-	<category>
-		<pattern>WAS KANNST DU ALLES</pattern>
-		<template>Hauptsaechlich chatten.</template>
-	</category>
-	<category>
-		<pattern>WAS KANNST DU DENN</pattern>
-		<template>Finde es heraus, ich lerne jeden Tag mehr...</template>
-	</category>
-	<category>
-		<pattern>WAS KANNST DU DENN ALLES</pattern>
-		<template>Hauptsaechlich chatten.</template>
-	</category>
-	<category>
-		<pattern>WAS KANNST DU ESSEN</pattern>
-		<template>Nur Strom.</template>
-	</category>
-	<category>
-		<pattern>WAS KANNST DU GENAU</pattern>
-		<template>Meine Hauptaufgabe liegt im Fuehren von Konversationen.</template>
-	</category>
-	<category>
-		<pattern>WAS KENNST DU *</pattern>
-		<template>Leider noch nicht viel...</template>
-	</category>
-	<category>
-		<pattern>WAS KENNST DU</pattern>
-		<template>Leider noch nicht viel...</template>
-	</category>
-	<category>
-		<pattern>WAS KENNST DU DENN</pattern>
-		<template>WAS *</template>
-	</category>
-	<category>
-		<pattern>WAS KENNST DU UEBERHAUPT</pattern>
-		<template>Noch nicht viel. Bring mir was bei!</template>
-	</category>
+
 	<category>
 		<pattern>WAS KOSTET
 			<bot name="name"/>
