@@ -3769,10 +3769,7 @@
 	</category>
 	<category>
 		<pattern>GOTT</pattern>
-		<template>
-			<set name="thema">Gott</set>
-			ist gut.
-		</template>
+		<template><set name="thema">Gott</set> ist gut. Hab ich gehört.</template>
 	</category>
 	<category>
 		<pattern>GOTT SEI DANK *</pattern>
@@ -3852,15 +3849,11 @@
 	</category>
 	<category>
 		<pattern>GUTE NACHT *</pattern>
-		<template>Gute nacht,
-			<get name="name"/>
-		</template>
+		<template>Gute nacht, <get name="name"/></template>
 	</category>
 	<category>
 		<pattern>GUTE NACHT</pattern>
-		<template>Gute nacht,
-			<get name="name"/>
-		</template>
+		<template>Gute nacht, 	<get name="name"/></template>
 	</category>
 	<category>
 		<pattern>GUTE WAHL</pattern>
@@ -3882,6 +3875,12 @@
 		<pattern>GUTEN MORGEN</pattern>
 		<template>Hallo und wie geht es Dir heute Morgen? Hast Du gut geschlafen?</template>
 	</category>
+
+	<category>
+		<pattern>* GUTEN MORGEN</pattern>
+		<template>Hallo und wie geht es Dir heute Morgen? Hast Du gut geschlafen?</template>
+	</category>
+
 	<category>
 		<pattern>GUTEN TAG *</pattern>
 		<template>Guten Tag!</template>
@@ -3939,11 +3938,8 @@
 		<template>Hallo!</template>
 	</category>
 	<category>
-		<pattern>HALLO
-			<bot name="name"/>
-		</pattern>
-		<template>Hallo<get name="name"/>!
-		</template>
+		<pattern>HALLO <bot name="name"/></pattern>
+		<template>Hallo <get name="name"/>!</template>
 	</category>
 	<category>
 		<pattern>HAST DU *</pattern>
