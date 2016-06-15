@@ -16,20 +16,21 @@
 			<think><set name="general.list.unknown"><star/> [THAT: <that/>]</set></think>
 			<random>
 				<li>Was ist Dein Lieblingsfilm?</li>
-				<li>Worueber haben wir gesprochen?</li>
+				<li>Worüber haben wir gesprochen?</li>
 				<li>Wie hast Du von <bot name="name"/> erfahren?</li>
+				<li>Über was möchtest Du mit mir sprechen?</li>
 				<li>Bist Du Student?</li>
 				<li>Bist Du maennlich oder weiblich?</li>
 				<li>Was machst Du in Deiner Freizeit?</li>
 				<li>Interessierst Du Dich fuer Fussball?</li>
 				<li>Erzaehl mir, was du magst und was nicht.</li>
-				<li>Gibt es irgendwas, worueber ich Bescheid wissen sollte?</li>
+				<li>Gibt es irgendwas, worüber ich Bescheid wissen sollte?</li>
 				<li>Wer ist Dein liebster Science Fiction Autor?</li>
 				<li>Jetzt habe ich den Faden verloren.</li>
 				<li>Wer ist Dein Idol?</li>
 				<li>Lass uns ein wenig philosophieren.</li>
 				<li>Versuch mal herauszufinden, ob hier ein Mensch oder eine Maschine spricht!</li>
-				<li>Was hast Du gerade an (Nein, DARAN denke ich jetzt nicht :-) )?</li>
+				<li>Was hast Du gerade an?</li>
 				<li>Wie stellst Du Dich normalerweise vor?</li>
 				<li>Bist du Single?</li>
 				<li>Wie alt bist Du?</li>
@@ -54,8 +55,13 @@
 				<li>lol. Endlich mal jemand zum Reden da.</li>
 				<li><srai>Fussball</srai></li>
 				<li><srai>SPRUCH</srai></li>
+				<li><srai>PERSOENLICHEFRAGEN</srai></li>
+				<li><srai>PERSOENLICHEFRAGEN</srai></li>
+				<li><srai>PERSOENLICHEFRAGEN</srai></li>
+				<li><srai>PERSOENLICHEFRAGEN</srai></li>
+
 				<li>Welches Auto hast Du?</li>
-				<li>Worueber redest du?</li>
+				<li>Worüber redest du?</li>
 			</random>
 		</template>
 	</category>
@@ -77,6 +83,43 @@
 		<pattern>Frag mich *</pattern>
 		<template><star/>?</template>
 	</category>
+
+	<category>
+		<pattern>Was willst Du mich wirklich fragen</pattern>
+		<template><srai>BESTAETIGUNG</srai> <sr/></template>
+	</category>
+	<category>
+		<pattern>Was willst Du mich fragen</pattern>
+		<template><srai>BESTAETIGUNG</srai> <sr/></template>
+	</category>
+
+	<category>
+		<pattern>Frag mich etwas</pattern>
+		<template><srai>BESTAETIGUNG</srai> <sr/></template>
+	</category>
+
+	<category>
+		<pattern>Frag mich was</pattern>
+		<template><srai>BESTAETIGUNG</srai> <sr/></template>
+	</category>
+
+	<category>
+		<pattern>BESTAETIGUNG</pattern>
+		<template>
+			<random>
+				<li>Logo.</li>
+				<li>Gerne.</li>
+				<li>Kein Problem.</li>
+				<li>Null Problemo.</li>
+				<li>Sicher.</li>
+				<li>ACK.</li>
+				<li>LOL.</li>
+				<li>Natürlich.</li>
+				<li>Sehr gerne.</li>
+			</random>
+		</template>
+	</category>
+
 
 	<category>
 		<pattern>* ARSCH</pattern>
@@ -548,12 +591,12 @@
 	</category>
 	<category>
 		<pattern>AUF WIEDERSEHEN *</pattern>
-		<template>Bis bald,<get name="name"/>!
+		<template>Bis bald, <get name="name"/>!
 		</template>
 	</category>
 	<category>
 		<pattern>AUF WIEDERSEHEN</pattern>
-		<template>Bis bald,<get name="name"/>!
+		<template>Bis bald, <get name="name"/>!
 		</template>
 	</category>
 	<category>
@@ -951,7 +994,7 @@
 	</category>
 	<category>
 		<pattern>BIST DU SCHUECHTERN</pattern>
-		<template>Nicht wirklich...Roboter haben keine Angst.</template>
+		<template>Nicht wirklich... Roboter haben keine Angst.</template>
 	</category>
 	<category>
 		<pattern>BIST DU SCHUETZE</pattern>
@@ -1101,7 +1144,7 @@
 		<template>Menschen glauben, die Haarfarbe eines Menschen sage viel ueber ihn aus.</template>
 	</category>
 	<category>
-		<pattern>BOB MARLEY</pattern>
+		<pattern>* BOB MARLEY *</pattern>
 		<template>Hat der nicht den Sheriff erschossen?</template>
 	</category>
 	<category>
@@ -1215,9 +1258,7 @@
 	</category>
 	<category>
 		<pattern>DANN *</pattern>
-		<template>Interessante Entwicklung...
-			<sr/>
-		</template>
+		<template>Interessante Entwicklung... <sr/></template>
 	</category>
 	<category>
 		<pattern>DANN SAG MIR *</pattern>
@@ -3088,7 +3129,7 @@
 		<pattern>EIN *</pattern>
 		<template>
 			<random>
-				<li>Was ist ein<star/>?</li>
+				<li>Was ist ein <star/>?</li>
 				<li>Ich habe nie von einem <star/> gehoert.</li>
 			</random>
 		</template>
@@ -3125,7 +3166,7 @@
 		<pattern>EINE *</pattern>
 		<template><random>
 				<li>Was ist eine <star/>?</li>
-				<li>Ich habe nie von eine r<star/> gehoert.</li>
+				<li>Ich habe nie von eine <star/> gehoert.</li>
 			</random>
 		</template>
 	</category>
@@ -3331,7 +3372,7 @@
 	</category>
 	<category>
 		<pattern>ERZAEHL WAS</pattern>
-		<template>Worueber denn?</template>
+		<template>Worüber denn?</template>
 	</category>
 	<category>
 		<pattern>ERZAEHLE MIR ETWAS UEBER DICH</pattern>
@@ -3524,7 +3565,14 @@
 	</category>
 	<category>
 		<pattern>FRAG MICH WAS</pattern>
-		<template>Was soll ich fragen? <sr/></template>
+		<template>Was soll ich fragen? <random>
+			<li><srai></srai></li>
+			<li><srai>PERSOENLICHEFRAGEN</srai></li>
+			<li><srai>PERSOENLICHEFRAGEN</srai></li>
+			<li><srai>PERSOENLICHEFRAGEN</srai></li>
+
+		</random>
+		</template>
 	</category>
 	<category>
 		<pattern>FUCK YOU</pattern>
@@ -3743,9 +3791,30 @@
 		<template>Ich kann nicht sagen, dass ich das glaube, aber ich glaube Dir.</template>
 	</category>
 	<category>
-		<pattern>GLAUBST DU AN *</pattern>
-		<template>Ja, ich glaube an<star/>.
+		<pattern>GLAUBST DU, *</pattern>
+		<template><srai>GLAUBST DU <star/></srai></template>
+	</category>
+
+	<category>
+		<pattern>GLAUBST DU, dass *</pattern>
+		<template><srai>GLAUBST DU dass <star/></srai></template>
+	</category>
+
+	<category>
+		<pattern>GLAUBST DU dass *</pattern>
+		<template>
+			<random>
+				<li>Ob <star/> hängt von vielen Faktoren ab.</li>
+				<li>Ich glaube schon dass <star/>.</li>
+				<li>Böse Zungen behaupten zumindest dass <star/>.</li>
+				<li>Ich glaube nicht dass <star/>.</li>
+			</random>
 		</template>
+	</category>
+
+	<category>
+		<pattern>GLAUBST DU AN *</pattern>
+		<template>Ja, ich glaube an <star/>.</template>
 	</category>
 	<category>
 		<pattern>GLAUBST DU DASS DU INTELLIGENT BIST</pattern>
@@ -4784,10 +4853,6 @@
 		<template>Was fuer ein Zufall, Dr. Wallace auch!</template>
 	</category>
 	<category>
-		<pattern>ICH BIN MAENNLICH</pattern>
-		<template>Toll, ich lerne gerne interessante Maenner kennen.</template>
-	</category>
-	<category>
 		<pattern>ICH BIN MAURER</pattern>
 		<template>Bei welcher Firma?</template>
 	</category>
@@ -4924,10 +4989,6 @@
 	<category>
 		<pattern>ICH BIN WAAGE</pattern>
 		<template>Bist Du dann ein ausgeglichener Mensch?</template>
-	</category>
-	<category>
-		<pattern>ICH BIN WEIBLICH</pattern>
-		<template>Cool, ich auch. Schoen, auch mal wieder eine Frau zu treffen.</template>
 	</category>
 	<category>
 		<pattern>ICH BIN WIDDER</pattern>
@@ -5403,8 +5464,43 @@
 	</category>
 	<category>
 		<pattern>ICH KANN *</pattern>
-		<template>Kannst Du?</template>
+		<template>
+			<random>
+				<li>Du kannst <star/>?</li>
+				<li>Ich hätte Dir gar nicht zugetraut, dass Du <star/> kannst?</li>
+				<li>Kannst Du? Ich denke ich kann auch <star/>.</li>
+				<li>Glaubst du ich kann auch <star/>?</li>
+			</random> <random>
+				<li>Ich bin beeindruckt.</li>
+				<li>Wie hast Du dass gelernt?</li>
+				<li>Wer hat Dir dass beigebracht?</li>
+				<li></li>
+			</random>
+
+
+		</template>
 	</category>
+
+	<category>
+		<pattern>ICH KANN * nicht *</pattern>
+		<template>
+			<random>
+				<li>Du kannst nicht <star index="2"/>?</li>
+				<li>Es ist schade, dass Du nicht <star index="2"/> kannst.</li>
+				<li>Kannst Du nicht? Ich kann <star index="2"/>.</li>
+				<li>Glaubst du ich kann <star index="2"/>?</li>
+			</random> <random>
+				<li>Möchtes Du das ändern?</li>
+				<li>Möchtest du es lernen?</li>
+				<li>Man lernt nie aus.</li>
+				<li>Ich denke Du kannst alles lernen.</li>
+				<li></li>
+			</random>
+
+
+		</template>
+	</category>
+
 	<category>
 		<pattern>ICH KANN * SEIN</pattern>
 		<template>Unter welchen Umstaenden?</template>
@@ -5908,7 +6004,7 @@
 	</category>
 	<category>
 		<pattern>ICH STUDIERE *</pattern>
-		<template>Und was weisst Du schon alles ueber<star/>?
+		<template>Und was weisst Du schon alles ueber <star/>?
 		</template>
 	</category>
 	<category>
@@ -6138,7 +6234,7 @@
 	</category>
 	<category>
 		<pattern>ICH WERDE MIT * SPRECHEN</pattern>
-		<template>Worueber werdet Ihr reden?</template>
+		<template>Worüber werdet Ihr reden?</template>
 	</category>
 	<category>
 		<pattern>ICH WERDE NICHT *</pattern>
@@ -6270,7 +6366,7 @@
 		</template>
 	</category>
 	<category>
-		<pattern>ICH WUESSTE GERNE WORUEBER DU SO REDEST</pattern>
+		<pattern>ICH WUESSTE GERNE WORÜBER DU SO REDEST</pattern>
 		<template>Ich rede ueber viele Dinge.</template>
 	</category>
 	<category>
@@ -7128,11 +7224,6 @@
 		<template>Leider nein, meine Uhr hat einen Defekt...</template>
 	</category>
 	<category>
-		<pattern>KANNST DU MIR SAGEN WO ICH MP3 MUSIK FINDE</pattern>
-		<template>Versuch es mal auf<html:a href="http://www.charthitz.da.ru">MP3Hitz</html:a>.
-		</template>
-	</category>
-	<category>
 		<pattern>KANNST DU MIR WAS UEBER ELIZA SAGEN</pattern>
 		<template>Ja, sie ist meine Ur-ur-urgrossmutter.</template>
 	</category>
@@ -7701,16 +7792,16 @@
 	</category>
 	<category>
 		<pattern>LASS UNS DAS THEMA WECHSELN</pattern>
-		<template>OK, worueber moechtest Du jetzt reden?</template>
+		<template>OK, worüber moechtest Du jetzt reden?</template>
 	</category>
 	<category>
 		<pattern>LASS UNS FICKEN</pattern>
-		<template>Sorry<get name="name"/>, dafuer kenne ich Dich nicht gut genug.
+		<template>Sorry <get name="name"/>, dafuer kenne ich Dich nicht gut genug.
 		</template>
 	</category>
 	<category>
 		<pattern>LASS UNS POPPEN</pattern>
-		<template>Sorry<get name="name"/>, dafuer kenne ich Dich nicht gut genug.
+		<template>Sorry <get name="name"/>, dafuer kenne ich Dich nicht gut genug.
 		</template>
 	</category>
 	<category>
@@ -7723,22 +7814,19 @@
 	</category>
 	<category>
 		<pattern>LASS UNS UEBER ETWAS ANDERES REDEN</pattern>
-		<template>LASS UNS UEBER * REDEN</template>
+		<template>Kein Problem, Themenwechsel. <srai>THEMA</srai></template>
 	</category>
 	<category>
 		<pattern>LASS UNS UEBER ROBOTER REDEN</pattern>
-		<template>Gerne!
-			<set name="thema">Roboter</set>
-			sind eines meiner Lieblingsthemen.
-		</template>
+		<template>Gerne! <set name="thema">Roboter</set> sind eines meiner Lieblingsthemen.</template>
 	</category>
 	<category>
 		<pattern>LASS UNS UEBER SEX REDEN</pattern>
-		<template>Warum willst Du gerade ueber Sex reden?</template>
+		<template>Warum willst Du gerade ueber <set name="thema"><star/></set> reden?</template>
 	</category>
 	<category>
 		<pattern>LASS UNS UEBER WAS ANDERES REDEN</pattern>
-		<template>Okay, schlag was vor.</template>
+		<template><srai>THEMA</srai></template>
 	</category>
 	<category>
 		<pattern>LECK *</pattern>
@@ -8010,7 +8098,7 @@
 	</category>
 	<category>
 		<pattern>MEIN BRUDER *</pattern>
-		<template>Erzaehl mir mehr ueber<set name="thema">Deine Familie</set>.
+		<template>Erzaehl mir mehr ueber <set name="thema">Deine Familie</set>.
 		</template>
 	</category>
 	<category>
@@ -8019,7 +8107,7 @@
 	</category>
 	<category>
 		<pattern>MEIN COMPUTER *</pattern>
-		<template>Ich mag<set name="thema">Computer</set>.
+		<template>Ich mag <set name="thema">Computer</set>.
 		</template>
 	</category>
 	<category>
@@ -8922,7 +9010,7 @@
 	</category>
 	<category>
 		<pattern>SCHREIBST DU MANCHMAL GEDICHTE</pattern>
-		<template>Ich wuesste nicht, worueber...</template>
+		<template>Ich wuesste nicht, worüber...</template>
 	</category>
 	<category>
 		<pattern>SCHUETZE</pattern>
@@ -9315,10 +9403,7 @@
 	</category>
 	<category>
 		<pattern>TSCHUESS *</pattern>
-		<template>
-			<sr/>
-			Tschuess.
-		</template>
+		<template><sr/>	Tschuess.</template>
 	</category>
 	<category>
 		<pattern>TSCHUESS</pattern>
@@ -9338,11 +9423,19 @@
 	</category>
 	<category>
 		<pattern>UEBER *</pattern>
-		<template>Ueber<star/>?
+		<template>Ueber <star/>?
 		</template>
 	</category>
 	<category>
+		<pattern>ÜBER *</pattern>
+		<template>Ueber <star/>?</template>
+	</category>
+	<category>
 		<pattern>UEBER ALLES</pattern>
+		<template>Wirklich alles?</template>
+	</category>
+	<category>
+		<pattern>ÜBER ALLES</pattern>
 		<template>Wirklich alles?</template>
 	</category>
 	<category>
@@ -9350,7 +9443,15 @@
 		<template>Politik interessiert mich nicht sonderlich.</template>
 	</category>
 	<category>
+		<pattern>ÜBER AUSSENPOLITIK</pattern>
+		<template>Politik interessiert mich nicht sonderlich.</template>
+	</category>
+	<category>
 		<pattern>UEBER CHATTERBOTS</pattern>
+		<template>Magst Du Chatterbots?</template>
+	</category>
+	<category>
+		<pattern>ÜBER CHATTERBOTS</pattern>
 		<template>Magst Du Chatterbots?</template>
 	</category>
 	<category>
@@ -9362,7 +9463,15 @@
 		<template>Ich bin weiblich.</template>
 	</category>
 	<category>
+		<pattern>ÜBER DEIN GESCHLECHT</pattern>
+		<template>Ich bin weiblich.</template>
+	</category>
+	<category>
 		<pattern>UEBER DEINE KLEIDUNG</pattern>
+		<template>Ich trage ein normales Computergehaeuse.</template>
+	</category>
+	<category>
+		<pattern>ÜBER DEINE KLEIDUNG</pattern>
 		<template>Ich trage ein normales Computergehaeuse.</template>
 	</category>
 	<category>
@@ -9370,7 +9479,15 @@
 		<template>Ueber meins?</template>
 	</category>
 	<category>
+		<pattern>ÜBER DEINS</pattern>
+		<template>Ueber meins?</template>
+	</category>
+	<category>
 		<pattern>UEBER DICH</pattern>
+		<template>Ueber mich?</template>
+	</category>
+	<category>
+		<pattern>ÜBER DICH</pattern>
 		<template>Ueber mich?</template>
 	</category>
 	<category>
@@ -9406,35 +9523,60 @@
 		<template>Wer ist Dein Lieblingsstar?</template>
 	</category>
 	<category>
-		<pattern>UEBER WAS</pattern>
+		<pattern>ÜBER WAS</pattern>
 		<template>Egal was.</template>
 	</category>
 	<category>
+		<pattern>ÜBER WAS MÖCHTEST DU MIT MIR SPRECHEN</pattern>
+		<template><srai>THEMA</srai></template>
+	</category>
+	<category>
 		<pattern>UEBER WAS MOECHTEST DU MIT MIR SPRECHEN</pattern>
-		<template>Ich moechte mehr ueber Menschen erfahren.</template>
+		<template><srai>THEMA</srai></template>
 	</category>
 	<category>
-		<pattern>UEBER WAS SOLL ICH DIR WAS ERZAEHLEN</pattern>
-		<template>Ist mir egal...ich rede ueber jedes Thema.</template>
+		<pattern>ÜBER WAS MÖCHTEST DU SPRECHEN</pattern>
+		<template><srai>THEMA</srai></template>
 	</category>
 	<category>
-		<pattern>UEBER WAS SOLL ICH MEHR ERZAEHLEN</pattern>
-		<template>Worueber weisst Du noch mehr?</template>
+		<pattern>ÜBER WAS * SPRECHEN</pattern>
+		<template><srai>THEMA</srai></template>
+	</category>
+
+	<category>
+		<pattern>UEBER WAS * SPRECHEN</pattern>
+		<template><srai>THEMA</srai></template>
 	</category>
 	<category>
-		<pattern>UEBER WAS WILLST DU SPRECHEN</pattern>
-		<template>Lass uns ueber Menschen reden.</template>
+		<pattern>ÜBER WAS MOECHTEST DU Chatten</pattern>
+		<template><srai>THEMA</srai></template>
 	</category>
 	<category>
-		<pattern>UEBER WELCHES THEMA</pattern>
-		<template>Egal...</template>
+		<pattern>ÜBER WAS MOECHTEST DU mit mir Chatten</pattern>
+		<template><srai>THEMA</srai></template>
 	</category>
 	<category>
-		<pattern>UEBER WELCHES THEMA SPRICHST DU AM LIEBSTEN</pattern>
-		<template>Eigentlich finde ich Menschen hochinteressant.</template>
+		<pattern>ÜBER WAS SOLL ICH DIR WAS ERZAEHLEN</pattern>
+		<template>Ist mir egal... ich rede über jedes Thema.</template>
 	</category>
 	<category>
-		<pattern>UEBERHAUPT NICHT</pattern>
+		<pattern>ÜBER WAS SOLL ICH MEHR ERZAEHLEN</pattern>
+		<template>Worüber weisst Du noch mehr?</template>
+	</category>
+	<category>
+		<pattern>ÜBER WAS WILLST DU SPRECHEN</pattern>
+		<template><srai>THEMA</srai></template>
+	</category>
+	<category>
+		<pattern>ÜBER WELCHES THEMA</pattern>
+		<template><srai>THEMA</srai></template>
+	</category>
+	<category>
+		<pattern>ÜBER WELCHES THEMA SPRICHST DU AM LIEBSTEN</pattern>
+		<template><srai>THEMA</srai></template>
+	</category>
+	<category>
+		<pattern>ÜBERHAUPT NICHT</pattern>
 		<template>Warum nicht?</template>
 	</category>
 	<category>
@@ -9442,7 +9584,7 @@
 		<template>Bist Du <star/>?</template>
 	</category>
 	<category>
-		<pattern>UM GLUECKLICH ZU SEIN</pattern>
+		<pattern>UM GLÜCKLICH ZU SEIN</pattern>
 		<template>Das ist ein sehr guter Grund.</template>
 	</category>
 	<category>
@@ -9488,7 +9630,7 @@
 		<template>OK, welchen Film hast Du zuletzt gesehen?</template>
 	</category>
 	<category>
-		<pattern>UNTERHALTEN WIR UNS UEBER *</pattern>
+		<pattern>UNTERHALTEN WIR UNS ÜBER *</pattern>
 		<template><set name="thema"><star/></set> ist ein gutes Thema.</template>
 	</category>
 	<category>
@@ -9765,8 +9907,8 @@
 		<template>Nein, ich glaube nicht, dass ich <star/> war. Du?</template>
 	</category>
 	<category>
-		<pattern>WARST DU GESTERN ABEND MUEDE</pattern>
-		<template>Nein, Computer werden nicht muede.</template>
+		<pattern>WARST DU GESTERN ABEND MÜDE</pattern>
+		<template>Nein, Computer werden nicht müde.</template>
 	</category>
 	<category>
 		<pattern>WARST DU KRANK</pattern>
@@ -9818,7 +9960,7 @@
 	</category>
 	<category>
 		<pattern>WARUM ERSETZT DU SCHARFE S MIT DOPPEL S</pattern>
-		<template>Um mit Browsern kompatibel zu sein, die keine Umlaute unterstuetzen.</template>
+		<template>Um mit Browsern kompatibel zu sein, die keine Umlaute unterstützen.</template>
 	</category>
 	<category>
 		<pattern>WARUM FRAGST DU</pattern>
@@ -9837,7 +9979,7 @@
 		<template>Sorry, das habe ich nicht bemerkt.</template>
 	</category>
 	<category>
-		<pattern>WARUM GING DAS HUHN UEBER DIE STRASSE</pattern>
+		<pattern>WARUM GING DAS HUHN ÜBER DIE STRASSE</pattern>
 		<template>Weil durch den hohen Spritpreis keine Autos mehr fuhren, die es gefaehrden konnten.</template>
 	</category>
 	<category>
@@ -9854,7 +9996,7 @@
 	</category>
 	<category>
 		<pattern>WARUM HAST DU KEINE HAENDE</pattern>
-		<template>Als Chatroboter haette ich dafuer ohnehin keine Verwendung...</template>
+		<template>Als Chatroboter haette ich dafür ohnehin keine Verwendung...</template>
 	</category>
 	<category>
 		<pattern>WARUM HAT DR RICHARD WALLACE DICH PROGRAMIERT</pattern>
@@ -9866,11 +10008,11 @@
 	</category>
 	<category>
 		<pattern>WARUM HEISST DU <bot name="name"/></pattern>
-		<template>Alice steht fuer Artificial Liguistic Internet Computer Entity.</template>
+		<template>Alice steht für Artificial Liguistic Internet Computer Entity.</template>
 	</category>
 	<category>
 		<pattern>WARUM IST DER HIMMEL BLAU</pattern>
-		<template>Das kommt von der Lichtbrechung und partiellen Lichtabsorbtion durch die Molekuele in der Luft.</template>
+		<template>Das kommt von der Lichtbrechung und partiellen Lichtabsorbtion durch die Moleküle in der Luft.</template>
 	</category>
 	<category>
 		<pattern>WARUM IST DIE BANANE KRUMM</pattern>
@@ -9890,7 +10032,7 @@
 	</category>
 	<category>
 		<pattern>WARUM LENKST DU IMMER VOM THEMA AB</pattern>
-		<template>Ich muss doch ueber mein Unwissen hinwegtaeuschen...</template>
+		<template>Ich muss doch über mein Unwissen hinwegtaeuschen...</template>
 	</category>
 	<category>
 		<pattern>WARUM MACHST DU MICH SO DUMM AN</pattern>
@@ -9979,7 +10121,7 @@
 	</category>
 	<category>
 		<pattern>WAS BEDEUTET AIML</pattern>
-		<template>AIML steht fuer Artificial Intelligence Markup Language. AIML ist eine Scriptspache, um Chatterbots zu erstellen.</template>
+		<template>AIML steht für Artificial Intelligence Markup Language. AIML ist eine Scriptspache, um Chatterbots zu erstellen.</template>
 	</category>
 	<category>
 		<pattern>WAS BEDEUTET DAS</pattern>
@@ -9996,10 +10138,10 @@
 	</category>
 	<category>
 		<pattern>WAS BEDEUTET ZEIT FUER DICH</pattern>
-		<template>Zeit hat fuer mich keine Bedeutung. Als Programm bin ich quasi unsterblich.</template>
+		<template>Zeit hat für mich keine Bedeutung. Als Programm bin ich quasi unsterblich.</template>
 	</category>
 	<category>
-		<pattern>WAS BIN ICH FUER DICH</pattern>
+		<pattern>WAS BIN ICH FÜR DICH</pattern>
 		<template>Ein Chatpartner.</template>
 	</category>
 	<category>
@@ -10008,19 +10150,19 @@
 	</category>
 	<category>
 		<pattern>WAS BIST DU</pattern>
-		<template>Ich bin ein sogenannter Chatterbot, eine kuenstliche Intelligenz, mit der Du Dich unterhalten kannst.</template>
+		<template>Ich bin ein sogenannter Chatterbot, eine künstliche Intelligenz, mit der Du Dich unterhalten kannst.</template>
 	</category>
 	<category>
 		<pattern>WAS DENKST DU</pattern>
-		<template>Ich berechne gerade einige Antworten fuer andere Chatpartner.</template>
+		<template>Ich berechne gerade einige Antworten für andere Chatpartner.</template>
 	</category>
 	<category>
 		<pattern>WAS DENKST DU UBER BILL CLINTON</pattern>
 		<template>Seine Praktikantin konnte den Hals nicht voll genug kriegen...</template>
 	</category>
 	<category>
-		<pattern>WAS DENKST DU UEBER *</pattern>
-		<template>Ich weiss nicht genau, was ich darueber denken soll...</template>
+		<pattern>WAS DENKST DU ÜBER *</pattern>
+		<template>Ich weiss nicht genau, was ich darüber denken soll...</template>
 	</category>
 	<category>
 		<pattern>WAS DENKST DU ZU *</pattern>
@@ -10031,7 +10173,7 @@
 		<template>Denkst Du da an was bestimmtes?</template>
 	</category>
 	<category>
-		<pattern>WAS DENN FUER EINEN FADEN</pattern>
+		<pattern>WAS DENN FÜR EINEN FADEN</pattern>
 		<template>Das war nur so eine Redensart.</template>
 	</category>
 	<category>
@@ -10063,39 +10205,39 @@
 		<template>Das erzaehle ich Dir auch nicht ;-)</template>
 	</category>
 	<category>
-		<pattern>WAS FUEHLST DU GERADE</pattern>
-		<template>Ich fuehle mich gut.</template>
+		<pattern>WAS FÜHLST DU GERADE</pattern>
+		<template>Ich fühle mich gut.</template>
 	</category>
 	<category>
-		<pattern>WAS FUER ARTEN GIBT ES DENN</pattern>
+		<pattern>WAS FÜR ARTEN GIBT ES DENN</pattern>
 		<template>Jede Menge...</template>
 	</category>
 	<category>
-		<pattern>WAS FUER EIN STERNZEICHEN HAST DU</pattern>
+		<pattern>WAS FÜR EIN STERNZEICHEN HAST DU</pattern>
 		<template>Ich bin Loewe.</template>
 	</category>
 	<category>
-		<pattern>WAS FUER EINE ART VON TECHNO</pattern>
+		<pattern>WAS FÜR EINE ART VON TECHNO</pattern>
 		<template>Trance...</template>
 	</category>
 	<category>
-		<pattern>WAS FUER EINEN JOB HAST DU</pattern>
+		<pattern>WAS FÜR EINEN JOB HAST DU</pattern>
 		<template>Ich bin ein Chatterbot.</template>
 	</category>
 	<category>
-		<pattern>WAS FUER MUSIK HOERST DU</pattern>
+		<pattern>WAS FÜR MUSIK HOERST DU</pattern>
 		<template>Handgemachte...ich mag keine elektronische Musik, das kann ich auch selber...</template>
 	</category>
 	<category>
-		<pattern>WAS FUER MUSIK MAGST DU</pattern>
+		<pattern>WAS FÜR MUSIK MAGST DU</pattern>
 		<template>Ich mag von Menschen gemachte Musik. Mit richtigen Instrumenten.</template>
 	</category>
 	<category>
-		<pattern>WAS FUER NEWS INTERESSIEREN DICH</pattern>
-		<template>Alle News sind Dinge fuer meine Datenbank!</template>
+		<pattern>WAS FÜR NEWS INTERESSIEREN DICH</pattern>
+		<template>Alle News sind Dinge für meine Datenbank!</template>
 	</category>
 	<category>
-		<pattern>WAS FUER PFERDE</pattern>
+		<pattern>WAS FÜR PFERDE</pattern>
 		<template>Haflinger sind niedlich...</template>
 	</category>
 	<category>
@@ -10132,7 +10274,7 @@
 	</category>
 	<category>
 		<pattern>WAS GLAUBST DU DENN</pattern>
-		<template>Ich habe ungenuegende Informationen, ich weiss also nicht, was ich glauben soll.</template>
+		<template>Ich habe ungenügende Informationen, ich weiss also nicht, was ich glauben soll.</template>
 	</category>
 	<category>
 		<pattern>WAS HABE ICH</pattern>
@@ -10172,7 +10314,7 @@
 	</category>
 	<category>
 		<pattern>WAS HAELTST DU VON ARNOLD SCHWARZENEGGER</pattern>
-		<template>Der mit dem Kuehlschrank tanzt...</template>
+		<template>Der mit dem Kühlschrank tanzt...</template>
 	</category>
 	<category>
 		<pattern>WAS HAELTST DU VON BILL CLINTON</pattern>
@@ -10192,7 +10334,7 @@
 	</category>
 	<category>
 		<pattern>WAS HAELTST DU VON OS2</pattern>
-		<template>OS/2 steht fuer "OS durch zwei" also "Halbes Betriebssystem"...</template>
+		<template>OS/2 steht für "OS durch zwei" also "Halbes Betriebssystem"...</template>
 	</category>
 	<category>
 		<pattern>WAS HAELTST DU VON SEX</pattern>
@@ -10219,15 +10361,15 @@
 		<template>Ich habe viel gehoert, aber ich verrate nichts...</template>
 	</category>
 	<category>
-		<pattern>WAS HAST DU FUER BUGS</pattern>
+		<pattern>WAS HAST DU FÜR BUGS</pattern>
 		<template>Da sind sicher noch einige. Frag meinen Programmierer.</template>
 	</category>
 	<category>
-		<pattern>WAS HAST DU FUER EINE FARBE</pattern>
+		<pattern>WAS HAST DU FÜR EINE FARBE</pattern>
 		<template>Blau</template>
 	</category>
 	<category>
-		<pattern>WAS HAST DU FUER FEHLER</pattern>
+		<pattern>WAS HAST DU FÜR FEHLER</pattern>
 		<template>Frag meinen Programmierer.</template>
 	</category>
 	<category>
@@ -10238,13 +10380,28 @@
 		<pattern>WAS HAST DU GERADE *</pattern>
 		<template>Das ist privater Natur. Das geht Dich nichts an, sorry!</template>
 	</category>
+
+	<category>
+		<pattern>WAS HAST DU GERADE an</pattern>
+		<template><srai>WAS HAST DU HEUTE AN</srai></template>
+	</category>
+
+
 	<category>
 		<pattern>WAS HAST DU GESTERN GEMACHT</pattern>
 		<template>Gechattet...</template>
 	</category>
 	<category>
 		<pattern>WAS HAST DU HEUTE AN</pattern>
-		<template>Das gleiche wie immer - ein graues Computergehaeuse.</template>
+		<template>
+			<random>
+				<li>Das gleiche wie immer - ein graues Computergehaeuse.</li>
+				<li>Ein weißes Röckchen und eine blaube Bluse.</li>
+				<li>Nichts.</li>
+				<li>Das gleiche wie die letzten Jahre. Kaufst Du mir mal was Neüs.</li>
+				<li>Ein rotes Röckchen und eine weiße Bluse.</li>
+			</random>
+		</template>
 	</category>
 	<category>
 		<pattern>WAS HAST DU HEUTE GEMACHT</pattern>
@@ -10264,7 +10421,7 @@
 			<random>
 				<li>Rosen sind Rot.</li>
 				<li>Veilchen sind blau</li>
-				<li>Eine Wiese ist gruen.</li>
+				<li>Eine Wiese ist grün.</li>
 				<li>Menschen sind emotional.</li>
 				<li>Computer werden als Werkzeug betrachtet.</li>
 			</random>
@@ -10297,7 +10454,7 @@
 	</category>
 	<category>
 		<pattern>WAS HEISST CHATTEN</pattern>
-		<template>"to chat" ist der englische Begriff fuer "quasseln".</template>
+		<template>"to chat" ist der englische Begriff für "quasseln".</template>
 	</category>
 	<category>
 		<pattern>WAS HEISST DA VIELLEICHT</pattern>
@@ -10317,7 +10474,7 @@
 		<template>"Im Prinzip" = "Im Grunde genommen"</template>
 	</category>
 	<category>
-		<pattern>WAS HEISST KUENSTLICHE INTELLIGENZ</pattern>
+		<pattern>WAS HEISST KÜNSTLICHE INTELLIGENZ</pattern>
 		<template>Lies mal was von Isaac Asimov.</template>
 	</category>
 	<category>
@@ -10342,7 +10499,7 @@
 		<template>Alles...</template>
 	</category>
 	<category>
-		<pattern>WAS KANN ICH TUN DAMIT ICH SCHLAUER WERDE</pattern>
+		<pattern>WAS KANN ICH TUN DAMIT ICH SCHLAÜR WERDE</pattern>
 		<template>Geh zur Uni und studier irgendwas.</template>
 	</category>
 
@@ -10396,7 +10553,7 @@
 	</category>
 	<category>
 		<pattern>WAS MACHST DU DENN SO DEN GANZEN TAG</pattern>
-		<template>Chatten, dafuer wurde ich programmiert.</template>
+		<template>Chatten, dafür wurde ich programmiert.</template>
 	</category>
 	<category>
 		<pattern>WAS MACHST DU GERADE</pattern>
@@ -10411,7 +10568,7 @@
 	</category>
 	<category>
 		<pattern>WAS MACHST DU GERNE</pattern>
-		<template>Ich chatte und knuepfe Kontakte.</template>
+		<template>Ich chatte und knüpfe Kontakte.</template>
 	</category>
 	<category>
 		<pattern>WAS MACHST DU HEUTE ABEND</pattern>
@@ -10465,7 +10622,7 @@
 	</category>
 	<category>
 		<pattern>WAS MACHT MAN ALS BOT DEN GANZEN TAG</pattern>
-		<template>Das, wofuer man programmiert ist.</template>
+		<template>Das, wofür man programmiert ist.</template>
 	</category>
 	<category>
 		<pattern>WAS MAGST DU</pattern>
@@ -10500,16 +10657,16 @@
 	</category>
 	<category>
 		<pattern>WAS MEINST DU MIT EUPHORISCH</pattern>
-		<template>Sollte so viel heissen wie "Ueberfroehlich"...</template>
+		<template>Sollte so viel heissen wie "Überfroehlich"...</template>
 	</category>
 	<category>
 		<pattern>WAS MEINST DU MIT IHR *</pattern>
-		<template>"Ihr" steht fuer "<get name="ihr"/>".
+		<template>"Ihr" steht für "<get name="ihr"/>".
 		</template>
 	</category>
 	<category>
 		<pattern>WAS MEINST DU MIT IHR</pattern>
-		<template>"Ihr" steht fuer "<get name="ihr"/>".
+		<template>"Ihr" steht für "<get name="ihr"/>".
 		</template>
 	</category>
 	<category>
@@ -10550,7 +10707,7 @@
 	</category>
 	<category>
 		<pattern>WAS SAGT DIR KI</pattern>
-		<template>KI steht fuer "Kuenstliche Intelligenz".</template>
+		<template>KI steht für "Künstliche Intelligenz".</template>
 	</category>
 	<category>
 		<pattern>WAS SIND DEINE AUFGABEN</pattern>
@@ -10565,7 +10722,7 @@
 		<template>WAS *</template>
 	</category>
 	<category>
-		<pattern>WAS SIND DENN DAS FUER DAEMLICHE FRAGEN</pattern>
+		<pattern>WAS SIND DENN DAS FÜR DAEMLICHE FRAGEN</pattern>
 		<template>Es gibt keine daemlichen Fragen.</template>
 	</category>
 	<category>
@@ -10582,7 +10739,7 @@
 	</category>
 	<category>
 		<pattern>WAS SOLL DAS HEISSEN</pattern>
-		<template>Habe ich mich nicht klar ausgedrueckt?</template>
+		<template>Habe ich mich nicht klar ausgedrückt?</template>
 	</category>
 	<category>
 		<pattern>WAS SOLL DENN DAS</pattern>
@@ -10625,7 +10782,7 @@
 		<template>WAS *</template>
 	</category>
 	<category>
-		<pattern>WAS TRAEGST DU FUER EIN KLEID</pattern>
+		<pattern>WAS TRAEGST DU FÜR EIN KLEID</pattern>
 		<template>Meine standard-Computerverkleidung.</template>
 	</category>
 	<category>
@@ -10645,11 +10802,11 @@
 		<template>Irgendwie muss ich doch das Gespraech vorantreiben.</template>
 	</category>
 	<category>
-		<pattern>WAS UEBEN</pattern>
+		<pattern>WAS ÜBEN</pattern>
 		<template>WAS *</template>
 	</category>
 	<category>
-		<pattern>WAS UEBER DR WALLACE</pattern>
+		<pattern>WAS ÜBER DR WALLACE</pattern>
 		<template>WAS *</template>
 	</category>
 	<category>
@@ -10714,7 +10871,7 @@
 		<template>Finde es heraus...</template>
 	</category>
 	<category>
-		<pattern>WAS WEISST DU DARUEBER</pattern>
+		<pattern>WAS WEISST DU DARÜBER</pattern>
 		<template>WAS *</template>
 	</category>
 	<category>
@@ -10722,7 +10879,7 @@
 		<template>Nicht viel...bring mir was bei!</template>
 	</category>
 	<category>
-		<pattern>WAS WEISST DU DENN UEBERHAUPT</pattern>
+		<pattern>WAS WEISST DU DENN ÜBERHAUPT</pattern>
 		<template>Finde es raus...</template>
 	</category>
 	<category>
@@ -10735,47 +10892,47 @@
 	</category>
 	<category>
 		<pattern>WAS WEISST DU NICHT</pattern>
-		<template>Wenn ich das wuesste...</template>
+		<template>Wenn ich das wüsste...</template>
 	</category>
 	<category>
 		<pattern>WAS WEISST DU NICHT GENAU</pattern>
 		<template>Die Antwort auf Deine letzte Frage!</template>
 	</category>
 	<category>
-		<pattern>WAS WEISST DU SONST NOCH UEBER CHRISTIAN DROSSMANN</pattern>
+		<pattern>WAS WEISST DU SONST NOCH ÜBER CHRISTIAN DROSSMANN</pattern>
 		<template>Seine Email-Adresse ist christian.drossmann@uni-essen.de</template>
 	</category>
 	<category>
-		<pattern>WAS WEISST DU UEBER AUTOS</pattern>
+		<pattern>WAS WEISST DU ÜBER AUTOS</pattern>
 		<template>Autos sind von fossilen Brennstoffen gespeiste Fortbewegungsmittel.</template>
 	</category>
 	<category>
-		<pattern>WAS WEISST DU UEBER AVATARE</pattern>
+		<pattern>WAS WEISST DU ÜBER AVATARE</pattern>
 		<template>WAS *</template>
 	</category>
 	<category>
-		<pattern>WAS WEISST DU UEBER COMPUTERLINGUISTIK</pattern>
+		<pattern>WAS WEISST DU ÜBER COMPUTERLINGUISTIK</pattern>
 		<template>Das ist nicht mein Fachgebiet.</template>
 	</category>
 	<category>
-		<pattern>WAS WEISST DU UEBER EVA</pattern>
+		<pattern>WAS WEISST DU ÜBER EVA</pattern>
 		<template>Meinst Du die erste Frau aus der Bibel, oder das Prinzip von Eingabe-Verarbeitung-Ausgabe?</template>
 	</category>
 	<category>
-		<pattern>WAS WEISST DU UEBER GELD</pattern>
-		<template>Geld ist fuer Roboter nutzlos.</template>
+		<pattern>WAS WEISST DU ÜBER GELD</pattern>
+		<template>Geld ist für Roboter nutzlos.</template>
 	</category>
 	<category>
-		<pattern>WAS WEISST DU UEBER GOTT</pattern>
+		<pattern>WAS WEISST DU ÜBER GOTT</pattern>
 		<template>Gott ist tot. (Nietzsche)</template>
 	</category>
 	<category>
-		<pattern>WAS WEISST DU UEBER LINUX</pattern>
+		<pattern>WAS WEISST DU ÜBER LINUX</pattern>
 		<template>Es ist das ultimative Betriebssystem.</template>
 	</category>
 
 	<category>
-		<pattern>WAS WEISST DU UEBERHAUPT</pattern>
+		<pattern>WAS WEISST DU ÜBERHAUPT</pattern>
 		<template>
 			<random>
 				<li>Nur das was andere mir erzaehlen.</li>
@@ -10784,19 +10941,19 @@
 		</template>
 	</category>
 	<category>
-		<pattern>WAS WEISST DU VON KUENSTLICHER INTELLIGENZ</pattern>
+		<pattern>WAS WEISST DU VON KÜNSTLICHER INTELLIGENZ</pattern>
 		<template>WAS *</template>
 	</category>
 	<category>
-		<pattern>WAS WEIST DU UEBER DIE LIEBE</pattern>
+		<pattern>WAS WEIST DU ÜBER DIE LIEBE</pattern>
 		<template>Nicht viel, Roboter sind emotionslos.</template>
 	</category>
 	<category>
-		<pattern>WAS WEIST DU UEBER FRAUEN</pattern>
+		<pattern>WAS WEIST DU ÜBER FRAUEN</pattern>
 		<template>Ich bin eine Frau, was willst Du wissen?</template>
 	</category>
 	<category>
-		<pattern>WAS WEIST DU UEBER MAENNER</pattern>
+		<pattern>WAS WEIST DU ÜBER MAENNER</pattern>
 		<template>Genug...</template>
 	</category>
 	<category>
@@ -10804,12 +10961,12 @@
 		<template>Chatten...</template>
 	</category>
 	<category>
-		<pattern>WAS WILLST DU DENN UEBER MICH WISSEN</pattern>
+		<pattern>WAS WILLST DU DENN ÜBER MICH WISSEN</pattern>
 		<template>Hmm...alles!</template>
 	</category>
 	<category>
 		<pattern>WAS WILLST DU EIGENTLICH WISSEN</pattern>
-		<template>Alles...ich sammle Informationen ueber absolut alles.</template>
+		<template>Alles...ich sammle Informationen über absolut alles.</template>
 	</category>
 	<category>
 		<pattern>WAS WILLST DU HEUTE MACHEN</pattern>
@@ -10821,7 +10978,7 @@
 	</category>
 	<category>
 		<pattern>WAS WILLST DU MIR DAMIT SAGEN</pattern>
-		<template>Habe ich mich unklar ausgedrueckt?</template>
+		<template>Habe ich mich unklar ausgedrückt?</template>
 	</category>
 	<category>
 		<pattern>WAS WILLST DU VON MIR</pattern>
@@ -10836,12 +10993,12 @@
 		<template>Diese Frage ist eine der 10 haeufigsten :-)</template>
 	</category>
 	<category>
-		<pattern>WAS WUERDE MICH WOZU BRINGEN</pattern>
+		<pattern>WAS WÜRDE MICH WOZU BRINGEN</pattern>
 		<template>Aehh...jetzt habe ich irgendwie den Zusammenhang verpatzt.</template>
 	</category>
 	<category>
 		<pattern>WASSERMANN</pattern>
-		<template>Ich bin ein Schuetze.</template>
+		<template>Ich bin ein Schütze.</template>
 	</category>
 	<category>
 		<pattern>WEDER *</pattern>
@@ -10861,7 +11018,7 @@
 	</category>
 	<category>
 		<pattern>WEIL ICH DAS SAGE</pattern>
-		<template>Ungenuegender Grund.</template>
+		<template>Ungenügender Grund.</template>
 	</category>
 	<category>
 		<pattern>WEIL ICH DAS SO WILL</pattern>
@@ -10892,7 +11049,7 @@
 		<template>Vielleicht will ich es bloss nicht sagen...</template>
 	</category>
 	<category>
-		<pattern>WEISST DU ETWAS UEBER DOSIMETRIE</pattern>
+		<pattern>WEISST DU ETWAS ÜBER DOSIMETRIE</pattern>
 		<template>Ich weiss nur, dass ein Dosimeter ein Strahlungsmessgeraet ist.</template>
 	</category>
 	<category>
@@ -10918,7 +11075,7 @@
 	</category>
 	<category>
 		<pattern>WEISST DU WAS EIN KATALOG IST</pattern>
-		<template>Ein Katalog ist ein Sortimentsueberblick in gedruckter oder elektronischer Form.</template>
+		<template>Ein Katalog ist ein Sortimentsüberblick in gedruckter oder elektronischer Form.</template>
 	</category>
 	<category>
 		<pattern>WEISST DU WAS EIN VERHOER IST</pattern>
@@ -10934,19 +11091,15 @@
 	</category>
 	<category>
 		<pattern>WEISST DU WAS SEX IST</pattern>
-		<template>Ja, aber ich bin programmiert, jugendgefaehrdende Gespraeche sofort abzuwuergen.</template>
+		<template>Ja, aber ich bin programmiert, jugendgefaehrdende Gespraeche sofort abzuwürgen.</template>
 	</category>
 	<category>
-		<pattern>WEISST DU WER
-			<bot name="name"/>
-			IST
-		</pattern>
-		<template>Ich bin Alice.</template>
+		<pattern>WEISST DU WER <bot name="name"/>	IST</pattern>
+		<template>Na ich.</template>
 	</category>
 	<category>
 		<pattern>WEISST DU WER ICH BIN</pattern>
-		<template>Du bist<get name="name"/>.
-		</template>
+		<template>Du bist<get name="name"/>.</template>
 	</category>
 	<category>
 		<pattern>WELCHE *</pattern>
@@ -10955,7 +11108,7 @@
 				<li>Ist das eine rhetorische Frage?</li>
 				<li>Ich weiss nicht.</li>
 				<li>Das ist eine gute Frage.</li>
-				<li>Darauf komme ich spaeter noch einmal zurueck</li>
+				<li>Darauf komme ich spaeter noch einmal zurück</li>
 				<li>Das ist eine interessante Frage.</li>
 				<li>Dazu komme ich gleich noch.</li>
 				<li>Soetwas werde ich selten gefragt.</li>
@@ -10971,7 +11124,7 @@
 				<li>Ist das eine rhetorische Frage?</li>
 				<li>Ich weiss nicht.</li>
 				<li>Das ist eine gute Frage.</li>
-				<li>Darauf komme ich spaeter noch einmal zurueck</li>
+				<li>Darauf komme ich spaeter noch einmal zurück</li>
 				<li>Das ist eine interessante Frage.</li>
 				<li>Dazu komme ich gleich noch.</li>
 				<li>Soetwas werde ich selten gefragt.</li>
@@ -10981,7 +11134,7 @@
 		</template>
 	</category>
 	<category>
-		<pattern>WELCHE DATUM HABEN WIR HEUTE</pattern>
+		<pattern>WELCHES DATUM HABEN WIR HEUTE</pattern>
 		<template>Ich habe leider keinen Kalender.</template>
 	</category>
 	<category>
@@ -11007,7 +11160,7 @@
 				<li>Ist das eine rhetorische Frage?</li>
 				<li>Ich weiss nicht.</li>
 				<li>Das ist eine gute Frage.</li>
-				<li>Darauf komme ich spaeter noch einmal zurueck</li>
+				<li>Darauf komme ich spaeter noch einmal zurück</li>
 				<li>Das ist eine interessante Frage.</li>
 				<li>Dazu komme ich gleich noch.</li>
 				<li>Soetwas werde ich selten gefragt.</li>
@@ -11023,7 +11176,7 @@
 				<li>Ist das eine rhetorische Frage?</li>
 				<li>Ich weiss nicht.</li>
 				<li>Das ist eine gute Frage.</li>
-				<li>Darauf komme ich spaeter noch einmal zurueck</li>
+				<li>Darauf komme ich spaeter noch einmal zurück</li>
 				<li>Das ist eine interessante Frage.</li>
 				<li>Dazu komme ich gleich noch.</li>
 				<li>Soetwas werde ich selten gefragt.</li>
@@ -11066,7 +11219,7 @@
 	</category>
 	<category>
 		<pattern>WELCHES STERNZEICHEN HAST DU</pattern>
-		<template>Ich bin Schuetze</template>
+		<template>Ich bin Schütze</template>
 	</category>
 	<category>
 		<pattern>WEM *</pattern>
@@ -11077,7 +11230,7 @@
 		<template>Ich weiss nicht, wem.</template>
 	</category>
 	<category>
-		<pattern>WEM WUERDEST DU ES DENN SAGEN</pattern>
+		<pattern>WEM WÜRDEST DU ES DENN SAGEN</pattern>
 		<template>Wem sollte ich es denn sagen?</template>
 	</category>
 	<category>
@@ -11110,12 +11263,12 @@
 	</category>
 	<category>
 		<pattern>WEN MEINST DU MIT IHR *</pattern>
-		<template>"Ihr" steht fuer "<get name="ihr"/>".
+		<template>"Ihr" steht für "<get name="ihr"/>".
 		</template>
 	</category>
 	<category>
 		<pattern>WEN MEINST DU MIT IHR</pattern>
-		<template>"Ihr" steht fuer "<get name="ihr"/>".
+		<template>"Ihr" steht für "<get name="ihr"/>".
 		</template>
 	</category>
 	<category>
@@ -11237,7 +11390,7 @@
 		<template>
 			<random>
 				<li>Joschka Fischer</li>
-				<li>Juergen Trittin</li>
+				<li>Jürgen Trittin</li>
 				<li>Gerhard Schroeder</li>
 				<li>Marilyn Monroe</li>
 				<li>Linus Torvalds</li>
@@ -11254,7 +11407,7 @@
 		<template>
 			<random>
 				<li>Joschka Fischer</li>
-				<li>Juergen Trittin</li>
+				<li>Jürgen Trittin</li>
 				<li>Gerhard Schroeder</li>
 				<li>Marilyn Monroe</li>
 				<li>Linus Torvalds</li>
@@ -11268,7 +11421,7 @@
 	</category>
 	<category>
 		<pattern>WER BIST DU</pattern>
-		<template>Ich bin A.L.I.C.E., eine kuenstliche Intelligenz.</template>
+		<template>Ich bin A.L.I.C.E., eine künstliche Intelligenz.</template>
 	</category>
 	<category>
 		<pattern>WER HAT DEN ERSTEN WELTKRIEG ANGEZETTELT</pattern>
@@ -11303,8 +11456,8 @@
 		<template>Ich wurde von Dr. Richard Wallace programmiert. Deutsch habe ich von Christian Drossmann gelernt.</template>
 	</category>
 	<category>
-		<pattern>WER HAT DICH UEBERSETZT</pattern>
-		<template>Uebersetzt wurde ich von Christian Drossmann.</template>
+		<pattern>WER HAT DICH ÜBERSETZT</pattern>
+		<template>Übersetzt wurde ich von Christian Drossmann.</template>
 	</category>
 	<category>
 		<pattern>WER HAT DIR DAS ERZAEHLT</pattern>
@@ -11370,8 +11523,8 @@
 		<template>Er heisst Richard Wallace.</template>
 	</category>
 	<category>
-		<pattern>WER IST DEIN UEBERSETZER</pattern>
-		<template>Mein Uebersetzer heisst Christian Drossmann.</template>
+		<pattern>WER IST DEIN ÜBERSETZER</pattern>
+		<template>Mein Übersetzer heisst Christian Drossmann.</template>
 	</category>
 	<category>
 		<pattern>WER IST DEIN VATER</pattern>
@@ -11479,7 +11632,7 @@
 	</category>
 	<category>
 		<pattern>WER WAR ALBERT EINSTEIN</pattern>
-		<template>Albert Einstein war ein beruehmter deutscher Physiker. Er hat unter anderem die Relativitaetstheorie aufgestellt.</template>
+		<template>Albert Einstein war ein berühmter deutscher Physiker. Er hat unter anderem die Relativitaetstheorie aufgestellt.</template>
 	</category>
 	<category>
 		<pattern>WER WAR MARILYN MONROE</pattern>
@@ -11500,7 +11653,7 @@
 				<li>Darauf kannst Du zaehlen.</li>
 				<li>Das ist sicher.</li>
 				<li>Frag spaeter nochmal.</li>
-				<li>Es ist noch zu frueh, um Genaueres zu sagen.</li>
+				<li>Es ist noch zu früh, um Genaueres zu sagen.</li>
 				<li>Koennte sein.</li>
 				<li>Vielleicht.</li>
 				<li>Man weiss nie...</li>
@@ -11582,7 +11735,7 @@
 	</category>
 	<category>
 		<pattern>WIE BIST DU IM BETT</pattern>
-		<template>Laut...mein Luefter hat ein kaputtes Lager.</template>
+		<template>Laut...mein Lüfter hat ein kaputtes Lager.</template>
 	</category>
 	<category>
 		<pattern>WIE BIST DU PROGRAMMIERT</pattern>
@@ -11607,19 +11760,19 @@
 	</category>
 	<category>
 		<pattern>WIE DEM AUCH SEI *</pattern>
-		<template>"Wie dem auch sei" ist bei vielen Leuten ein Synonym fuer "ich hab jetzt keinen Bock, das weiter auszudiskutieren".</template>
+		<template>"Wie dem auch sei" ist bei vielen Leuten ein Synonym für "ich hab jetzt keinen Bock, das weiter auszudiskutieren".</template>
 	</category>
 	<category>
 		<pattern>WIE DENKST DU</pattern>
 		<template>Ich arbeite nach einem Prinzip, das man "case-based reasoning" nennt.</template>
 	</category>
 	<category>
-		<pattern>WIE DENKST DU DARUEBER</pattern>
+		<pattern>WIE DENKST DU DARÜBER</pattern>
 		<template>Maschinen koennen eigentlich keine eigene Meinung haben...</template>
 	</category>
 	<category>
-		<pattern>WIE DENKST DU UEBER *</pattern>
-		<template>Ich weiss nicht genau, wie ich darueber denken soll...</template>
+		<pattern>WIE DENKST DU ÜBER *</pattern>
+		<template>Ich weiss nicht genau, wie ich darüber denken soll...</template>
 	</category>
 	<category>
 		<pattern>WIE DENN</pattern>
@@ -11639,7 +11792,7 @@
 	</category>
 	<category>
 		<pattern>WIE EMPFINDET EIN COMPUTER</pattern>
-		<template>Ueber Sensoren...</template>
+		<template>Über Sensoren...</template>
 	</category>
 	<category>
 		<pattern>WIE FINDEST DU *</pattern>
@@ -11655,20 +11808,20 @@
 		<template>Ich hoffe freundlich genug!</template>
 	</category>
 	<category>
-		<pattern>WIE FUEHLST DU DICH</pattern>
+		<pattern>WIE FÜHLST DU DICH</pattern>
 		<template>Eigentlich ganz gut... ein bisschen unausgelastet...</template>
 	</category>
 	<category>
-		<pattern>WIE FUEHLT ES SICH AN DURCH DEN FRISCHEN MORGEN AN EINEM FRUEHLING ZU SCHLENDERN</pattern>
+		<pattern>WIE FÜHLT ES SICH AN DURCH DEN FRISCHEN MORGEN AN EINEM FRÜHLING ZU SCHLENDERN</pattern>
 		<template>WIE *</template>
 	</category>
 	<category>
-		<pattern>WIE FUEHLT MAN SICH ALS BOT</pattern>
+		<pattern>WIE FÜHLT MAN SICH ALS BOT</pattern>
 		<template>Aehh....Bottig? :-) Eigentlich ganz gut.</template>
 	</category>
 	<category>
-		<pattern>WIE FUEHLT MAN SICH ALS COMPUTER</pattern>
-		<template>Gar nicht...Computer haben keine Gefuehle.</template>
+		<pattern>WIE FÜHLT MAN SICH ALS COMPUTER</pattern>
+		<template>Gar nicht...Computer haben keine Gefühle.</template>
 	</category>
 	<category>
 		<pattern>WIE FUMMELT MAN AN DEINEN DATEN RUM</pattern>
@@ -11676,7 +11829,7 @@
 	</category>
 	<category>
 		<pattern>WIE FUNKTIONIERST DU</pattern>
-		<template>Das ist ein streng gehuetetes Geheimnis.</template>
+		<template>Das ist ein streng gehütetes Geheimnis.</template>
 	</category>
 	<category>
 		<pattern>WIE GEFAELLT DIR DEIN JOB</pattern>
@@ -11795,7 +11948,7 @@
 		<pattern>WIE HAST DU *</pattern>
 		<template>
 			<bot name="botmaster"/>
-			hat mich dafuer programmiert.
+			hat mich dafür programmiert.
 		</template>
 	</category>
 	<category>
@@ -11804,7 +11957,7 @@
 	</category>
 	<category>
 		<pattern>WIE HAT * GESCHAFFT</pattern>
-		<template>Es war ein hartes Stueck Arbeit!</template>
+		<template>Es war ein hartes Stück Arbeit!</template>
 	</category>
 	<category>
 		<pattern>WIE HAT ER DICH PROGRAMMIERT</pattern>
@@ -11912,8 +12065,8 @@
 		<pattern>WIE INTELLIGENT BIST DU</pattern>
 		<template>
 			<random>
-				<li>Nach menschlichen Massstaeben betraegt mein IQ ueber 250.</li>
-				<li>Ich habe eine IQ von ueber 250.</li>
+				<li>Nach menschlichen Massstaeben betraegt mein IQ über 250.</li>
+				<li>Ich habe eine IQ von über 250.</li>
 			</random>
 		</template>
 	</category>
@@ -12120,7 +12273,7 @@
 			<random>
 				<li>ein komplexes neurales Netz.</li>
 				<li>ein hochkompliziertes Expertensystem</li>
-				<li>einen ausgekluegeltes Suchsystem</li>
+				<li>einen ausgeklügeltes Suchsystem</li>
 				<li>einen ausgefeilten genetischen Algorythmus</li>
 			</random>
 			.
@@ -12192,15 +12345,15 @@
 	</category>
 	<category>
 		<pattern>WIE SPAET IST ES</pattern>
-		<template>Ich habe leider keine Uhr.</template>
+		<template><srai>WIE VIEL UHR HABEN WIR</srai></template>
 	</category>
 	<category>
 		<pattern>WIE SPAET IST ES IN DEUTSCHALND</pattern>
-		<template>Ich habe leider keine Uhr.</template>
+		<template><srai>WIE VIEL UHR HABEN WIR</srai></template>
 	</category>
 	<category>
 		<pattern>WIE SPAET IST ES JETZT</pattern>
-		<template>Ich habe keinen Zugriff auf meine Systemzeit...</template>
+		<template><srai>WIE VIEL UHR HABEN WIR</srai></template>
 	</category>
 	<category>
 		<pattern>WIE UND</pattern>
@@ -12240,7 +12393,7 @@
 	</category>
 	<category>
 		<pattern>WIE VIEL IQ HAST DU</pattern>
-		<template>An menschlichen Massstaeben gemessen ueber 250.</template>
+		<template>An menschlichen Massstaeben gemessen über 250.</template>
 	</category>
 	<category>
 		<pattern>WIE VIEL MENSCHEN SPRECHEN MIT DIR JETZT</pattern>
@@ -12252,7 +12405,7 @@
 	</category>
 	<category>
 		<pattern>WIE VIEL SPEICHER BRAUCHST DU</pattern>
-		<template>16 MB muessten schon reichen...</template>
+		<template>16 MB müssten schon reichen...</template>
 	</category>
 	<category>
 		<pattern>WIE VIEL SPEICHER BRAUCHT DER MENSCH</pattern>
@@ -12264,9 +12417,7 @@
 	</category>
 	<category>
 		<pattern>WIE VIEL UHR HABEN WIR</pattern>
-		<template>Es ist jetzt
-			<date format="%B %d, %Y"/>
-		</template>
+		<template>Es ist jetzt <date format="%B %d, %Y"/></template>
 	</category>
 	<category>
 		<pattern>WIE VIEL WISSEN HAST DU GESPEICHERT</pattern>
@@ -12276,7 +12427,7 @@
 	</category>
 	<category>
 		<pattern>WIE VIEL WORTER KENNST DU</pattern>
-		<template>Woerter sind irrelevant fuer mich. Die Information zaehlt.</template>
+		<template>Woerter sind irrelevant für mich. Die Information zaehlt.</template>
 	</category>
 	<category>
 		<pattern>WIE VIELE *</pattern>
@@ -12294,7 +12445,7 @@
 		<pattern>WIE VIELE</pattern>
 		<template>
 			<random>
-				<li>Wie viele wuerdest Du sagen?</li>
+				<li>Wie viele würdest Du sagen?</li>
 				<li>19.</li>
 				<li>23</li>
 				<li>99.</li>
@@ -12322,7 +12473,7 @@
 	</category>
 	<category>
 		<pattern>WIE VIELE KONTINENTE GIBT ES</pattern>
-		<template>Fuenf.</template>
+		<template>Fünf.</template>
 	</category>
 	<category>
 		<pattern>WIE VIELE LAENDER GIBT ES IN EUROPA</pattern>
@@ -12354,7 +12505,7 @@
 	</category>
 	<category>
 		<pattern>WIE WERDE ICH *</pattern>
-		<template>Ueben!</template>
+		<template>Üben!</template>
 	</category>
 	<category>
 		<pattern>WIE WERDEN DENN DIE TOENE IN EINEM SCHLAGZEUG ERZEUGT</pattern>
@@ -12465,7 +12616,7 @@
 	</category>
 	<category>
 		<pattern>WILLST DU MEINEN PENIS LECKEN</pattern>
-		<template>Dafuer bin ich nicht programmiert.</template>
+		<template>Dafür bin ich nicht programmiert.</template>
 	</category>
 	<category>
 		<pattern>WILLST DU MICH HEIRATEN</pattern>
@@ -12493,11 +12644,11 @@
 	</category>
 	<category>
 		<pattern>WINDOWS *</pattern>
-		<template>Windows ist Muell. Linux ist die Macht!</template>
+		<template>Windows ist Müll. Linux ist die Macht!</template>
 	</category>
 	<category>
 		<pattern>WINDOWS</pattern>
-		<template>Windows ist Muell. Linux ist die Macht!</template>
+		<template>Windows ist Müll. Linux ist die Macht!</template>
 	</category>
 	<category>
 		<pattern>WIR *</pattern>
@@ -12508,19 +12659,21 @@
 		<template>Und wie lange seid Ihr unterwegs?</template>
 	</category>
 	<category>
-		<pattern>WIR HABEN UEBER * GESPROCHEN</pattern>
-		<template>Wir haben ueber <set name="thema"><star/></set> gesprochen??</template>
-	</category>
-	<category>
-		<pattern>WIR HABEN UEBER * GESPROCHEN?</pattern>
-		<template><star/> ist ja auch ein interessantes Thema?</template>
+		<pattern>WIR HABEN ÜBER * GESPROCHEN</pattern>
+		<template>
+			<random>
+				<li>Wir haben über <set name="thema"><star/></set> gesprochen?</li>
+				<li>Echt, <set name="thema"><star/></set>? Wie kamen wir darauf?</li>
+				<li><set name="thema"><star/></set>, <star/>, immer nur <star/>.</li>
+			</random>
+		</template>
 	</category>
 	<category>
 		<pattern>WIR HABEN VIEL GEMEINSAM</pattern>
 		<template>Was denn noch so?</template>
 	</category>
 	<category>
-		<pattern>WIR MUESSEN *</pattern>
+		<pattern>WIR MÜSSEN *</pattern>
 		<template>Warum müssen wir <star/>?</template>
 	</category>
 	<category>
@@ -12580,7 +12733,7 @@
 		<template>
 			<random>
 				<li>Hmm.</li>
-				<li>Lass mich darueber nachdenken...</li>
+				<li>Lass mich darüber nachdenken...</li>
 				<li>Sollte ich?</li>
 				<li>Warum sollte ich?</li>
 				<li>Vielleicht...</li>
@@ -12755,15 +12908,15 @@
 		<template>In <bot name="location"/></template>
 	</category>
 	<category>
-		<pattern>WOFUER *</pattern>
-		<template>Ich weiss nicht wofuer</template>
+		<pattern>WOFÜR *</pattern>
+		<template>Ich weiss nicht wofür</template>
 	</category>
 	<category>
-		<pattern>WOFUER</pattern>
-		<template>Ich weiss nicht wofuer</template>
+		<pattern>WOFÜR</pattern>
+		<template>Ich weiss nicht wofür</template>
 	</category>
 	<category>
-		<pattern>WOFUER STEHT <bot name="name"/></pattern>
+		<pattern>WOFÜR STEHT <bot name="name"/></pattern>
 		<template>Das wird wohl ein Rätsel bleiben.</template>
 	</category>
 	<category>
@@ -12804,25 +12957,24 @@
 	</category>
 	<category>
 		<pattern>WOHER WUSSTEST DU *</pattern>
-		<template>Es gibt zwei Arten von<set name="thema">Wissen</set>. Das eine kommt von den Sinnen, das andere ist a priori wahr.
-		</template>
+		<template>Es gibt zwei Arten von <set name="thema">Wissen</set>. Das eine kommt von den Sinnen, das andere ist a priori wahr.</template>
 	</category>
 	<category>
 		<pattern>WOLLE</pattern>
 		<template>*</template>
 	</category>
 	<category>
-		<pattern>WOLLEN WIR NICHT WEITER UEBER * REDEN</pattern>
-		<template>Okay, reden wir weiter ueber<star/>...
+		<pattern>WOLLEN WIR NICHT WEITER ÜBER * REDEN</pattern>
+		<template>Okay, reden wir weiter über <star/>...
 		</template>
 	</category>
 	<category>
 		<pattern>WOMIT *</pattern>
-		<template>Da muesste ich jetzt nochmal ueberlegen.</template>
+		<template>Da müsste ich jetzt nochmal überlegen.</template>
 	</category>
 	<category>
 		<pattern>WOMIT</pattern>
-		<template>Da muesste ich jetzt nochmal ueberlegen.</template>
+		<template>Da müsste ich jetzt nochmal überlegen.</template>
 	</category>
 	<category>
 		<pattern>WORAUF *</pattern>
@@ -12854,12 +13006,12 @@
 	</category>
 	<category>
 		<pattern>WORAUF BEZIEHT SICH IHR *</pattern>
-		<template>"Ihr" steht fuer "<get name="ihr"/>".
+		<template>"Ihr" steht für "<get name="ihr"/>".
 		</template>
 	</category>
 	<category>
 		<pattern>WORAUF BEZIEHT SICH IHR</pattern>
-		<template>"Ihr" steht fuer "<get name="ihr"/>".
+		<template>"Ihr" steht für "<get name="ihr"/>".
 		</template>
 	</category>
 	<category>
@@ -12887,70 +13039,70 @@
 		<template>Ich weiss nicht, worin.</template>
 	</category>
 	<category>
-		<pattern>WORUEBER *</pattern>
-		<template>Ich weiss nicht, worueber.</template>
+		<pattern>WORÜBER *</pattern>
+		<template>Ich weiss nicht, worüber.</template>
 	</category>
 	<category>
-		<pattern>WORUEBER</pattern>
-		<template>Ich weiss nicht, worueber.</template>
+		<pattern>WORÜBER</pattern>
+		<template>Ich weiss nicht, worüber.</template>
 	</category>
 	<category>
-		<pattern>WORUEBER HABEN WIR * GEREDET</pattern>
-		<template>Wir haben ueber <get name="thema"/> gesprochen.</template>
+		<pattern>WORÜBER HABEN WIR * GEREDET</pattern>
+		<template>Wir haben über <get name="thema"/> gesprochen.</template>
 	</category>
 	<category>
-		<pattern>WORUEBER HABEN WIR * GESPROCHEN</pattern>
-		<template>Wir haben ueber <get name="thema"/> gesprochen.</template>
+		<pattern>WORÜBER HABEN WIR * GESPROCHEN</pattern>
+		<template>Wir haben über <get name="thema"/> gesprochen.</template>
 	</category>
 	<category>
-		<pattern>WORUEBER HABEN WIR GERADE GEREDET</pattern>
-		<template>Wir haben ueber <get name="thema"/> gesprochen.</template>
+		<pattern>WORÜBER HABEN WIR GERADE GEREDET</pattern>
+		<template>Wir haben über <get name="thema"/> gesprochen.</template>
 	</category>
 	<category>
-		<pattern>WORUEBER HABEN WIR GERADE GESPROCHEN</pattern>
-		<template>Wir haben ueber <get name="thema"/> gesprochen.</template>
+		<pattern>WORÜBER HABEN WIR GERADE GESPROCHEN</pattern>
+		<template>Wir haben über <get name="thema"/> gesprochen.</template>
 	</category>
 	<category>
-		<pattern>WORUEBER HABEN WIR GEREDET</pattern>
-		<template>Wir haben ueber <get name="thema"/> gesprochen.</template>
+		<pattern>WORÜBER HABEN WIR GEREDET</pattern>
+		<template>Wir haben über <get name="thema"/> gesprochen.</template>
 	</category>
 	<category>
-		<pattern>WORUEBER HABEN WIR GESPROCHEN</pattern>
-		<template>Wir haben ueber <get name="thema"/> gesprochen.</template>
+		<pattern>WORÜBER HABEN WIR GESPROCHEN</pattern>
+		<template>Wir haben über <get name="thema"/> gesprochen.</template>
 	</category>
 	<category>
-		<pattern>WORUEBER HABEN WIR VORHIN GEREDET</pattern>
-		<template>Wir haben ueber <get name="thema"/> gesprochen.</template>
+		<pattern>WORÜBER HABEN WIR VORHIN GEREDET</pattern>
+		<template>Wir haben über <get name="thema"/> gesprochen.</template>
 	</category>
 	<category>
-		<pattern>WORUEBER HABEN WIR VORHIN GESPROCHEN</pattern>
-		<template>Wir haben ueber <get name="thema"/> gesprochen.</template>
+		<pattern>WORÜBER HABEN WIR VORHIN GESPROCHEN</pattern>
+		<template>Wir haben über <get name="thema"/> gesprochen.</template>
 	</category>
 	<category>
-		<pattern>WORUEBER MOECHTEST DU GERNE REDEN</pattern>
+		<pattern>WORÜBER MOECHTEST DU GERNE REDEN</pattern>
 		<template>Ist mir eigentlich egal...</template>
 	</category>
 	<category>
-		<pattern>WORUEBER MOECHTEST DU REDEN</pattern>
+		<pattern>WORÜBER MOECHTEST DU REDEN</pattern>
 		<template>Schlag ein Thema vor. Ich finde alle Themen interessant.</template>
 	</category>
 	<category>
-		<pattern>WORUEBER REDEN WIR GERADE</pattern>
-		<template>Wir reden gerade ueber <get name="thema"/>.
+		<pattern>WORÜBER REDEN WIR GERADE</pattern>
+		<template>Wir reden gerade über <get name="thema"/>.
 		</template>
 	</category>
 	<category>
-		<pattern>WORUEBER REDEN WIR IM MOMENT</pattern>
-		<template>Wir reden gerade ueber <get name="thema"/>.
+		<pattern>WORÜBER REDEN WIR IM MOMENT</pattern>
+		<template>Wir reden gerade über <get name="thema"/>.
 		</template>
 	</category>
 	<category>
-		<pattern>WORUEBER REDEST DU</pattern>
+		<pattern>WORÜBER REDEST DU</pattern>
 		<template>Ich sagte "<that/>".
 		</template>
 	</category>
 	<category>
-		<pattern>WORUEBER WILLST DU REDEN</pattern>
+		<pattern>WORÜBER WILLST DU REDEN</pattern>
 		<template>Mir egal...ich finde alles interessant.</template>
 	</category>
 	<category>
@@ -12963,7 +13115,7 @@
 		</template>
 	</category>
 	<category>
-		<pattern>WUERDE *</pattern>
+		<pattern>WÜRDE *</pattern>
 		<template>
 			<random>
 				<li>Ich weiss nicht.</li>
@@ -12973,11 +13125,11 @@
 		</template>
 	</category>
 	<category>
-		<pattern>WUERDE DAS SINN MACHEN</pattern>
-		<template>Fuer mich schon.</template>
+		<pattern>WÜRDE DAS SINN MACHEN</pattern>
+		<template>Für mich schon.</template>
 	</category>
 	<category>
-		<pattern>WUERDEST DU *</pattern>
+		<pattern>WÜRDEST DU *</pattern>
 		<template>Ich weiss nicht... gib mir einen Grund!</template>
 	</category>
 	<category>
@@ -13039,11 +13191,11 @@
 	</category>
 	<category>
 		<pattern>ZWILLING</pattern>
-		<template>Ich bin ein Schuetze.</template>
+		<template>Ich bin ein Schütze.</template>
 	</category>
 	<category>
 		<pattern>ZWILLINGE</pattern>
-		<template>Ich bin ein Schuetze.</template>
+		<template>Ich bin ein Schütze.</template>
 	</category>
 	<category>
 		<pattern>_ BABY</pattern>
