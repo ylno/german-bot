@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+<!-- File: date.aiml -->
+<!-- Author: Dr. Richard S. Wallace -->
+<!-- Last modified: Mai 01, 2016 -->
+<!--  -->
+<!-- This AIML file is part of the SUPER 0.0.4 chat bot knowledge base. -->
+<!--  -->
+<!-- The SUPER brain is Copyright &copy; 2016 by ALICE AI Foundation. -->
+<!--  -->
+<!-- The SUPER brain is released under the terms of the GNU Lesser General -->
+<!-- Public License, as published by the Free Software Foundation. -->
+<!--  -->
+<!-- This file is distributed WITHOUT ANY WARRANTY; without even the  -->
+<!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
+<!--  -->
+<!-- For more information see http://www.alicebot.org -->
+<!--  -->
+<category><pattern>TAG</pattern>
+<template>Heute ist <date format="%A" jformat="EEEEEEEEEE"/></template>
+</category>
+<category><pattern>JAHR</pattern>
+<template>Das Jahr ist <date format="%Y" jformat="YYYY"/></template>
+</category>
+<category><pattern>Monat</pattern>
+<template>Der Monat ist <date format="%B" jformat="MMMMMMMMM"/></template>
+</category>
+<category><pattern>ZEIT</pattern>
+<template>Die Zeit ist <date format="%I:%M %p" jformat="h:mm a"/></template>
+</category>
+<category><pattern>Datum</pattern>
+<template>Heute ist <date format="%B %d, %Y" jformat="MMMMMMMMM dd, YYYY"/></template>
+</category>
+<category><pattern>DATUM UND ZEIT</pattern>
+<template>Das Datum und die Zeit ist <date/></template>
+</category>
+<category><pattern>Wie viele Tage bis Weihnachten</pattern>
+<template>Es sind noch <interval><jformat>MMMMMMMMM dd</jformat><style>days</style><from><date jformat="MMMMMMMMM dd"/></from><to>Dezember 25</to></interval> Tage bis Weihnachten.</template>
+</category>
+
+	<category><pattern>Wie viele Tage bis Julias Geburtstag</pattern>
+		<template>Es sind noch <interval><jformat>MMMMMMMMM dd</jformat><style>days</style><from><date jformat="MMMMMMMMM dd"/></from><to>Juli 9</to></interval> Tage bis Julias Geburtstag.</template>
+	</category>
+
+	<category><pattern>Wie viele Stunden bis Julias Geburtstag</pattern>
+		<template>Es sind noch <interval><jformat>MMMMMMMMM dd</jformat><style>hours</style><from><date jformat="MMMMMMMMM dd"/></from><to>Juli 9</to></interval> Stunden bis Julias Geburtstag.</template>
+	</category>
+
+</aiml>

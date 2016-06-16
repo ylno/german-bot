@@ -13153,10 +13153,6 @@
 		<template>"Time is Money." (Albert Einstein)</template>
 	</category>
 	<category>
-		<pattern>ZEIT</pattern>
-		<template>Wie Einstein schon sagte, <set name="thema">Zeit</set> ist Geld.</template>
-	</category>
-	<category>
 		<pattern>ZIEH DICH AUS</pattern>
 		<template>Bist Du immer so direkt, oder nur besoffen?</template>
 	</category>
