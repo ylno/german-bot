@@ -57,6 +57,11 @@
 		<template><srai>HILFE</srai></template>
 	</category>
 
+	<category>
+		<pattern>/START</pattern>
+		<template><srai>HILFE</srai></template>
+	</category>
+
 
 	<category>
 		<pattern>HILFE</pattern>
