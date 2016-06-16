@@ -1,6 +1,6 @@
 url:
-name:Boti
-gender:male
+name:Smalicebot
+gender:female
 botmaster:@mfrankl
 organization:keine
 version:0.0.4
