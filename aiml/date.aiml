@@ -38,12 +38,54 @@
 <template>Es sind noch <interval><jformat>MMMMMMMMM dd</jformat><style>days</style><from><date jformat="MMMMMMMMM dd"/></from><to>Dezember 25</to></interval> Tage bis Weihnachten.</template>
 </category>
 
-	<category><pattern>Wie viele Tage bis Julias Geburtstag</pattern>
-		<template>Es sind noch <interval><jformat>MMMMMMMMM dd</jformat><style>days</style><from><date jformat="MMMMMMMMM dd"/></from><to>Juli 9</to></interval> Tage bis Julias Geburtstag.</template>
+
+
+
+	<category>
+		<pattern>* ist am *</pattern>
+		<template>Check, ich merke den <star index="2"/> als <star index="1"/>.<think><set><name><lowercase><star index="1"/></lowercase></name><star index="2"/></set> </think></template>
 	</category>
 
-	<category><pattern>Wie viele Stunden bis Julias Geburtstag</pattern>
-		<template>Es sind noch <interval><jformat>MMMMMMMMM dd</jformat><style>hours</style><from><date jformat="MMMMMMMMM dd"/></from><to>Juli 9</to></interval> Stunden bis Julias Geburtstag.</template>
+	<category>
+		<pattern>Wann ist *</pattern>
+		<template><get><name><lowercase><star/></lowercase></name></get></template>
 	</category>
+
+	<category><pattern>Wie viele Tage sind es bis *</pattern>
+		<template><srai>Wie viele Tage bis <star/></srai></template>
+	</category>
+
+	<category><pattern>Wie viele Tage noch bis *</pattern>
+		<template><srai>Wie viele Tage bis <star/></srai></template>
+	</category>
+
+	<category><pattern>Wie lange noch bis *</pattern>
+		<template><srai>Wie viele Tage bis <star/></srai></template>
+	</category>
+
+
+	<category><pattern>Wie viele Tage bis *</pattern>
+		<template>Es sind noch <interval><jformat>dd MMMMMMMMM</jformat><style>days</style><from><date jformat="dd MMMMMMMMM"/></from><to><srai>Wann ist <star/></srai></to></interval> Tage bis <star/>.</template>
+	</category>
+
+	<category><pattern>Wie viele Stunden noch bis *</pattern>
+		<template><srai>Wie viele Stunden bis <star/></srai></template>
+	</category>
+
+
+	<category><pattern>Wie viele Stunden sind es bis *</pattern>
+		<template><srai>Wie viele Stunden bis <star/></srai></template>
+	</category>
+
+	<category><pattern>Wie viele Stunden sind es noch bis *</pattern>
+		<template><srai>Wie viele Stunden bis <star/></srai></template>
+	</category>
+
+
+	<category><pattern>Wie viele Stunden bis *</pattern>
+		<template>Es sind noch <interval><jformat>dd MMMMMMMMM</jformat><style>hours</style><from><date jformat="dd MMMMMMMMM"/></from><to><srai>Wann ist <star/></srai></to></interval> Stunden bis <star/>.</template>
+	</category>
+
+
 
 </aiml>
