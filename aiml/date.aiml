@@ -55,11 +55,31 @@
 		<template><srai>Wie viele Tage bis <star/></srai></template>
 	</category>
 
+	<category><pattern>Wie viele Tage sind es bis zu *</pattern>
+		<template><srai>Wie viele Tage bis <star/></srai></template>
+	</category>
+
+	<category><pattern>Wie viele Tage bis zu *</pattern>
+		<template><srai>Wie viele Tage bis <star/></srai></template>
+	</category>
+
+	<category><pattern>Wie viele Tage sind es noch bis *</pattern>
+		<template><srai>Wie viele Tage bis <star/></srai></template>
+	</category>
+
 	<category><pattern>Wie viele Tage noch bis *</pattern>
 		<template><srai>Wie viele Tage bis <star/></srai></template>
 	</category>
 
 	<category><pattern>Wie lange noch bis *</pattern>
+		<template><srai>Wie viele Tage bis <star/></srai></template>
+	</category>
+
+	<category><pattern>Wie lange dauert es noch bis *</pattern>
+		<template><srai>Wie viele Tage bis <star/></srai></template>
+	</category>
+
+	<category><pattern>Wie lange dauert es noch bis zu *</pattern>
 		<template><srai>Wie viele Tage bis <star/></srai></template>
 	</category>
 
@@ -72,8 +92,25 @@
 		<template><srai>Wie viele Stunden bis <star/></srai></template>
 	</category>
 
+	<category><pattern>Wie viele Stunden noch bis zu *</pattern>
+		<template><srai>Wie viele Stunden bis <star/></srai></template>
+	</category>
+
+	<category><pattern>Wie viele Stunden bis zu *</pattern>
+		<template><srai>Wie viele Stunden bis <star/></srai></template>
+	</category>
+
+	<category><pattern>Wie viele Stunden noch bis *</pattern>
+		<template><srai>Wie viele Stunden bis <star/></srai></template>
+	</category>
+
+
 
 	<category><pattern>Wie viele Stunden sind es bis *</pattern>
+		<template><srai>Wie viele Stunden bis <star/></srai></template>
+	</category>
+
+	<category><pattern>Wie viele Stunden sind es bis zu *</pattern>
 		<template><srai>Wie viele Stunden bis <star/></srai></template>
 	</category>
 

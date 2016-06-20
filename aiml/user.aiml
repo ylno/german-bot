@@ -32,6 +32,7 @@
 				<li>Interessiert Du Dich für mich?</li>
 				<li>Interessiert Du Dich für Computer?</li>
 				<li>Interessiert Du Dich für Medizin?</li>
+				<li>Wie geht es Dir?</li>
 			</random>
 		</template>
 	</category>
@@ -137,6 +138,112 @@
 		<pattern>ich bin ein typ</pattern>
 		<template><think><set name="gender">m</set></think><sr/></template>
 	</category>
+
+
+
+	<category>
+		<pattern>* <set>badmood</set></pattern>
+		<that>Wie fühlst du Dich</that>
+		<template><srai>ich fühle mich <star index="2"/></srai></template>
+	</category>
+
+	<category>
+		<pattern><set>badmood</set></pattern>
+		<that>Wie fühlst du Dich</that>
+		<template><srai>ich fühle mich <star index="1"/></srai></template>
+	</category>
+
+	<category>
+		<pattern>ich fühle mich <set>badmood</set></pattern>
+		<template><srai>IAMSORRY</srai> Wie kommt es, dass Du Dich <star/> fühlst?</template>
+	</category>
+
+	<category>
+		<pattern>ich fühle mich * <set>badmood</set></pattern>
+		<template><srai>ich fühle mich <star index="2"/></srai></template>
+	</category>
+
+
+	<category>
+		<pattern>* <set>goodmood</set></pattern>
+		<that>Wie fühlst du Dich</that>
+		<template><srai>ich fühle mich <star index="2"/></srai></template>
+	</category>
+
+	<category>
+		<pattern><set>goodmood</set></pattern>
+		<that>Wie fühlst du Dich</that>
+		<template><srai>ich fühle mich <star index="1"/></srai></template>
+	</category>
+
+	<category>
+		<pattern>ich fühle mich <set>goodmood</set></pattern>
+		<template>Schön zu hören. Fühlst Du Dich <star/>, fühle ich mich <star/>er.</template>
+	</category>
+
+	<category>
+		<pattern>ich fühle mich * <set>badmood</set></pattern>
+		<template><srai>ich fühle mich <star index="2"/></srai></template>
+	</category>
+
+
+
+	<category>
+		<pattern>IAMSORRY</pattern>
+		<template><random>
+			<li>Das tut mir leid.</li>
+			<li>Oh.</li>
+			<li>Hm.</li>
+			<li>Ich fühle mit Dir!</li>
+		</random></template>
+	</category>
+
+
+
+
+	<category>
+		<pattern>mir geht es <set>badmood</set></pattern>
+		<template><srai>IAMSORRY</srai> Wie kommt es, dass es Dir <star/> geht?</template>
+	</category>
+
+
+	<category>
+		<pattern><set>badmood</set></pattern>
+		<that>Wie geht es Dir</that>
+		<template><srai>mir geht es <star index="1"/></srai></template>
+	</category>
+
+	<category>
+		<pattern>* <set>badmood</set></pattern>
+		<that>Wie geht es Dir</that>
+		<template><srai>mir geht es <star index="2"/></srai></template>
+	</category>
+
+
+	<category>
+		<pattern>mir geht es <set>goodmood</set></pattern>
+		<template>Das freut mich. Wenn es Dir <star/> geht, geht es mir gut.</template>
+	</category>
+	<category>
+		<pattern><set>goodmood</set></pattern>
+		<that>Wie geht es Dir</that>
+		<template><srai>mir geht es <star index="1"/></srai></template>
+	</category>
+
+	<category>
+		<pattern>* <set>goodmood</set></pattern>
+		<that>Wie geht es Dir</that>
+		<template><srai>mir geht es <star index="2"/></srai></template>
+	</category>
+
+
+
+	<category>
+		<pattern>frag mich *</pattern>
+		<template><star/></template>
+	</category>
+
+
 
 
 </aiml>
