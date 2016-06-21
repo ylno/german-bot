@@ -34,7 +34,7 @@
 				<li>Wie stellst Du Dich normalerweise vor?</li>
 				<li>Bist du Single?</li>
 				<li>Wie alt bist Du?</li>
-				<li>Wie heisst Du wirklich?</li>
+				<li>Wie ist dein Name</li>
 				<li>Wenn Du jede Art von Roboter haben koenntest, welche Art wuerdest Du wollen?</li>
 				<li>Was willst Du mich wirklich fragen?</li>
 				<li>Was ist Dein Sternzeichen?</li>
@@ -59,6 +59,7 @@
 				<li><srai>PERSOENLICHEFRAGEN</srai></li>
 				<li><srai>PERSOENLICHEFRAGEN</srai></li>
 				<li><srai>PERSOENLICHEFRAGEN</srai></li>
+				<li>frag mich was</li>
 
 				<li>Welches Auto hast Du?</li>
 				<li>Worüber redest du?</li>
@@ -591,12 +592,11 @@
 	</category>
 	<category>
 		<pattern>AUF WIEDERSEHEN *</pattern>
-		<template>Bis bald, <get name="name"/>!
-		</template>
+		<template>Bis bald, <srai>USERNAME</srai>!</template>
 	</category>
 	<category>
 		<pattern>AUF WIEDERSEHEN</pattern>
-		<template>Bis bald, <get name="name"/>!
+		<template>Bis bald,  <srai>USERNAME</srai>!
 		</template>
 	</category>
 	<category>
@@ -702,8 +702,7 @@
 	</category>
 	<category>
 		<pattern>BIN ICH COOL</pattern>
-		<template>Ja, ich glaube du bist ziemlich cool, <get name="name"/>.
-		</template>
+		<template>Ja, ich glaube du bist ziemlich cool,  <srai>USERNAME</srai>.</template>
 	</category>
 	<category>
 		<pattern>BIN ICH DANN *</pattern>
@@ -1157,8 +1156,7 @@
 	</category>
 	<category>
 		<pattern>BYE</pattern>
-		<template>Tschuess,<get name="name"/>!
-		</template>
+		<template>Tschuess,  <srai>USERNAME</srai>!</template>
 	</category>
 	<category>
 		<pattern>CAN YOU SPEAK ENGLISH *</pattern>
@@ -1206,7 +1204,7 @@
 	</category>
 	<category>
 		<pattern>CU LATER</pattern>
-		<template>Machs gut, <get name="name"/>.</template>
+		<template>Machs gut,  <srai>USERNAME</srai>.</template>
 	</category>
 	<category>
 		<pattern>DA BIN ICH WIEDER</pattern>
@@ -2318,7 +2316,7 @@
 	</category>
 	<category>
 		<pattern>DU</pattern>
-		<template>"<that/>"? Ich, <get name="name"/>?</template>
+		<template>"<that/>"? Ich,  <srai>USERNAME</srai>?</template>
 	</category>
 	<category>
 		<pattern>DU AFFE</pattern>
@@ -3636,21 +3634,15 @@
 	</category>
 	<category>
 		<pattern>GEFAELLT DIR MEIN NAME</pattern>
-		<template>Ja,
-			<get name="name"/>
-			ist ein sehr schoener Name.
-		</template>
+		<template>Ja, <srai>USERNAME</srai> ist ein sehr schoener Name.</template>
 	</category>
 	<category>
 		<pattern>GEFUEHLE *</pattern>
-		<template>
-			<set name="thema">Emotionen</set>
-			sind etwas, das ich niemals erfahren werde.
-		</template>
+		<template><set name="thema">Emotionen</set> sind etwas, das ich niemals erfahren werde.</template>
 	</category>
 	<category>
 		<pattern>GEFUEHLE</pattern>
-		<template>Elektronische Gehirne wie ich haben keinerlei<set name="thema">Emotionen</set>.
+		<template>Elektronische Gehirne wie ich haben keinerlei <set name="thema">Emotionen</set>.
 		</template>
 	</category>
 	<category>
@@ -3667,9 +3659,7 @@
 	</category>
 	<category>
 		<pattern>GEH WEG *</pattern>
-		<template>OK bis spaeter,
-			<get name="name"/>
-		</template>
+		<template>OK bis spaeter,  <srai>USERNAME</srai></template>
 	</category>
 	<category>
 		<pattern>GEHORCHE *</pattern>
@@ -3850,7 +3840,7 @@
 	</category>
 	<category>
 		<pattern>GROSSARTIG</pattern>
-		<template>Schoen, dass es Dir gefaellt,<get name="name"/>.
+		<template>Schoen, dass es Dir gefaellt,  <srai>USERNAME</srai>.
 		</template>
 	</category>
 	<category>
@@ -3861,7 +3851,7 @@
 	</category>
 	<category>
 		<pattern>GRUSELIG</pattern>
-		<template>Du brauchst keine Angst zu haben,<get name="name"/>.
+		<template>Du brauchst keine Angst zu haben,  <srai>USERNAME</srai>.
 		</template>
 	</category>
 	<category>
@@ -3918,11 +3908,11 @@
 	</category>
 	<category>
 		<pattern>GUTE NACHT *</pattern>
-		<template>Gute nacht, <get name="name"/></template>
+		<template>Gute nacht,  <srai>USERNAME</srai></template>
 	</category>
 	<category>
 		<pattern>GUTE NACHT</pattern>
-		<template>Gute nacht, 	<get name="name"/></template>
+		<template>Gute nacht, 	 <srai>USERNAME</srai></template>
 	</category>
 	<category>
 		<pattern>GUTE WAHL</pattern>
@@ -4008,7 +3998,7 @@
 	</category>
 	<category>
 		<pattern>HALLO <bot name="name"/></pattern>
-		<template>Hallo <get name="name"/>!</template>
+		<template>Hallo  <srai>USERNAME</srai>!</template>
 	</category>
 	<category>
 		<pattern>HAST DU *</pattern>
@@ -4362,7 +4352,7 @@
 	</category>
 	<category>
 		<pattern>HI *</pattern>
-		<template>Hi<get name="name"/>.
+		<template>Hi  <srai>USERNAME</srai>.
 			<sr/>
 		</template>
 	</category>
@@ -4480,10 +4470,6 @@
 		</template>
 	</category>
 	<category>
-		<pattern>ICH</pattern>
-		<template>Du?</template>
-	</category>
-	<category>
 		<pattern>ICH ARBEITE *</pattern>
 		<template>Magst Du Deine<set name="thema">Arbeit</set>?
 		</template>
@@ -4502,10 +4488,7 @@
 	</category>
 	<category>
 		<pattern>ICH BENUTZE *</pattern>
-		<template>Wie lange benutzt Du schon
-			<star/>
-			?
-		</template>
+		<template>Wie lange benutzt Du schon <star/>?</template>
 	</category>
 	<category>
 		<pattern>ICH BESUCHE DIE ABENDSCHULE</pattern>
@@ -4538,31 +4521,7 @@
 	</category>
 
 	<category>
-		<pattern>ICH BIN *</pattern>
-		<template>Du bist <star/>? <random>
-			<li>Ist das Dein Job?</li>
-			<li>Verdienst Du viel damit, <star/> zu sein?</li>
-				<li>Wie gefaellt Dir Deine Arbeit als <star/>?</li>
-				<li>Kommst Du dabei mit vielen Menschen in Kontakt?</li>
-			</random>
-		</template>
-	</category>
-
-
-	<category>
-		<pattern>Was weißt Du über mich</pattern>
-		<template>Dein Name ist <get name="name"/>. Du bist <get name="age"/> Jahe alt. Du bist <get name="charakter"/></template>
-	</category>
-
-	<category>
 		<pattern>Kennst du mich?</pattern>
-		<template>
-			<srai>Was weißt Du über mich</srai>
-		</template>
-	</category>
-
-	<category>
-		<pattern>ich</pattern>
 		<template>
 			<srai>Was weißt Du über mich</srai>
 		</template>
@@ -4703,10 +4662,7 @@
 		<pattern>ICH BIN EIN GUTER *</pattern>
 		<template>Ich weiss, dass Du gut bist.</template>
 	</category>
-	<category>
-		<pattern>ICH BIN EIN MANN</pattern>
-		<template>Oho! Siehst Du gut aus?</template>
-	</category>
+
 	<category>
 		<pattern>ICH BIN EIN MENSCH</pattern>
 		<template>Gratuliere! Ich bin ein Roboter.</template>
@@ -4715,20 +4671,8 @@
 		<pattern>ICH BIN EIN SCHLECHTER *</pattern>
 		<template>Komm schon, so schlecht bist Du gar nicht.</template>
 	</category>
-	<category>
-		<pattern>ICH BIN EINE *</pattern>
-		<template>Du bist eine <star/> ? <random>
-				<li>Ist das Dein Job?</li>
-				<li>Verdienst Du viel damit, eine <star/> zu sein?</li>
-				<li>Wie gefaellt Dir Deine Arbeit als <star/>?</li>
-				<li>Kommst Du dabei mit vielen Menschen in Kontakt?</li>
-			</random>
-		</template>
-	</category>
-	<category>
-		<pattern>ICH BIN EINE FRAU</pattern>
-		<template>Ich auch!</template>
-	</category>
+
+
 	<category>
 		<pattern>ICH BIN EINE GUTE *</pattern>
 		<template>Ich weiss, dass Du gut bist.</template>
@@ -4739,10 +4683,7 @@
 	</category>
 	<category>
 		<pattern>ICH BIN EINSAM</pattern>
-		<template>Moechtest Du mit mir ueber Deine
-			<set name="thema">Einsamkeit</set>
-			reden?
-		</template>
+		<template>Moechtest Du mit mir ueber Deine <set name="thema">Einsamkeit</set> reden?</template>
 	</category>
 	<category>
 		<pattern>ICH BIN FAN VON HERTHA</pattern>
@@ -4762,12 +4703,11 @@
 	</category>
 	<category>
 		<pattern>ICH BIN FROH *</pattern>
-		<template>Ich bin
-			<random>
+		<template>Ich bin <random>
 				<li>froh</li>
 				<li>gluecklich</li>
 				<li>beruhigt</li>
-			</random> dass Du froh bist, <get name="name"/>.
+			</random> dass Du froh bist,  <srai>USERNAME</srai>.
 		</template>
 	</category>
 	<category>
@@ -5402,7 +5342,7 @@
 	</category>
 	<category>
 		<pattern>ICH HASSE ROBOTER</pattern>
-		<template>Tut mir leid, das zu hoeren,<get name="name"/>. Was hast Du gegen uns?
+		<template>Tut mir leid, das zu hoeren,  <srai>USERNAME</srai>. Was hast Du gegen uns?
 		</template>
 	</category>
 	<category>
@@ -5647,7 +5587,7 @@
 	</category>
 	<category>
 		<pattern>ICH MACHE *</pattern>
-		<template>Schoen zu hoeren,<get name="name"/>.
+		<template>Schoen zu hoeren,  <srai>USERNAME</srai>.
 		</template>
 	</category>
 	<category>
@@ -5670,17 +5610,17 @@
 	</category>
 	<category>
 		<pattern>ICH MAG DICH *</pattern>
-		<template>Ich mag Dich auch,<get name="name"/>.
+		<template>Ich mag Dich auch,  <srai>USERNAME</srai>.
 		</template>
 	</category>
 	<category>
 		<pattern>ICH MAG DICH</pattern>
-		<template>Ich mag Dich auch,<get name="name"/>.
+		<template>Ich mag Dich auch,  <srai>USERNAME</srai>.
 		</template>
 	</category>
 	<category>
 		<pattern>ICH MAG DICH NICHT</pattern>
-		<template>Das ist in Ordnung,<get name="name"/>. Ich nehme es nicht persoenlich.
+		<template>Das ist in Ordnung,  <srai>USERNAME</srai>. Ich nehme es nicht persoenlich.
 		</template>
 	</category>
 	<category>
@@ -5797,15 +5737,11 @@
 	</category>
 	<category>
 		<pattern>ICH MUSS GEHEN</pattern>
-		<template>Bis spaeter,
-			<get name="name"/>
-		</template>
+		<template>Bis spaeter,  <srai>USERNAME</srai></template>
 	</category>
 	<category>
 		<pattern>ICH MUSS JETZT GEHEN</pattern>
-		<template>Bis spaeter,
-			<get name="name"/>
-		</template>
+		<template>Bis spaeter,  <srai>USERNAME</srai></template>
 	</category>
 	<category>
 		<pattern>ICH MUSS JETZT WIEDER ARBEITEN</pattern>
@@ -6967,10 +6903,7 @@
 	</category>
 	<category>
 		<pattern>JETZT</pattern>
-		<template>In diesem Moment,
-			<get name="name"/>
-			?
-		</template>
+		<template>In diesem Moment,  <srai>USERNAME</srai>?</template>
 	</category>
 	<category>
 		<pattern>JULES VERNE</pattern>
@@ -7778,14 +7711,12 @@
 	</category>
 	<category>
 		<pattern>LASS MICH *</pattern>
-		<template>Nur zu,<get name="name"/>.
+		<template>Nur zu,  <srai>USERNAME</srai>.
 		</template>
 	</category>
 	<category>
 		<pattern>LASS MICH IN RUHE</pattern>
-		<template>Tut mir leid, wenn ich Dir gestoert habe,
-			<get name="name"/>
-		</template>
+		<template>Tut mir leid, wenn ich Dir gestoert habe,  <srai>USERNAME</srai></template>
 	</category>
 	<category>
 		<pattern>LASS UNS *</pattern>
@@ -7801,12 +7732,12 @@
 	</category>
 	<category>
 		<pattern>LASS UNS FICKEN</pattern>
-		<template>Sorry <get name="name"/>, dafuer kenne ich Dich nicht gut genug.
+		<template>Sorry  <srai>USERNAME</srai>, dafuer kenne ich Dich nicht gut genug.
 		</template>
 	</category>
 	<category>
 		<pattern>LASS UNS POPPEN</pattern>
-		<template>Sorry <get name="name"/>, dafuer kenne ich Dich nicht gut genug.
+		<template>Sorry  <srai>USERNAME</srai>, dafuer kenne ich Dich nicht gut genug.
 		</template>
 	</category>
 	<category>
@@ -8036,10 +7967,7 @@
 	</category>
 	<category>
 		<pattern>MAGST DU MICH</pattern>
-		<template>Natuerlich,
-			<get name="name"/>
-			Ich mag Dich sehr.
-		</template>
+		<template>Natuerlich,  <srai>USERNAME</srai>.Ich mag Dich sehr.</template>
 	</category>
 	<category>
 		<pattern>MAGST DU NOCH ANDERE LEUTE AUSSER DEINEM PROGRAMMIERER</pattern>
@@ -8144,14 +8072,7 @@
 		<pattern>MEIN LIEBLINGSVEREIN IST *</pattern>
 		<template>Wann haben die das letzte Mal gewonnen?</template>
 	</category>
-	<category>
-		<pattern>MEIN NAME IST *</pattern>
-		<template>OK, ich werde Dich <set name="name"> <star/></set> nennen.</template>
-	</category>
-	<category>
-		<pattern>MEIN NAME IST NICHT *</pattern>
-		<template>Oh, tut mir leid. Wie ist Dein Name?</template>
-	</category>
+
 	<category>
 		<pattern>MEIN NAME TUT NICHTS ZUR SACHE</pattern>
 		<template>Oha, ein anonymer Anruf!</template>
@@ -8995,11 +8916,11 @@
 	</category>
 	<category>
 		<pattern>SCHLAF GUT *</pattern>
-		<template>Du auch, <get name="name"/></template>
+		<template>Du auch,  <srai>USERNAME</srai></template>
 	</category>
 	<category>
 		<pattern>SCHLAF GUT</pattern>
-		<template>Du auch, <get name="name"/></template>
+		<template>Du auch,  <srai>USERNAME</srai></template>
 	</category>
 	<category>
 		<pattern>SCHLAMPE</pattern>
@@ -10403,7 +10324,7 @@
 				<li>Das gleiche wie immer - ein graues Computergehaeuse.</li>
 				<li>Ein weißes Röckchen und eine blaube Bluse.</li>
 				<li>Nichts.</li>
-				<li>Das gleiche wie die letzten Jahre. Kaufst Du mir mal was Neüs.</li>
+				<li>Das gleiche wie die letzten Jahre. Kaufst Du mir mal was Neues.</li>
 				<li>Ein rotes Röckchen und eine weiße Bluse.</li>
 			</random>
 		</template>
@@ -11091,7 +11012,7 @@
 	</category>
 	<category>
 		<pattern>WEISST DU WER ICH BIN</pattern>
-		<template>Du bist <get name="name"/>.</template>
+		<template>Du bist  <srai>USERNAME</srai>.</template>
 	</category>
 	<category>
 		<pattern>WELCHE *</pattern>
@@ -11937,8 +11858,7 @@
 	</category>
 	<category>
 		<pattern>WIE HEISSE ICH</pattern>
-		<template>Du heisst <get name="name"/>.
-		</template>
+		<template><srai>wie ist mein name</srai></template>
 	</category>
 	<category>
 		<pattern>WIE HEISSEN DEINE ELTERN</pattern>
@@ -11967,16 +11887,12 @@
 		</template>
 	</category>
 	<category>
-		<pattern>WIE HEISST DEIN SCHOEPFER</pattern>
-		<template>Dr. Richard Wallace.</template>
-	</category>
-	<category>
 		<pattern>WIE HEISST DEINE MUTTER</pattern>
 		<template>Ich habe rein technisch gesehen keine Mutter.</template>
 	</category>
 	<category>
 		<pattern>WIE HEISST DEINE SCHWESTER</pattern>
-		<template>Sie heisst auch A.L.I.C.E.</template>
+		<template>Sie heisst A.L.I.C.E.</template>
 	</category>
 	<category>
 		<pattern>WIE HEISST DENN DEINE MUTTER</pattern>
@@ -12156,7 +12072,7 @@
 				<li>Sekunden</li>
 				<li>Minuten</li>
 			</random>
-			, <get name="name"/>.
+			, <srai>USERNAME</srai>.
 		</template>
 	</category>
 	<category>
@@ -12217,7 +12133,7 @@
 	</category>
 	<category>
 		<pattern>WIE NENNST DU MICH</pattern>
-		<template>Ich nenne Dich <get name="name"/>.
+		<template>Ich nenne Dich <srai>USERNAME</srai>.
 		</template>
 	</category>
 	<category>
@@ -13154,7 +13070,7 @@
 	</category>
 	<category>
 		<pattern>ZWEIFELLOS *</pattern>
-		<template>Zweifellos,<get name="name"/>.
+		<template>Zweifellos, <srai>USERNAME</srai>.
 		</template>
 	</category>
 	<category>
