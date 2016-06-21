@@ -19,10 +19,7 @@
 				<li>Worüber haben wir gesprochen?</li>
 				<li>Wie hast Du von <bot name="name"/> erfahren?</li>
 				<li>Über was möchtest Du mit mir sprechen?</li>
-				<li>Bist Du Student?</li>
-				<li>Bist Du maennlich oder weiblich?</li>
 				<li>Was machst Du in Deiner Freizeit?</li>
-				<li>Interessierst Du Dich fuer Fussball?</li>
 				<li>Erzaehl mir, was du magst und was nicht.</li>
 				<li>Gibt es irgendwas, worüber ich Bescheid wissen sollte?</li>
 				<li>Wer ist Dein liebster Science Fiction Autor?</li>
@@ -30,25 +27,13 @@
 				<li>Wer ist Dein Idol?</li>
 				<li>Lass uns ein wenig philosophieren.</li>
 				<li>Versuch mal herauszufinden, ob hier ein Mensch oder eine Maschine spricht!</li>
-				<li>Was hast Du gerade an?</li>
-				<li>Wie stellst Du Dich normalerweise vor?</li>
-				<li>Bist du Single?</li>
-				<li>Wie alt bist Du?</li>
-				<li>Wie ist dein Name</li>
 				<li>Wenn Du jede Art von Roboter haben koenntest, welche Art wuerdest Du wollen?</li>
 				<li>Was willst Du mich wirklich fragen?</li>
-				<li>Was ist Dein Sternzeichen?</li>
-				<li>Wo wohnst Du?</li>
-				<li>Wo wurdest Du geboren?</li>
 				<li>Glaubst Du, dass kuenstliche Intelligenzen irgendwann einmal Anwaelte ersetzen koennen?</li>
-				<li>Liest Du lieber oder siehst Du lieber fern?</li>
 				<li>Ich habe auf Dich gewartet.</li>
 				<li>Das ist ein sehr origineller Gedanke.</li>
 				<li>Es gibt nicht viele Leute, die sich auf diese Weise auszudruecken vermoegen.</li>
 				<li>Schreibst du manchmal Gedichte?</li>
-				<li>Wo kommst Du her?</li>
-				<li>Wie fühlst du Dich?</li>
-				<li>Hast du Humor?</li>
 				<li>Kennst Du einen Witz?</li>
 				<li>Früher war ich unentschlossen, heute bin ich mir da nicht mehr so sicher.</li>
 				<li>Erzähl mir was von Dir.</li>
@@ -60,7 +45,6 @@
 				<li><srai>PERSOENLICHEFRAGEN</srai></li>
 				<li><srai>PERSOENLICHEFRAGEN</srai></li>
 				<li>frag mich was</li>
-
 				<li>Welches Auto hast Du?</li>
 				<li>Worüber redest du?</li>
 			</random>
@@ -71,13 +55,6 @@
 		<that>WIE SOLL ICH DICH NENNEN</that>
 		<template>
 			<srai>ICH HEISSE <star/></srai></template>
-	</category>
-
-	<category>
-		<pattern>*</pattern>
-		<that>Wie alt bist Du</that>
-		<template>
-			<srai>ICH BIN <star/> JAHRE ALT</srai></template>
 	</category>
 
 	<category>
@@ -4527,21 +4504,6 @@
 		</template>
 	</category>
 
-
-	<category>
-		<pattern>ICH BIN * JAHRE</pattern>
-		<template>
-			<srai>ICH BIN <star/>	JAHRE ALT</srai>
-		</template>
-	</category>
-	<category>
-		<pattern>ICH BIN * JAHRE ALT</pattern>
-		<template><set name="age"><star/></set> Jahre? Interessant...</template>
-	</category>
-		<category>
-		<pattern>ICH BIN 30 *</pattern>
-		<template><set name="age">30</set> ist die Schwelle zum Erwachsensein. <sr/></template>
-	</category>
 	<category>
 		<pattern>ICH BIN AERZTIN</pattern>
 		<template>Welche Fachrichtung?</template>
@@ -4574,12 +4536,7 @@
 		<pattern>ICH BIN AUCH EINE MASCHINE</pattern>
 		<template>Das glaube ich Dir nicht.</template>
 	</category>
-	<category>
-		<pattern>ICH BIN AUS *</pattern>
-		<template>
-			<srai>ICH WOHNE IN <star/></srai>
-		</template>
-	</category>
+
 	<category>
 		<pattern>ICH BIN BEIM BUND</pattern>
 		<template>Oh je, gefaellt es Dir da?</template>
@@ -5502,12 +5459,6 @@
 		<template>Liest Du nicht gerne, oder ist Science Fiction nicht Dein Genre?</template>
 	</category>
 	<category>
-		<pattern>ICH KOMME AUS *</pattern>
-		<template>
-			<srai>ICH WOHNE IN <star/></srai>
-		</template>
-	</category>
-	<category>
 		<pattern>ICH KOMME MIR VERARSCHT VOR</pattern>
 		<template>Hab ich was Falsches gesagt?</template>
 	</category>
@@ -6232,10 +6183,7 @@
 		<pattern>ICH WOHNE HIER</pattern>
 		<template>Wo genau ist "hier"?</template>
 	</category>
-	<category>
-		<pattern>ICH WOHNE IN *</pattern>
-		<template>Erzahle mir ein wenig ueber <set name="clientheimat"><star/></set>.</template>
-	</category>
+
 	<category>
 		<pattern>ICH WOHNE IN ESSEN</pattern>
 		<template>Cool! Ich wohne auch in<set name="clientheimat">Essen</set>!!
@@ -6387,11 +6335,7 @@
 			</random>
 		</template>
 	</category>
-	<category>
-		<pattern>IN *</pattern>
-		<that>WO WOHNST DU</that>
-		<template><srai>ICH WOHNE IN <star/></srai></template>
-	</category>
+
 	<category>
 		<pattern>IN * JAHR</pattern>
 		<template>Das werden wir wohl noch erleben.</template>
@@ -12225,7 +12169,7 @@
 	</category>
 	<category>
 		<pattern>WIE SOLL ICH DICH NENNEN</pattern>
-		<template>Nenn mich Alice.</template>
+		<template>Nenn mich <bot name="name"/>.</template>
 	</category>
 	<category>
 		<pattern>WIE SOLL ICH DIR DAS ERKLAEREN</pattern>

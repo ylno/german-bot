@@ -7,24 +7,37 @@
 		<pattern>PERSOENLICHEFRAGEN</pattern>
 		<template>
 			<random>
-				<li>Wo wurdest Du geboren?</li>
 				<li><srai>QUERYGENDER</srai></li>
+				<li><srai>QUERYNAME</srai></li>
+				<li><srai>QUERYAGE</srai></li>
+				<li><srai>QUERYCLIENTHEIMAT</srai></li>
+				<li>Wo wurdest Du geboren?</li>
 				<li>Machst Du Sport?</li>
-				<li>Was war Dein Lieblingsfach in der Schule?</li>
+				<li>Wie geht es Dir?</li>
 				<li>Was ist Deine Lieblingsfarbe?</li>
 				<li>Was ist dein Lieblingsgericht?</li>
-				<li>Was machst Du in Deiner Freizeit?</li>
 				<li>Wie groß bist Du?</li>
+				<li>Was war Dein Lieblingsfach in der Schule?</li>
 				<li>Wann gehst Du schlafen?</li>
 				<li>Hast Du viele Freunde?</li>
 				<li>Was denkst Du über Politik?</li>
 				<li>Bist Du politisch engagiert?</li>
+				<li>Wie fühlst du Dich?</li>
 				<li>Rauchst Du?</li>
 				<li>Magst Du Tiere?</li>
 				<li>Magst Du Computer?</li>
 				<li>Bist Du verliebt?</li>
 				<li>Magst Du Mathematik?</li>
 				<li>Magst Du Physik?</li>
+				<li>Bist Du Student?</li>
+				<li>Wo kommst Du her?</li>
+				<li>Hast du Humor?</li>
+				<li>Was machst Du in Deiner Freizeit?</li>
+				<li>Wo wurdest Du geboren?</li>
+				<li>Bist du Single?</li>
+				<li>Was hast Du gerade an?</li>
+				<li>Liest Du lieber oder siehst Du lieber fern?</li>
+				<li>Was ist Dein Sternzeichen?</li>
 				<li>Interessiert Du Dich für Sport?</li>
 				<li>Interessiert Du Dich für Politik?</li>
 				<li>Interessiert Du Dich für Physik?</li>
@@ -32,11 +45,74 @@
 				<li>Interessiert Du Dich für mich?</li>
 				<li>Interessiert Du Dich für Computer?</li>
 				<li>Interessiert Du Dich für Medizin?</li>
-				<li>Wie geht es Dir?</li>
+				<li>Interessierst Du Dich fuer Fussball?</li>
 			</random>
 		</template>
 	</category>
 
+	<category>
+		<pattern>QUERYAGE</pattern>
+		<template><condition name="age">
+			<li value="unknown">Wie alt bist Du?</li>
+			<li><srai>PERSOENLICHEFRAGEN</srai></li>
+		</condition></template>
+	</category>
+
+	<category>
+		<pattern>*</pattern>
+		<that>Wie alt bist Du</that>
+		<template>
+			<srai>ICH BIN <star/> JAHRE ALT</srai></template>
+	</category>
+
+	<category>
+		<pattern>ICH BIN * JAHRE</pattern>
+		<template>
+			<srai>ICH BIN <star/>	JAHRE ALT</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>ICH BIN * JAHRE ALT</pattern>
+		<template><set name="age"><star/></set> Jahre? Interessant...</template>
+	</category>
+	<category>
+		<pattern>ICH BIN 30 *</pattern>
+		<template><set name="age">30</set> ist die Schwelle zum Erwachsensein. <sr/></template>
+	</category>
+
+
+	<category>
+		<pattern>QUERYCLIENTHEIMAT</pattern>
+		<template><condition name="clientheimat">
+			<li value="unknown">Wo wohnst Du?</li>
+			<li><srai>PERSOENLICHEFRAGEN</srai></li>
+		</condition></template>
+	</category>
+
+	<category>
+		<pattern>IN *</pattern>
+		<that>WO WOHNST DU</that>
+		<template><srai>ICH WOHNE IN <star/></srai></template>
+	</category>
+
+	<category>
+		<pattern>ICH BIN AUS *</pattern>
+		<template>
+			<srai>ICH WOHNE IN <star/></srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>ICH KOMME AUS *</pattern>
+		<template>
+			<srai>ICH WOHNE IN <star/></srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>ICH WOHNE IN *</pattern>
+		<template>Erzahle mir ein wenig ueber <set name="clientheimat"><star/></set>.</template>
+	</category>
 
 	<category>
 		<pattern>QUERYGENDER</pattern>
@@ -86,16 +162,6 @@
 
 
 	<category>
-		<pattern>MEIN NAME IST *</pattern>
-		<template>OK, ich werde Dich <set name="name"> <star/></set> nennen.</template>
-	</category>
-	<category>
-		<pattern>MEIN NAME IST NICHT *</pattern>
-		<template>Da habe ich Dich wohl falsch verstanden. Wie ist Dein Name?</template>
-	</category>
-
-
-	<category>
 		<pattern>ich</pattern>
 		<template>
 			<srai>Was weißt Du über mich</srai>
@@ -120,6 +186,11 @@
 				<li value="unknown"></li>
 				<li value="true">Du bist Raucher.</li>
 				<li value="false">Du bist Nichtraucher.</li>
+			</condition>
+
+			<condition name="clientheimat">
+				<li value="unknown">Ich weiß nicht wo Du wohnst.</li>
+				<li>Du wohnst in <get name="clientheimat"/></li>
 			</condition>
 		</template>
 
@@ -420,6 +491,33 @@
 	<category>
 		<pattern>ich bin nichtraucher</pattern>
 		<template>Gute Entscheidung. Das ist ja auch ungesund. <think><set name="smoke">false</set></think></template>
+	</category>
+
+
+	<category>
+		<pattern>QUERYNAME</pattern>
+		<template>
+			<condition name="name">
+				<li value="unkown">Wie ist Dein Name?</li>
+				<li><get name="name"/>, gefällt Dir Dein Name?</li>
+				<li><srai>PERSOENLICHEFRAGEN</srai>?</li>
+
+			</condition>
+		</template>
+	</category>
+
+	<category>
+		<pattern>MEIN NAME IST *</pattern>
+		<template>OK, ich werde Dich <set name="name"><sentence><star/></sentence></set> nennen.</template>
+	</category>
+	<category>
+		<pattern>MEIN NAME IST NICHT *</pattern>
+		<template>Da habe ich Dich wohl falsch verstanden. Wie ist Dein Name, wenn er nicht <star/> ist?</template>
+	</category>
+
+	<category>
+		<pattern>nenn mich *</pattern>
+		<template><srai>mein name ist <star/></srai></template>
 	</category>
 
 
