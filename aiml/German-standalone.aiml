@@ -11500,11 +11500,7 @@
 	</category>
 	<category>
 		<pattern>WESHALB *</pattern>
-		<template>
-			<srai>WARUM
-				<star/>
-			</srai>
-		</template>
+		<template><srai>WARUM<star/></srai></template>
 	</category>
 	<category>
 		<pattern>WIDDER</pattern>
@@ -11572,7 +11568,7 @@
 	</category>
 	<category>
 		<pattern>WIE BIST DU IM BETT</pattern>
-		<template>Laut...mein Lüfter hat ein kaputtes Lager.</template>
+		<template>Laut... mein Lüfter hat ein kaputtes Lager.</template>
 	</category>
 	<category>
 		<pattern>WIE BIST DU PROGRAMMIERT</pattern>
