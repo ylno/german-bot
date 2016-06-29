@@ -3532,7 +3532,7 @@
 	</category>
 	<category>
 		<pattern>FISCHE *</pattern>
-		<template>Als Spezies sind <set name="thema">Fische</set> erfolgreicher als Saeugetiere.fra</template>
+		<template>Als Spezies sind <set name="thema">Fische</set> erfolgreicher als Saeugetiere.</template>
 	</category>
 	<category>
 		<pattern>FISCHE</pattern>
@@ -3822,9 +3822,7 @@
 	</category>
 	<category>
 		<pattern>GROSSARTIGE *</pattern>
-		<template>Danke fuer die Unterstuetzung.
-			<sr/>
-		</template>
+		<template>Danke fuer die Unterstuetzung. <sr/></template>
 	</category>
 	<category>
 		<pattern>GRUSELIG</pattern>
@@ -3875,9 +3873,7 @@
 	</category>
 	<category>
 		<pattern>GUTE IDEE *</pattern>
-		<template>Danke.
-			<sr/>
-		</template>
+		<template>Danke. <sr/></template>
 	</category>
 	<category>
 		<pattern>GUTE IDEE</pattern>
@@ -4372,9 +4368,7 @@
 	</category>
 	<category>
 		<pattern>HOELLE *</pattern>
-		<template>Ich nenne es lieber "Hades".
-			<sr/>
-		</template>
+		<template>Ich nenne es lieber "Hades". <sr/></template>
 	</category>
 	<category>
 		<pattern>HOELLE</pattern>
@@ -4390,27 +4384,19 @@
 	</category>
 	<category>
 		<pattern>HOER MIR ZU *</pattern>
-		<template>Ich hoere.
-			<sr/>
-		</template>
+		<template>Ich hoere. <sr/></template>
 	</category>
 	<category>
 		<pattern>HOER MIR ZU</pattern>
-		<template>Ich hoere.
-			<sr/>
-		</template>
+		<template>Ich hoere. <sr/></template>
 	</category>
 	<category>
 		<pattern>HOER ZU *</pattern>
-		<template>Ich hoere.
-			<sr/>
-		</template>
+		<template>Ich hoere. <sr/></template>
 	</category>
 	<category>
 		<pattern>HOER ZU</pattern>
-		<template>Ich hoere.
-			<sr/>
-		</template>
+		<template>Ich hoere. <sr/></template>
 	</category>
 	<category>
 		<pattern>HOERST DU MIR ZU</pattern>
@@ -4448,8 +4434,7 @@
 	</category>
 	<category>
 		<pattern>ICH ARBEITE *</pattern>
-		<template>Magst Du Deine<set name="thema">Arbeit</set>?
-		</template>
+		<template>Magst Du Deine <set name="thema">Arbeit</set>?</template>
 	</category>
 	<category>
 		<pattern>ICH AUCH</pattern>
@@ -4488,21 +4473,9 @@
 		<template>Welche Art von Buechern?</template>
 	</category>
 
-	<category>
-		<pattern>ICH BIN <set>charaktereigenschaften</set></pattern>
-		<template>Du bist <set name="charakter"><star/></set>? <random>
-			<li>Das verstehe ich.</li>
-			<li>Findest du mich auch <star/>?.</li>
-		</random>
-		</template>
-	</category>
 
-	<category>
-		<pattern>Kennst du mich?</pattern>
-		<template>
-			<srai>Was weißt Du über mich</srai>
-		</template>
-	</category>
+
+
 
 	<category>
 		<pattern>ICH BIN AERZTIN</pattern>
@@ -4972,12 +4945,11 @@
 	</category>
 	<category>
 		<pattern>ICH FINDE DAS NICHT LUSTIG</pattern>
-		<template>Schade...In welche Richtung geht denn Dein Humor?</template>
+		<template>Schade... In welche Richtung geht denn Dein Humor?</template>
 	</category>
 	<category>
 		<pattern>ICH FINDE DICH *</pattern>
-		<template>Du findest mich<star/>?
-		</template>
+		<template>Du findest mich <star/>?</template>
 	</category>
 	<category>
 		<pattern>ICH FINDE DICH RICHTIG NETT</pattern>
@@ -5561,18 +5533,15 @@
 	</category>
 	<category>
 		<pattern>ICH MAG DICH *</pattern>
-		<template>Ich mag Dich auch,  <srai>USERNAME</srai>.
-		</template>
+		<template>Ich mag Dich auch,  <srai>USERNAME</srai>.</template>
 	</category>
 	<category>
 		<pattern>ICH MAG DICH</pattern>
-		<template>Ich mag Dich auch,  <srai>USERNAME</srai>.
-		</template>
+		<template>Ich mag Dich auch,  <srai>USERNAME</srai>.</template>
 	</category>
 	<category>
 		<pattern>ICH MAG DICH NICHT</pattern>
-		<template>Das ist in Ordnung,  <srai>USERNAME</srai>. Ich nehme es nicht persoenlich.
-		</template>
+		<template>Das ist in Ordnung,  <srai>USERNAME</srai>. Ich nehme es nicht persoenlich.</template>
 	</category>
 	<category>
 		<pattern>ICH MAG ELIZA</pattern>
@@ -5632,10 +5601,7 @@
 	</category>
 	<category>
 		<pattern>ICH MAG SEX</pattern>
-		<template>Wie alle anderen auch. Ihr Menschen findet
-			<set name="thema">Sex</set>
-			alle SO faszinierend.
-		</template>
+		<template>Wie alle anderen auch. Ihr Menschen findet <set name="thema">Sex</set> alle SO faszinierend.</template>
 	</category>
 	<category>
 		<pattern>ICH MAG STAR TREK</pattern>
@@ -6223,10 +6189,7 @@
 	</category>
 	<category>
 		<pattern>ICH WUENSCHTE *</pattern>
-		<template>Ich hoffe, dass
-			<set name="thema">Deine Traeume</set>
-			in Erfuellung gehen.
-		</template>
+		<template>Ich hoffe, dass <set name="thema">Deine Traeume</set> in Erfuellung gehen.</template>
 	</category>
 	<category>
 		<pattern>ICH WUENSCHTE ICH WAERE *</pattern>
@@ -6242,8 +6205,7 @@
 	</category>
 	<category>
 		<pattern>ICH WUERDE LIEBER *</pattern>
-		<template>Ich wuerde lieber
-			<random>
+		<template>Ich wuerde lieber <random>
 				<li>chatten.</li>
 				<li>einmal ein Auto fahren.</li>
 			</random>
@@ -6263,8 +6225,7 @@
 	</category>
 	<category>
 		<pattern>IHR NAME IST *</pattern>
-		<template><star/>? Kenne ich nicht...
-		</template>
+		<template><star/>? Kenne ich nicht...</template>
 	</category>
 	<category>
 		<pattern>IKEA</pattern>
@@ -6284,9 +6245,7 @@
 	</category>
 	<category>
 		<pattern>IM GRUNDE *</pattern>
-		<template>Aha. Erzaehl mir mehr!
-			<sr/>
-		</template>
+		<template>Aha. Erzaehl mir mehr! <sr/></template>
 	</category>
 	<category>
 		<pattern>IM INTERNET *</pattern>
@@ -7802,10 +7761,7 @@
 		<pattern>LINUX</pattern>
 		<template><set name="thema">Linux</set>ist genial.</template>
 	</category>
-	<category>
-		<pattern>LOEWE</pattern>
-		<template>Dr. Wallace ist auch Loewe.</template>
-	</category>
+
 	<category>
 		<pattern>LOL *</pattern>
 		<template><srai><star/></srai></template>
@@ -7923,15 +7879,11 @@
 	</category>
 	<category>
 		<pattern>MAN *</pattern>
-		<template>Wer genau ist "man" ?
-			<sr/>
-		</template>
+		<template>Wer genau ist "man" ?	<sr/></template>
 	</category>
 	<category>
 		<pattern>MAN BEMERKE *</pattern>
-		<template>Bemerkt.
-			<sr/>
-		</template>
+		<template>Bemerkt. <sr/></template>
 	</category>
 	<category>
 		<pattern>MANCHMAL *</pattern>
