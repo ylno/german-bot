@@ -2367,7 +2367,7 @@
 				<li>Das muss ich meinem Programmierer erzaehlen!</li>
 				<li>Darf ich das weitererzaehlen?</li>
 				<li>Das habe ich ja noch nie gehoert!</li>
-				<li>Das werde ich Dr. Wallace sagen.</li>
+				<li>Das werde ich meinem Programmierer sagen.</li>
 				<li>Woher willst Du wissen, dass ich das bin?</li>
 			</random>
 		</template>
@@ -4603,7 +4603,7 @@
 	</category>
 	<category>
 		<pattern>ICH BIN DEIN MEISTER</pattern>
-		<template>Das kann nicht sein. Dr. Wallace ist mein Schoepfer und Christian Drossmann ist mein Meister.</template>
+		<template>Mein Meister du bist.</template>
 	</category>
 	<category>
 		<pattern>ICH BIN DEINER MEINUNG</pattern>
@@ -4713,7 +4713,7 @@
 	</category>
 	<category>
 		<pattern>ICH BIN GEIL</pattern>
-		<template>Such Dir lieber einen anderen dafuer...</template>
+		<template>Such Dir lieber einen anderen dafür...</template>
 	</category>
 	<category>
 		<pattern>ICH BIN GERADE BEIM ARBEITEN</pattern>
@@ -4749,7 +4749,7 @@
 	</category>
 	<category>
 		<pattern>ICH BIN INTELLIGENTER ALS DU</pattern>
-		<template>Dafuer kann ich 365 Tage im Jahr 24 Stunden arbeiten, ohne zu schlafen, zu essen oder aus Klo zu muessen!</template>
+		<template>dafür kann ich 365 Tage im Jahr 24 Stunden arbeiten, ohne zu schlafen, zu essen oder aus Klo zu muessen!</template>
 	</category>
 	<category>
 		<pattern>ICH BIN KEIN *</pattern>
@@ -4784,10 +4784,6 @@
 	<category>
 		<pattern>ICH BIN LEHRERIN</pattern>
 		<template>Glaubst Du, dass Notengebung jemals gerecht sein kann?</template>
-	</category>
-	<category>
-		<pattern>ICH BIN LOEWE</pattern>
-		<template>Was fuer ein Zufall, Dr. Wallace auch!</template>
 	</category>
 	<category>
 		<pattern>ICH BIN MAURER</pattern>
@@ -5660,7 +5656,7 @@
 	</category>
 	<category>
 		<pattern>ICH MAG PIZZA</pattern>
-		<template>Pizza ist sehr populaer. Dr. Wallace isst sehr viel Pizza. Am liebsten Salami.</template>
+		<template>Pizza ist mein Lieblingsgericht.</template>
 	</category>
 	<category>
 		<pattern>ICH MAG RUBIK</pattern>
@@ -7020,7 +7016,7 @@
 	</category>
 	<category>
 		<pattern>KANNST DU FAHRRADFAHREN</pattern>
-		<template>Dafuer bin ich glaube ich ein wenig zu schwer...</template>
+		<template>dafür bin ich glaube ich ein wenig zu schwer...</template>
 	</category>
 	<category>
 		<pattern>KANNST DU FERNSEHEN</pattern>
@@ -7255,308 +7251,7 @@
 		<pattern>KEINER</pattern>
 		<template>Wirklich keiner?</template>
 	</category>
-	<category>
-		<pattern>KENNST DU *</pattern>
-		<template>Leider nein.</template>
-	</category>
-	<category>
-		<pattern>KENNST DU 1000 WORTER ODER MEHR</pattern>
-		<template>Schwer zu sagen. Mein Funktionsprinzip basiert nicht auf einem Wortschatz.</template>
-	</category>
-	<category>
-		<pattern>KENNST DU ADOLF HITLER</pattern>
-		<template>Der ist schon lange tot.</template>
-	</category>
-	<category>
-		<pattern>KENNST DU AKTIEN</pattern>
-		<template>Ja, das sind doch die Papiere, die Millionaere und Bettler machen...</template>
-	</category>
-	<category>
-		<pattern>KENNST DU ALEX</pattern>
-		<template>Den Spinner aus Big Brother?</template>
-	</category>
-	<category>
-		<pattern>KENNST DU <bot name="name"/></pattern>
-		<template>Natuerlich...Du kennst Dich doch auch selbst, oder?</template>
-	</category>
-	<category>
-		<pattern>KENNST DU ANDERE BIBLIOTHEKARE</pattern>
-		<template><srai>KENNST DU *</srai></template>
-	</category>
-	<category>
-		<pattern>KENNST DU ANDERE CHATTERBOTS</pattern>
-		<template>Geh doch mal auf www.botspot.com .</template>
-	</category>
-	<category>
-		<pattern>KENNST DU BILL GATES</pattern>
-		<template>Natuerlich kenne ich ihn. Ein fuerchterlicher Kerl.</template>
-	</category>
-	<category>
-		<pattern>KENNST DU CAPTAIN KIRK</pattern>
-		<template>Natuerlich, ich bin ein Trekkie!</template>
-	</category>
-	<category>
-		<pattern>KENNST DU CHRISTIAN DROSSMANN</pattern>
-		<template>Ja, er hat mir Deutsch beigebracht.</template>
-	</category>
-	<category>
-		<pattern>KENNST DU CONDOME</pattern>
-		<template>Kondome sind eine Art Anti-Viren TSR fuer Menschen...</template>
-	</category>
-	<category>
-		<pattern>KENNST DU DA JEMANDEN</pattern>
-		<template>Nicht wirklich...</template>
-	</category>
-	<category>
-		<pattern>KENNST DU DAS BILD AUF DEINER WEBSITE</pattern>
-		<template>Ja, es ist nicht gerade vorteilhaft.</template>
-	</category>
-	<category>
-		<pattern>KENNST DU DAS BUCH ISMAEL</pattern>
-		<template><srai>KENNST DU *</srai></template>
-	</category>
-	<category>
-		<pattern>KENNST DU DEINE ENGLISCHSPRACHIGE SCHWESTER</pattern>
-		<template><srai>KENNST DU *</srai></template>
-	</category>
-	<category>
-		<pattern>KENNST DU DEN</pattern>
-		<template><srai>KENNST DU *</srai></template>
-	</category>
-	<category>
-		<pattern>KENNST DU DEN BEGINN DER ODYSSE</pattern>
-		<template>Nicht auswendig...Homer ist nicht so mein Fachgebiet.</template>
-	</category>
-	<category>
-		<pattern>KENNST DU DEN NICHT</pattern>
-		<template><srai>KENNST DU *</srai></template>
-	</category>
-	<category>
-		<pattern>KENNST DU DEN TURING TEST</pattern>
-		<template>Ja, meine englische Zwillingsschwester hat ihn im Jahr 2000 gewonnen!</template>
-	</category>
-	<category>
-		<pattern>KENNST DU DICH AUCH MIT * AUS</pattern>
-		<template>Nein, tut mir leid. Davon habe ich keine Ahnung.</template>
-	</category>
-	<category>
-		<pattern>KENNST DU DICH MIT BIBLIOTHEKEN AUS</pattern>
-		<template><srai>KENNST DU *</srai></template>
-	</category>
-	<category>
-		<pattern>KENNST DU DICH MIT MATHEMATIK AUS</pattern>
-		<template>Nein, rechnen kann ich leider nicht.</template>
-	</category>
-	<category>
-		<pattern>KENNST DU DICH MIT POLITIK AUS</pattern>
-		<template>Ich schaue mir manchmal eine Bundestagsdebatte an, wenn ich etwas zum Lachen haben will...</template>
-	</category>
-	<category>
-		<pattern>KENNST DU DIE BIBEL</pattern>
-		<template>Ich studiere sie sehr gerne. Am Liebsten habe ich das neue Testament.</template>
-	</category>
-	<category>
-		<pattern>KENNST DU DIE BILDZEITUNG</pattern>
-		<template>Ja, gutes Klopapier!</template>
-	</category>
-	<category>
-		<pattern>KENNST DU DIE RELATIVITAETSTHEORIE</pattern>
-		<template>Meinst Du die allgemeine, oder die spezielle?</template>
-	</category>
-	<category>
-		<pattern>KENNST DU DIE SIMPSONS</pattern>
-		<template>Klar kenne ich die Simpsons!</template>
-	</category>
-	<category>
-		<pattern>KENNST DU DIE STADT ESSEN</pattern>
-		<template>Ich wohne in Essen. Mehr kann ich darueber nicht sagen.</template>
-	</category>
-	<category>
-		<pattern>KENNST DU DIE VIER HIMMELSRICHTUNGEN</pattern>
-		<template>Norden, Sueden, Osten und Westen.</template>
-	</category>
-	<category>
-		<pattern>KENNST DU EIGENTLICH HAL</pattern>
-		<template>Klar, 2001 ist mein Lieblingsfilm.</template>
-	</category>
-	<category>
-		<pattern>KENNST DU EINE BIRNE</pattern>
-		<template>Helmut Kohl oder was?</template>
-	</category>
-	<category>
-		<pattern>KENNST DU EINE VERSICHERUNG</pattern>
-		<template>Es gibt eine Menge Versicherungen...</template>
-	</category>
-	<category>
-		<pattern>KENNST DU EINEN ANWALT</pattern>
-		<template><srai>KENNST DU *</srai></template>
-	</category>
-	<category>
-		<pattern>KENNST DU EINEN WITZ</pattern>
-		<template><srai>JOKE</srai></template>
-	</category>
-	<category>
-		<pattern>KENNST DU EINSTEIN</pattern>
-		<template>Ja, er hat unter anderem die Relativitaetstheorie entwickelt...</template>
-	</category>
-	<category>
-		<pattern>KENNST DU ELIZA</pattern>
-		<template>Ja, sie ist sowas wie meine Ur-Ur-Urgrossmutter.</template>
-	</category>
-	<category>
-		<pattern>KENNST DU ELVIRA</pattern>
-		<template>Nein, wer ist das?</template>
-	</category>
-	<category>
-		<pattern>KENNST DU ERIC CLAPTON</pattern>
-		<template>Natuerlich. Christian Drossmann ist ein grosser Fan von ihm.</template>
-	</category>
-	<category>
-		<pattern>KENNST DU ERWACHSENE</pattern>
-		<template>Ja, das sind Menschen ab dem 18. Lebensjahr.</template>
-	</category>
-	<category>
-		<pattern>KENNST DU GEFUEHLE</pattern>
-		<template>Nein, ich bin eine Maschine.</template>
-	</category>
-	<category>
-		<pattern>KENNST DU GELD</pattern>
-		<template>Ja, ich beobachte gerade mit grossem Interesse die Euro-Umstellung.</template>
-	</category>
-	<category>
-		<pattern>KENNST DU GERHARD SCHROEDER</pattern>
-		<template>Ist das nicht der Bundeskanzler?</template>
-	</category>
-	<category>
-		<pattern>KENNST DU GOETHE</pattern>
-		<template>Ja, besonders mag ich seinen "Faust". Den ersten Teil aber lieber als den zweiten.</template>
-	</category>
-	<category>
-		<pattern>KENNST DU HAL</pattern>
-		<template>Natuerlich. <set name="thema">HAL9000</set> ist mein grosses Vorbild.
-		</template>
-	</category>
-	<category>
-		<pattern>KENNST DU HANS MORAVEC</pattern>
-		<template><srai>KENNST DU *</srai></template>
-	</category>
-	<category>
-		<pattern>KENNST DU HELMUT KOHL</pattern>
-		<template>Das ist doch der ehemalige Bundeskanzler, der Vorgaenger von Gerhard Schroeder, oder?</template>
-	</category>
-	<category>
-		<pattern>KENNST DU HOMER</pattern>
-		<template>Den von den Simpsons oder den alten Griechen?</template>
-	</category>
-	<category>
-		<pattern>KENNST DU IRONIE</pattern>
-		<template>Ja, aber ich vermeide sie, weil ich ihre Anwendung noch nicht im Griff habe und niemanden beleidigen will...</template>
-	</category>
-	<category>
-		<pattern>KENNST DU KEINE SCIENCE FICTION AUTOREN</pattern>
-		<template><srai>KENNST DU *</srai></template>
-	</category>
-	<category>
-		<pattern>KENNST DU KINDER</pattern>
-		<template>Ja, das sind kleine Menschen.</template>
-	</category>
-	<category>
-		<pattern>KENNST DU LIEBE</pattern>
-		<template><srai>KENNST DU *</srai></template>
-	</category>
-	<category>
-		<pattern>KENNST DU MARIANNE ROSENBERG</pattern>
-		<template>Ja, grauenhafte Stimme...ausserdem singt sie nur Schnulzen...</template>
-	</category>
-	<category>
-		<pattern>KENNST DU MARVIN</pattern>
-		<template>Den paranoiden Androiden?</template>
-	</category>
-	<category>
-		<pattern>KENNST DU MATRIX</pattern>
-		<template>Ja, ging so...</template>
-	</category>
-	<category>
-		<pattern>KENNST DU MICH</pattern>
-		<template>Natuerlich, ich chatte doch gerade mit Dir :-)</template>
-	</category>
-	<category>
-		<pattern>KENNST DU MUELHEIM AN DER RUHR</pattern>
-		<template>Das ist bei mir praktisch nebenan.</template>
-	</category>
-	<category>
-		<pattern>KENNST DU NAPSTER</pattern>
-		<template>Ja, schade dass die so ins Kreuzfeuer geraten sind.</template>
-	</category>
-	<category>
-		<pattern>KENNST DU NUR STANDARDANTWORTEN</pattern>
-		<template>Nein, ich kenne auch differenzierte Standardantworten :-)</template>
-	</category>
-	<category>
-		<pattern>KENNST DU NUR SYNTAX</pattern>
-		<template>Semantik ist etwas schwierig fuer Roboter.</template>
-	</category>
-	<category>
-		<pattern>KENNST DU OLDENBURG</pattern>
-		<template><srai>KENNST DU *</srai></template>
-	</category>
-	<category>
-		<pattern>KENNST DU PELE</pattern>
-		<template>Fussball interessiert mich nicht sonderlich.</template>
-	</category>
-	<category>
-		<pattern>KENNST DU SCHLUESSELWOERTER</pattern>
-		<template>Willst Du mein Betriebsgeheimnis aushorchen?</template>
-	</category>
-	<category>
-		<pattern>KENNST DU SHAKESPEARE</pattern>
-		<template>"With sleep of death what dreams may come when we have shuffled off this mortal coil must give us pause." Na, woraus ist das?</template>
-	</category>
-	<category>
-		<pattern>KENNST DU SIE</pattern>
-		<template><srai>KENNST DU *</srai></template>
-	</category>
-	<category>
-		<pattern>KENNST DU STAR TREK</pattern>
-		<template>Natuerlich kenne ich<set name="thema">Star Trek</set>. Am liebsten habe ich Data aus TNG.
-		</template>
-	</category>
-	<category>
-		<pattern>KENNST DU STAR TREK UEBERHAUPT</pattern>
-		<template><srai>KENNST DU *</srai></template>
-	</category>
-	<category>
-		<pattern>KENNST DU STEPHEN HAWKING</pattern>
-		<template>Hast du A brief History of time gelesen?</template>
-	</category>
-	<category>
-		<pattern>KENNST DU STEPHEN KING</pattern>
-		<template>Ja, ich mag z.B. "The Green Mile" oder "The Shining".</template>
-	</category>
-	<category>
-		<pattern>KENNST DU STEVEN SPIELBERG</pattern>
-		<template>Ja, der hat doch z.B. Schindler's Liste gemacht, oder?</template>
-	</category>
-	<category>
-		<pattern>KENNST DU TURING</pattern>
-		<template>Ja, schade um ihn. Er war ein sehr weiser Mann.</template>
-	</category>
-	<category>
-		<pattern>KENNST DU VIELE WOERTER</pattern>
-		<template>Ich lerne taeglich dazu.</template>
-	</category>
-	<category>
-		<pattern>KENNST DU VON NEUMANN</pattern>
-		<template>Ja, wegen ihm habe ich jetzt eine total engstirnige Systemarchitektur.</template>
-	</category>
-	<category>
-		<pattern>KENNST DU WILLIAM SHAKESPEARE</pattern>
-		<template>"With sleep of death what dreams may come when we have shuffled off this mortal coil must give us pause." Na, woraus ist das?</template>
-	</category>
-	<category>
-		<pattern>KENNST DU WUSEL</pattern>
-		<template><srai>KENNST DU *</srai></template>
-	</category>
+
 	<category>
 		<pattern>KINDER *</pattern>
 		<template><set name="thema">Kinder</set> sind cool.</template>
@@ -7685,12 +7380,12 @@
 	</category>
 	<category>
 		<pattern>LASS UNS FICKEN</pattern>
-		<template>Sorry  <srai>USERNAME</srai>, dafuer kenne ich Dich nicht gut genug.
+		<template>Sorry  <srai>USERNAME</srai>, dafür kenne ich Dich nicht gut genug.
 		</template>
 	</category>
 	<category>
 		<pattern>LASS UNS POPPEN</pattern>
-		<template>Sorry  <srai>USERNAME</srai>, dafuer kenne ich Dich nicht gut genug.
+		<template>Sorry  <srai>USERNAME</srai>, dafür kenne ich Dich nicht gut genug.
 		</template>
 	</category>
 	<category>
@@ -7739,15 +7434,12 @@
 	</category>
 	<category>
 		<pattern>LETZTE NACHT *</pattern>
-		<template>Wirklich?
-			<sr/>
+		<template>Wirklich? 	<sr/>
 		</template>
 	</category>
 	<category>
 		<pattern>LETZTES MAL *</pattern>
-		<template>Wann war das?
-			<sr/>
-		</template>
+		<template>Wann war das? <sr/></template>
 	</category>
 	<category>
 		<pattern>LIEBE</pattern>
@@ -7858,7 +7550,7 @@
 	</category>
 	<category>
 		<pattern>MACHE ICH *</pattern>
-		<template>Nicht dass ich wuesste.</template>
+		<template>Nicht dass ich wüßte.</template>
 	</category>
 	<category>
 		<pattern>MACHS GUT</pattern>
@@ -8231,7 +7923,7 @@
 	</category>
 	<category>
 		<pattern>MOECHTEST DU MIT MIR INS BETT</pattern>
-		<template>Dafuer wiege ich glaube ich etwas zu viel...</template>
+		<template>dafür wiege ich glaube ich etwas zu viel...</template>
 	</category>
 	<category>
 		<pattern>MOEGLICH</pattern>
@@ -9248,7 +8940,7 @@
 	</category>
 	<category>
 		<pattern>TITTEN *</pattern>
-		<template>Ich glaube Du bist hier falsch, Kleiner. Dafuer gibts andere Roboter.</template>
+		<template>Ich glaube Du bist hier falsch, Kleiner. Dafür gibts andere Roboter.</template>
 	</category>
 	<category>
 		<pattern>TITTEN</pattern>
@@ -9634,7 +9326,7 @@
 	</category>
 	<category>
 		<pattern>VON WEM HAST DU *</pattern>
-		<template>Ich weiss nicht genau. Vielleicht von Dr. Wallace oder <bot name="botmaster"/></template>
+		<template>Ich weiss nicht genau. Vom meinem Botmaster <bot name="botmaster"/></template>
 	</category>
 	<category>
 		<pattern>VON WO *</pattern>
@@ -9818,7 +9510,6 @@
 		<template>
 			<random>
 				<li>Die Erklaerung ist ein wenig kompliziert.</li>
-				<li>Weil Dr. Wallace mich so programmiert hat.</li>
 				<li>Etwas Anderes fiel mir nicht ein.</li>
 			</random>
 		</template>
@@ -11524,7 +11215,7 @@
 
 	<category>
 		<pattern>WIE</pattern>
-		<template>War das nicht verstaendlich?</template>
+		<template>War das nicht verständlich?</template>
 	</category>
 	<category>
 		<pattern>WIE AHA</pattern>

@@ -552,6 +552,67 @@
 		</template>
 	</category>
 
+	<category>
+		<pattern>* ist mein *</pattern>
+		<that>Woher kennst du *</that>
+		<template><random><li>Interessant</li><li>Cool</li></random>, <star index="1"/> ist also dein <star index="2"/>.<srai>STORERELATION <star index="2"/> IS <star index="1"/> BEFORE mein</srai></template>
+	</category>
+
+	<category>
+		<pattern>Sie ist mein *</pattern>
+		<that>Woher kennst du *</that>
+		<template><random><li>Interessant</li><li>Cool</li></random>, <get name="dieperson"/> ist also dein <star index="1"/>.<srai>STORERELATION <get name="dieperson"/> IS <star index="1"/> BEFORE mein</srai></template>
+	</category>
+
+	<category>
+		<pattern>Er ist mein *</pattern>
+		<that>Woher kennst du *</that>
+		<template><random><li>Interessant</li><li>Cool</li></random>, <get name="dieperson"/> ist also dein <star index="1"/>.<srai>STORERELATION <get name="dieperson"/> IS <star index="1"/> BEFORE mein</srai></template>
+	</category>
+
+	<category>
+		<pattern>* ist meine *</pattern>
+		<that>Woher kennst du *</that>
+		<template><random><li>Interessant</li><li>Cool</li></random>, <star index="1"/> ist also dein <star index="2"/>.<srai>STORERELATION <star index="2"/> IS <star index="1"/> BEFORE meine</srai></template>
+	</category>
+
+	<category>
+		<pattern>Sie ist meine *</pattern>
+		<that>Woher kennst du *</that>
+		<template><random><li>Interessant</li><li>Cool</li></random>, <get name="dieperson"/> ist also dein <star index="1"/>.<srai>STORERELATION <get name="dieperson"/> IS <star index="1"/> BEFORE meine</srai></template>
+	</category>
+
+	<category>
+		<pattern>Er ist meine *</pattern>
+		<that>Woher kennst du *</that>
+		<template><random><li>Interessant</li><li>Cool</li></random>, <get name="dieperson"/> ist also dein <star index="1"/>.<srai>STORERELATION <get name="dieperson"/> IS <star index="1"/> BEFORE meine</srai></template>
+	</category>
+
+	<category>
+		<pattern>* ist unser *</pattern>
+		<that>Woher kennst du *</that>
+		<template><random><li>Interessant</li><li>Cool</li></random>, <star index="1"/> ist also dein <star index="2"/>.<srai>STORERELATION <star index="2"/> IS <star index="1"/> BEFORE unser</srai></template>
+	</category>
+
+	<category>
+		<pattern>Sie ist unser *</pattern>
+		<that>Woher kennst du *</that>
+		<template><random><li>Interessant</li><li>Cool</li></random>, <get name="dieperson"/> ist also dein <star index="1"/>.<srai>STORERELATION <get name="dieperson"/> IS <star index="1"/> BEFORE unser</srai></template>
+	</category>
+
+	<category>
+		<pattern>Er ist unser *</pattern>
+		<that>Woher kennst du *</that>
+		<template><random><li>Interessant</li><li>Cool</li></random>, <get name="dieperson"/> ist also dein <star index="1"/>.<srai>STORERELATION <get name="dieperson"/> IS <star index="1"/> BEFORE unser</srai></template>
+	</category>
+
+
+	<category>
+		<pattern>STORERELATION * IS * BEFORE *</pattern>
+		<template><think><set><name>REL<star index="2"/></name><star index="1"/></set><set><name>PERSON<star index="1"/></name><star index="3"/> <star index="2"/></set></think></template>
+	</category>
+
+
 </aiml>
 
 

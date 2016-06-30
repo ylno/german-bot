@@ -176,7 +176,7 @@
 	<category>
 		<pattern>_</pattern>
 		<that>Was sind Deine Ziele im Leben</that>
-		<template><set name="ziel"><person><star/></person></set>. Das klingt vernünftig</template>
+		<template><set name="ziel"><person><star/></person></set>. Das klingt vernünftig.</template>
 	</category>
 
 	<category>

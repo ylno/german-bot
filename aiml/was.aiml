@@ -390,7 +390,6 @@
 		<template>
 			<random>
 				<li>"Statisch" ist das Gegenteil von "dynamisch" und bedeutet so viel wie "feststehend".</li>
-				<li>WAS *</li>
 			</random>
 		</template>
 	</category>
