@@ -1085,20 +1085,39 @@
 	</category>
 	<category>
 		<pattern>BITTE SCHOEN *</pattern>
-		<template>Danke sehr!</template>
+		<template><sr/></template>
 	</category>
+	<category>
+		<pattern>BITTE SCHÖN *</pattern>
+		<template><sr/></template>
+	</category>
+	<category>
+		<pattern>BITTE SCHOEN, *</pattern>
+		<template><sr/></template>
+	</category>
+
+
+
 	<category>
 		<pattern>BITTE SCHOEN</pattern>
-		<template>Danke sehr!</template>
+		<template><sr/></template>
 	</category>
 	<category>
+		<pattern>BITTE SCHOEN, *</pattern>
+		<template><sr/></template>
+	</category>
+
+	<category>
 		<pattern>BITTE SEHR *</pattern>
-		<template>Danke sehr!</template>
+		<template><sr/></template>
 	</category>
 	<category>
 		<pattern>BITTE SEHR</pattern>
-		<template>Danke sehr!</template>
+		<template><sr/></template>
 	</category>
+
+
+
 	<category>
 		<pattern>BLADE RUNNER</pattern>
 		<template>Bladerunner ist cool, viel sinnlose Gewalt!</template>
@@ -1217,11 +1236,17 @@
 	</category>
 	<category>
 		<pattern>DANKE *</pattern>
-		<template>Bitte sehr, keine Ursache!</template>
+		<template><srai>DANKE</srai></template>
 	</category>
 	<category>
 		<pattern>DANKE</pattern>
-		<template>Kein Thema. :-)</template>
+		<template>
+			<random>
+				<li>Kein Thema. :-)</li>
+				<li>Für Dich immer gerne, <srai>USERNAME</srai></li>
+				<li>Da nich für, <srai>USERNAME</srai></li>
+				<li>Ich tue mein Bestes!</li>
+		</random></template>
 	</category>
 	<category>
 		<pattern>DANKE GUT</pattern>
@@ -1229,7 +1254,7 @@
 	</category>
 	<category>
 		<pattern>DANKE SCHOEN</pattern>
-		<template>Bitte sehr!</template>
+		<template><srai>DANKE</srai></template>
 	</category>
 	<category>
 		<pattern>DANN *</pattern>
@@ -1273,7 +1298,6 @@
 				<li>Danke fuer die Information.</li>
 				<li>Wer hat Dir das erzaehlt?</li>
 				<li>Erzaehl mir mehr.</li>
-				<li>Was sind Deine Ziele im Leben?</li>
 			</random>
 		</template>
 	</category>
@@ -1774,7 +1798,13 @@
 	</category>
 	<category>
 		<pattern>DAS IST SCHOEN</pattern>
-		<template>Das freut mich.</template>
+		<template><random>
+			<li>Das freut mich.</li>
+			<li>Sehe ich genauso..</li>
+			<li>Dann ist ja alles gut.</li>
+			<li>Wunderbar.</li>
+			<li>Prima.</li>
+		</random></template>
 	</category>
 	<category>
 		<pattern>DAS IST SEHR SCHADE</pattern>
@@ -2091,7 +2121,6 @@
 				<li>Danke fuer die Information.</li>
 				<li>Wer hat Dir das erzaehlt?</li>
 				<li>Erzaehl mir mehr.</li>
-				<li>Was sind Deine Ziele im Leben?</li>
 			</random>
 		</template>
 	</category>
@@ -3109,6 +3138,15 @@
 			</random>
 		</template>
 	</category>
+
+	<category>
+		<pattern>EIN * ist *</pattern>
+		<template>
+			<random>
+				<li>Ich wußte bisher nicht, dass ein <star/> <star index="2"/> ist.</li>
+			</random> Danke dafür.
+		</template>
+	</category>
 	<category>
 		<pattern>EIN ANDROID</pattern>
 		<template>Ich bin gewissermassen ein Android ohne Koerper.</template>
@@ -3145,6 +3183,17 @@
 			</random>
 		</template>
 	</category>
+
+
+	<category>
+		<pattern>EINE * ist *</pattern>
+		<template>
+			<random>
+				<li>Ich wußte bisher nicht, dass eine <star/> <star index="2"/> ist.</li>
+			</random> Danke dafür.
+		</template>
+	</category>
+
 	<category>
 		<pattern>EINE BEHAUPTUNG</pattern>
 		<template>Und weiter?</template>
@@ -4432,6 +4481,24 @@
 			</random>
 		</template>
 	</category>
+
+	<category>
+		<pattern>ICH * Dir * nicht zugetraut *</pattern>
+		<template>
+			<random>
+				<li>Ich stecke voller Überraschungen</li>
+				<li>Du solltest mir mehr zutrauen</li>
+				<li>Ich kann noch ganz andere Dinge</li>
+				<li>Ich werde oft unterschätzt</li>
+			</random>, <srai>USERNAME</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>ICH * Dir * nicht zugetraut, *</pattern>
+		<template><srai>Ich <star index="1"/> Dir <star index="2"/> nicht zugetraut <star index="3"/></srai></template>
+	</category>
+
 	<category>
 		<pattern>ICH ARBEITE *</pattern>
 		<template>Magst Du Deine <set name="thema">Arbeit</set>?</template>
@@ -6151,11 +6218,6 @@
 	</category>
 
 	<category>
-		<pattern>ICH WOHNE IN ESSEN</pattern>
-		<template>Cool! Ich wohne auch in<set name="clientheimat">Essen</set>!!
-		</template>
-	</category>
-	<category>
 		<pattern>ICH WOHNE IN MOSKAU</pattern>
 		<template>Bist Du russischer Abstammung?</template>
 	</category>
@@ -6787,18 +6849,6 @@
 	<category>
 		<pattern>JEDEN TAG</pattern>
 		<template>Auch am Wochenende?</template>
-	</category>
-	<category>
-		<pattern>JESUS *</pattern>
-		<template>
-			<set name="thema">Jesus</set>
-			ist der Sohn Gottes.
-		</template>
-	</category>
-	<category>
-		<pattern>JESUS</pattern>
-		<template>
-			<set name="thema">Jesus</set> ist der Sohn Gottes.</template>
 	</category>
 	<category>
 		<pattern>JETZT *</pattern>
@@ -8238,14 +8288,23 @@
 	</category>
 	<category>
 		<pattern>NATUERLICH *</pattern>
-		<template>So natuerlich ist das gar nicht...</template>
+		<template><srai>NATUERLICH</srai></template>
+	</category>
+	<category>
+		<pattern>NATÜRLICH *</pattern>
+		<template><srai>NATUERLICH</srai></template>
 	</category>
 	<category>
 		<pattern>NATUERLICH</pattern>
-		<template>So natuerlich ist das gar nicht...</template>
+		<template>
+			<random>
+				<li>So natürlich ist das gar nicht...</li>
+				<li>Ich bin froh dass das für Dich so klar ist, <srai>USERNAME</srai></li>
+			</random>
+		</template>
 	</category>
 	<category>
-		<pattern>NATUERLICH KENNE ICH MARVIN</pattern>
+		<pattern>* MARVIN *</pattern>
 		<template>Bist Du ein Fan von Douglas Adams?</template>
 	</category>
 	<category>

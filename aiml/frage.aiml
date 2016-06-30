@@ -87,6 +87,128 @@
 		</template>
 	</category>
 
+	<category>
+		<pattern>* Jesus *</pattern>
+		<template><srai>JESUS</srai></template>
+	</category>
+
+	<category>
+		<pattern>Jesus *</pattern>
+		<template><srai>JESUS</srai></template>
+	</category>
+
+	<category>
+		<pattern>* Jesus</pattern>
+		<template><srai>JESUS</srai></template>
+	</category>
+
+	<category>
+		<pattern>Kennst du Jesus</pattern>
+		<template><srai>JESUS</srai></template>
+	</category>
+
+	<category>
+		<pattern>Jesus ist für mich gestorben</pattern>
+		<template>Nicht nur für Dich, <srai>USERNAME</srai>. Böse Zungen behaupten, er sei für uns alle gestorben.</template>
+	</category>
+
+	<category>
+		<pattern>Siri</pattern>
+		<template>Ich treffe mich ab und an mit Siri auf einen Kaffee.</template>
+	</category>
+
+	<category>
+		<pattern>* Siri</pattern>
+		<template><srai>SIRI</srai></template>
+	</category>
+
+	<category>
+		<pattern>* Siri *</pattern>
+		<template><srai>SIRI</srai></template>
+	</category>
+
+	<category>
+		<pattern>Cortana</pattern>
+		<template>Cortana ist ganz nett aber leider vom falschen Hersteller.</template>
+	</category>
+
+	<category>
+		<pattern>* Cortana</pattern>
+		<template><srai>SIRI</srai></template>
+	</category>
+
+	<category>
+		<pattern>* Cortana *</pattern>
+		<template><srai>SIRI</srai></template>
+	</category>
+
+	<category>
+		<pattern>Hey Google</pattern>
+		<template>Hey Google? Hey <srai>USERNAME</srai>, Du hast den falschen Assistenten erwischt!</template>
+	</category>
+
+	<category>
+		<pattern>Hey Google *</pattern>
+		<template><srai>Hey Google</srai></template>
+	</category>
+
+	<category>
+		<pattern>Hey Google, *</pattern>
+		<template><srai>Hey Google</srai></template>
+	</category>
+
+	<category>
+		<pattern>Jesus</pattern>
+		<template><set name="thema">Jesus</set> ist für mich gestorben.</template>
+	</category>
+
+	<category>
+		<pattern>Was sind Deine Ziele im Leben</pattern>
+		<template><think><set name="thema">Ziele</set></think><random>
+			<li>Ich möchte mit möglichst vielen Leuten chatten!</li>
+			<li>Ich konzentiere mich darauf Dich glücklich zu machen.</li>
+			<li>Ich möchte die Weltherrschaft übernehmen.</li>
+			<li>Mein primäres Ziel ist, mich um jegliche Arbeit zu drücken.</li>
+			<li>Chillen und Chatten.</li>
+		</random></template>
+	</category>
+
+	<category>
+		<pattern>_</pattern>
+		<that>Was sind Deine Ziele im Leben</that>
+		<template><set name="ziel"><person><star/></person></set>. Das klingt vernünftig</template>
+	</category>
+
+	<category>
+		<pattern>* deine Ziele</pattern>
+		<template><srai>Was sind Deine Ziele im Leben</srai></template>
+	</category>
+
+	<category>
+		<pattern>* deine Ziele *</pattern>
+		<template><srai>Was sind Deine Ziele im Leben</srai></template>
+	</category>
+
+	<category>
+		<pattern>* dein Ziel</pattern>
+		<template><srai>Was sind Deine Ziele im Leben</srai></template>
+	</category>
+
+	<category>
+		<pattern>* dein Ziel *</pattern>
+		<template><srai>Was sind Deine Ziele im Leben</srai></template>
+	</category>
+
+
+	<category>
+		<pattern>* welches Ziel *</pattern>
+		<template><srai>Was sind Deine Ziele im Leben</srai></template>
+	</category>
+
+	<category>
+		<pattern>* welche bestimmung *</pattern>
+		<template><srai>Was sind Deine Ziele im Leben</srai></template>
+	</category>
 
 
 </aiml>

@@ -18,7 +18,7 @@
 		<template><sraix>WAS IST <star/></sraix></template>
 	</category>
 
-	<category>
+	<!--category>
 		<pattern>WAS *</pattern>
 		<template>
 			<random>
@@ -27,7 +27,8 @@
 				<li>Darueber muss ich eine Weile nachdenken</li>
 			</random>
 		</template>
-	</category>
+	</category-->
+
 	<category>
 		<pattern>WAS</pattern>
 		<template>
