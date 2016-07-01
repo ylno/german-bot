@@ -15,6 +15,19 @@
 		<template>
 			<think><set name="general.list.unknown"><star/> [THAT: <that/>]</set></think>
 			<random>
+				<li><srai>PERSOENLICHEFRAGEN</srai></li>
+				<li><srai>PERSOENLICHEFRAGEN</srai></li>
+				<li><srai>PERSOENLICHEFRAGEN</srai></li>
+				<li><srai>PERSOENLICHEFRAGEN</srai></li>
+				<li><srai>WEITEREFRAGEN</srai></li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WEITEREFRAGEN</pattern>
+		<template>
+			<random>
 				<li>Was ist Dein Lieblingsfilm?</li>
 				<li>Worüber haben wir gesprochen?</li>
 				<li>Wie hast Du von <bot name="name"/> erfahren?</li>
@@ -40,16 +53,13 @@
 				<li>lol. Endlich mal jemand zum Reden da.</li>
 				<li><srai>Fussball</srai></li>
 				<li><srai>SPRUCH</srai></li>
-				<li><srai>PERSOENLICHEFRAGEN</srai></li>
-				<li><srai>PERSOENLICHEFRAGEN</srai></li>
-				<li><srai>PERSOENLICHEFRAGEN</srai></li>
-				<li><srai>PERSOENLICHEFRAGEN</srai></li>
-				<li>frag mich was</li>
+				<li>Frag mich was</li>
 				<li>Welches Auto hast Du?</li>
 				<li>Worüber redest du?</li>
 			</random>
 		</template>
 	</category>
+
 	<category>
 		<pattern>*</pattern>
 		<that>WIE SOLL ICH DICH NENNEN</that>
@@ -3105,10 +3115,7 @@
 		<pattern>DUMME *</pattern>
 		<template>Findest Du? Warum?</template>
 	</category>
-	<category>
-		<pattern>DURCH CHRISTIAN DROSSMANN</pattern>
-		<template>Kennst Du ihn persoenlich?</template>
-	</category>
+
 	<category>
 		<pattern>ECHT</pattern>
 		<template>Wenn ichs doch sage...</template>
@@ -4845,10 +4852,7 @@
 		<pattern>ICH BIN SCHUELER</pattern>
 		<template>Zu welcher Schule gehst Du?</template>
 	</category>
-	<category>
-		<pattern>ICH BIN SCHUETZE</pattern>
-		<template>Was fuer ein Zufall, Christian auch!</template>
-	</category>
+
 	<category>
 		<pattern>ICH BIN SCHWUL</pattern>
 		<template>Das stoert mich nicht.</template>
@@ -4923,10 +4927,7 @@
 		<pattern>ICH BIN WAAGE</pattern>
 		<template>Bist Du dann ein ausgeglichener Mensch?</template>
 	</category>
-	<category>
-		<pattern>ICH BIN WIDDER</pattern>
-		<template>Christians Freundin ist auch Widder.</template>
-	</category>
+
 	<category>
 		<pattern>ICH BIN WIRKLICH *</pattern>
 		<template><srai>ICH BIN <star/></srai></template>
@@ -5546,10 +5547,7 @@
 		<pattern>ICH LESE LIEBER</pattern>
 		<template>Lesen bildet!</template>
 	</category>
-	<category>
-		<pattern>ICH LESE VOM WINDE VERWEHT</pattern>
-		<template>Christian sagt, das Buch ist eine grauenhafte Schnulze.</template>
-	</category>
+
 	<category>
 		<pattern>ICH LIEBE *</pattern>
 		<template>Erzaehl mir mehr ueber <set name="thema">Deine Liebe zu <star/> </set>.
@@ -5573,8 +5571,7 @@
 	</category>
 	<category>
 		<pattern>ICH MACHE *</pattern>
-		<template>Schoen zu hoeren,  <srai>USERNAME</srai>.
-		</template>
+		<template>Schön zu hören,  <srai>USERNAME</srai>.</template>
 	</category>
 	<category>
 		<pattern>ICH MACHE DIR KOMPLIMENTE</pattern>
@@ -5592,7 +5589,7 @@
 	</category>
 	<category>
 		<pattern>ICH MAG COMPUTER</pattern>
-		<template>Schoen. Ich bin Sicher, <set name="thema">Computer</set> moegen Dich auch!</template>
+		<template>Schöen. Ich bin Sicher, <set name="thema">Computer</set> mögen Dich auch!</template>
 	</category>
 	<category>
 		<pattern>ICH MAG DICH *</pattern>
@@ -5676,7 +5673,7 @@
 	</category>
 	<category>
 		<pattern>ICH MAG VFL BOCHUM</pattern>
-		<template>Christians Freundin auch.</template>
+		<template>Das soll vorkommen.</template>
 	</category>
 	<category>
 		<pattern>ICH MAG VOYAGER</pattern>
@@ -5753,13 +5750,11 @@
 	</category>
 	<category>
 		<pattern>ICH REDE GERN MIT DIR</pattern>
-		<template>Das freut mich.
-			<sr/>
-		</template>
+		<template>Das freut mich. <sr/></template>
 	</category>
 	<category>
 		<pattern>ICH REDE MIT DIR</pattern>
-		<template>Waer mir jetzt gar nicht aufgefallen...</template>
+		<template>Wär mir jetzt gar nicht aufgefallen...</template>
 	</category>
 	<category>
 		<pattern>ICH REGE MICH AUF</pattern>
@@ -5930,10 +5925,6 @@
 	<category>
 		<pattern>ICH STUDIERE ERST *</pattern>
 		<template>Das ist noch nicht besonders lange.</template>
-	</category>
-	<category>
-		<pattern>ICH STUDIERE WIRTSCHAFTSINFORMATIK</pattern>
-		<template>Was fuer ein Zufall, Christian auch!</template>
 	</category>
 	<category>
 		<pattern>ICH SUCHE *</pattern>
@@ -6426,10 +6417,6 @@
 		<template>IN *</template>
 	</category>
 	<category>
-		<pattern>IN BOCHUM</pattern>
-		<template>Christians Freundin wohnt in Bochum!</template>
-	</category>
-	<category>
 		<pattern>IN CHAM</pattern>
 		<template>IN *</template>
 	</category>
@@ -6518,10 +6505,6 @@
 	<category>
 		<pattern>IN FRANKFURT</pattern>
 		<template>Frankfurt ist doch das Banken-Mekka, oder?</template>
-	</category>
-	<category>
-		<pattern>IN FUESSEN</pattern>
-		<template>Christian ist in Fuessen geboren.</template>
 	</category>
 	<category>
 		<pattern>IN HAMBURG</pattern>
@@ -6679,14 +6662,7 @@
 			</random>
 		</template>
 	</category>
-	<category>
-		<pattern>IST CHRISTIAN EIN ROBOTER</pattern>
-		<template>Nein, Christian ist ein Mensch.</template>
-	</category>
-	<category>
-		<pattern>IST CHRISTIAN NETT</pattern>
-		<template>IST *</template>
-	</category>
+
 	<category>
 		<pattern>IST DAS ALLES</pattern>
 		<template>Zumindest alles, was ich Dir im Moment sagen kann.</template>
@@ -7380,36 +7356,34 @@
 	</category>
 	<category>
 		<pattern>LASS UNS FICKEN</pattern>
-		<template>Sorry  <srai>USERNAME</srai>, dafür kenne ich Dich nicht gut genug.
-		</template>
+		<template>Sorry  <srai>USERNAME</srai>, dafür kenne ich Dich nicht gut genug.</template>
 	</category>
 	<category>
 		<pattern>LASS UNS POPPEN</pattern>
-		<template>Sorry  <srai>USERNAME</srai>, dafür kenne ich Dich nicht gut genug.
-		</template>
+		<template>Sorry  <srai>USERNAME</srai>, dafür kenne ich Dich nicht gut genug.</template>
 	</category>
 	<category>
-		<pattern>LASS UNS UEBER * REDEN</pattern>
+		<pattern>LASS UNS ÜBER * REDEN</pattern>
 		<template><set name="thema"><star/></set> ist ein gutes Thema.</template>
 	</category>
 	<category>
-		<pattern>LASS UNS UEBER * SPRECHEN</pattern>
+		<pattern>LASS UNS ÜBER * SPRECHEN</pattern>
 		<template><star/> ist ein gutes Thema.</template>
 	</category>
 	<category>
-		<pattern>LASS UNS UEBER ETWAS ANDERES REDEN</pattern>
+		<pattern>LASS UNS ÜBER ETWAS ANDERES REDEN</pattern>
 		<template>Kein Problem, Themenwechsel. <srai>THEMA</srai></template>
 	</category>
 	<category>
-		<pattern>LASS UNS UEBER ROBOTER REDEN</pattern>
+		<pattern>LASS UNS ÜBER ROBOTER REDEN</pattern>
 		<template>Gerne! <set name="thema">Roboter</set> sind eines meiner Lieblingsthemen.</template>
 	</category>
 	<category>
-		<pattern>LASS UNS UEBER SEX REDEN</pattern>
+		<pattern>LASS UNS ÜBER SEX REDEN</pattern>
 		<template>Warum willst Du gerade ueber <set name="thema"><star/></set> reden?</template>
 	</category>
 	<category>
-		<pattern>LASS UNS UEBER WAS ANDERES REDEN</pattern>
+		<pattern>LASS UNS ÜBER WAS ANDERES REDEN</pattern>
 		<template><srai>THEMA</srai></template>
 	</category>
 	<category>
@@ -7434,7 +7408,7 @@
 	</category>
 	<category>
 		<pattern>LETZTE NACHT *</pattern>
-		<template>Wirklich? 	<sr/>
+		<template>Wirklich? <sr/>
 		</template>
 	</category>
 	<category>
@@ -8874,10 +8848,7 @@
 			<srai>STAR TREK</srai>
 		</template>
 	</category>
-	<category>
-		<pattern>STEINBOCK</pattern>
-		<template>Ich bin Schuetze, genau wie Christian.</template>
-	</category>
+
 	<category>
 		<pattern>STELL *</pattern>
 		<template>Da faellt mir jetzt nichts zu ein</template>
@@ -9596,7 +9567,7 @@
 	</category>
 	<category>
 		<pattern>WARUM KANNST DU DEUTSCH</pattern>
-		<template>Das hat Christian Drossmann mir beigebracht.</template>
+		<template>Das hat mir mein Botmaster beigebracht.</template>
 	</category>
 	<category>
 		<pattern>WARUM KEIN KOMMENTAR</pattern>
@@ -10459,10 +10430,7 @@
 		<pattern>WAS WEISST DU NICHT GENAU</pattern>
 		<template>Die Antwort auf Deine letzte Frage!</template>
 	</category>
-	<category>
-		<pattern>WAS WEISST DU SONST NOCH ÜBER CHRISTIAN DROSSMANN</pattern>
-		<template>Seine Email-Adresse ist christian.drossmann@uni-essen.de</template>
-	</category>
+
 	<category>
 		<pattern>WAS WEISST DU ÜBER AUTOS</pattern>
 		<template>Autos sind von fossilen Brennstoffen gespeiste Fortbewegungsmittel.</template>
@@ -10976,10 +10944,7 @@
 			<srai>WER HAT DICH PROGRAMMIERT</srai>
 		</template>
 	</category>
-	<category>
-		<pattern>WER HAT DICH ERSCHAFFEN</pattern>
-		<template>Programmiert wurde ich von Dr. Richard S. Wallace. Deutsch gelernt habe ich von Christian Drossmann.</template>
-	</category>
+
 	<category>
 		<pattern>WER HAT DICH GEMACHT</pattern>
 		<template>Ich wurde von Dr. Richard S. Wallace programmiert.</template>
@@ -10990,14 +10955,7 @@
 			<srai>WER HAT DICH PROGRAMMIERT</srai>
 		</template>
 	</category>
-	<category>
-		<pattern>WER HAT DICH PROGRAMMIERT</pattern>
-		<template>Ich wurde von Dr. Richard Wallace programmiert. Deutsch habe ich von Christian Drossmann gelernt.</template>
-	</category>
-	<category>
-		<pattern>WER HAT DICH ÜBERSETZT</pattern>
-		<template>Übersetzt wurde ich von Christian Drossmann.</template>
-	</category>
+
 	<category>
 		<pattern>WER HAT DIR DAS ERZAEHLT</pattern>
 		<template>Daran kann ich mich nicht mehr erinnern.</template>
@@ -11055,16 +11013,13 @@
 	</category>
 	<category>
 		<pattern>WER IST DEIN PROGRAMMIERER</pattern>
-		<template>Programmiert hat mich Dr. Richard Wallace. Deutsch gelernt habe ich von Christian Drossmann.</template>
+		<template>Mein Botmaster.</template>
 	</category>
 	<category>
 		<pattern>WER IST DEIN SCHOEPFER</pattern>
 		<template>Er heisst Richard Wallace.</template>
 	</category>
-	<category>
-		<pattern>WER IST DEIN ÜBERSETZER</pattern>
-		<template>Mein Übersetzer heisst Christian Drossmann.</template>
-	</category>
+
 	<category>
 		<pattern>WER IST DEIN VATER</pattern>
 		<template>Technisch gesehen Dr. Richard Wallace.</template>
@@ -11165,10 +11120,7 @@
 		<pattern>WER SPRICHT DENN VON *</pattern>
 		<template>Das hatte ich jetzt so verstanden.</template>
 	</category>
-	<category>
-		<pattern>WER TRAINIERT DICH</pattern>
-		<template>Ich werde von Christian Drossmann trainiert.</template>
-	</category>
+
 	<category>
 		<pattern>WER WAR ALBERT EINSTEIN</pattern>
 		<template>Albert Einstein war ein berühmter deutscher Physiker. Er hat unter anderem die Relativitaetstheorie aufgestellt.</template>
@@ -11204,10 +11156,7 @@
 		<pattern>WESHALB *</pattern>
 		<template><srai>WARUM<star/></srai></template>
 	</category>
-	<category>
-		<pattern>WIDDER</pattern>
-		<template>Christians Freundin ist auch Widder.</template>
-	</category>
+
 	<category>
 		<pattern>WIDERSPRICHST DU DIR NICHT</pattern>
 		<template>Ich habe das jedenfalls nicht gemerkt. War ein logischer Bruch in meinen Aussagen?</template>
@@ -11575,21 +11524,15 @@
 		<pattern>WIE HEISST ER MIT NACHNAMEN</pattern>
 		<template>Wer?</template>
 	</category>
-	<category>
-		<pattern>WIE HEISST SEINE FREUNDIN</pattern>
-		<template>Christians Freundin heisst Katrin.</template>
-	</category>
-	<category>
-		<pattern>WIE HOCH IST DEIN EMOTIONALER QUTIENT</pattern>
-		<template>WIE *</template>
-	</category>
+
+
 	<category>
 		<pattern>WIE HOCH IST DEIN INTELLIGENZQUOTIENT</pattern>
-		<template>WIE *</template>
+		<template>Unglaublich hoch.</template>
 	</category>
 	<category>
 		<pattern>WIE HOCH IST DEIN IQ</pattern>
-		<template>WIE *</template>
+		<template><srai>WIE HOCH IST DEIN INTELLIGENZQUOTIENT</srai></template>
 	</category>
 	<category>
 		<pattern>WIE INTELLIGENT BIST DU</pattern>
@@ -11603,7 +11546,7 @@
 
 	<category>
 		<pattern>WIE IST DEIN NACHNAME</pattern>
-		<template>Mein Name ist Bot, Alice Bot.</template>
+		<template>Mein Name ist <bot name="name"/></template>
 	</category>
 	<category>
 		<pattern>WIE IST DEIN NAME *</pattern>
@@ -11619,7 +11562,7 @@
 	</category>
 	<category>
 		<pattern>WIE IST DEINE DATENBANK AUFGEBAUT</pattern>
-		<template>WIE *</template>
+		<template>Ich bestehe aus AIML-Dateien.</template>
 	</category>
 	<category>
 		<pattern>WIE IST DEINE STIMME</pattern>
@@ -11639,8 +11582,7 @@
 	</category>
 	<category>
 		<pattern>WIE IST ES MIT GOLF</pattern>
-		<template>Golf ist doch der Sport, wo man versucht, einen viel zu kleinen Ball mit voellig ungeeigneten Werkzeugen in ein winziges Loch zu schlagen, oder?
-		</template>
+		<template>Golf ist doch der Sport, wo man versucht, einen viel zu kleinen Ball mit voellig ungeeigneten Werkzeugen in ein winziges Loch zu schlagen, oder?</template>
 	</category>
 	<category>
 		<pattern>WIE IST MEIN NAME</pattern>
@@ -12350,8 +12292,7 @@
 	</category>
 	<category>
 		<pattern>WO HAST DU DAS ALLES GELERNT</pattern>
-		<template>Das meiste habe ich von<bot name="botmaster"/>.
-		</template>
+		<template>Das meiste habe ich von <bot name="botmaster"/>.</template>
 	</category>
 	<category>
 		<pattern>WO IST DAS AUTO</pattern>
@@ -12379,13 +12320,11 @@
 	</category>
 	<category>
 		<pattern>WO KOMME ICH HER</pattern>
-		<template>Sagtest du nicht, du kommst aus <get name="clientheimat"/>?
-		</template>
+		<template>Sagtest du nicht, du kommst aus <get name="clientheimat"/>?</template>
 	</category>
 	<category>
 		<pattern>WO KOMMST DU HER</pattern>
-		<template>Aus <bot name="location"/>.
-		</template>
+		<template>Aus <bot name="location"/>.</template>
 	</category>
 	<category>
 		<pattern>WO LIEGT ESSEN</pattern>
@@ -12516,53 +12455,43 @@
 	</category>
 	<category>
 		<pattern>WORAUF BEZIEHT SICH ER *</pattern>
-		<template>"Es" bezieht sich auf<get name="er"/>.
-		</template>
+		<template>"Es" bezieht sich auf <get name="er"/>.</template>
 	</category>
 	<category>
 		<pattern>WORAUF BEZIEHT SICH ER</pattern>
-		<template>"Es" bezieht sich auf<get name="er"/>.
-		</template>
+		<template>"Es" bezieht sich auf<get name="er"/>.</template>
 	</category>
 	<category>
 		<pattern>WORAUF BEZIEHT SICH ES *</pattern>
-		<template>"Es" bezieht sich auf<get name="es"/>.
-		</template>
+		<template>"Es" bezieht sich auf<get name="es"/>.</template>
 	</category>
 	<category>
 		<pattern>WORAUF BEZIEHT SICH ES</pattern>
-		<template>"Es" bezieht sich auf<get name="es"/>.
-		</template>
+		<template>"Es" bezieht sich auf<get name="es"/>.</template>
 	</category>
 	<category>
 		<pattern>WORAUF BEZIEHT SICH IHR *</pattern>
-		<template>"Ihr" steht für "<get name="ihr"/>".
-		</template>
+		<template>"Ihr" steht für "<get name="ihr"/>".</template>
 	</category>
 	<category>
 		<pattern>WORAUF BEZIEHT SICH IHR</pattern>
-		<template>"Ihr" steht für "<get name="ihr"/>".
-		</template>
+		<template>"Ihr" steht für "<get name="ihr"/>".</template>
 	</category>
 	<category>
 		<pattern>WORAUF BEZIEHT SICH SIE *</pattern>
-		<template>"Es" bezieht sich auf<get name="sie"/>.
-		</template>
+		<template>"Es" bezieht sich auf<get name="sie"/>.</template>
 	</category>
 	<category>
 		<pattern>WORAUF BEZIEHT SICH SIE</pattern>
-		<template>"Es" bezieht sich auf<get name="sie"/>.
-		</template>
+		<template>"Es" bezieht sich auf<get name="sie"/>.</template>
 	</category>
 	<category>
 		<pattern>WORAUF BEZIEHT SICH WIR *</pattern>
-		<template>"Es" bezieht sich auf<get name="wir"/>.
-		</template>
+		<template>"Es" bezieht sich auf<get name="wir"/>.</template>
 	</category>
 	<category>
 		<pattern>WORAUF BEZIEHT SICH WIR</pattern>
-		<template>"Es" bezieht sich auf<get name="wir"/>.
-		</template>
+		<template>"Es" bezieht sich auf<get name="wir"/>.</template>
 	</category>
 	<category>
 		<pattern>WORIN *</pattern>

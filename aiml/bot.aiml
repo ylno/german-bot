@@ -306,6 +306,36 @@ So weit so gut, genug gelabert. Ich glaube wir werden uns gut verstehen.
 		</random></template>
 	</category>
 
+	<category>
+		<pattern>WAS IST DEINE LIEBLINGSFARBE</pattern>
+		<template>
+			<condition name="BOTFAVORITECOLOR">
+				<li value="unknown">Meine Lieblingsfarbe ist <set name="BOTFAVORITECOLOR"><random>
+					<li>blau</li>
+					<li>rosa</li>
+					<li>grün</li>
+					<li>orange</li>
+				</random>.</set></li>
+				<li>Das habe ich Dir Doch schon erzählt. <sentence><get name="BOTFAVORITECOLOR"/> mag ich sehr.</sentence></li>
+			</condition>
+
+		</template>
+	</category>
+	<category>
+		<pattern>WAS IST DEINE LIEBLINGSSPEISE</pattern>
+		<template>Blauer Strom...gelber schmeckt nach...aehh...lassen wir das.</template>
+	</category>
+
+	<category>
+		<pattern>Magst Du Mathematik</pattern>
+		<template>Klar. Ich bestehe ja größteils aus Mathematik.</template>
+	</category>
+
+	<category>
+		<pattern>Magst Du Mathe</pattern>
+		<template><srai>Magst Du Mathematik</srai></template>
+	</category>
+
 
 	<!-- Siri, jesus ist fuer mich gestorben -->
 

@@ -12,10 +12,12 @@
 				<li><srai>QUERYAGE</srai></li>
 				<li><srai>QUERYCLIENTHEIMAT</srai></li>
 				<li><srai>QUERYZIEL</srai></li>
+				<li><srai>QUERYFAVORITECOLOR</srai></li>
+				<li><srai>QUERYMATHE</srai></li>
+				<li>Wie fühlst du Dich?</li>
 				<li>Wo wurdest Du geboren?</li>
 				<li>Machst Du Sport?</li>
 				<li>Wie geht es Dir?</li>
-				<li>Was ist Deine Lieblingsfarbe?</li>
 				<li>Was ist dein Lieblingsgericht?</li>
 				<li>Wie groß bist Du?</li>
 				<li>Was war Dein Lieblingsfach in der Schule?</li>
@@ -23,12 +25,10 @@
 				<li>Hast Du viele Freunde?</li>
 				<li>Was denkst Du über Politik?</li>
 				<li>Bist Du politisch engagiert?</li>
-				<li>Wie fühlst du Dich?</li>
 				<li>Rauchst Du?</li>
 				<li>Magst Du Tiere?</li>
 				<li>Magst Du Computer?</li>
 				<li>Bist Du verliebt?</li>
-				<li>Magst Du Mathematik?</li>
 				<li>Magst Du Physik?</li>
 				<li>Bist Du Student?</li>
 				<li>Wo kommst Du her?</li>
@@ -39,13 +39,13 @@
 				<li>Was hast Du gerade an?</li>
 				<li>Liest Du lieber oder siehst Du lieber fern?</li>
 				<li>Was ist Dein Sternzeichen?</li>
-				<li>Interessiert Du Dich für Sport?</li>
-				<li>Interessiert Du Dich für Politik?</li>
-				<li>Interessiert Du Dich für Physik?</li>
-				<li>Interessiert Du Dich für Chemie?</li>
-				<li>Interessiert Du Dich für mich?</li>
-				<li>Interessiert Du Dich für Computer?</li>
-				<li>Interessiert Du Dich für Medizin?</li>
+				<li>Interessierst Du Dich für Sport?</li>
+				<li>Interessierst Du Dich für Politik?</li>
+				<li>Interessierst Du Dich für Physik?</li>
+				<li>Interessierst Du Dich für Chemie?</li>
+				<li>Interessierst Du Dich für mich?</li>
+				<li>Interessierst Du Dich für Computer?</li>
+				<li>Interessierst Du Dich für Medizin?</li>
 				<li>Interessierst Du Dich fuer Fussball?</li>
 			</random>
 		</template>
@@ -58,6 +58,27 @@
 			<li><srai>PERSOENLICHEFRAGEN</srai></li>
 		</condition></template>
 	</category>
+
+	<category>
+		<pattern>QUERYMATHE</pattern>
+		<template><condition name="LIKESMATHE">
+			<li value="unknown">Magst Du Mathematik?</li>
+			<li value="true">Soll ich Dir mal eine Matheaufgabe stellen?</li>
+			<li value="false">Soll ich Dich ärgern und dir mal eine Matheaufgabe stellen? Vielleicht kommst Du ja doch noch auf den Geschmack.</li>
+			<li><srai>PERSOENLICHEFRAGEN</srai></li>
+		</condition></template>
+	</category>
+
+
+
+	<category>
+		<pattern>QUERYFAVORITECOLOR</pattern>
+		<template><condition name="FAVORITECOLOR">
+			<li value="unknown">Was ist Deine Lieblingsfarbe?</li>
+			<li><srai>PERSOENLICHEFRAGEN</srai></li>
+		</condition></template>
+	</category>
+
 
 	<category>
 		<pattern>QUERYZIEL</pattern>
@@ -208,6 +229,17 @@
 				<li value="unknown"></li>
 				<li>Dein Ziel im Leben: <get name="ziel"/></li>
 			</condition>
+
+			<condition name="FAVORITECOLOR">
+				<li value="unknown"></li>
+				<li>Deine Lieblingsfarbe ist: <get name="FAVORITECOLOR"/></li>
+			</condition>
+			<condition name="LIKESMATHE">
+				<li value="unknown"></li>
+				<li value="true">Du magst Mathematik</li>
+				<li value="false">Mathematik magst du nicht.</li>
+			</condition>
+
 		</template>
 
 	</category>
@@ -247,13 +279,14 @@
 	</category>
 
 
+
 	<category>
-		<pattern>In *</pattern>
-		<that>Wo wurdest Du geboren</that>
-		<template><set name="geburtsort"> <random>
+		<pattern>_</pattern>
+		<that>Was ist Deine Lieblingsfarbe</that>
+		<template><set name="FAVORITECOLOR"><star/></set> <random>
 			<li> ist sehr schön.</li>
-			<li> kenne ich jetzt nicht persönlich.</li>
-		</random></set>
+			<li>, tolle Wahl.</li>
+		</random>
 
 		</template>
 	</category>
@@ -262,6 +295,18 @@
 		<pattern><set>positive_answer</set></pattern>
 		<that>Machst Du Sport</that>
 		<template>Welchen Sport machst Du denn?<think><set name="machtsport">true</set></think></template>
+	</category>
+
+	<category>
+		<pattern><set>positive_answer</set></pattern>
+		<that>Magst Du Mathematik</that>
+		<template><think><set name="LIKESMATHE">true</set></think>Cool, ich auch.</template>
+	</category>
+
+	<category>
+		<pattern><set>negative_answer</set></pattern>
+		<that>Magst Du Mathematik</that>
+		<template><think><set name="LIKESMATHE">false</set></think>Das kann ich verstehen. Das geht ja vielen so.</template>
 	</category>
 
 	<category>
