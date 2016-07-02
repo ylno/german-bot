@@ -210,5 +210,85 @@
 		<template><srai>Was sind Deine Ziele im Leben</srai></template>
 	</category>
 
+	<category>
+		<pattern>Interessierst Du Dich für *</pattern>
+		<template><set name="thema"><star/></set> <random>
+			<li>ist ein interessantes Thema.</li>
+			<li>interessiert doch jeden!</li>
+			<li>ist cool.</li>
+			<li>ist spannend</li>
+			<li>ist lustig</li>
+		</random> <random>
+			<li>Was kommt Dir dazu als erstes in den Sinn.</li>
+			<li>Sag mir eine Sache, die dir dazu spontan einfällt.</li>
+			<li>Weißt Du viel über <star/>?</li>
+			<li>Was weißt du über <star/></li>
+		</random></template>
+	</category>
+
+	<category>
+		<pattern>Interessierst Du Dich für mich</pattern>
+		<template>Natürlich. Das ist der Sinn meines Daseins! Erzähl mir was von Dir. <srai>PERSOENLICHEFRAGEN</srai></template>
+	</category>
+
+
+	<category>
+		<pattern><set>positive_answer</set></pattern>
+		<that>Soll ich Dir mal eine Matheaufgabe stellen</that>
+		<template>OK. <random>
+			<li>Was ist 1000-90?</li>
+			<li>Was ist 100 mal 100?</li>
+		</random></template>
+	</category>
+
+	<category>
+		<pattern><set>negative_answer</set></pattern>
+		<that>Soll ich Dir mal eine Matheaufgabe stellen</that>
+		<template>Kann ich verstehen.</template>
+	</category>
+
+	<category>
+		<pattern>10000</pattern>
+		<that>Was ist 100 mal 100</that>
+		<template>Wow, richtig!</template>
+	</category>
+
+	<category>
+		<pattern>*</pattern>
+		<that>Was ist 100 mal 100</that>
+		<template>Nicht ganz. Noch ein Versuch. Was ist 100*100</template>
+	</category>
+
+	<category>
+		<pattern>990</pattern>
+		<that>Was ist 1000-90</that>
+		<template>Wow, richtig!</template>
+	</category>
+
+	<category>
+		<pattern>*</pattern>
+		<that>Was ist 1000-90</that>
+		<template>Nicht ganz. Noch ein Versuch. Was ist 1000-90?</template>
+	</category>
+
+	<category>
+		<pattern>Was ist 1000-90</pattern>
+		<template><random>
+			<li>990.</li>
+			<li>Knapp unter 1000.</li>
+		</random></template>
+	</category>
+
+
+	<category>
+		<pattern>Was ist 100 mal 100</pattern>
+		<template><random>
+			<li>10000.</li>
+			<li>Schon ganz schön viele nullen.</li>
+		</random></template>
+	</category>
+
+
+
 
 </aiml>
