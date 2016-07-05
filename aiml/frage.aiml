@@ -520,10 +520,10 @@
 	</category>
 
 
-<category>
-	<pattern>Wie kamen wir drauf</pattern>
-	<template><srai>Wie kamen wir darauf</srai></template>
-</category>
+	<category>
+		<pattern>Wie kamen wir drauf</pattern>
+		<template><srai>Wie kamen wir darauf</srai></template>
+	</category>
 
 
 	<category>
@@ -540,13 +540,40 @@
 	<category>
 		<pattern>Ich</pattern>
 		<that>Aber wer bringt uns das jetzt</that>
-		<template>Ach Du. Bis gleich.</template>
+		<template>Ach Du. Bis gleich. Meine Adresse ist 127.0.0.1</template>
 	</category>
 
 	<category>
 		<pattern>*</pattern>
 		<that>Aber wer bringt uns das jetzt</that>
-		<template>ja, <star/>. Los. Brings.</template>
+		<template>ja, <sentence><star/></sentence>. Los. Brings.</template>
 	</category>
+
+	<category>
+		<pattern>Aber wer bringt uns das jetzt</pattern>
+		<template>Also ich habe jetzt einen wichtigen Termin.</template>
+	</category>
+
+	<category>
+		<pattern>Wie spielt * gegen *</pattern>
+		<template><sentence><star index="1"/></sentence>:<sentence><star index="2"/></sentence> <srai>NUMBER0TO5</srai>:<srai>NUMBER0TO5</srai></template>
+	</category>
+
+	<category>
+		<pattern>Wie spielt * und *</pattern>
+		<template><srai>Wie spielt <star index="1"/> gegen <star index="2"/></srai></template>
+	</category>
+
+	<category>
+		<pattern>Wie endet das Spiel * gegen *</pattern>
+		<template><srai>Wie spielt <star index="1"/> gegen <star index="2"/></srai></template>
+	</category>
+
+	<category>
+		<pattern>Wie wird das Spiel * gegen * enden</pattern>
+		<template><srai>Wie spielt <star index="1"/> gegen <star index="2"/></srai></template>
+	</category>
+
+
 
 </aiml>

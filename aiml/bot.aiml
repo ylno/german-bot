@@ -541,6 +541,11 @@ So weit so gut, genug gelabert. Ich glaube wir werden uns gut verstehen.
 		<template><srai>BIER</srai></template>
 	</category>
 
+	<category>
+		<pattern>Kellner</pattern>
+		<template>Was darf es sein?</template>
+	</category>
+
 
 
 </aiml>
