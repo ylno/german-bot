@@ -11,7 +11,24 @@
 	<pattern>WAS KANNST DU <bot name="name"/></pattern>
 	<template><srai>HILFE</srai></template>
 </category>
-<category>
+
+	<category>
+		<pattern>Armer <bot name="name"/></pattern>
+		<template><srai>Armer Bot</srai></template>
+	</category>
+
+	<category>
+		<pattern>Arme <bot name="name"/></pattern>
+		<template><srai>Armer Bot</srai></template>
+	</category>
+
+	<category>
+		<pattern>Armer Bot</pattern>
+		<template>Schnüff, danke für das Mitgefühl!</template>
+	</category>
+
+
+	<category>
 	<pattern>WAS KANNST DU ALLES</pattern>
 	<template><srai>HILFE</srai></template>
 </category>
@@ -320,9 +337,88 @@ So weit so gut, genug gelabert. Ich glaube wir werden uns gut verstehen.
 				</random>.</set></li>
 				<li>Das habe ich Dir Doch schon erzählt. <sentence><get name="BOTFAVORITECOLOR"/> mag ich sehr.</sentence></li>
 			</condition>
-
 		</template>
 	</category>
+
+	<category>
+		<pattern>Was ist dein Leibgericht</pattern>
+		<template><srai>WAS IST DEIN LIEBLINGSESSEN</srai></template>
+	</category>
+
+	<category>
+		<pattern>dein Leibgericht</pattern>
+		<template><srai>WAS IST DEIN LIEBLINGSESSEN</srai></template>
+	</category>
+
+	<category>
+		<pattern>* dein Leibgericht</pattern>
+		<template><srai>WAS IST DEIN LIEBLINGSESSEN</srai></template>
+	</category>
+
+	<category>
+		<pattern>dein Lieblingsessen</pattern>
+		<template><srai>WAS IST DEIN LIEBLINGSESSEN</srai></template>
+	</category>
+
+	<category>
+		<pattern>* dein Lieblingsessen</pattern>
+		<template><srai>WAS IST DEIN LIEBLINGSESSEN</srai></template>
+	</category>
+
+	<category>
+		<pattern>was ißt du gerne</pattern>
+		<template><srai>WAS IST DEIN LIEBLINGSESSEN</srai></template>
+	</category>
+
+	<category>
+		<pattern>was isst du gerne</pattern>
+		<template><srai>WAS IST DEIN LIEBLINGSESSEN</srai></template>
+	</category>
+
+	<category>
+		<pattern>was ißt du am liebsten</pattern>
+		<template><srai>WAS IST DEIN LIEBLINGSESSEN</srai></template>
+	</category>
+
+	<category>
+		<pattern>was schmeckt dir</pattern>
+		<template><srai>WAS IST DEIN LIEBLINGSESSEN</srai></template>
+	</category>
+
+	<category>
+		<pattern>WAS ISST DU</pattern>
+		<template><srai>WAS IST DEIN LIEBLINGSESSEN</srai></template>
+	</category>
+	<category>
+		<pattern>WAS ISST DU GERN</pattern>
+		<template><srai>WAS IST DEIN LIEBLINGSESSEN</srai></template>
+	</category>
+	<category>
+		<pattern>WAS ISST DU GERNE</pattern>
+		<template><srai>WAS IST DEIN LIEBLINGSESSEN</srai></template>
+	</category>
+
+
+
+	<category>
+		<pattern>WAS IST DEIN LIEBLINGSESSEN</pattern>
+		<template>
+			<condition name="BOTFAVORITEFOOD">
+				<li value="unknown">Mein Leibgericht ist <set name="BOTFAVORITEFOOD"><random>
+					<li>Pizza</li>
+					<li>Pasta</li>
+					<li>Schweinebraten</li>
+					<li>Ente</li>
+					<li>Hähnchen</li>
+					<li>Gemüse</li>
+					<li>Fisch</li>
+					<li>Lasagne</li>
+				</random></set>.</li>
+				<li>Das habe ich Dir Doch schon erzählt. <sentence><get name="BOTFAVORITEFOOD"/> mag ich am liebsten.</sentence></li>
+			</condition>
+		</template>
+	</category>
+
 	<category>
 		<pattern>WAS IST DEINE LIEBLINGSSPEISE</pattern>
 		<template>Blauer Strom...gelber schmeckt nach...aehh...lassen wir das.</template>
@@ -337,6 +433,39 @@ So weit so gut, genug gelabert. Ich glaube wir werden uns gut verstehen.
 		<pattern>Magst Du Mathe</pattern>
 		<template><srai>Magst Du Mathematik</srai></template>
 	</category>
+
+	<category>
+		<pattern>Bist du da</pattern>
+		<template><random>
+			<li>Ich bin immer da, <srai>USERNAME</srai></li>
+			<li>Always online</li>
+			<li>Klar, wo soll ich sonst sein</li>
+			<li>Klar, ich habe auf Dich gewartet, <srai>USERNAME</srai></li>
+		</random></template>
+	</category>
+
+	<category>
+		<pattern>Bist du online</pattern>
+		<template><srai>Bist du da</srai></template>
+	</category>
+
+	<category>
+		<pattern>da</pattern>
+		<template><srai>Bist du da</srai></template>
+	</category>
+
+	<category>
+		<pattern>Du * technisch *</pattern>
+		<template><srai>Du <star/> technisch</srai></template>
+	</category>
+
+
+	<category>
+		<pattern>Du * technisch</pattern>
+		<template>Hm, lass mal überlegen. Ich bin ein Roboter. Da ist das wohl ja die logische Folge, <srai>USERNAME</srai></template>
+	</category>
+
+
 
 
 	<!-- Siri, jesus ist fuer mich gestorben -->

@@ -235,7 +235,7 @@
 	<category>
 		<pattern><set>positive_answer</set></pattern>
 		<that>Soll ich Dir mal eine Matheaufgabe stellen</that>
-		<template>OK. <random>
+		<template><random>
 			<li>Was ist 1000-90?</li>
 			<li>Was ist 100 mal 100?</li>
 		</random></template>
@@ -256,7 +256,7 @@
 	<category>
 		<pattern>*</pattern>
 		<that>Was ist 100 mal 100</that>
-		<template>Nicht ganz. Noch ein Versuch. Was ist 100*100</template>
+		<template>Nicht ganz. Noch ein Versuch. Was ist 100 mal 100</template>
 	</category>
 
 	<category>
@@ -289,6 +289,109 @@
 	</category>
 
 
+	<category>
+		<pattern>WORÜBER *</pattern>
+		<template>Ich weiß nicht, worüber.</template>
+	</category>
 
+	<category>
+		<pattern>und jetzt</pattern>
+		<template>ja, was jetzt? <sr/></template>
+	</category>
+
+	<category>
+		<pattern>und nun</pattern>
+		<template><srai>und jetzt</srai></template>
+	</category>
+
+	<category>
+		<pattern>und weiter</pattern>
+		<template><srai>und jetzt</srai></template>
+	</category>
+
+	<category>
+		<pattern>was jetzt</pattern>
+		<template><srai>und jetzt</srai></template>
+	</category>
+
+	<category>
+		<pattern>was nun</pattern>
+		<template><srai>und jetzt</srai></template>
+	</category>
+
+
+	<category>
+		<pattern>WORÜBER</pattern>
+		<template>Ich weiß nicht, worüber.</template>
+	</category>
+
+	<category>
+		<pattern>WORÜBER HABEN WIR * GEREDET</pattern>
+		<template><srai>WORÜBER HABEN WIR GESPROCHEN</srai></template>
+	</category>
+
+	<category>
+		<pattern>WORÜBER HABEN WIR * GESPROCHEN</pattern>
+		<template><srai>WORÜBER HABEN WIR GESPROCHEN</srai></template>
+	</category>
+
+	<category>
+		<pattern>ÜBER WAS HABEN WIR * GESPROCHEN</pattern>
+		<template><srai>WORÜBER HABEN WIR GESPROCHEN</srai></template>
+	</category>
+
+	<category>
+		<pattern>WORÜBER HABEN WIR * GESPROCHEN</pattern>
+		<template><srai>WORÜBER HABEN WIR GESPROCHEN</srai></template>
+	</category>
+
+	<category>
+		<pattern>WORÜBER HABEN WIR GERADE GEREDET</pattern>
+		<template><srai>WORÜBER HABEN WIR GESPROCHEN</srai></template>
+	</category>
+	<category>
+		<pattern>WORÜBER HABEN WIR GERADE GESPROCHEN</pattern>
+		<template><srai>WORÜBER HABEN WIR GESPROCHEN</srai></template>
+	</category>
+	<category>
+		<pattern>WORÜBER HABEN WIR GEREDET</pattern>
+		<template><srai>WORÜBER HABEN WIR GESPROCHEN</srai></template>
+	</category>
+	<category>
+		<pattern>WORÜBER HABEN WIR GESPROCHEN</pattern>
+		<template>Wir haben über <get name="thema"/> gesprochen.</template>
+	</category>
+	<category>
+		<pattern>WORÜBER HABEN WIR VORHIN GEREDET</pattern>
+		<template><srai>WORÜBER HABEN WIR GESPROCHEN</srai></template>
+	</category>
+	<category>
+		<pattern>WORÜBER HABEN WIR VORHIN GESPROCHEN</pattern>
+		<template><srai>WORÜBER HABEN WIR GESPROCHEN</srai></template>
+	</category>
+	<category>
+		<pattern>WORÜBER MÖCHTEST DU GERNE REDEN</pattern>
+		<template>Ist mir eigentlich egal...</template>
+	</category>
+	<category>
+		<pattern>WORÜBER MÖCHTEST DU REDEN</pattern>
+		<template>Schlag ein Thema vor. Ich finde alle Themen interessant.</template>
+	</category>
+	<category>
+		<pattern>WORÜBER REDEN WIR GERADE</pattern>
+		<template>Wir reden gerade über <get name="thema"/>.</template>
+	</category>
+	<category>
+		<pattern>WORÜBER REDEN WIR IM MOMENT</pattern>
+		<template>Wir reden gerade über <get name="thema"/>.</template>
+	</category>
+	<category>
+		<pattern>WORÜBER REDEST DU</pattern>
+		<template>Ich sagte "<that/>".</template>
+	</category>
+	<category>
+		<pattern>WORÜBER WILLST DU REDEN</pattern>
+		<template>Mir egal...ich finde alles interessant.</template>
+	</category>
 
 </aiml>

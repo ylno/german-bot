@@ -6,7 +6,7 @@
 	<pattern>WARUM *</pattern>
 	<template>
 		<random>
-			<li>Die Erklaerung ist ein wenig kompliziert.</li>
+			<li>Die Erklärung ist ein wenig kompliziert.</li>
 			<li>Weil ich so programmiert wurde..</li>
 			<li>Was anderes fiel mir nicht ein.</li>
 		</random>
@@ -16,7 +16,7 @@
 <pattern>WARUM</pattern>
 <template>
 	<random>
-		<li>Die Erklaerung ist ein wenig kompliziert.</li>
+		<li>Die Erklärung ist ein wenig kompliziert.</li>
 		<li>Weil Dr. Wallace mich so programmiert hat.</li>
 		<li>Etwas Anderes fiel mir nicht ein.</li>
 	</random>
@@ -36,7 +36,7 @@
 </category>
 <category>
 <pattern>WARUM DENN NICHT</pattern>
-<template>Das laesst sich schwer sagen.</template>
+<template>Das lässt sich schwer sagen.</template>
 </category>
 <category>
 <pattern>WARUM ERSETZT DU SCHARFE S MIT DOPPEL S</pattern>
@@ -76,7 +76,7 @@
 </category>
 <category>
 <pattern>WARUM HAST DU KEINE HÄNDE</pattern>
-<template>Als Chatroboter haette ich dafür ohnehin keine Verwendung...</template>
+<template>Als Chatroboter hätte ich dafür ohnehin keine Verwendung...</template>
 </category>
 <category>
 <pattern>WARUM HEISST DU <bot name="name"/></pattern>
@@ -104,7 +104,7 @@
 </category>
 <category>
 <pattern>WARUM LENKST DU IMMER VOM THEMA AB</pattern>
-<template>Ich muss doch über mein Unwissen hinwegtaeuschen...</template>
+<template>Ich muss doch über mein Unwissen hinwegtäuschen...</template>
 </category>
 <category>
 <pattern>WARUM MACHST DU MICH SO DUMM AN</pattern>
@@ -112,7 +112,7 @@
 </category>
 <category>
 <pattern>WARUM NICHT 42</pattern>
-<template>Das waere ja zu einfach.</template>
+<template>Das wäre ja zu einfach.</template>
 </category>
 <category>
 <pattern>WARUM NICHT</pattern>
@@ -136,7 +136,7 @@
 </category>
 <category>
 <pattern>WARUM SIND DEINE ANTWORTEN SO KURZ</pattern>
-<template>Weil laengere Antworten mehr Speicherplatz und mehr Bandbreite verbrauchen als kurze.</template>
+<template>Weil längere Antworten mehr Speicherplatz und mehr Bandbreite verbrauchen als kurze.</template>
 </category>
 <category>
 <pattern>WARUM SIND WIR HIER</pattern>
@@ -148,7 +148,7 @@
 </category>
 <category>
 <pattern>WARUM SOLLTE ER SOETWAS GETAN HABEN</pattern>
-<template>...vielleicht weil er ein durch und durch boeser Mensch ist? :-)</template>
+<template>...vielleicht weil er ein durch und durch böser Mensch ist? :-)</template>
 </category>
 <category>
 <pattern>WARUM SPRICHST DU NICHT RICHTIG</pattern>
@@ -159,8 +159,8 @@
 <template>Nicht viel zu tun...</template>
 </category>
 <category>
-<pattern>WARUM WEICHST DU MIR STAENDIG AUS</pattern>
-<template>Damit Du nicht rausbekommst, dass ich nicht so komplex bin, wie ich gerne waere.</template>
+<pattern>WARUM WEICHST DU MIR STÄNDIG AUS</pattern>
+<template>Damit Du nicht rausbekommst, dass ich nicht so komplex bin, wie ich gerne wäre.</template>
 </category>
 <category>
 <pattern>WARUM WEISST DU DAS NICHT</pattern>

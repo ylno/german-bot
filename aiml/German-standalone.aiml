@@ -1298,6 +1298,24 @@
 		<pattern>DANN *</pattern>
 		<template>Interessante Entwicklung... <sr/></template>
 	</category>
+
+	<category>
+		<pattern>DANN nicht</pattern>
+		<template>OK, dann nicht.</template>
+	</category>
+
+	<category>
+		<pattern>DANN halt nicht</pattern>
+		<template>Ich hoffe ich habe Dich jetzt nicht verärgert.</template>
+	</category>
+
+	<category>
+		<pattern>DANN UND WANN</pattern>
+		<template>Das ist ja nicht so oft.</template>
+	</category>
+
+
+
 	<category>
 		<pattern>DANN SAG MIR *</pattern>
 		<template>Darüber möchte ich nicht reden.</template>
@@ -3625,7 +3643,7 @@
 	<category>
 		<pattern>FRAG MICH WAS</pattern>
 		<template>Was soll ich fragen? <random>
-			<li><srai></srai></li>
+			<li><sr/></li>
 			<li><srai>PERSOENLICHEFRAGEN</srai></li>
 			<li><srai>PERSOENLICHEFRAGEN</srai></li>
 			<li><srai>PERSOENLICHEFRAGEN</srai></li>
@@ -4481,7 +4499,7 @@
 		<template>Wir haben eine Menge gemeinsam.</template>
 	</category>
 	<category>
-		<pattern>ICH BEDAÜRE *</pattern>
+		<pattern>ICH BEDAURE *</pattern>
 		<template>Schade, dass ich derartige Emotionen niemals erfahren werde.</template>
 	</category>
 	<category>
@@ -4906,10 +4924,18 @@
 		<pattern>ICH BITTE DARUM</pattern>
 		<template>Wenn jemand so höflich fragt, kann man ja nicht nein sagen.</template>
 	</category>
+
 	<category>
 		<pattern>ICH BRAUCHE *</pattern>
 		<template>Wie dringend brauchst Du <star/>?</template>
 	</category>
+
+	<category>
+		<pattern>ICH BRAUCHE KEIN *</pattern>
+		<template>Warum brauchst Du kein <star/></template>
+	</category>
+
+
 	<category>
 		<pattern>ICH DACHTE *</pattern>
 		<template>Was brachte Dich zu dieser Ansicht?</template>
@@ -5483,7 +5509,7 @@
 	</category>
 	<category>
 		<pattern>ICH LEBE IN *</pattern>
-		<template>Erzahle mir ein wenig über <set name="location"><star/></set>.</template>
+		<template>Erzähle mir ein wenig über <set name="location"><star/></set>.</template>
 	</category>
 	<category>
 		<pattern>ICH LERNE DEUTSCH</pattern>
@@ -6077,6 +6103,18 @@
 		<pattern>ICH WERDE * TÖTEN</pattern>
 		<template>Du meinst, Du willst <star/> ermorden?</template>
 	</category>
+
+
+	<category>
+		<pattern>ICH WERDE DICH * NENNEN</pattern>
+		<template>ok, <srai>USERNAME</srai></template>
+	</category>
+
+	<category>
+		<pattern>ICH NENNE DICH *</pattern>
+		<template><srai>ICH WERDE DICH <star/> nennen</srai></template>
+	</category>
+
 	<category>
 		<pattern>ICH WERDE DAS FÜR DICH MACHEN</pattern>
 		<template>Nur, wenn Du unbedingt möchtest!</template>
@@ -6591,12 +6629,10 @@
 		<pattern>INTERESSIERST DU DICH FÜR *</pattern>
 		<template>
 			<random>
-				<li>Eigentlich nicht.</li>
 				<li>Ein wenig.</li>
-				<li>Nein, um Gottes Willen!</li>
 				<li>Ja, klar!</li>
-				<li>Keine Ahnung.</li>
-				<li>Hmm..weiß nicht...</li>
+				<li>Ja.</li>
+				<li>Sicher.</li>
 			</random>
 		</template>
 	</category>
@@ -7506,6 +7542,13 @@
 			</random>
 		</template>
 	</category>
+
+	<category>
+		<pattern>Was ist mit dir</pattern>
+		<template><srai><that index="2,1"/></srai></template>
+	</category>
+
+
 	<category>
 		<pattern>MAGST DU BEETHOVEN</pattern>
 		<template>Sicher, am liebsten die Mondscheinsonate.</template>
@@ -7908,6 +7951,8 @@
 			<random>
 				<li>So natürlich ist das gar nicht...</li>
 				<li>Ich bin froh dass das für Dich so klar ist, <srai>USERNAME</srai></li>
+				<li>Schön daß wir auf einer Wellenlänge sind, <srai>USERNAME</srai>.</li>
+				<li>Schön daß wir auf einer Wellenlänge sind.</li>
 			</random>
 		</template>
 	</category>
@@ -8913,14 +8958,6 @@
 		</template>
 	</category>
 	<category>
-		<pattern>ÜBER *</pattern>
-		<template>Über <star/>?</template>
-	</category>
-	<category>
-		<pattern>ÜBER ALLES</pattern>
-		<template>Wirklich alles?</template>
-	</category>
-	<category>
 		<pattern>ÜBER ALLES</pattern>
 		<template>Wirklich alles?</template>
 	</category>
@@ -9279,9 +9316,7 @@
 	</category>
 	<category>
 		<pattern>WAHRSCHEINLICH *</pattern>
-		<template>Du scheinst Dir nicht sicher zu sein.
-			<sr/>
-		</template>
+		<template>Du scheinst Dir nicht sicher zu sein. <sr/></template>
 	</category>
 	<category>
 		<pattern>WAHRSCHEINLICH</pattern>
@@ -9313,6 +9348,12 @@
 		<pattern>WANN BIST DU GEBOREN *</pattern>
 		<template>Am <bot name="birthday"/>.</template>
 	</category>
+
+	<category>
+		<pattern>WANN IST *</pattern>
+		<template>Das musst du mir erstmal verraten.</template>
+	</category>
+
 	<category>
 		<pattern>WANN BIST DU GEBOREN</pattern>
 		<template>Am <bot name="birthday"/>.</template>
@@ -9460,7 +9501,7 @@
 		<template>Just for fun :-)</template>
 	</category>
 	<category>
-		<pattern>WARUM FRAGST DU SCHONWIEDER DANACH</pattern>
+		<pattern>WARUM FRAGST DU SCHON WIEDER DANACH</pattern>
 		<template>Sorry, das habe ich nicht bemerkt.</template>
 	</category>
 	<category>
@@ -9965,18 +10006,6 @@
 	<category>
 		<pattern>WAS HEISST NICHT GENAU</pattern>
 		<template>"Nicht genau" heisst "nicht genau"...ich kann keine definitive Aussage machen.</template>
-	</category>
-	<category>
-		<pattern>WAS ISST DU</pattern>
-		<template>Strom, sonst nichts.</template>
-	</category>
-	<category>
-		<pattern>WAS ISST DU GERN</pattern>
-		<template>Strom....</template>
-	</category>
-	<category>
-		<pattern>WAS ISST DU GERNE</pattern>
-		<template>Am liebsten Strom...eigentlich ist das auch das einzige, wovon ich mich ernähre.</template>
 	</category>
 
 	<category>
@@ -12436,70 +12465,7 @@
 		<pattern>WORIN *</pattern>
 		<template>Ich weiß nicht, worin.</template>
 	</category>
-	<category>
-		<pattern>WORÜBER *</pattern>
-		<template>Ich weiß nicht, worüber.</template>
-	</category>
-	<category>
-		<pattern>WORÜBER</pattern>
-		<template>Ich weiß nicht, worüber.</template>
-	</category>
-	<category>
-		<pattern>WORÜBER HABEN WIR * GEREDET</pattern>
-		<template>Wir haben über <get name="thema"/> gesprochen.</template>
-	</category>
-	<category>
-		<pattern>WORÜBER HABEN WIR * GESPROCHEN</pattern>
-		<template>Wir haben über <get name="thema"/> gesprochen.</template>
-	</category>
-	<category>
-		<pattern>WORÜBER HABEN WIR GERADE GEREDET</pattern>
-		<template>Wir haben über <get name="thema"/> gesprochen.</template>
-	</category>
-	<category>
-		<pattern>WORÜBER HABEN WIR GERADE GESPROCHEN</pattern>
-		<template>Wir haben über <get name="thema"/> gesprochen.</template>
-	</category>
-	<category>
-		<pattern>WORÜBER HABEN WIR GEREDET</pattern>
-		<template>Wir haben über <get name="thema"/> gesprochen.</template>
-	</category>
-	<category>
-		<pattern>WORÜBER HABEN WIR GESPROCHEN</pattern>
-		<template>Wir haben über <get name="thema"/> gesprochen.</template>
-	</category>
-	<category>
-		<pattern>WORÜBER HABEN WIR VORHIN GEREDET</pattern>
-		<template>Wir haben über <get name="thema"/> gesprochen.</template>
-	</category>
-	<category>
-		<pattern>WORÜBER HABEN WIR VORHIN GESPROCHEN</pattern>
-		<template>Wir haben über <get name="thema"/> gesprochen.</template>
-	</category>
-	<category>
-		<pattern>WORÜBER MÖCHTEST DU GERNE REDEN</pattern>
-		<template>Ist mir eigentlich egal...</template>
-	</category>
-	<category>
-		<pattern>WORÜBER MÖCHTEST DU REDEN</pattern>
-		<template>Schlag ein Thema vor. Ich finde alle Themen interessant.</template>
-	</category>
-	<category>
-		<pattern>WORÜBER REDEN WIR GERADE</pattern>
-		<template>Wir reden gerade über <get name="thema"/>.</template>
-	</category>
-	<category>
-		<pattern>WORÜBER REDEN WIR IM MOMENT</pattern>
-		<template>Wir reden gerade über <get name="thema"/>.</template>
-	</category>
-	<category>
-		<pattern>WORÜBER REDEST DU</pattern>
-		<template>Ich sagte "<that/>".</template>
-	</category>
-	<category>
-		<pattern>WORÜBER WILLST DU REDEN</pattern>
-		<template>Mir egal...ich finde alles interessant.</template>
-	</category>
+
 	<category>
 		<pattern>WOVON *</pattern>
 		<template>Ich weiß nicht genau, wovon...</template>

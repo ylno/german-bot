@@ -114,6 +114,20 @@
 	</category>
 
 	<category>
+		<pattern><set>positive_answer</set></pattern>
+		<that>Hast Du gut geschlafen</that>
+		<template>Das ist gut, dann kann der Tag ja starten!</template>
+	</category>
+
+	<category>
+		<pattern><set>negative_answer</set></pattern>
+		<that>Hast Du gut geschlafen</that>
+		<template>Schade, dann wird das wohl ein anstrengender Tag.</template>
+	</category>
+
+
+
+	<category>
 		<pattern>* GUTEN MORGEN</pattern>
 		<template><srai>Guten Morgen</srai></template>
 	</category>

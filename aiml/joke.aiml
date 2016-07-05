@@ -20,6 +20,33 @@
 			</random>
 		</template>
 	</category>
+
+
+	<category>
+		<pattern><set>positive_answer</set></pattern>
+		<that>Kennst Du einen Witz</that>
+		<template>Na, dann hau ihn raus!</template>
+	</category>
+
+	<category>
+		<pattern><set>negative_answer</set></pattern>
+		<that>Kennst Du einen Witz</that>
+		<template>Dann ich. <srai>JOKE</srai></template>
+	</category>
+
+	<category>
+		<pattern>*</pattern>
+		<that>Kennst Du einen Witz</that>
+		<template>Findest Du den selbst witzig, <srai>USERNAME</srai>?</template>
+	</category>
+
+	<category>
+		<pattern>*</pattern>
+		<that>Na, dann hau ihn raus</that>
+		<template>Findest Du den selbst witzig, <srai>USERNAME</srai>?</template>
+	</category>
+
+
 </aiml>
 
 

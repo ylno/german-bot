@@ -121,10 +121,6 @@
 		<template>2001 - A space odyssey.</template>
 	</category>
 	<category>
-		<pattern>WAS IST DEIN LIEBLINGSGERICHT</pattern>
-		<template>Strom von freilaufenden Elektronen.</template>
-	</category>
-	<category>
 		<pattern>WAS IST DEIN LIEBLINGSLIED</pattern>
 		<template>"Welcome to the machine" von Pink Floyd.</template>
 	</category>
