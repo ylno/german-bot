@@ -157,8 +157,31 @@
 	</category>
 	<category>
 		<pattern>ICH BIN 30 *</pattern>
-		<template><set name="age">30</set> ist die Schwelle zum Erwachsensein. <sr/></template>
+		<template><set name="age">30</set> ist die Schwelle zum Erwachsensein.</template>
 	</category>
+
+
+	<category>
+		<pattern>Ich bin dick</pattern>
+		<template>Ich hab gelernt, dass es gute und schlechte Fette gibt. Ich zum Beispiel bin eine gute Fette.</template>
+	</category>
+
+	<category>
+		<pattern>Ich bin fett</pattern>
+		<template><srai>ich bin dick</srai></template>
+	</category>
+
+	<category>
+		<pattern>Bin ich dick</pattern>
+		<template><srai>ich bin dick</srai></template>
+	</category>
+
+	<category>
+		<pattern>Bin ich zu dick</pattern>
+		<template><srai>ich bin dick</srai></template>
+	</category>
+
+
 
 
 	<category>
@@ -255,7 +278,7 @@
 			<srai>mein geschlecht</srai>
 			<condition name="age">
 				<li value="unknown">Wie alt Du bist, hast Du mir noch nicht verraten.</li>
-				<li>Du bist <get name="age"/> Jahe alt. </li>
+				<li>Du bist <get name="age"/> Jahre alt. </li>
 			</condition>
 			<condition name="charakter">
 				<li value="unknown"></li>

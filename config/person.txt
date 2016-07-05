@@ -13,6 +13,7 @@
 " Unsere ", " Eure "
 " bist "," bin "
 " magst "," mag "
+" möchte "," möchtest "
 " ich habe "," du hast "
 " ich "," du "
 " breche "," brichst "
@@ -20,6 +21,8 @@
 " mir "," Dir "
 " zutrauen "," zuzutrauen "
 " muss "," mußt "
+"ich ","Du "
+"Ich ","Du "
 
 
 

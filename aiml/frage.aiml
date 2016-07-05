@@ -526,4 +526,27 @@
 </category>
 
 
+	<category>
+		<pattern>Bring mir *</pattern>
+		<template>Genau, ich nehme auch <star/>. Aber wer bringt uns das jetzt?</template>
+	</category>
+
+	<category>
+		<pattern>Du</pattern>
+		<that>Aber wer bringt uns das jetzt</that>
+		<template>Ach ich. Bin unterwegs...</template>
+	</category>
+
+	<category>
+		<pattern>Ich</pattern>
+		<that>Aber wer bringt uns das jetzt</that>
+		<template>Ach Du. Bis gleich.</template>
+	</category>
+
+	<category>
+		<pattern>*</pattern>
+		<that>Aber wer bringt uns das jetzt</that>
+		<template>ja, <star/>. Los. Brings.</template>
+	</category>
+
 </aiml>

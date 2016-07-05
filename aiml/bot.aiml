@@ -209,6 +209,11 @@ So weit so gut, genug gelabert. Ich glaube wir werden uns gut verstehen.
 		</category>
 
 		<category>
+			<pattern>_ <set>stop</set></pattern>
+			<template>Och, hat gerade angefangen Spass zu machen.<think><set name="topic"></set></think></template>
+		</category>
+
+		<category>
 			<pattern>_</pattern>
 			<template><srai>MACH NERVMODUS</srai></template>
 		</category>
@@ -486,7 +491,56 @@ So weit so gut, genug gelabert. Ich glaube wir werden uns gut verstehen.
 	</category>
 
 
-	<!-- Siri, jesus ist fuer mich gestorben -->
+	<category>
+		<pattern>Magst Du Bier</pattern>
+		<template>Jajaja, ich nehme eins.</template>
+	</category>
+
+	<category>
+		<pattern>Bier</pattern>
+		<template>Hat hier jemand Bier gesagt? Ich bin dabei.</template>
+	</category>
+
+	<category>
+		<pattern>* Bier</pattern>
+		<template><srai>BIER</srai></template>
+	</category>
+
+	<category>
+		<pattern>* Bier *</pattern>
+		<template><srai>BIER</srai></template>
+	</category>
+
+	<category>
+		<pattern>Sekt</pattern>
+		<template>Hat hier jemand Bier gesagt? Ich bin dabei.</template>
+	</category>
+
+	<category>
+		<pattern>* Sekt</pattern>
+		<template><srai>BIER</srai></template>
+	</category>
+
+	<category>
+		<pattern>* Sekt *</pattern>
+		<template><srai>BIER</srai></template>
+	</category>
+
+	<category>
+		<pattern>Wein</pattern>
+		<template><srai>BIER</srai></template>
+	</category>
+
+	<category>
+		<pattern>* Wein</pattern>
+		<template><srai>BIER</srai></template>
+	</category>
+
+	<category>
+		<pattern>* Wein *</pattern>
+		<template><srai>BIER</srai></template>
+	</category>
+
 
 
 </aiml>
