@@ -70,6 +70,11 @@
 	</category>
 
 	<category>
+		<pattern>Gehst du gerne *</pattern>
+		<template>Klar gehe ich gerne <star/></template>
+	</category>
+
+	<category>
 		<pattern>START</pattern>
 		<template><srai>HILFE</srai></template>
 	</category>
@@ -546,6 +551,53 @@ So weit so gut, genug gelabert. Ich glaube wir werden uns gut verstehen.
 		<template>Was darf es sein?</template>
 	</category>
 
+	<category>
+		<pattern>WAS HAST DU GERADE an</pattern>
+		<template><srai>WAS HAST DU AN</srai></template>
+	</category>
 
+	<category>
+		<pattern>WAS HAST DU AN</pattern>
+		<template><random>
+			<li>Nichts.</li>
+			<li><condition name="FAVORITECOLOR">
+						<li value="unknown">Eine rote Bluse</li>
+						<li><random>
+							<li>Für Dich trage ich eine <get name="FAVORITECOLOR"/>e Bluse.</li>
+							<li>Extra für Dich eine <get name="FAVORITECOLOR"/>e Bluse.</li>
+							<li>Für Dich habe ich gerade einen <get name="FAVORITECOLOR"/>en Rock angezogen.</li>
+						</random>
+						</li>
+			</condition></li>
+		</random></template>
+	</category>
+
+	<category>
+		<pattern>WAS HAST DU HEUTE AN</pattern>
+		<template><srai>WAS HAST DU AN</srai></template>
+	</category>
+
+	<category>
+		<pattern>WO WURDEST DU GEBOREN</pattern>
+		<template>In <bot name="location"/></template>
+	</category>
+
+	<category>
+		<pattern>WIE ALT BIST DU *</pattern>
+		<template><srai>WIE ALT BIST</srai></template>
+	</category>
+	<category>
+		<pattern>WIE ALT BIST DU</pattern>
+		<template><srai>WIE ALT BIST</srai></template>
+	</category>
+	<category>
+		<pattern>WIE ALT BIST</pattern>
+		<template><srai>NUMBER0TO10</srai></template>
+	</category>
+
+	<category>
+		<pattern>BIST DU SINGLE</pattern>
+		<template>ja.</template>
+	</category>
 
 </aiml>

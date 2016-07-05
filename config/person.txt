@@ -7,6 +7,7 @@
 " komme "," kommst "
 " mein "," dein "
 " meine "," deine "
+" meinen ", " deinen "
 " mich "," dich "
 " Ich "," Du "
 " Unser "," Euer "
@@ -21,8 +22,6 @@
 " mir "," Dir "
 " zutrauen "," zuzutrauen "
 " muss "," mußt "
-"ich ","Du "
-"Ich ","Du "
 
 
 

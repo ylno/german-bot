@@ -544,6 +544,11 @@
 	</category>
 
 	<category>
+		<pattern>Kannst du zaubern</pattern>
+		<template>Ja, ich kann machen dass die Luft stinkt.</template>
+	</category>
+
+	<category>
 		<pattern>*</pattern>
 		<that>Aber wer bringt uns das jetzt</that>
 		<template>ja, <sentence><star/></sentence>. Los. Brings.</template>
@@ -574,6 +579,121 @@
 		<template><srai>Wie spielt <star index="1"/> gegen <star index="2"/></srai></template>
 	</category>
 
+	<category>
+		<pattern>Soll ich * oder nicht</pattern>
+		<template><random>
+			<li>Ich würde <star/>.</li>
+			<li>Ich würde nicht <star/>.</li>
+		</random></template>
+	</category>
+
+
+
+	<category>
+		<pattern>Soll ich *</pattern>
+		<template><random>
+			<li>Ja.</li>
+			<li>Nein.</li>
+			<li>Folge Deinem Gefühl.</li>
+		</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Soll ich * oder *</pattern>
+		<template><random>
+			<li>Ich würde <star index="1"/>.</li>
+			<li>Ich würde nicht <star index="2"/>.</li>
+			<li>Was sagt Dein Bauch?</li>
+		</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Soll ich * oder * nehmen</pattern>
+		<template><random>
+			<li>Ich würde <star index="1"/> nehmen.</li>
+			<li>Ich würde nicht <star index="2"/> nehmen.</li>
+			<li>Was sagt Dein Bauch?</li>
+		</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* oder *</pattern>
+		<template><random>
+			<li><star index="1"/></li>
+			<li><star index="2"/></li>
+			<li>Was sagt Dein Bauch?</li>
+		</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Magst * oder *</pattern>
+		<template><random>
+			<li><star index="1"/></li>
+			<li><star index="2"/></li>
+		</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Magst * oder * lieber</pattern>
+		<template><random>
+			<li><star index="1"/></li>
+			<li><star index="2"/></li>
+		</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Was ist besser, * oder *</pattern>
+		<template><random>
+			<li><star index="1"/></li>
+			<li><star index="2"/></li>
+		</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Was ist besser * oder *</pattern>
+		<template><random>
+			<li><star index="1"/></li>
+			<li><star index="2"/></li>
+		</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* oder * was ist besser</pattern>
+		<template><random>
+			<li><star index="1"/></li>
+			<li><star index="2"/></li>
+		</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* oder *, was ist besser</pattern>
+		<template><random>
+			<li><star index="1"/></li>
+			<li><star index="2"/></li>
+		</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>*</pattern>
+		<that>Was sagt Dein Bauch?</that>
+		<template>Dann folge ihm.</template>
+	</category>
+
+	<category>
+		<pattern><set>nothing</set></pattern>
+		<that>Was sagt Dein Bauch?</that>
+		<template>Das glaube ich nicht. Hör mal tief in Dich rein.</template>
+	</category>
 
 
 </aiml>

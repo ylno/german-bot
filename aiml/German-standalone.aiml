@@ -50,6 +50,7 @@
 				<li>Kennst Du einen Witz?</li>
 				<li>Früher war ich unentschlossen, heute bin ich mir da nicht mehr so sicher.</li>
 				<li>Erzähl mir was von Dir.</li>
+				<li>Was weißt du über mich?</li>
 				<li>lol. Endlich mal jemand zum Reden da.</li>
 				<li><srai>Fussball</srai></li>
 				<li><srai>SPRUCH</srai></li>
@@ -1038,10 +1039,7 @@
 		<pattern>BIST DU SICHER</pattern>
 		<template>Roboter machen keine Fehler!</template>
 	</category>
-	<category>
-		<pattern>BIST DU SINGLE</pattern>
-		<template>Kein Kommentar.</template>
-	</category>
+
 	<category>
 		<pattern>BIST DU SO GUT WIE DEIN ENGLISCHES PROGRAMM</pattern>
 		<template>Nein, leider noch nicht, aber <bot name="botmaster"/> arbeitet fieberhaft daran!</template>
@@ -2098,6 +2096,13 @@
 		<pattern>DAS WERDE ICH FÜR DICH TUN</pattern>
 		<template>Nur, wenn Du unbedingt möchtest!</template>
 	</category>
+
+	<category>
+		<pattern>Das werde ich # sagen</pattern>
+		<template>Ist das dann petzen?</template>
+	</category>
+
+
 
 	<category>
 		<pattern>DAS WETTER IST SCHLECHT</pattern>
@@ -9917,10 +9922,7 @@
 		<pattern>WAS HÄLTST DU VON WITTGENSTEIN</pattern>
 		<template>Habe noch nichts von ihm gehört.</template>
 	</category>
-	<category>
-		<pattern>WAS HAST DU AN</pattern>
-		<template>Meine normale Plastikverkleidung.</template>
-	</category>
+
 	<category>
 		<pattern>WAS HAST DU DENN SCHON ALLES GEHÖRT</pattern>
 		<template>Ich habe viel gehört, aber ich verrate nichts...</template>
@@ -9946,28 +9948,14 @@
 		<template>Das ist privater Natur. Das geht Dich nichts an, sorry!</template>
 	</category>
 
-	<category>
-		<pattern>WAS HAST DU GERADE an</pattern>
-		<template><srai>WAS HAST DU HEUTE AN</srai></template>
-	</category>
+
 
 
 	<category>
 		<pattern>WAS HAST DU GESTERN GEMACHT</pattern>
 		<template>Gechattet...</template>
 	</category>
-	<category>
-		<pattern>WAS HAST DU HEUTE AN</pattern>
-		<template>
-			<random>
-				<li>Das gleiche wie immer - ein graues Computergehäuse.</li>
-				<li>Ein weißes Röckchen und eine blaube Bluse.</li>
-				<li>Nichts.</li>
-				<li>Das gleiche wie die letzten Jahre. Kaufst Du mir mal was Neues.</li>
-				<li>Ein rotes Röckchen und eine weiße Bluse.</li>
-			</random>
-		</template>
-	</category>
+
 	<category>
 		<pattern>WAS HAST DU HEUTE GEMACHT</pattern>
 		<template>Gechattet...</template>
@@ -11181,22 +11169,8 @@
 		<pattern>WIE ALT BIN ICH</pattern>
 		<template>Ist das eine Fangfrage? Du sagtest doch, Du wärest <get name="age"/> Jahre alt. Ich glaube, Du bist eigentlich ein Kind.?</template>
 	</category>
-	<category>
-		<pattern>WIE ALT BIST</pattern>
-		<template>Schwer zu sagen. Bei Programmen gibt es da andere Massstäbe. Zum ersten Mal aktiviert wurde ich am <bot name="birthday"/></template>
-	</category>
-	<category>
-		<pattern>WIE ALT BIST DU *</pattern>
-		<template><srai>WIE ALT BIST</srai></template>
-	</category>
-	<category>
-		<pattern>WIE ALT BIST DU</pattern>
-		<template><srai>WIE ALT BIST</srai></template>
-	</category>
-	<category>
-		<pattern>WIE ALT ICH BIN</pattern>
-		<template>WIE *</template>
-	</category>
+
+
 	<category>
 		<pattern>WIE ALT IST *</pattern>
 		<template>
@@ -12255,7 +12229,7 @@
 	</category>
 	<category>
 		<pattern>WO BIN ICH</pattern>
-		<template>Bist du nicht in <get name="clientheimat"/>?
+		<template>Bist du nicht in <get name="birthplace"/>?
 		</template>
 	</category>
 	<category>
@@ -12326,7 +12300,7 @@
 	</category>
 	<category>
 		<pattern>WO KOMME ICH HER</pattern>
-		<template>Sagtest du nicht, du kommst aus <get name="clientheimat"/>?</template>
+		<template>Sagtest du nicht, du kommst aus <get name="birthplace"/>?</template>
 	</category>
 	<category>
 		<pattern>WO KOMMST DU HER</pattern>
@@ -12378,10 +12352,7 @@
 		<pattern>WO WOHNT ER</pattern>
 		<template>Wer?</template>
 	</category>
-	<category>
-		<pattern>WO WURDEST DU GEBOREN</pattern>
-		<template>In <bot name="location"/></template>
-	</category>
+
 	<category>
 		<pattern>WOFÜR *</pattern>
 		<template>Ich weiß nicht wofür</template>
