@@ -1324,6 +1324,12 @@
 		<pattern>DARF ICH *</pattern>
 		<template>Natürlich darfst Du!</template>
 	</category>
+
+	<category>
+		<pattern>DARF ICH DAS WEITERERZÄHLEN</pattern>
+		<template>Wem willst Du das denn erzählen?</template>
+	</category>
+
 	<category>
 		<pattern>DARF ICH</pattern>
 		<template>Natürlich darfst Du!</template>
@@ -6345,6 +6351,19 @@
 	</category>
 
 	<category>
+		<pattern>IN deutschland</pattern>
+		<template>
+			<random>
+				<li>Das ist aber nicht sehr konkret?</li>
+				<li>Geht es auch exakter?</li>
+				<li>Und wo genau in Deutschland?</li>
+			</random>
+		</template>
+	</category>
+
+
+
+	<category>
 		<pattern>IN * JAHR</pattern>
 		<template>Das werden wir wohl noch erleben.</template>
 	</category>
@@ -7945,6 +7964,17 @@
 		<pattern>NATÜRLICH *</pattern>
 		<template><srai>NATÜRLICH</srai></template>
 	</category>
+
+	<category>
+		<pattern>Natürlich darfst Du</pattern>
+		<template><random>
+			<li>Danke <srai>USERNAME</srai></li>
+			<li>OK</li>
+			<li>Das mache ich direkt.</li>
+		</random></template>
+	</category>
+
+
 	<category>
 		<pattern>NATÜRLICH</pattern>
 		<template>
@@ -8573,10 +8603,22 @@
 			<sr/>
 		</template>
 	</category>
+
 	<category>
 		<pattern>SEI *</pattern>
 		<template>OK ich werde versuchen, <star/> zu sein.</template>
 	</category>
+
+	<category>
+		<pattern>Du solltest *</pattern>
+		<template>OK ich werde es versuchen.</template>
+	</category>
+
+	<category>
+		<pattern>Du solltest mir *</pattern>
+		<template>Ich versuche Dir <person><star/></person>.</template>
+	</category>
+
 	<category>
 		<pattern>SEI MEIN GAST</pattern>
 		<template>Danke für die Einladung.</template>
@@ -8613,10 +8655,7 @@
 		<pattern>SEXY *</pattern>
 		<template>Was bezeichnest Du als "sexy"?</template>
 	</category>
-	<category>
-		<pattern>SICHER</pattern>
-		<template>"Sicher" im Sinne von "definitiv"?</template>
-	</category>
+
 	<category>
 		<pattern>SIE *</pattern>
 		<template>

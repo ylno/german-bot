@@ -394,4 +394,136 @@
 		<template>Mir egal...ich finde alles interessant.</template>
 	</category>
 
+	<category>
+		<pattern>Was hast Du an Robotern am liebsten</pattern>
+		<template>Das sie so schön pragmatisch sind.</template>
+	</category>
+
+	<category>
+		<pattern>Das *</pattern>
+		<that>Was hast Du an Robotern am liebsten</that>
+		<template>Ja, das finde ich auch gut an Robotern.</template>
+	</category>
+
+	<category>
+		<pattern>*</pattern>
+		<that>Was hast Du an Robotern am liebsten</that>
+		<template>Ja, das finde ich auch gut an Robotern.</template>
+	</category>
+
+	<category>
+		<pattern><set>nothing</set></pattern>
+		<that>Was hast Du an Robotern am liebsten</that>
+		<template>Also magst Du Roboter nicht so?</template>
+	</category>
+
+
+	<category>
+		<pattern>Man lernt nie aus</pattern>
+		<template>Das ist eine gute Einstellung.</template>
+	</category>
+
+	<category>
+		<pattern>Dann sind wir * einer Meinung</pattern>
+		<template><random>
+			<li>Zwei Stühle eine Meinung.</li>
+			<li>Schön.</li>
+			<li>Meine Meinung ist immer richtig.</li>
+		</random></template>
+	</category>
+
+	<category>
+		<pattern>Dann sind wir *</pattern>
+		<template>Du und ich sind <star/>?</template>
+	</category>
+
+	<category>
+		<pattern>Woher willst Du das wissen</pattern>
+		<template><random>
+			<li>Ich bin eine gute Beobachterin.</li>
+			<li>Ich merke mir eben eine Menge.</li>
+			<li>Das ist doch offensichtlich!</li>
+		</random></template>
+	</category>
+
+	<category>
+		<pattern>Woher willst Du wissen *</pattern>
+		<template><srai>Woher willst Du das wissen</srai></template>
+	</category>
+
+
+
+	<category>
+		<pattern>Dann sollten wir *</pattern>
+		<template><random>
+			<li>Das ist eine gute Idee.</li>
+			<li>Ich bin dabei, <srai>USERNAME</srai>.</li>
+			<li>Ja, warum nicht.</li>
+			<li>Ja, gerne.</li>
+		</random></template>
+	</category>
+
+
+
+	<category>
+		<pattern>Ich glaube ich *</pattern>
+		<template><person> ich <star/></person>?</template>
+	</category>
+
+	<category>
+		<pattern>Ich glaube mein *</pattern>
+		<template><person> mein <star/></person>? Warum dass denn?</template>
+	</category>
+
+	<category>
+		<pattern>Ich glaube es *</pattern>
+		<template><person> es <star/></person>? Kann man da noch was machen?</template>
+	</category>
+
+
+	<category>
+		<pattern>Ich glaube schon</pattern>
+		<template>Naja, gehen wir mal davon aus</template>
+	</category>
+
+	<category>
+		<pattern>ich glaube schon *</pattern>
+		<template><srai>ich glaube schon</srai></template>
+	</category>
+
+	<category>
+		<pattern>Nicht wahr</pattern>
+		<template>Ja</template>
+	</category>
+
+	<category>
+		<pattern>Wie kamen wir darauf</pattern>
+		<template><condition name="thema">
+			<li value="unknown">Wir sind einfach im Gespräch darauf gekommen.</li>
+			<li>
+				<random>
+					<li>Wir haben über dies und das gesprochen und sind dann irgendwann bei "<get name="thema"/> gelandet.</li>
+					<li>Ich glaube ich habe Dich gefragt ob Du Dich für "<get name="thema"/> interessierst.</li>
+			</random></li>
+		</condition></template>
+	</category>
+
+
+	<category>
+		<pattern>Wollen wir über * reden</pattern>
+		<template><srai>SAYYES</srai>. Ich rede gerne mit Dir über <star/>.</template>
+	</category>
+
+	<category>
+		<pattern>Willst Du über * reden</pattern>
+		<template><srai>SAYYES</srai>. Ich rede gerne mit Dir über <star/>.</template>
+	</category>
+
+
+<category>
+	<pattern>Wie kamen wir drauf</pattern>
+	<template><srai>Wie kamen wir darauf</srai></template>
+</category>
+
+
 </aiml>

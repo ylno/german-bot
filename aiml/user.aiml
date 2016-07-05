@@ -54,12 +54,19 @@
 
 	<category>
 		<pattern>QUERYINTEREST *</pattern>
-		<template><condition><name>INTEREST<star/></name>
+		<template><condition><name>ISINTERESTEDIN<sentence><star/></sentence></name>
 			<li value="unknown">Interessierst Du Dich für <star/>?</li>
 			<li value="true">Wollen wir über <star/> reden?</li>
 			<li><srai>PERSOENLICHEFRAGEN</srai></li>
 		</condition></template>
 	</category>
+
+	<category>
+		<pattern><set>positive_answer</set></pattern>
+		<that>Wollen wir über * reden</that>
+		<template>Ok, dann legen wir los. <think><set name="topic"><thatstar/></set></think><srai>FRAGEN</srai></template>
+	</category>
+
 
 
 	<category>
@@ -190,15 +197,15 @@
 	<category>
 		<pattern>QUERYGENDER</pattern>
 		<template><condition name="gender">
-				<li value="unkown">Bist Du maennlich oder weiblich?</li>
+				<li value="unknown">Bist Du männlich oder weiblich?</li>
 				<li value="f"><srai>FRAUENFRAGEN</srai></li>
-				<li value="m"><srai>MAENNERFRAGEN</srai></li>
+				<li value="m"><srai>MÄNNERFRAGEN</srai></li>
 			</condition>
 		</template>
 	</category>
 
 	<category>
-		<pattern>MAENNERFRAGEN</pattern>
+		<pattern>MÄNNERFRAGEN</pattern>
 		<template>
 			<random>
 				<li>So von Frau zu Mann.</li>
@@ -430,81 +437,81 @@
 	</category>
 
 	<category>
-		<pattern>maennlich</pattern>
-		<that>Bist Du maennlich oder weiblich</that>
-		<template><srai>ich bin maennlich</srai></template>
+		<pattern>männlich</pattern>
+		<that>Bist Du männlich oder weiblich</that>
+		<template><srai>ich bin männlich</srai></template>
 	</category>
 
 	<category>
 		<pattern>mann</pattern>
-		<that>Bist Du maennlich oder weiblich</that>
-		<template><srai>ich bin maennlich</srai></template>
+		<that>Bist Du männlich oder weiblich</that>
+		<template><srai>ich bin männlich</srai></template>
 	</category>
 
 	<category>
-		<pattern>* maennlich *</pattern>
-		<that>Bist Du maennlich oder weiblich</that>
-		<template><srai>ich bin maennlich</srai></template>
+		<pattern>* männlich *</pattern>
+		<that>Bist Du männlich oder weiblich</that>
+		<template><srai>ich bin männlich</srai></template>
 	</category>
 
 	<category>
 		<pattern>ein Mann</pattern>
-		<that>Bist Du maennlich oder weiblich</that>
-		<template><srai>ich bin maennlich</srai></template>
+		<that>Bist Du männlich oder weiblich</that>
+		<template><srai>ich bin männlich</srai></template>
 	</category>
 
 	<category>
 		<pattern>ich bin ein Mann</pattern>
-		<template><srai>ich bin maennlich</srai></template>
+		<template><srai>ich bin männlich</srai></template>
 	</category>
 
 	<category>
 		<pattern>ich bin männlich</pattern>
-		<template><srai>ich bin maennlich</srai></template>
+		<template><srai>ich bin männlich</srai></template>
 	</category>
 
 	<category>
 		<pattern>ich bin ein typ</pattern>
-		<template><srai>ich bin maennlich</srai></template>
+		<template><srai>ich bin männlich</srai></template>
 	</category>
 
 	<category>
-		<pattern>ich bin maennlich</pattern>
-		<template>Cool, ich unterhalte mich gerne mit Männern. <think><set name="gender">m</set></think><srai>MAENNERFRAGEN</srai></template>
+		<pattern>ich bin männlich</pattern>
+		<template>Cool, ich unterhalte mich gerne mit Männern. <think><set name="gender">m</set></think><srai>MÄNNERFRAGEN</srai></template>
 	</category>
 
 	<category>
 		<pattern>ICH BIN EIN MANN</pattern>
-		<template>Oho! Siehst Du gut aus? <srai>ich bin maennlich</srai></template>
+		<template>Oho! Siehst Du gut aus? <srai>ich bin männlich</srai></template>
 	</category>
 
 
 
 	<category>
 		<pattern>weiblich</pattern>
-		<that>Bist Du maennlich oder weiblich</that>
+		<that>Bist Du männlich oder weiblich</that>
 		<template><srai>ich bin weiblich</srai></template>
 	</category>
 
 	<category>
 		<pattern>* weiblich</pattern>
-		<that>Bist Du maennlich oder weiblich</that>
+		<that>Bist Du männlich oder weiblich</that>
 		<template><srai>ich bin weiblich</srai></template>
 	</category>
 
 	<category>
 		<pattern>Frau</pattern>
-		<that>Bist Du maennlich oder weiblich</that>
+		<that>Bist Du männlich oder weiblich</that>
 		<template><srai>ich bin weiblich</srai></template>
 	</category>
 	<category>
 		<pattern>* Frau</pattern>
-		<that>Bist Du maennlich oder weiblich</that>
+		<that>Bist Du männlich oder weiblich</that>
 		<template><srai>ich bin weiblich</srai></template>
 	</category>
 	<category>
 		<pattern>eine Frau</pattern>
-		<that>Bist Du maennlich oder weiblich</that>
+		<that>Bist Du männlich oder weiblich</that>
 		<template><srai>ich bin weiblich</srai></template>
 	</category>
 
@@ -667,7 +674,7 @@
 		<pattern>QUERYNAME</pattern>
 		<template>
 			<condition name="name">
-				<li value="unkown">Wie ist Dein Name?</li>
+				<li value="unknown">Wie ist Dein Name?</li>
 				<li><get name="name"/>, gefällt Dir Dein Name?</li>
 				<li><srai>PERSOENLICHEFRAGEN</srai>?</li>
 
@@ -778,10 +785,23 @@
 	</category>
 
 	<category>
+		<pattern>ein *</pattern>
+		<that>Was hast Du gerade an</that>
+		<template><star/>, so genau wollte ich es gar nicht wissen.</template>
+	</category>
+
+	<category>
+		<pattern>eine *</pattern>
+		<that>Was hast Du gerade an</that>
+		<template><star/>, so genau wollte ich es gar nicht wissen.</template>
+	</category>
+
+	<category>
 		<pattern>*</pattern>
 		<that>Was hast Du gerade an</that>
 		<template><star/>, so genau wollte ich es gar nicht wissen.</template>
 	</category>
+
 
 
 

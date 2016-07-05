@@ -6,6 +6,22 @@
 		<pattern>OK, *</pattern>
 		<template><srai><star/></srai></template>
 	</category>
+
+
+	<category>
+		<pattern>Naja, *</pattern>
+		<template><srai><star/></srai></template>
+	</category>
+
+	<category>
+		<pattern>SAYYES</pattern>
+		<template><random>
+			<li>Gerne</li>
+			<li>Klar</li>
+			<li>Sicher</li>
+			<li>Ok</li>
+		</random></template>
+	</category>
 </aiml>
 
 

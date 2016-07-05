@@ -11,7 +11,15 @@
 " Ich "," Du "
 " Unser "," Euer "
 " Unsere ", " Eure "
-" du "," ich "
 " bist "," bin "
 " magst "," mag "
+" ich habe "," du hast "
+" ich "," du "
+" breche "," brichst "
+" werde "," wirst "
+" mir "," Dir "
+" zutrauen "," zuzutrauen "
+" muss "," mußt "
+
+
 

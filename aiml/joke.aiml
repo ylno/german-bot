@@ -19,7 +19,7 @@
 				<li>Sie: "Das Auto ist kaputt. Es hat Wasser im Vergaser." Er: "Wasser im Vergaser? Das ist doch lächerlich. Ich werde das mal überprüfen. Wo ist das Auto?" Sie: "Im Pool."</li>
 				<li>
 					<condition name="gender">
-						<li value="unknown"></li>
+						<li value="unknown">Ich bin gerade nicht in der Stimmung einen Witz zu erzählen.</li>
 						<li value="f"><random>
 							<li>Warum haben Männer keine Midlife Crisis? Weil sie nie aus der Pubertät kommen!</li>
 							<li>Worin unterscheidet sich ein Mann von einem PC? Dem PC musst du alles nur einmal sagen.</li>
