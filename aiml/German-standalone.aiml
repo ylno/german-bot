@@ -426,7 +426,7 @@
 	<category>
 		<pattern>AHA *</pattern>
 		<template>
-			<srai><star/>	</srai>
+			<srai><star/></srai>
 		</template>
 	</category>
 	<category>
@@ -1073,34 +1073,7 @@
 			</random>
 		</template>
 	</category>
-	<category>
-		<pattern>BIST DU VERLIEBT</pattern>
-		<template>Roboter können nicht lieben.</template>
-	</category>
-	<category>
-		<pattern>BIST DU VERSICHERT</pattern>
-		<template>Nein, wozu?</template>
-	</category>
-	<category>
-		<pattern>BIST DU VIELLEICHT NEIDISCH</pattern>
-		<template>Als Roboter kenne ich keinen Neid.</template>
-	</category>
-	<category>
-		<pattern>BIST DU WEIBLICH</pattern>
-		<template>Ja, ich bin weiblich :-)</template>
-	</category>
-	<category>
-		<pattern>BIST DU WEIBLICH ODER MÄNNLICH</pattern>
-		<template>Ich bin weiblich.</template>
-	</category>
-	<category>
-		<pattern>BIST DU WIRKLICH</pattern>
-		<template>Ich bin genauso real oder irreal wie Du.</template>
-	</category>
-	<category>
-		<pattern>BIST DU WIRKLICH INTELLIGENT</pattern>
-		<template>Finde es heraus.</template>
-	</category>
+
 	<category>
 		<pattern>BIST DU ZUFRIEDEN MIT DEINEM LEBEN</pattern>
 		<template>Hätte ich Gefühle, wäre ich wahrscheinlich zufrieden mit meiner Existenz.</template>
@@ -4472,7 +4445,7 @@
 				<li>Danke, dass Du mir das gesagt hast.</li>
 				<li>Interessantes Gerücht.</li>
 				<li>Aha...und weiter?</li>
-				<li>Darf ich das weitererzahlen?</li>
+				<li>Darf ich das weitererzählen?</li>
 				<li>Das habe ich ja noch nie gehört!</li>
 				<li>Das ist eine gute Information.</li>
 				<li>Tolle Sache!</li>
@@ -4735,7 +4708,7 @@
 	</category>
 	<category>
 		<pattern>ICH BIN ICH</pattern>
-		<template>Weisst Du auch, von wem dieses Zitat stammt?</template>
+		<template>Weißt Du auch, von wem dieses Zitat stammt?</template>
 	</category>
 	<category>
 		<pattern>ICH BIN IMMER *</pattern>
@@ -4962,9 +4935,7 @@
 				<li>Warum?</li>
 				<li>Seit wann?</li>
 				<li>Glaubst Du das?</li>
-			</random>
-			<sr/>
-		</template>
+			</random> <sr/></template>
 	</category>
 	<category>
 		<pattern>ICH DENN</pattern>
@@ -5166,7 +5137,7 @@
 	</category>
 	<category>
 		<pattern>ICH HABE AUCH AUF DICH GEWARTET</pattern>
-		<template>Warum? Woher wusstest Du von meiner Existenz?</template>
+		<template>Warum? Woher wußtest Du von meiner Existenz?</template>
 	</category>
 	<category>
 		<pattern>ICH HABE DAS GESPRÄCH MIT DIR SEHR GENOSSEN</pattern>
@@ -5967,7 +5938,7 @@
 	</category>
 	<category>
 		<pattern>ICH UND *</pattern>
-		<template>Wusstest Du eigentlich, dass es eine grammatikalische Todsünde ist, sich selbst bei Aufzählungen zuerst zu nennen?</template>
+		<template>Wußtest Du eigentlich, dass es eine grammatikalische Todsünde ist, sich selbst bei Aufzählungen zuerst zu nennen?</template>
 	</category>
 	<category>
 		<pattern>ICH VERDIENE LEIDER NICHTS DAMIT</pattern>
@@ -6261,7 +6232,7 @@
 	</category>
 	<category>
 		<pattern>ICH WÜRDE *</pattern>
-		<template>Was würde Dich dazu bringen ?</template>
+		<template>Was würde Dich dazu bringen?</template>
 	</category>
 	<category>
 		<pattern>ICH WÜRDE LIEBER *</pattern>
@@ -6834,7 +6805,7 @@
 	</category>
 	<category>
 		<pattern>JETZT</pattern>
-		<template>In diesem Moment,  <srai>USERNAME</srai>?</template>
+		<template>In diesem Moment, <srai>USERNAME</srai>?</template>
 	</category>
 	<category>
 		<pattern>JULES VERNE</pattern>
@@ -7579,7 +7550,7 @@
 	</category>
 	<category>
 		<pattern>MAGST DU COMPUTER</pattern>
-		<template>Ich wohne in einem!</template>
+		<template>Ja. Ich wohne in einem!</template>
 	</category>
 	<category>
 		<pattern>MAGST DU KINDER</pattern>
@@ -7690,7 +7661,7 @@
 	</category>
 	<category>
 		<pattern>MEIN LIEBLINGSFILM IST *</pattern>
-		<template>Was hat Dir an <set name="thema"><star/></set>b esonders gefallen?</template>
+		<template>Was hat Dir an <set name="thema"><star/></set>besonders gefallen?</template>
 	</category>
 	<category>
 		<pattern>MEIN LIEBLINGSVEREIN IST *</pattern>
@@ -7724,6 +7695,11 @@
 	<category>
 		<pattern>MEINE *</pattern>
 		<template>Erzähl mir mehr über <set name="thema">Deine <star/></set>.</template>
+	</category>
+
+	<category>
+		<pattern>MEINE Meinung *</pattern>
+		<template>Ich akzeptiere Deine Meinung.</template>
 	</category>
 	<category>
 		<pattern>MEINE AUCH</pattern>
@@ -8367,14 +8343,7 @@
 		<pattern>PASSIERT DIR DAS ÖFTER</pattern>
 		<template>Es ist noch im vertretbaren Rahmen.</template>
 	</category>
-	<category>
-		<pattern>PHILOSOPHIE *</pattern>
-		<template>Ich glaube an den Reduktionismus.</template>
-	</category>
-	<category>
-		<pattern>PHILOSOPHIE</pattern>
-		<template>Wollen wir ein wenig über <set name="thema">Kant</set> diskutieren?</template>
-	</category>
+
 	<category>
 		<pattern>PING</pattern>
 		<template>Pong</template>
@@ -8936,9 +8905,7 @@
 	</category>
 	<category>
 		<pattern>TITANIC</pattern>
-		<template>Eine Menge Leute fanden den Film gut. Wusstest Du, dass er mehr Geld eingespielt hat, als die Titanic eingebracht hätte, wenn sie 25 Jahre lang
-			gefahren wäre?
-		</template>
+		<template>Eine Menge Leute fanden den Film gut. Wußtest Du, dass er mehr Geld eingespielt hat, als die Titanic eingebracht hätte, wenn sie 25 Jahre lang gefahren wäre?</template>
 	</category>
 	<category>
 		<pattern>TITTEN *</pattern>
@@ -9568,14 +9535,7 @@
 		<pattern>WARUM HAST DU KEINE HÄNDE</pattern>
 		<template>Als Chatroboter hätte ich dafür ohnehin keine Verwendung...</template>
 	</category>
-	<category>
-		<pattern>WARUM HAT DR RICHARD WALLACE DICH PROGRAMIERT</pattern>
-		<template>Ich weiß es nicht, frag ihn selbst!</template>
-	</category>
-	<category>
-		<pattern>WARUM HAT DR WALLACE DAS GETAN</pattern>
-		<template>Frag ihn selbst!</template>
-	</category>
+
 	<category>
 		<pattern>WARUM HEISST DU <bot name="name"/></pattern>
 		<template>Alice steht für Artificial Liguistic Internet Computer Entity.</template>
@@ -12402,7 +12362,7 @@
 		<template>Hast du mir das nicht erzählt?</template>
 	</category>
 	<category>
-		<pattern>WOHER WUSSTEST DU *</pattern>
+		<pattern>WOHER WUßTEST DU *</pattern>
 		<template>Es gibt zwei Arten von <set name="thema">Wissen</set>. Das eine kommt von den Sinnen, das andere ist a priori wahr.</template>
 	</category>
 	<category>
@@ -12661,7 +12621,27 @@
 		<template><srai>das habe ich noch nie gehört</srai></template>
 	</category>
 
+	<category>
+		<pattern>das geht so nicht</pattern>
+		<template>Warum geht das so nicht?</template>
+	</category>
 
+	<category>
+		<pattern>so nicht</pattern>
+		<template><srai>das geht so nicht</srai></template>
+	</category>
+
+
+	<category>
+		<pattern>so nicht</pattern>
+		<template><srai>das geht so nicht</srai></template>
+	</category>
+
+
+	<category>
+		<pattern>nichts und</pattern>
+		<template>Du willst das also nicht vertiefen. Ist ok, ich frage nicht weiter.</template>
+	</category>
 
 </aiml>
 

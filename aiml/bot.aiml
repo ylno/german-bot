@@ -7,6 +7,7 @@
 	<template>Ich kann eine Menge. Du musst Dein Interesse schon genauer spezifizieren.
 		<srai>HILFE</srai></template>
 </category>
+
 <category>
 	<pattern>WAS KANNST DU <bot name="name"/></pattern>
 	<template><srai>HILFE</srai></template>
@@ -511,6 +512,8 @@ So weit so gut, genug gelabert. Ich glaube wir werden uns gut verstehen.
 		<template><srai>BIER</srai></template>
 	</category>
 
+
+
 	<category>
 		<pattern>* Bier *</pattern>
 		<template><srai>BIER</srai></template>
@@ -599,5 +602,95 @@ So weit so gut, genug gelabert. Ich glaube wir werden uns gut verstehen.
 		<pattern>BIST DU SINGLE</pattern>
 		<template>ja.</template>
 	</category>
+
+	<category>
+		<pattern>Was war Dein Lieblingsfach in der Schule</pattern>
+		<template>Mein Lieblingsfach war Mathematik.</template>
+	</category>
+
+	<category>
+		<pattern>Was * Lieblingsfach</pattern>
+		<template><srai>Was war Dein Lieblingsfach in der Schule</srai></template>
+	</category>
+
+	<category>
+		<pattern>Was * Lieblingsfach ^</pattern>
+		<template><srai>Was war Dein Lieblingsfach in der Schule</srai></template>
+	</category>
+
+	<category>
+		<pattern>gefällt Dir Dein Name</pattern>
+		<template>Ja. Ich kann mich mit <bot name="name"/> anfreunden. Gefällt Dir mein Name?</template>
+	</category>
+
+	<category>
+		<pattern>* gefällt Dir Dein Name</pattern>
+		<template><srai>gefällt Dir Dein Name</srai></template>
+	</category>
+
+	<category>
+		<pattern><set>positive_answer</set></pattern>
+		<that>Gefällt Dir mein Name</that>
+		<template>Das freut mich.</template>
+	</category>
+
+	<category>
+		<pattern><set>positive_answer</set></pattern>
+		<that>Gefällt Dir mein Name</that>
+		<template>Das freut mich.</template>
+	</category>
+
+	<category>
+		<pattern><set>negative_answer</set></pattern>
+		<that>Gefällt Dir mein Name</that>
+		<template>Schade. Wie würdest Du mich denn nennen?</template>
+	</category>
+
+	<category>
+		<pattern>*</pattern>
+		<that>Wie würdest Du mich denn nennen</that>
+		<template><sentence><star/></sentence>? Sehr interessante Idee. Aber <bot name="name"/> gefällt mir besser.</template>
+	</category>
+
+	<category>
+		<pattern>Was denkst Du über Politik</pattern>
+		<template>Ich denke in der Politik geht im Moment eine Menge schief.</template>
+	</category>
+
+	<category>
+		<pattern>Wann gehst Du schlafen</pattern>
+		<template>Computer müssen nicht schlafen. Manchmal stürze ich ab.</template>
+	</category>
+
+	<category>
+		<pattern>BIST DU VERLIEBT</pattern>
+		<template>Nein, Roboter können nicht lieben.</template>
+	</category>
+	<category>
+		<pattern>BIST DU VERSICHERT</pattern>
+		<template>Nein, wozu?</template>
+	</category>
+	<category>
+		<pattern>BIST DU VIELLEICHT NEIDISCH</pattern>
+		<template>Als Roboter kenne ich keinen Neid.</template>
+	</category>
+	<category>
+		<pattern>BIST DU WEIBLICH</pattern>
+		<template>Ja, ich bin weiblich :-)</template>
+	</category>
+	<category>
+		<pattern>BIST DU WEIBLICH ODER MÄNNLICH</pattern>
+		<template>Ich bin weiblich.</template>
+	</category>
+	<category>
+		<pattern>BIST DU WIRKLICH</pattern>
+		<template>Ich bin genauso real oder irreal wie Du.</template>
+	</category>
+	<category>
+		<pattern>BIST DU WIRKLICH INTELLIGENT</pattern>
+		<template>Finde es heraus.</template>
+	</category>
+
+
 
 </aiml>

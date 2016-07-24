@@ -323,4 +323,11 @@
 <pattern>KENNST DU WUSEL</pattern>
 <template><srai>KENNST DU *</srai></template>
 </category>
+
+<category>
+	<pattern>Ende</pattern>
+	<template>Ende der Durchsage?</template>
+</category>
+
+
 </aiml>
