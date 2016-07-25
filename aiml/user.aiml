@@ -142,7 +142,7 @@
 	<category>
 		<pattern>QUERYFAVORITEFOOD</pattern>
 		<template><condition name="FAVORITEFOOD">
-			<li value="unknown">WAS IST DEIN LIEBLINGSESSEN?</li>
+			<li value="unknown">Was ist Dein Lieblingsessen?</li>
 			<li><srai>PERSOENLICHEFRAGEN</srai></li>
 		</condition></template>
 	</category>
