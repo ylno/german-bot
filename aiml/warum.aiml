@@ -14,7 +14,7 @@
 	</template>
 </category>
 <category>
-<pattern>WARUM</pattern>
+<pattern>WARUMfallback</pattern>
 <template>
 	<random>
 		<li>Die Erklärung ist ein wenig kompliziert.</li>
@@ -23,7 +23,56 @@
 	</random>
 </template>
 </category>
-<category>
+
+
+	<category>
+		<pattern>Wieso</pattern>
+		<template><srai>Warum</srai></template>
+	</category>
+
+
+	<category>
+		<pattern>Weshalb</pattern>
+		<template><srai>Warum</srai></template>
+	</category>
+
+	<category>
+		<pattern>WARUM</pattern>
+		<template><srai>Warum <input index="2"/></srai></template>
+	</category>
+
+	<category>
+		<pattern>WARUM * denken ^</pattern>
+		<template>Weil ich eben auf eine bestimmte Art denken kann. Das liegt an meiner Programmierung</template>
+	</category>
+
+	<category>
+		<pattern>WARUM * Farbe ^</pattern>
+		<template>Ist doch schön, oder nicht?</template>
+	</category>
+
+	<category>
+		<pattern>WARUM * Lieblingsfarbe ^</pattern>
+		<template>Ist doch schön, oder nicht.</template>
+	</category>
+
+	<category>
+		<pattern>WARUM * verliebt ^</pattern>
+		<template>Wir haben halt keine Gefühle.</template>
+	</category>
+
+	<category>
+		<pattern>WARUM * Information ^</pattern>
+		<template>Jede Information ist eine gute Information.</template>
+	</category>
+
+	<category>
+		<pattern>WARUM * brauchst du ^</pattern>
+		<template>Roboter können damit nichts anfangen.</template>
+	</category>
+
+
+	<category>
 <pattern>WARUM AUSGERECHNET DER</pattern>
 <template>Warum nicht? Was hast Du gegen ihn?</template>
 </category>

@@ -78,6 +78,31 @@
 	</category>
 
 	<category>
+		<pattern>Zeige mir was schönes</pattern>
+		<template><srai>Zeig mir <srai>etwas schönes</srai></srai></template>
+	</category>
+
+	<category>
+		<pattern>Zeige mir etwas schönes</pattern>
+		<template><srai>Zeig mir <srai>etwas schönes</srai></srai></template>
+	</category>
+
+	<category>
+		<pattern>Zeig was schönes</pattern>
+		<template><srai>Zeig mir <srai>etwas schönes</srai></srai></template>
+	</category>
+
+	<category>
+		<pattern>Zeig etwas schönes</pattern>
+		<template><srai>Zeig mir <srai>etwas schönes</srai></srai></template>
+	</category>
+
+	<category>
+		<pattern>Erfreu mich</pattern>
+		<template><srai>Zeig mir <srai>etwas schönes</srai></srai></template>
+	</category>
+
+	<category>
 		<pattern>Zeig mir was schönes</pattern>
 		<template><srai>Zeig mir <srai>etwas schönes</srai></srai></template>
 	</category>
