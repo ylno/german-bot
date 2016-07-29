@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <aiml version="1.0.1" xmlns="http://alicebot.org/2001/AIML-1.0.1"
 			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 			xsi:schemaLocation="http://alicebot.org/2001/AIML-1.0.1 http://aitools.org/aiml/schema/AIML.xsd">
@@ -25,15 +26,15 @@
 				<li>Wann gehst Du schlafen?</li>
 				<li>Hast Du viele Freunde?</li>
 				<li>Was denkst Du über Politik?</li>
-				<li>Bist Du politisch engagiert?</li>
-				<li>Rauchst Du?</li>
+				<li><srai>QUERYPOLITICS</srai></li>
+				<li><srai>QUERYSMOKE</srai></li>
 				<li>Magst Du Tiere?</li>
 				<li>Magst Du Computer?</li>
 				<li>Magst Du Physik?</li>
 				<li>Bist Du Student?</li>
 				<li>Wo kommst Du her?</li>
 				<li>Hast du Humor?</li>
-				<li>Was machst Du in Deiner Freizeit?</li>
+				<li><srai>QUERYGENERAL V SPARETIME Q Was machst Du in Deiner Freizeit</srai></li>
 				<li>Bist du Single?</li>
 				<li>Was hast Du gerade an?</li>
 				<li>Liest Du lieber oder siehst Du lieber fern?</li>
@@ -48,6 +49,14 @@
 				<li><srai>QUERYINTEREST Fussball</srai></li>
 			</random>
 		</template>
+	</category>
+
+	<category>
+		<pattern>QUERYGENERAL V * Q *</pattern>
+		<template><condition><name><star index="1"/></name>
+			<li value="unknown"><star index="2"/>?</li>
+			<li><srai>PERSOENLICHEFRAGEN</srai></li>
+		</condition></template>
 	</category>
 
 
@@ -85,6 +94,8 @@
 		</condition></template>
 	</category>
 
+
+
 	<category>
 		<pattern>QUERYMATHE</pattern>
 		<template><condition name="LIKESMATHE">
@@ -101,6 +112,26 @@
 		<template>Dann sollten wir mehr über <set name="thema"><thatstar/></set> reden.<think><set><name>ISINTERESTEDIN<sentence><thatstar/></sentence></name>true</set></think></template>
 	</category>
 
+
+	<category>
+		<pattern>QUERYPOLITICS</pattern>
+		<template><condition name="POLITICAL">
+			<li value="unknown">Bist Du politisch engagiert?</li>
+			<li><srai>PERSOENLICHEFRAGEN</srai></li>
+		</condition></template>
+	</category>
+
+	<category>
+		<pattern><set>positive_answer</set></pattern>
+		<that>Bist Du politisch engagiert</that>
+		<template>Na dann sollten wir öfter über <set name="thema">Politik</set> reden.<think><set><name>POLITICAL<sentence><thatstar/></sentence></name>true</set></think></template>
+	</category>
+
+	<category>
+		<pattern><set>negative_answer</set></pattern>
+		<that>Bist Du politisch engagiert</that>
+		<template>Dann können wir uns das Thema Politik ja sparen<think><set><name>POLITICAL<sentence><thatstar/></sentence></name>false</set></think></template>
+	</category>
 
 	<category>
 		<pattern>QUERYVERLIEBT</pattern>
@@ -353,7 +384,11 @@ Deine Leibgericht ist: <get name="FAVORITEFOOD"/></li>
 Du magst Mathematik</li>
 	<li value="false">
 Mathematik magst du nicht.</li>
-</condition>
+</condition><condition name="POLITICAL">
+			<li value="unknown"></li>
+			<li value="true">Du bist politisch engagiert.</li>
+			<li value="false">Du bist nicht politisch engagiert.</li>
+		</condition>
 <srai>ISINTERESTEDIN Sport</srai>
 <srai>ISINTERESTEDIN Politik</srai>
 <srai>ISINTERESTEDIN Physik</srai>
@@ -703,6 +738,15 @@ Mathematik magst du nicht.</li>
 	<category>
 		<pattern>frag mich *</pattern>
 		<template><star/></template>
+	</category>
+
+	<category>
+		<pattern>QUERYSMOKE</pattern>
+		<template><condition name="smoke">
+			<li value="unknown">Rauchst Du?</li>
+			<li><srai>PERSOENLICHEFRAGEN</srai></li>
+			</condition>
+		</template>
 	</category>
 
 
