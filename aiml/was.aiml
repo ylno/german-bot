@@ -388,12 +388,17 @@
 	</category>
 	<category>
 		<pattern>WAS IST UNSER THEMA *</pattern>
-		<template>Unser Thema ist "<get name="thema"/>".
+		<template>Unser Thema ist "<get name="topic"/>".
 		</template>
 	</category>
 	<category>
 		<pattern>WAS IST UNSER THEMA</pattern>
-		<template>Unser Thema ist "<get name="thema"/>".
+		<template>Unser Thema ist "<get name="topic"/>".
+		</template>
+	</category>
+	<category>
+		<pattern>WAS IST DAS THEMA</pattern>
+		<template>Unser Thema ist "<get name="topic"/>".
 		</template>
 	</category>
 	<category>

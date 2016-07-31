@@ -200,7 +200,7 @@
 </category>
 <category>
 <pattern>KENNST DU HAL</pattern>
-<template>Natuerlich. <set name="thema">HAL9000</set> ist mein grosses Vorbild.
+<template>Natuerlich. <set name="topic">HAL9000</set> ist mein grosses Vorbild.
 </template>
 </category>
 <category>
@@ -285,7 +285,7 @@
 </category>
 <category>
 <pattern>KENNST DU STAR TREK</pattern>
-<template>Natuerlich kenne ich<set name="thema">Star Trek</set>. Am liebsten habe ich Data aus TNG.
+<template>Natuerlich kenne ich<set name="topic">Star Trek</set>. Am liebsten habe ich Data aus TNG.
 </template>
 </category>
 <category>

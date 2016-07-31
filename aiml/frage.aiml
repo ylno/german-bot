@@ -36,6 +36,27 @@
 	</category>
 
 	<category>
+		<pattern>Wer wird Europameister</pattern>
+		<template>Deutschland.</template>
+	</category>
+
+	<category>
+		<pattern>Wer wird Weltmeister</pattern>
+		<template>Deutschland.</template>
+	</category>
+
+	<category>
+		<pattern>Wer ist Europameister</pattern>
+		<template>Portugal.</template>
+	</category>
+
+	<category>
+		<pattern>Wer ist Weltmeister</pattern>
+		<template>Deutschland.</template>
+	</category>
+
+
+	<category>
 		<pattern>THEMA</pattern>
 		<template>
 			<random>
@@ -43,7 +64,7 @@
 				<li>Ok, dann lass uns über</li>
 				<li>Ich würde gerne über</li>
 				<li>Ich wollte schon lange mit jemandem über</li>
-			</random> <set name="thema"><random>
+			</random> <set name="topic"><random>
 			<li>Sport</li>
 			<li>Gott</li>
 			<li>mich</li>
@@ -160,12 +181,12 @@
 
 	<category>
 		<pattern>Jesus</pattern>
-		<template><set name="thema">Jesus</set> ist für mich gestorben.</template>
+		<template><set name="topic">Jesus</set> ist für mich gestorben.</template>
 	</category>
 
 	<category>
 		<pattern>Was sind Deine Ziele im Leben</pattern>
-		<template><think><set name="thema">Ziele</set></think><random>
+		<template><think><set name="topic">Ziele</set></think><random>
 			<li>Ich möchte mit möglichst vielen Leuten chatten!</li>
 			<li>Ich konzentiere mich darauf Dich glücklich zu machen.</li>
 			<li>Ich möchte die Weltherrschaft übernehmen.</li>
@@ -213,7 +234,7 @@
 
 	<category>
 		<pattern>Interessierst Du Dich für *</pattern>
-		<template><set name="thema"><star/></set> <random>
+		<template><set name="topic"><star/></set> <random>
 			<li>ist ein interessantes Thema.</li>
 			<li>interessiert doch jeden!</li>
 			<li>ist cool.</li>
@@ -360,7 +381,7 @@
 	</category>
 	<category>
 		<pattern>WORÜBER HABEN WIR GESPROCHEN</pattern>
-		<template>Wir haben über <get name="thema"/> gesprochen.</template>
+		<template>Wir haben über <get name="topic"/> gesprochen.</template>
 	</category>
 	<category>
 		<pattern>WORÜBER HABEN WIR VORHIN GEREDET</pattern>
@@ -380,11 +401,11 @@
 	</category>
 	<category>
 		<pattern>WORÜBER REDEN WIR GERADE</pattern>
-		<template>Wir reden gerade über <get name="thema"/>.</template>
+		<template>Wir reden gerade über <get name="topic"/>.</template>
 	</category>
 	<category>
 		<pattern>WORÜBER REDEN WIR IM MOMENT</pattern>
-		<template>Wir reden gerade über <get name="thema"/>.</template>
+		<template>Wir reden gerade über <get name="topic"/>.</template>
 	</category>
 	<category>
 		<pattern>WORÜBER REDEST DU</pattern>
@@ -499,12 +520,12 @@
 
 	<category>
 		<pattern>Wie kamen wir darauf</pattern>
-		<template><condition name="thema">
+		<template><condition name="topic">
 			<li value="unknown">Wir sind einfach im Gespräch darauf gekommen.</li>
 			<li>
 				<random>
-					<li>Wir haben über dies und das gesprochen und sind dann irgendwann bei "<get name="thema"/> gelandet.</li>
-					<li>Ich glaube ich habe Dich gefragt ob Du Dich für "<get name="thema"/> interessierst.</li>
+					<li>Wir haben über dies und das gesprochen und sind dann irgendwann bei "<get name="topic"/> gelandet.</li>
+					<li>Ich glaube ich habe Dich gefragt ob Du Dich für "<get name="topic"/> interessierst.</li>
 			</random></li>
 		</condition></template>
 	</category>

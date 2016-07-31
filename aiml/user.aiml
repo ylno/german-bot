@@ -28,7 +28,7 @@
 				<li>Was denkst Du über Politik?</li>
 				<li><srai>QUERYPOLITICS</srai></li>
 				<li><srai>QUERYSMOKE</srai></li>
-				<li>Magst Du Tiere?</li>
+				<li>Magst Du <set name="topic">Tiere</set>?</li>
 				<li>Magst Du Computer?</li>
 				<li>Magst Du Physik?</li>
 				<li>Bist Du Student?</li>
@@ -109,7 +109,7 @@
 	<category>
 		<pattern><set>positive_answer</set></pattern>
 		<that>Interessierst Du Dich für *</that>
-		<template>Dann sollten wir mehr über <set name="thema"><thatstar/></set> reden.<think><set><name>ISINTERESTEDIN<sentence><thatstar/></sentence></name>true</set></think></template>
+		<template>Dann sollten wir mehr über <set name="topic"><thatstar/></set> reden.<think><set><name>ISINTERESTEDIN<sentence><thatstar/></sentence></name>true</set></think></template>
 	</category>
 
 
@@ -124,7 +124,7 @@
 	<category>
 		<pattern><set>positive_answer</set></pattern>
 		<that>Bist Du politisch engagiert</that>
-		<template>Na dann sollten wir öfter über <set name="thema">Politik</set> reden.<think><set><name>POLITICAL<sentence><thatstar/></sentence></name>true</set></think></template>
+		<template>Na dann sollten wir öfter über <set name="topic">Politik</set> reden.<think><set><name>POLITICAL<sentence><thatstar/></sentence></name>true</set></think></template>
 	</category>
 
 	<category>
@@ -395,7 +395,24 @@ Mathematik magst du nicht.</li>
 <srai>ISINTERESTEDIN Chemie</srai>
 <srai>ISINTERESTEDIN Computer</srai>
 <srai>ISINTERESTEDIN Medizin</srai>
-<srai>ISINTERESTEDIN Fussball</srai>
+<srai>ISINTERESTEDIN Fussball</srai><condition name="KANNREITEN">
+			<li value="unknown"></li>
+			<li value="true">
+				Du kannst reiten.</li>
+			<li value="false">
+				Du kannst nicht reiten.</li>
+		</condition><condition name="HATHAUSTIER">
+			<li value="unknown"></li>
+			<li value="true">
+				Du hast ein Haustier.</li>
+			<li value="false">
+				Du hast kein Haustier.</li>
+		</condition><condition name="HAUSTIER">
+			<li value="unknown"></li>
+			<li>
+				Du hast <get name="HAUSTIER"/></li>
+		</condition>
+
 		</template>
 
 	</category>

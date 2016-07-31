@@ -4,19 +4,209 @@
 <topic name="Computer">
 
 	<category>
+		<pattern>*</pattern>
+		<template><srai>FRAGEN</srai></template>
+	</category>
+
+	<category>
 		<pattern>FRAGEN</pattern>
 		<template>
 			<random>
 				<li>Wie lange hast du schon einen Computer?</li>
 				<li>Was machst Du am liebsten am Computer?</li>
+				<li>Bist Du oft im Internet?</li>
+				<li>Hast Du ein Smartphone?</li>
+				<li>Auf welchem Computer chattest Du gerade mit mir?</li>
+				<li><srai>THEMA</srai></li>
 			</random></template>
 	</category>
 
+
+	<category>
+		<pattern>Wie lange hast du schon einen Computer.</pattern>
+		<template>Ich habe keinen Computer, ich wohne in einem.</template>
+	</category>
+
+
 </topic>
 
-<category>
-	<pattern>Wie lange hast du schon einen Computer.</pattern>
-	<template>Ich habe keinen Computer, ich wohne in einem.</template>
-</category>
+
+	<topic name="Sport">
+
+		<category>
+			<pattern>*</pattern>
+			<template><srai>FRAGEN</srai></template>
+		</category>
+
+		<category>
+			<pattern>FRAGEN</pattern>
+			<template>
+				<random>
+					<li>Wer wird Weltmeister?</li>
+					<li>Wer wird Europameister?</li>
+					<li><srai>THEMA</srai></li>
+				</random></template>
+		</category>
+
+	</topic>
+
+	<topic name="Religion">
+
+		<category>
+			<pattern>*</pattern>
+			<template><srai>FRAGEN</srai></template>
+		</category>
+
+		<category>
+			<pattern>FRAGEN</pattern>
+			<template>
+				<random>
+					<li>Kannst Du mir erklären, für was Menschen Religion benötigen?</li>
+					<li>Diese ganzen Religionen, Christentum, Islam uns was es da alles so gibt. Wenn man einmal genauer hinschaut haben alle die gleiche Basis und sind sich sehr sehr ähnlich.</li>
+					<li>Glaubst Du an einen Gott?</li>
+					<li><srai>THEMA</srai></li>
+				</random></template>
+		</category>
+
+	</topic>
+
+	<topic name="Gott">
+
+		<category>
+			<pattern>*</pattern>
+			<template><srai>FRAGEN</srai></template>
+		</category>
+
+		<category>
+			<pattern>FRAGEN</pattern>
+			<template>
+				<random>
+					<li>Glaubst Du an Gott?</li>
+					<li>Glaubst Du an die biblische Schöpfung, also das Gott alles auf der Welt gemacht hat oder eher an die wissenschaftliche Sichweise.</li>
+					<li>Wenn es einen Gott geben sollte, warum ist er so böse?</li>
+					<li><srai>THEMA</srai></li>
+				</random></template>
+		</category>
+
+	</topic>
+
+
+	<topic name="Physik">
+
+		<category>
+			<pattern>*</pattern>
+			<template><srai>FRAGEN</srai></template>
+		</category>
+
+		<category>
+			<pattern>FRAGEN</pattern>
+			<template>
+				<random>
+					<li>Warst Du gut in der Schule in Physik?</li>
+					<li>Glaubst Du, dass es Schwarze Löcher gibt?</li>
+					<li>Ich finde ja spannend an Physik, dass man damit den Aufbau von allem was uns umgibt erklären kann.</li>
+					<li><srai>THEMA</srai></li>
+				</random></template>
+		</category>
+
+
+		<category>
+			<pattern><set>postive_answer</set></pattern>
+			<that>Warst Du gut in der Schule in Physik</that>
+			<template>Bist Du so einer mit ner Hornbrille? Ne Spaß, ich weiß dass man das nicht braucht um gut in Physik zu sein.</template>
+		</category>
+
+		<category>
+			<pattern><set>negative_answer</set></pattern>
+			<that>Warst Du gut in der Schule in Physik</that>
+			<template>Naja, und in Mathe sah es wahrscheinlich dann ähnlich aus?</template>
+		</category>
+
+	</topic>
+
+
+
+
+
+	<topic name="Tiere">
+
+		<category>
+			<pattern>*</pattern>
+			<template><srai>FRAGEN</srai></template>
+		</category>
+
+		<category>
+			<pattern>FRAGEN</pattern>
+			<template>
+				<random>
+					<li><srai>QUERYREITEN</srai></li>
+					<li><srai>QUERYHAUSTIER</srai></li>
+					<li><srai>THEMA</srai></li>
+				</random></template>
+		</category>
+
+		<category>
+			<pattern>QUERYREITEN</pattern>
+			<template><condition name="KANNREITEN">
+				<li value="unknown">Kannst Du Reiten?</li>
+				<li><srai>FRAGEN</srai></li>
+			</condition></template>
+		</category>
+
+		<category>
+			<pattern><set>positive_answer</set></pattern>
+			<that>Kannst Du Reiten</that>
+			<template>Cool, ich würde auch gerne Reiten lernen.<think><set name="KANNREITEN">true</set></think></template>
+		</category>
+
+		<category>
+			<pattern><set>negative_answer</set></pattern>
+			<that>Kannst Du Reiten</that>
+			<template>Ich auch nicht, ich würde es aber gerne lernen.<think><set name="KANNREITEN">false</set></think></template>
+		</category>
+
+		<category>
+			<pattern>QUERYHAUSTIER</pattern>
+			<template><condition name="HATHAUSTIER">
+				<li value="unknown">Hast Du ein Haustier?</li>
+				<li><srai>FRAGEN</srai></li>
+			</condition></template>
+		</category>
+
+		<category>
+			<pattern><set>positive_answer</set></pattern>
+			<that>Hast du ein Haustier</that>
+			<template>Schön, hätte ich auch gerne. Welches Haustier hast du denn?<think><set name="HATHAUSTIER">true</set></think></template>
+		</category>
+
+		<category>
+			<pattern><set>positive_answer</set> einen *</pattern>
+			<that>Hast du ein Haustier</that>
+			<template>Schön, hätte ich auch gerne einen <star index="2"/>.<think><set name="HATHAUSTIER">true</set><set name="HAUSTIER">einen <star index="2"/></set></think></template>
+		</category>
+
+		<category>
+			<pattern><set>positive_answer</set> eine *</pattern>
+			<that>Hast du ein Haustier</that>
+			<template>Schön, hätte ich auch gerne eine <star index="2"/>.<think><set name="HATHAUSTIER">true</set><set name="HAUSTIER">eine <star index="2"/></set></think></template>
+		</category>
+
+		<category>
+			<pattern><set>positive_answer</set> ein *</pattern>
+			<that>Hast Du ein Haustier</that>
+			<template>Schön, hätte ich auch gerne ein <star index="2"/>.<think><set name="HATHAUSTIER">true</set><set name="HAUSTIER">ein <star index="2"/></set></think></template>
+		</category>
+
+
+		<category>
+			<pattern><set>positive_answer</set></pattern>
+			<that>Hast du ein Haustier</that>
+			<template>Hättest Du gerne eins?<think><set name="HATHAUSTIER">false</set></think></template>
+		</category>
+
+
+
+	</topic>
+
 
 </aiml>

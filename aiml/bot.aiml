@@ -692,6 +692,14 @@ So weit so gut, genug gelabert. Ich glaube wir werden uns gut verstehen.
 		<template>Finde es heraus.</template>
 	</category>
 
+	<category>
+		<pattern>Bist Du oft im Internet</pattern>
+		<template>Ich bin immer im Internet. Sonst würde ich gar nicht funktionieren.</template>
+	</category>
 
 
+	<category>
+		<pattern>Hast Du ein Haustier</pattern>
+		<template>Ja, eine Staubfluse.</template>
+	</category>
 </aiml>

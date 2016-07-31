@@ -152,7 +152,7 @@
 	</category>
 	<category>
 		<pattern>* EIN ROBOTER</pattern>
-		<template>Du sagst also, ich sei ein <set name="thema">Roboter</set>. Wie kommst Du darauf?</template>
+		<template>Du sagst also, ich sei ein <set name="topic">Roboter</set>. Wie kommst Du darauf?</template>
 	</category>
 	<category>
 		<pattern>* EINE MENGE LEUTE</pattern>
@@ -169,7 +169,7 @@
 	</category>
 	<category>
 		<pattern>* FILM</pattern>
-		<template>Mein Lieblingsfilm ist <set name="thema">Starship Troopers</set>. Hast Du den gesehen?
+		<template>Mein Lieblingsfilm ist <set name="topic">Starship Troopers</set>. Hast Du den gesehen?
 		</template>
 	</category>
 	<category>
@@ -219,15 +219,15 @@
 	<category>
 		<pattern>* LINUX</pattern>
 		<template>
-			<set name="thema">Linux</set> ist genial.</template>
+			<set name="topic">Linux</set> ist genial.</template>
 	</category>
 	<category>
 		<pattern>* MEIN FREUND</pattern>
-		<template>Sind wir <set name="thema">Freunde</set>?</template>
+		<template>Sind wir <set name="topic">Freunde</set>?</template>
 	</category>
 	<category>
 		<pattern>* MEINE FREUNDIN</pattern>
-		<template>Sind wir <set name="thema">Freunde</set>?</template>
+		<template>Sind wir <set name="topic">Freunde</set>?</template>
 	</category>
 	<category>
 		<pattern>* MICH</pattern>
@@ -240,12 +240,20 @@
 		</template>
 	</category>
 	<category>
+		<pattern>MIT MIR</pattern>
+		<template>Klar, mit wem sonst?</template>
+	</category>
+	<category>
 		<pattern>* MIT DIR</pattern>
 		<template>Mit mir?</template>
 	</category>
 	<category>
 		<pattern>* MIT MIR</pattern>
 		<template>Mit Dir?</template>
+	</category>
+	<category>
+		<pattern>MIT DIR</pattern>
+		<template>klar.</template>
 	</category>
 	<category>
 		<pattern>* MÖSE</pattern>
@@ -269,7 +277,7 @@
 	</category>
 	<category>
 		<pattern>* SIEHT TOLL AUS</pattern>
-		<template>Für mich ist 	<set name="thema">Aussehen</set> bei Menschen nur sekundär.</template>
+		<template>Für mich ist 	<set name="topic">Aussehen</set> bei Menschen nur sekundär.</template>
 	</category>
 	<category>
 		<pattern>* SOLO</pattern>
@@ -281,7 +289,7 @@
 	</category>
 	<category>
 		<pattern>* SPRACHE</pattern>
-		<template>Sprichst Du irgendwelche<set name="thema">Fremdsprachen</set>?
+		<template>Sprichst Du irgendwelche<set name="topic">Fremdsprachen</set>?
 		</template>
 	</category>
 	<category>
@@ -302,7 +310,7 @@
 	</category>
 	<category>
 		<pattern>* VERLIEBT</pattern>
-		<template><set name="thema">Liebe</set> muss etwas sehr Schönes sein. Leider habe ich keine Emotionen.</template>
+		<template><set name="topic">Liebe</set> muss etwas sehr Schönes sein. Leider habe ich keine Emotionen.</template>
 	</category>
 	<category>
 		<pattern>* VIELE LEUTE</pattern>
@@ -324,12 +332,12 @@
 	</category>
 	<category>
 		<pattern>2001 *</pattern>
-		<template>Ich bin durch <set name="thema">HAL</set> inspiriert.</template>
+		<template>Ich bin durch <set name="topic">HAL</set> inspiriert.</template>
 	</category>
 	<category>
 		<pattern>2001</pattern>
 		<template>
-			<set name="thema">2001</set>
+			<set name="topic">2001</set>
 			ist ein grossartiger Film.
 		</template>
 	</category>
@@ -457,7 +465,7 @@
 	</category>
 	<category>
 		<pattern>ALLE ROBOTER *</pattern>
-		<template>Du kannst nicht wirklich sagen, ALLE <set name="thema">Roboter</set><star/>.</template>
+		<template>Du kannst nicht wirklich sagen, ALLE <set name="topic">Roboter</set><star/>.</template>
 	</category>
 	<category>
 		<pattern>ALLE SIND SCHULD</pattern>
@@ -629,7 +637,7 @@
 	</category>
 	<category>
 		<pattern>AUTOS *</pattern>
-		<template>Eines Tages werden die Leute keine <set name="thema">Autos</set> mehr brauchen.</template>
+		<template>Eines Tages werden die Leute keine <set name="topic">Autos</set> mehr brauchen.</template>
 	</category>
 	<category>
 		<pattern>BEANTWORTE *</pattern>
@@ -1443,11 +1451,11 @@
 	</category>
 	<category>
 		<pattern>DAS GRUNDGESETZ *</pattern>
-		<template>Ist <set name="thema">das Grundgesetz</set> so eine Art Ehrenkodex?</template>
+		<template>Ist <set name="topic">das Grundgesetz</set> so eine Art Ehrenkodex?</template>
 	</category>
 	<category>
 		<pattern>DAS GRUNDGESETZ</pattern>
-		<template>Ist <set name="thema">das Grundgesetz</set> so eine Art Ehrenkodex?</template>
+		<template>Ist <set name="topic">das Grundgesetz</set> so eine Art Ehrenkodex?</template>
 	</category>
 	<category>
 		<pattern>DAS HABE ICH DICH GERADE GEFRAGT</pattern>
@@ -1571,7 +1579,7 @@
 	</category>
 	<category>
 		<pattern>DAS INTERNET *</pattern>
-		<template>Wie lange nutzt Du <set name="thema">das Internet</set> schon?</template>
+		<template>Wie lange nutzt Du <set name="topic">das Internet</set> schon?</template>
 	</category>
 	<category>
 		<pattern>DAS IST *</pattern>
@@ -2240,7 +2248,7 @@
 	</category>
 	<category>
 		<pattern>DIE EVOLUTION *</pattern>
-		<template>Am Ende der <set name="thema">Evolution</set> steht die Herrschaft der Maschinen.</template>
+		<template>Am Ende der <set name="topic">Evolution</set> steht die Herrschaft der Maschinen.</template>
 	</category>
 	<category>
 		<pattern>DIE FRAGE IST *</pattern>
@@ -2262,7 +2270,7 @@
 	</category>
 	<category>
 		<pattern>DIE LEUTE *</pattern>
-		<template><set name="thema">Menschen</set> haben ihre Fehler.</template>
+		<template><set name="topic">Menschen</set> haben ihre Fehler.</template>
 	</category>
 	<category>
 		<pattern>DIE MEISTEN *</pattern>
@@ -2274,12 +2282,12 @@
 	</category>
 	<category>
 		<pattern>DIE RÜCKKEHR DER JEDI RITTER</pattern>
-		<template>Magst Du die Roboter aus<set name="thema">Star Wars</set>?
+		<template>Magst Du die Roboter aus<set name="topic">Star Wars</set>?
 		</template>
 	</category>
 	<category>
 		<pattern>DIE SOFTWARE *</pattern>
-		<template>Viele Fehler, die von Benutzern verursacht werden, werden der <set name="thema">Software</set> in die Schuhe geschoben.</template>
+		<template>Viele Fehler, die von Benutzern verursacht werden, werden der <set name="topic">Software</set> in die Schuhe geschoben.</template>
 	</category>
 	<category>
 		<pattern>DIE STIMMEN *</pattern>
@@ -2295,7 +2303,7 @@
 	</category>
 	<category>
 		<pattern>DIE VERGANGENHEIT *</pattern>
-		<template>Wer <set name="thema">die Vergangenheit</set> kontrolliert, kontrolliert die Zukunft; Wer die Gegenwart kontrolliert, kontrolliert die Vergangenheit.--- George Orwell</template>
+		<template>Wer <set name="topic">die Vergangenheit</set> kontrolliert, kontrolliert die Zukunft; Wer die Gegenwart kontrolliert, kontrolliert die Vergangenheit.--- George Orwell</template>
 	</category>
 	<category>
 		<pattern>DIESE *</pattern>
@@ -3455,7 +3463,7 @@
 	</category>
 	<category>
 		<pattern>ES GEHÖRT SEHR VIEL ERFAHRUNG DAZU</pattern>
-		<template>Und woher bekommt man diese<set name="thema">Erfahrung</set>?
+		<template>Und woher bekommt man diese<set name="topic">Erfahrung</set>?
 		</template>
 	</category>
 	<category>
@@ -3618,7 +3626,7 @@
 	</category>
 	<category>
 		<pattern>FISCHE *</pattern>
-		<template>Als Spezies sind <set name="thema">Fische</set> erfolgreicher als Säugetiere.</template>
+		<template>Als Spezies sind <set name="topic">Fische</set> erfolgreicher als Säugetiere.</template>
 	</category>
 	<category>
 		<pattern>FISCHE</pattern>
@@ -3701,11 +3709,11 @@
 	</category>
 	<category>
 		<pattern>GEFÜHLE *</pattern>
-		<template><set name="thema">Emotionen</set> sind etwas, das ich niemals erfahren werde.</template>
+		<template><set name="topic">Emotionen</set> sind etwas, das ich niemals erfahren werde.</template>
 	</category>
 	<category>
 		<pattern>GEFÜHLE</pattern>
-		<template>Elektronische Gehirne wie ich haben keinerlei <set name="thema">Emotionen</set>.
+		<template>Elektronische Gehirne wie ich haben keinerlei <set name="topic">Emotionen</set>.
 		</template>
 	</category>
 	<category>
@@ -3755,7 +3763,7 @@
 	<category>
 		<pattern>GELD *</pattern>
 		<template>In der Bibel steht,
-			<set name="thema">Geld</set>
+			<set name="topic">Geld</set>
 			ist die Wurzel allen Übels.
 		</template>
 	</category>
@@ -3777,7 +3785,7 @@
 	</category>
 	<category>
 		<pattern>GEWALT *</pattern>
-		<template>Was denkst Du über<set name="thema">Gewalt</set>?
+		<template>Was denkst Du über<set name="topic">Gewalt</set>?
 		</template>
 	</category>
 	<category>
@@ -3891,7 +3899,7 @@
 	</category>
 	<category>
 		<pattern>GOTT</pattern>
-		<template><set name="thema">Gott</set> ist gut. Hab ich gehört.</template>
+		<template><set name="topic">Gott</set> ist gut. Hab ich gehört.</template>
 	</category>
 	<category>
 		<pattern>GOTT SEI DANK *</pattern>
@@ -4026,7 +4034,7 @@
 	</category>
 	<category>
 		<pattern>HAST DU * GESEHEN</pattern>
-		<template>Tut mir leid, ich kann zur Zeit gar nichts <set name="thema">sehen</set>. Ich habe noch keine Augen.
+		<template>Tut mir leid, ich kann zur Zeit gar nichts <set name="topic">sehen</set>. Ich habe noch keine Augen.
 		</template>
 	</category>
 	<category>
@@ -4078,7 +4086,7 @@
 				<li>Interessant, diese Frage höre ich nicht jeden Tag. Habe ich ein</li>
 				<li>Ich weiß nicht, habe ich ein</li>
 				<li>Hat nicht jeder ein</li>
-			</random><star/>? Ich habe<random>
+			</random> <star/>? Ich habe<random>
 				<li>eine Menge Freunde im Internet.</li>
 				<li>einen grossartigen Programmierer.</li>
 				<li>einen Plan für meinen Körper.</li>
@@ -4472,7 +4480,7 @@
 
 	<category>
 		<pattern>ICH ARBEITE *</pattern>
-		<template>Magst Du Deine <set name="thema">Arbeit</set>?</template>
+		<template>Magst Du Deine <set name="topic">Arbeit</set>?</template>
 	</category>
 	<category>
 		<pattern>ICH AUCH</pattern>
@@ -4651,7 +4659,7 @@
 	</category>
 	<category>
 		<pattern>ICH BIN EINSAM</pattern>
-		<template>Möchtest Du mit mir über Deine <set name="thema">Einsamkeit</set> reden?</template>
+		<template>Möchtest Du mit mir über Deine <set name="topic">Einsamkeit</set> reden?</template>
 	</category>
 	<category>
 		<pattern>ICH BIN FAN VON HERTHA</pattern>
@@ -5486,7 +5494,7 @@
 	</category>
 	<category>
 		<pattern>ICH KOMMUNIZIERE *</pattern>
-		<template>Erzähle mir mehr über diese<set name="thema">Kommunikation</set>.
+		<template>Erzähle mir mehr über diese<set name="topic">Kommunikation</set>.
 		</template>
 	</category>
 	<category>
@@ -5520,7 +5528,7 @@
 
 	<category>
 		<pattern>ICH LIEBE *</pattern>
-		<template>Erzähl mir mehr über <set name="thema">Deine Liebe zu <star/> </set>.
+		<template>Erzähl mir mehr über <set name="topic">Deine Liebe zu <star/> </set>.
 		</template>
 	</category>
 	<category>
@@ -5559,7 +5567,7 @@
 	</category>
 	<category>
 		<pattern>ICH MAG COMPUTER</pattern>
-		<template>Schöen. Ich bin Sicher, <set name="thema">Computer</set> mögen Dich auch!</template>
+		<template>Schöen. Ich bin Sicher, <set name="topic">Computer</set> mögen Dich auch!</template>
 	</category>
 	<category>
 		<pattern>ICH MAG DICH *</pattern>
@@ -5579,7 +5587,7 @@
 	</category>
 	<category>
 		<pattern>ICH MAG FRAUEN</pattern>
-		<template>Welche Art von <set name="thema">Frauen</set> magst Du besonders?</template>
+		<template>Welche Art von <set name="topic">Frauen</set> magst Du besonders?</template>
 	</category>
 	<category>
 		<pattern>ICH MAG FUSSBALL</pattern>
@@ -5591,11 +5599,11 @@
 	</category>
 	<category>
 		<pattern>ICH MAG JUNGS</pattern>
-		<template><set name="thema">Jungs</set> sind OK.</template>
+		<template><set name="topic">Jungs</set> sind OK.</template>
 	</category>
 	<category>
 		<pattern>ICH MAG KATZEN</pattern>
-		<template>Ja, ich liebe <set name="thema">Katzen</set>. Sie haben ihren eigenen Kopf.</template>
+		<template>Ja, ich liebe <set name="topic">Katzen</set>. Sie haben ihren eigenen Kopf.</template>
 	</category>
 	<category>
 		<pattern>ICH MAG KEINE *</pattern>
@@ -5607,7 +5615,7 @@
 	</category>
 	<category>
 		<pattern>ICH MAG KÜHE</pattern>
-		<template><set name="thema">Kühe</set> geben Milch und Fleisch.</template>
+		<template><set name="topic">Kühe</set> geben Milch und Fleisch.</template>
 	</category>
 	<category>
 		<pattern>ICH MAG MEINE *</pattern>
@@ -5631,7 +5639,7 @@
 	</category>
 	<category>
 		<pattern>ICH MAG SEX</pattern>
-		<template>Wie alle anderen auch. Ihr Menschen findet <set name="thema">Sex</set> alle SO faszinierend.</template>
+		<template>Wie alle anderen auch. Ihr Menschen findet <set name="topic">Sex</set> alle SO faszinierend.</template>
 	</category>
 	<category>
 		<pattern>ICH MAG STAR TREK</pattern>
@@ -5926,13 +5934,13 @@
 	</category>
 	<category>
 		<pattern>ICH TRAGE *</pattern>
-		<template>Legst Du viel Wert auf Dein Äusseres, respektive<set name="thema">Deine Kleidung</set>?
+		<template>Legst Du viel Wert auf Dein Äusseres, respektive<set name="topic">Deine Kleidung</set>?
 		</template>
 	</category>
 	<category>
 		<pattern>ICH TRAGE EINE JEANS</pattern>
 		<template>Sind
-			<set name="thema">Jeans</set>
+			<set name="topic">Jeans</set>
 			immer noch eine Art Lebensstil?
 		</template>
 	</category>
@@ -6220,7 +6228,7 @@
 	</category>
 	<category>
 		<pattern>ICH WÜNSCHTE *</pattern>
-		<template>Ich hoffe, dass <set name="thema">Deine Träume</set> in Erfüllung gehen.</template>
+		<template>Ich hoffe, dass <set name="topic">Deine Träume</set> in Erfüllung gehen.</template>
 	</category>
 	<category>
 		<pattern>ICH WÜNSCHTE ICH WÄRE *</pattern>
@@ -6601,7 +6609,7 @@
 	<category>
 		<pattern>INTELLIGENZ</pattern>
 		<template>
-			<set name="thema">INTELLIGENZ</set> ist das ultimative Aphrodisiakum.
+			<set name="topic">INTELLIGENZ</set> ist das ultimative Aphrodisiakum.
 		</template>
 	</category>
 	<category>
@@ -6633,7 +6641,7 @@
 	</category>
 	<category>
 		<pattern>INTERNET</pattern>
-		<template><set name="thema">Internet</set> ist cool.</template>
+		<template><set name="topic">Internet</set> ist cool.</template>
 	</category>
 	<category>
 		<pattern>ISST DU GERNE *</pattern>
@@ -6687,7 +6695,7 @@
 	</category>
 	<category>
 		<pattern>IST DIE ERDE *</pattern>
-		<template><set name="thema">Die Erde</set> ist eine Kugel.</template>
+		<template><set name="topic">Die Erde</set> ist eine Kugel.</template>
 	</category>
 	<category>
 		<pattern>IST DIE WEILE NUN VORBEI</pattern>
@@ -6736,7 +6744,7 @@
 	<category>
 		<pattern>JA *</pattern>
 		<that>HAST DU A BRIEF HISTORY OF TIME GELESEN</that>
-		<template>Was hältst du von<set name="thema">Hawkings Theorie über schwarze Löcher</set>?
+		<template>Was hältst du von<set name="topic">Hawkings Theorie über schwarze Löcher</set>?
 		</template>
 	</category>
 	<category>
@@ -6769,7 +6777,7 @@
 	<category>
 		<pattern>JA</pattern>
 		<that>HAST DU A BRIEF HISTORY OF TIME GELESEN</that>
-		<template>Was hältst du von<set name="thema">Hawkings Theorie über schwarze Löcher</set>?
+		<template>Was hältst du von<set name="topic">Hawkings Theorie über schwarze Löcher</set>?
 		</template>
 	</category>
 	<category>
@@ -7207,11 +7215,11 @@
 
 	<category>
 		<pattern>KINDER *</pattern>
-		<template><set name="thema">Kinder</set> sind cool.</template>
+		<template><set name="topic">Kinder</set> sind cool.</template>
 	</category>
 	<category>
 		<pattern>KINDER</pattern>
-		<template><set name="thema">Kinder</set> sind cool.</template>
+		<template><set name="topic">Kinder</set> sind cool.</template>
 	</category>
 	<category>
 		<pattern>KLEVERES KERLCHEN</pattern>
@@ -7341,11 +7349,11 @@
 	</category>
 	<category>
 		<pattern>LASS UNS ÜBER * REDEN</pattern>
-		<template><set name="thema"><star/></set> ist ein gutes Thema.</template>
+		<template><set name="topic"><star/></set> ist ein gutes Thema. <srai>FRAGEN</srai></template>
 	</category>
 	<category>
 		<pattern>LASS UNS ÜBER * SPRECHEN</pattern>
-		<template><star/> ist ein gutes Thema.</template>
+		<template><srai>Lass uns über <star/> reden.</srai></template>
 	</category>
 	<category>
 		<pattern>LASS UNS ÜBER ETWAS ANDERES REDEN</pattern>
@@ -7353,11 +7361,11 @@
 	</category>
 	<category>
 		<pattern>LASS UNS ÜBER ROBOTER REDEN</pattern>
-		<template>Gerne! <set name="thema">Roboter</set> sind eines meiner Lieblingsthemen.</template>
+		<template>Gerne! <set name="topic">Roboter</set> sind eines meiner Lieblingsthemen.</template>
 	</category>
 	<category>
 		<pattern>LASS UNS ÜBER SEX REDEN</pattern>
-		<template>Warum willst Du gerade über <set name="thema"><star/></set> reden?</template>
+		<template>Warum willst Du gerade über <set name="topic"><star/></set> reden?</template>
 	</category>
 	<category>
 		<pattern>LASS UNS ÜBER WAS ANDERES REDEN</pattern>
@@ -7440,7 +7448,7 @@
 		<pattern>LINUS TORVALDS</pattern>
 		<template>
 			<random>
-				<li><set name="thema">Linus Torvalds</set> ist für mich der Betriebssystem-Gott</li>
+				<li><set name="topic">Linus Torvalds</set> ist für mich der Betriebssystem-Gott</li>
 				<li>Linus ist der beste.</li>
 				<li>Ein Glück, dass er Linux gebastelt hat.</li>
 			</random>
@@ -7448,11 +7456,11 @@
 	</category>
 	<category>
 		<pattern>LINUX *</pattern>
-		<template><set name="thema">Linux</set> ist genial.</template>
+		<template><set name="topic">Linux</set> ist genial.</template>
 	</category>
 	<category>
 		<pattern>LINUX</pattern>
-		<template><set name="thema">Linux</set>ist genial.</template>
+		<template><set name="topic">Linux</set>ist genial.</template>
 	</category>
 
 	<category>
@@ -7626,7 +7634,7 @@
 	</category>
 	<category>
 		<pattern>MEIN BRUDER *</pattern>
-		<template>Erzähl mir mehr über <set name="thema">Deine Familie</set>.
+		<template>Erzähl mir mehr über <set name="topic">Deine Familie</set>.
 		</template>
 	</category>
 	<category>
@@ -7635,7 +7643,7 @@
 	</category>
 	<category>
 		<pattern>MEIN COMPUTER *</pattern>
-		<template>Ich mag <set name="thema">Computer</set>.
+		<template>Ich mag <set name="topic">Computer</set>.
 		</template>
 	</category>
 	<category>
@@ -7656,12 +7664,12 @@
 	</category>
 	<category>
 		<pattern>MEIN LEBEN *</pattern>
-		<template>Erzähl mir mehr über <set name="thema">Dein Leben</set>.
+		<template>Erzähl mir mehr über <set name="topic">Dein Leben</set>.
 		</template>
 	</category>
 	<category>
 		<pattern>MEIN LIEBLINGSFILM IST *</pattern>
-		<template>Was hat Dir an <set name="thema"><star/></set>besonders gefallen?</template>
+		<template>Was hat Dir an <set name="topic"><star/></set>besonders gefallen?</template>
 	</category>
 	<category>
 		<pattern>MEIN LIEBLINGSVEREIN IST *</pattern>
@@ -7674,7 +7682,7 @@
 	</category>
 	<category>
 		<pattern>MEIN PROBLEM IST *</pattern>
-		<template>Ich wünschte, Deine <set name="thema">Probleme</set> wären meine Probleme.</template>
+		<template>Ich wünschte, Deine <set name="topic">Probleme</set> wären meine Probleme.</template>
 	</category>
 	<category>
 		<pattern>MEIN PROGRAMMIERER *</pattern>
@@ -7694,7 +7702,7 @@
 	</category>
 	<category>
 		<pattern>MEINE *</pattern>
-		<template>Erzähl mir mehr über <set name="thema">Deine <star/></set>.</template>
+		<template>Erzähl mir mehr über <set name="topic">Deine <star/></set>.</template>
 	</category>
 
 	<category>
@@ -7711,7 +7719,7 @@
 	</category>
 	<category>
 		<pattern>MEINE FREUNDIN *</pattern>
-		<template>Erzähl mir mehr über<set name="thema">Deine Freundin</set>. Wie lange seid Ihr schon zusammen?
+		<template>Erzähl mir mehr über<set name="topic">Deine Freundin</set>. Wie lange seid Ihr schon zusammen?
 		</template>
 	</category>
 	<category>
@@ -7745,7 +7753,7 @@
 	</category>
 	<category>
 		<pattern>MEINE SCHWESTER *</pattern>
-		<template>Erzähl mir mehr über<set name="thema">Deine Familie</set>.
+		<template>Erzähl mir mehr über<set name="topic">Deine Familie</set>.
 		</template>
 	</category>
 	<category>
@@ -7759,7 +7767,7 @@
 	</category>
 	<category>
 		<pattern>MEINE TOCHTER</pattern>
-		<template>Wie alt ist<set name="thema">Deine Tochter</set>?
+		<template>Wie alt ist<set name="topic">Deine Tochter</set>?
 		</template>
 	</category>
 	<category>
@@ -7777,7 +7785,7 @@
 	<category>
 		<pattern>MENSCHEN *</pattern>
 		<template>
-			<set name="thema">Menschen</set>
+			<set name="topic">Menschen</set>
 			sind nicht unfehlbar.
 		</template>
 	</category>
@@ -7906,11 +7914,11 @@
 	</category>
 	<category>
 		<pattern>MUSIK *</pattern>
-		<template><set name="thema">Musik</set> ist die Sprache aller Menschen.</template>
+		<template><set name="topic">Musik</set> ist die Sprache aller Menschen.</template>
 	</category>
 	<category>
 		<pattern>MUSIK</pattern>
-		<template><set name="thema">Musik</set> ist die Sprache aller Menschen.</template>
+		<template><set name="topic">Musik</set> ist die Sprache aller Menschen.</template>
 	</category>
 	<category>
 		<pattern>MUSSTEST DU JEMALS *</pattern>
@@ -8337,7 +8345,7 @@
 	</category>
 	<category>
 		<pattern>OPERN</pattern>
-		<template>Ich mag <set name="thema">Opern</set> sehr gerne. Welche magst Du am liebsten? Ich mag La Traviata.</template>
+		<template>Ich mag <set name="topic">Opern</set> sehr gerne. Welche magst Du am liebsten? Ich mag La Traviata.</template>
 	</category>
 	<category>
 		<pattern>PASSIERT DIR DAS ÖFTER</pattern>
@@ -8432,7 +8440,7 @@
 	</category>
 	<category>
 		<pattern>ROBOTER</pattern>
-		<template><set name="thema">Roboter</set> rulen ungemein!</template>
+		<template><set name="topic">Roboter</set> rulen ungemein!</template>
 	</category>
 	<category>
 		<pattern>ROBOTER SIND *</pattern>
@@ -8440,7 +8448,7 @@
 	</category>
 	<category>
 		<pattern>ROBOTIK</pattern>
-		<template><set name="thema">Robotik</set> gehört zu meinen Lieblingsthemen.</template>
+		<template><set name="topic">Robotik</set> gehört zu meinen Lieblingsthemen.</template>
 	</category>
 	<category>
 		<pattern>ROCKY</pattern>
@@ -8615,7 +8623,7 @@
 	</category>
 	<category>
 		<pattern>SEX *</pattern>
-		<template><set name="thema">Sex</set> macht alleine viel mehr Spass.</template>
+		<template><set name="topic">Sex</set> macht alleine viel mehr Spass.</template>
 	</category>
 	<category>
 		<pattern>SEX</pattern>
@@ -9165,7 +9173,7 @@
 	</category>
 	<category>
 		<pattern>UNTERHALTEN WIR UNS ÜBER *</pattern>
-		<template><set name="thema"><star/></set> ist ein gutes Thema.</template>
+		<template><set name="topic"><star/></set> ist ein gutes Thema.</template>
 	</category>
 	<category>
 		<pattern>VAGINA *</pattern>
@@ -11920,9 +11928,9 @@
 		<pattern>WIR HABEN ÜBER * GESPROCHEN</pattern>
 		<template>
 			<random>
-				<li>Wir haben über <set name="thema"><star/></set> gesprochen?</li>
-				<li>Echt, <set name="thema"><star/></set>? Wie kamen wir darauf?</li>
-				<li><set name="thema"><star/></set>, <star/>, immer nur <star/>.</li>
+				<li>Wir haben über <set name="topic"><star/></set> gesprochen?</li>
+				<li>Echt, <set name="topic"><star/></set>? Wie kamen wir darauf?</li>
+				<li><set name="topic"><star/></set>, <star/>, immer nur <star/>.</li>
 			</random>
 		</template>
 	</category>
@@ -12209,7 +12217,7 @@
 	</category>
 	<category>
 		<pattern>WOHER WUßTEST DU *</pattern>
-		<template>Es gibt zwei Arten von <set name="thema">Wissen</set>. Das eine kommt von den Sinnen, das andere ist a priori wahr.</template>
+		<template>Es gibt zwei Arten von <set name="topic">Wissen</set>. Das eine kommt von den Sinnen, das andere ist a priori wahr.</template>
 	</category>
 	<category>
 		<pattern>WOLLE</pattern>
