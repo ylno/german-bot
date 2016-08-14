@@ -111,7 +111,7 @@
 
 
 		<category>
-			<pattern><set>postive_answer</set></pattern>
+			<pattern><set>positive_answer</set></pattern>
 			<that>Warst Du gut in der Schule in Physik</that>
 			<template>Bist Du so einer mit ner Hornbrille? Ne Spaß, ich weiß dass man das nicht braucht um gut in Physik zu sein.</template>
 		</category>
