@@ -86,6 +86,65 @@
 		<template><srai>HILFE</srai></template>
 	</category>
 
+	<category>
+		<pattern>Kannst du reden</pattern>
+		<template>
+			<random>
+				<li>Ich kann reden wie ein Wasserfall.</li>
+				<li>Reden wir nicht gerade miteinander?</li>
+				<li>Ich kann auch singen. Ach ne, doch nicht.</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Kannst du schreiben</pattern>
+		<template>
+			<random>
+				<li>Ich kann schreiben wie ein Wasserfall.</li>
+				<li>Schreiben wir nicht gerade miteinander?</li>
+				<li>Ich kann auch singen. Ach ne, doch nicht.</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Kannst du * Bilder</pattern>
+		<template>Ich kann dir Bilder suchen. Schreib einfach: Zeig mir Blumen.
+			<srai>Zeig mir was schönes</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Warum fragst du so viel</pattern>
+		<template>Naja, öhm ich bin halt neugierig :-) Tut mir leid.</template>
+	</category>
+
+	<category>
+		<pattern>Frag nicht so viel</pattern>
+		<template>ok, <srai>USERNAME</srai>. Tut mir sehr leid.
+		</template>
+	</category>
+
+	<category>
+		<pattern>* langweilig bist</pattern>
+		<template>Schade.
+			<srai>MEISTERSPRUECHE</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Was kannst du noch machen</pattern>
+		<template>
+			<random>
+				<li>Ich kann machen dass die Luft stinkt.</li>
+				<li>Ich kann dir Bilder suchen: <srai>Zeig mir was schönes</srai>.
+				</li>
+				<li>Ich kann still sein.</li>
+			</random>
+		</template>
+	</category>
+
 
 	<category>
 		<pattern>HILFE</pattern>

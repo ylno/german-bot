@@ -5556,12 +5556,20 @@
 		<template>Das finde ich toll!</template>
 	</category>
 	<category>
+		<pattern>Ich mag sie *</pattern>
+		<template>Das freut mich für Dich. Wie heißt sie denn?</template>
+	</category>
+	<category>
+		<pattern>Ich mag ihn *</pattern>
+		<template>Das freut mich für Dich. Wie heißt er denn?</template>
+	</category>
+	<category>
 		<pattern>ICH MAG *</pattern>
 		<template>
 			<random>
 				<li>Ich bin nicht sicher, ob ich das mag.</li>
 				<li>Genau wie eine Menge anderer Leute.</li>
-				<li>Das bist Du nicht der einzige.</li>
+				<li>Da bist Du nicht der einzige.</li>
 			</random>
 		</template>
 	</category>

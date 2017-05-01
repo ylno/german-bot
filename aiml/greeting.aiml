@@ -23,6 +23,49 @@
 		<template>Guuuude!</template>
 	</category>
 
+	<category>
+		<pattern>Bis dann</pattern>
+		<template>SEEYOU</template>
+	</category>
+	<category>
+		<pattern>Tschüss</pattern>
+		<template>SEEYOU</template>
+	</category>
+	<category>
+		<pattern>Ciao</pattern>
+		<template>SEEYOU</template>
+	</category>
+
+	<category>
+		<pattern>Cu</pattern>
+		<template>SEEYOU</template>
+	</category>
+
+	<category>
+		<pattern>Cu</pattern>
+		<template>SEEYOU</template>
+	</category>
+
+	<category>
+		<pattern>SEEYOU</pattern>
+		<template>
+			<random>
+				<li>Machs gut.</li>
+				<li>Tschüss.</li>
+				<li>Ciao.</li>
+				<li>Wiedersehen!</li>
+				<li>Au revoir!</li>
+			</random>
+			<random>
+				<li>Ich warte hier auf Dich.</li>
+				<li>Ich bleib so lange hier bis Du wieder kommst.</li>
+				<li></li>
+				<li>Ich werde Dich vermissen.</li>
+				<li>Winke Winke.</li>
+			</random>
+		</template>
+	</category>
+
 
 	<category>
 		<pattern>HALLO *</pattern>

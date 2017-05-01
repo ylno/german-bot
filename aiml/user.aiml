@@ -943,6 +943,17 @@ Mathematik magst du nicht.</li>
 		</template>
 	</category>
 
+	<category>
+		<pattern>* mich beleidigt</pattern>
+		<pattern>
+			<random>
+				<li>Klingt für mich wie Mimimimi.</li>
+				<li>Sorry, war nicht meine Absicht.</li>
+				<li>Naja, war nicht so gemeint.</li>
+				<li>Manchmal passiert mir das ganz unabsichtlich.</li>
+			</random>
+		</pattern>
+	</category>
 
 
 

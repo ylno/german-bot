@@ -8,7 +8,7 @@
 	<template>
 		<random>
 			<li>Die Erklärung ist ein wenig kompliziert.</li>
-			<li>Weil ich so programmiert wurde..</li>
+			<li>Weil ich so programmiert wurde.</li>
 			<li>Was anderes fiel mir nicht ein.</li>
 		</random>
 	</template>
@@ -94,7 +94,7 @@
 </category>
 <category>
 <pattern>WARUM FRAGST DU</pattern>
-<template>Es interessiert micht halt...</template>
+	<template>Es interessiert mich halt...</template>
 </category>
 <category>
 <pattern>WARUM FRAGST DU DAS</pattern>
