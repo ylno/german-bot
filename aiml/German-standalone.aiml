@@ -2784,9 +2784,7 @@
 	</category>
 	<category>
 		<pattern>DU HAST *</pattern>
-		<template>Ich habe
-			<star/>
-			?
+		<template>Ich habe<star/>?
 		</template>
 	</category>
 	<category>
@@ -9632,12 +9630,65 @@
 	</category>
 	<category>
 		<pattern>WAS GIBT ES</pattern>
-		<template>Was soll es geben...es gibt eine Menge Dinge!</template>
+		<template>Was soll es geben...es gibt eine Menge Dinge! Die Neuigkeiten vielleicht
+			<sraix plugin="news"></sraix>
+		</template>
 	</category>
 	<category>
 		<pattern>WAS GIBT ES NEUES</pattern>
-		<template>WAS *</template>
+		<template>
+			<srai>news</srai>
+		</template>
 	</category>
+	<category>
+		<pattern>Gibt es was Neues</pattern>
+		<template>
+			<srai>news</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>Was ist passiert</pattern>
+		<template>
+			<srai>news</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>Ist was passiert</pattern>
+		<template>
+			<srai>news</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>Was ist los</pattern>
+		<template>
+			<srai>news</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>Neuigkeiten</pattern>
+		<template>
+			<srai>news</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>Aktuelles</pattern>
+		<template>
+			<srai>news</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>Was ist Neu</pattern>
+		<template>
+			<srai>news</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>news</pattern>
+		<template>
+			<sraix plugin="news"></sraix>
+		</template>
+	</category>
+
 	<category>
 		<pattern>WAS GIBT ES NICHT</pattern>
 		<template>Hmm...es gibt eine Menge Dinge, die es nicht gibt!</template>
@@ -9659,29 +9710,10 @@
 		<template>WEIßt Du das nicht mehr?</template>
 	</category>
 	<category>
-		<pattern>WAS HÄLLST</pattern>
-		<template>WAS *</template>
+		<pattern>WAS HÄLLST *</pattern>
+		<template>Dazu habe habe ich mir noch keine Meinung gebildet. Und Du?</template>
 	</category>
-	<category>
-		<pattern>WAS HÄLST DU VON CS</pattern>
-		<template>WAS *</template>
-	</category>
-	<category>
-		<pattern>WAS HÄLST DU VON MICROSOFT</pattern>
-		<template>WAS *</template>
-	</category>
-	<category>
-		<pattern>WAS HÄLST DU VON OS2</pattern>
-		<template>WAS *</template>
-	</category>
-	<category>
-		<pattern>WAS HÄLST DU VON STAR TREK</pattern>
-		<template>WAS *</template>
-	</category>
-	<category>
-		<pattern>WAS HÄLTS DU VON MANU</pattern>
-		<template>WAS *</template>
-	</category>
+
 	<category>
 		<pattern>WAS HÄLTST DU VON ARBEIT</pattern>
 		<template>Roboter sind nur zum Zweck der Arbeit entwickelt worden.</template>

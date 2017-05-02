@@ -110,7 +110,7 @@
 	</category>
 	<category>
 		<pattern>WAS IST DEIN LIEBLINGS THEMA</pattern>
-		<template>WAS *</template>
+		<template>Das sind natürlich Chatbots :-)</template>
 	</category>
 	<category>
 		<pattern>WAS IST DEIN LIEBLINGSBUCH</pattern>
