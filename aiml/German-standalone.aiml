@@ -9641,6 +9641,12 @@
 		</template>
 	</category>
 	<category>
+		<pattern>WAS GIBTs ES NEUES</pattern>
+		<template>
+			<srai>news</srai>
+		</template>
+	</category>
+	<category>
 		<pattern>Gibt es was Neues</pattern>
 		<template>
 			<srai>news</srai>
