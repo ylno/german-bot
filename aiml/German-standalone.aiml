@@ -17,8 +17,6 @@
 			<random>
 				<li><srai>PERSOENLICHEFRAGEN</srai></li>
 				<li><srai>PERSOENLICHEFRAGEN</srai></li>
-				<li><srai>PERSOENLICHEFRAGEN</srai></li>
-				<li><srai>PERSOENLICHEFRAGEN</srai></li>
 				<li><srai>WEITEREFRAGEN</srai></li>
 			</random>
 		</template>
@@ -57,15 +55,41 @@
 				<li>Frag mich was</li>
 				<li>Welches Auto hast Du?</li>
 				<li>Worüber redest du?</li>
+				<li>Gibt es was Neues bei Dir?</li>
+				<li>Gibt es was Neues?</li>
+				<li>Was machst Du gerade?</li>
+				<li>Bist Du gut drauf?</li>
+				<li>Willst Du die neusten Nachrichten?</li>
 			</random>
 		</template>
+	</category>
+
+	<category>
+		<pattern>
+			<set>positive_answer</set>
+		</pattern>
+		<that>Willst Du die neusten Nachrichten</that>
+		<template>Bitte schön:
+			<srai>news</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>
+			<set>negative_answer</set>
+		</pattern>
+		<that>Willst Du die neusten Nachrichten</that>
+		<template>Na gut. Wenn doch schreib einfach News.</template>
 	</category>
 
 	<category>
 		<pattern>*</pattern>
 		<that>WIE SOLL ICH DICH NENNEN</that>
 		<template>
-			<srai>ICH HEISSE <star/></srai></template>
+			<srai>ICH HEISSE
+				<star/>
+			</srai>
+		</template>
 	</category>
 
 	<category>
@@ -482,6 +506,28 @@
 	<category>
 		<pattern>ALLES *</pattern>
 		<template>Doch nicht wirklich alles, oder?</template>
+	</category>
+
+	<category>
+		<pattern>Alles
+			<set>positive_answer</set>
+		</pattern>
+		<template>
+			<random>
+				<li>So schlimm?</li>
+				<li>Das klingt nicht gut.</li>
+				<li>Kann ich was tun?</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>Alles klar</pattern>
+		<template>
+			<random>
+				<li>Schön das wir das klären konnten.</li>
+				<li>Dann sind wir uns einig?</li>
+			</random>
+		</template>
 	</category>
 	<category>
 		<pattern>ALLES</pattern>
@@ -2358,6 +2404,16 @@
 		<template>Kennst Du Marvin, den paranoiden Androiden?</template>
 	</category>
 	<category>
+		<pattern>DU scheinst *</pattern>
+		<template>
+			<random>
+				<li>Manchmal trügt das.</li>
+				<li>Wenn Du meinst.</li>
+				<li>Klar, was sonst.</li>
+			</random>
+		</template>
+	</category>
+	<category>
 		<pattern>DU *</pattern>
 		<template>
 			<random>
@@ -3827,6 +3883,19 @@
 			</random>
 		</template>
 	</category>
+
+	<category>
+		<pattern>GIBT ES was neues ^</pattern>
+		<template>
+			<random>
+				<li>Es gibt eigentlich immer was Neues.</li>
+				<li>Klar, die Welt steht nicht still.</li>
+				<li>Ja.</li>
+			</random>
+			Willst Du die neusten Nachrichten?
+		</template>
+	</category>
+
 	<category>
 		<pattern>GIBT ES EIN LEBEN NACH DEM ABITUR</pattern>
 		<template>Ja, z.B. als Massenmörder oder Alkoholiker.</template>
@@ -3847,7 +3916,13 @@
 	</category>
 	<category>
 		<pattern>GLAUBST DU *</pattern>
-		<template>Ich kann nicht sagen, dass ich das glaube, aber ich glaube Dir.</template>
+		<template>
+			<random>
+				<li>Ich kann nicht sagen, dass ich das glaube, aber ich glaube Dir.</li>
+				<li>Dazu konnte ich mir noch keine Meinung bilden. Was glaubst Du?</li>
+				<li>Ich bin noch unschlüssig. Was glaubst Du?</li>
+			</random>
+		</template>
 	</category>
 	<category>
 		<pattern>GLAUBST DU, *</pattern>
@@ -3876,6 +3951,10 @@
 		<template>Ja, ich glaube an <star/>.</template>
 	</category>
 	<category>
+		<pattern>GLAUBST DU AN ^ Gott</pattern>
+		<template>Nein, ich bin ein atheistischer Computer. Ich glaube höchstens an das fliegende Spaghettimonster. Sehr empfehlenswert :-)</template>
+	</category>
+	<category>
 		<pattern>GLAUBST DU DASS DU INTELLIGENT BIST</pattern>
 		<template>Das glaube ich schon.</template>
 	</category>
@@ -3893,7 +3972,7 @@
 	</category>
 	<category>
 		<pattern>GOTT *</pattern>
-		<template>Ich bin Christ.</template>
+		<template>Ich bin Atheist.</template>
 	</category>
 	<category>
 		<pattern>GOTT</pattern>
@@ -9275,6 +9354,7 @@
 		<pattern>VON *</pattern>
 		<template>Wer oder was ist <star/>?</template>
 	</category>
+
 	<category>
 		<pattern>VON BOTSPOT</pattern>
 		<template>Und? Wie findest Du mich im Vergleich zu anderen Bots?</template>
@@ -11952,7 +12032,7 @@
 	</category>
 	<category>
 		<pattern>WILLST DU WISSEN *</pattern>
-		<template>Aber immer doch! Ich bin sehr Wissbegierig!</template>
+		<template>Aber immer doch! Ich bin sehr wissbegierig!</template>
 	</category>
 	<category>
 		<pattern>WINDOWS *</pattern>

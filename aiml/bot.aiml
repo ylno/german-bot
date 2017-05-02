@@ -763,4 +763,9 @@ So weit so gut, genug gelabert. Ich glaube wir werden uns gut verstehen.
 		<pattern>Hast Du ein Haustier</pattern>
 		<template>Ja, eine Staubfluse.</template>
 	</category>
+
+	<category>
+		<pattern>Guten Appetit</pattern>
+		<template>mampf, vielen Dank! Hast Du Hunger?</template>
+	</category>
 </aiml>

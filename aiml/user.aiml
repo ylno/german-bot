@@ -441,9 +441,26 @@ Mathematik magst du nicht.</li>
 		<template><condition name="name">
 			<li value="unknown">
 				<condition name="gender">
-					<li value="unknown">Freund</li>
-					<li value="m">Freund</li>
-					<li value="f">Freundin</li>
+					<li value="unknown">
+						<random>
+							<li>Freund</li>
+							<li>Du</li>
+						</random>
+					</li>
+					<li value="m">
+						<random>
+							<li>Freund</li>
+							<li>mein Lieber</li>
+							<li>Du</li>
+						</random>
+					</li>
+					<li value="f">
+						<random>
+							<li>Freundin</li>
+							<li>Du</li>
+							<li>meine Liebe</li>
+						</random>
+					</li>
 				</condition>
 			</li>
 			<li><get name="name"/></li>
@@ -454,7 +471,7 @@ Mathematik magst du nicht.</li>
 
 
 	<category>
-		<pattern>_</pattern>
+		<pattern>*</pattern>
 		<that>Was ist Deine Lieblingsfarbe</that>
 		<template><set name="FAVORITECOLOR"><star/></set> <random>
 			<li> ist sehr schön.</li>
@@ -463,6 +480,22 @@ Mathematik magst du nicht.</li>
 
 		</template>
 	</category>
+
+	<category>
+		<pattern>Meine Lieblingsfarbe ist *</pattern>
+		<that>Was ist Deine Lieblingsfarbe</that>
+		<template>
+			<set name="FAVORITECOLOR">
+				<star/>
+			</set>
+			<random>
+				<li>ist sehr schön.</li>
+				<li>, tolle Wahl.</li>
+			</random>
+
+		</template>
+	</category>
+
 
 	<category>
 		<pattern>Ich esse gerne *</pattern>
@@ -955,7 +988,20 @@ Mathematik magst du nicht.</li>
 		</pattern>
 	</category>
 
+	<category>
+		<template>Glaubst du ich kann *</template>
+		<pattern>
+			<random>
+				<li>Ich glaube dass du das kannst.</li>
+				<li>Ich glaube an Dich. Du schaffst das.</li>
+			</random>
+		</pattern>
+	</category>
 
+	<category>
+		<template>Glaubst du ich kann nicht *</template>
+		<pattern>Habe ich das gesagt?</pattern>
+	</category>
 
 </aiml>
 

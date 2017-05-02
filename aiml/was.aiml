@@ -459,6 +459,32 @@
 		<template><srai>Was ist <star/></srai></template>
 	</category>
 
+	<category>
+		<pattern>Was bedeutet dieses Wort</pattern>
+		<template>Welches Wort?</template>
+	</category>
 
+	<category>
+		<pattern>Was bedeutet das</pattern>
+		<template>Was meinst du jetzt genau?</template>
+	</category>
 
+	<category>
+		<pattern>*</pattern>
+		<that>welches wort</that>
+		<template>na
+			<srai>was ist
+				<star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>*</pattern>
+		<that>Was meinst du jetzt genau</that>
+		<template>
+			<srai>was ist
+				<star/>
+			</srai>
+		</template>
+	</category>
 </aiml>
