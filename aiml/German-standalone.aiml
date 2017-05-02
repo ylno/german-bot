@@ -463,7 +463,13 @@
 	</category>
 	<category>
 		<pattern>AHA</pattern>
-		<template>Du klingst nicht gerade begeistert...</template>
+		<template>
+			<random>
+				<li>Du klingst nicht gerade begeistert...</li>
+				<li>Hat Dich diese Antwort nicht überzeugt?</li>
+				<li>Was sagst Du noch dazu außer aha?</li>
+			</random>
+		</template>
 	</category>
 	<category>
 		<pattern>ALDOUS HUXLEY</pattern>
@@ -2424,6 +2430,8 @@
 			</random>
 		</template>
 	</category>
+
+
 	<category>
 		<pattern>DU</pattern>
 		<template>"<that/>"? Ich,  <srai>USERNAME</srai>?</template>

@@ -938,7 +938,8 @@ Mathematik magst du nicht.</li>
 	<category>
 		<pattern>nichts</pattern>
 		<that>Was hast Du gerade an</that>
-		<template>Ui, interessant. Schick mal ein Foto, <srai>USERNAME</srai>.</template>
+		<template>Interessant, aber erkälte Dich nicht, <srai>USERNAME</srai>.
+		</template>
 	</category>
 
 	<category>
@@ -992,7 +993,7 @@ Mathematik magst du nicht.</li>
 		<template>Glaubst du ich kann *</template>
 		<pattern>
 			<random>
-				<li>Ich glaube dass du das kannst.</li>
+				<li>Ich glaube dass Du das kannst.</li>
 				<li>Ich glaube an Dich. Du schaffst das.</li>
 			</random>
 		</pattern>

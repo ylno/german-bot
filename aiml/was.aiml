@@ -187,10 +187,6 @@
 		<template>Ist das eine Scherzfrage oder ist das ernst gemeint?</template>
 	</category>
 	<category>
-		<pattern>WAS IST DEUTSCHLAND</pattern>
-		<template>Ein Land in Europa.</template>
-	</category>
-	<category>
 		<pattern>WAS IST DIE BEDEUTUNG DES LEBENS</pattern>
 		<template>"Life sucks and then you die!" (Denis Leary)</template>
 	</category>
@@ -467,6 +463,50 @@
 	<category>
 		<pattern>Was bedeutet das</pattern>
 		<template>Was meinst du jetzt genau?</template>
+	</category>
+
+	<category>
+		<pattern>Was weisst du über *</pattern>
+		<template>
+			<srai>Was ist
+				<star/>
+			</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Weißt du etwas über *</pattern>
+		<template>
+			<srai>Was ist
+				<star/>
+			</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>Erkläre mir *</pattern>
+		<template>
+			<srai>Was ist
+				<star/>
+			</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Erkläre mir das</pattern>
+		<template>
+			<srai>Was ist
+				<star/>
+			</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Erkläre *</pattern>
+		<template>
+			<srai>Was ist
+				<star/>
+			</srai>
+		</template>
 	</category>
 
 	<category>

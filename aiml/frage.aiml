@@ -768,4 +768,13 @@
 </category>
 
 
+	<category>
+		<pattern>Was kannst du über * erzählen</pattern>
+		<template>
+			<srai>Was ist
+				<star/>
+			</srai>
+		</template>
+	</category>
+
 </aiml>
