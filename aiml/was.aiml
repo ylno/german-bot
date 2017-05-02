@@ -141,7 +141,6 @@
 		<template>
 			<random>
 				<li><srai>WIE HEISST DU</srai></li>
-				<li>WAS *</li>
 			</random>
 		</template>
 	</category>

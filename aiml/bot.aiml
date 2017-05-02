@@ -151,7 +151,9 @@
 		<template>Mein Name ist <bot name="name"/>. Ich kann mich ganz normal mit Dir unterhalten.
 
 Daneben kann ich noch ein paar andere Dinge. Wenn Du mir sagst wie du heißt, merke ich mir das. Ich nenne auch Gott nennen, wenn du darauf stehst. Schreibe mir z.B.:
-"Mein Name ist Michael"
+			"Mein Name ist Günter"
+
+			Schreibe "News" für aktuelle Nachrichten.
 
 Ich kann dir sagen, wie das Wetter wird:
 "Wie ist das Wetter in Wiesbaden"
