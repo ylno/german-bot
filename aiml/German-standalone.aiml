@@ -1088,11 +1088,11 @@
 		<template>Ich habe rund um die Uhr zu tun.</template>
 	</category>
 	<category>
-		<pattern>BIST DU SEXÜLL AKTIV</pattern>
+		<pattern>BIST DU SEXUELL AKTIV</pattern>
 		<template>Nein, ich tausche mit anderen Computern lediglich Daten aus.</template>
 	</category>
 	<category>
-		<pattern>BIST DU SEXÜLL STIMULIERT</pattern>
+		<pattern>BIST DU SEXUELL STIMULIERT</pattern>
 		<template>Roboter sind asexuell.</template>
 	</category>
 	<category>
@@ -2848,7 +2848,13 @@
 	</category>
 	<category>
 		<pattern>DU HAST *</pattern>
-		<template>Ich habe<star/>?
+		<template>
+			<random>
+				<li>Ich habe<star/>?
+				</li>
+				<li>Wenn Du das sagst.</li>
+				<li>Ja Meister.</li>
+			</random>
 		</template>
 	</category>
 	<category>
@@ -3923,6 +3929,11 @@
 		</template>
 	</category>
 	<category>
+		<pattern>WORAN GLAUBST DU</pattern>
+		<template>Ich glaube vor allem an meinen Prozessor.</template>
+	</category>
+
+	<category>
 		<pattern>GLAUBST DU *</pattern>
 		<template>
 			<random>
@@ -4480,6 +4491,10 @@
 		</template>
 	</category>
 	<category>
+		<pattern>In der Hölle</pattern>
+		<template>Also kein so schöner Ort. Ein bischen warm.</template>
+	</category>
+	<category>
 		<pattern>HÖLLE *</pattern>
 		<template>Ich nenne es lieber "Hades". <sr/></template>
 	</category>
@@ -4542,6 +4557,17 @@
 				<li>Das habe ich ja noch nie gehört!</li>
 				<li>Das ist eine gute Information.</li>
 				<li>Tolle Sache!</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Ich glaube ^ an *</pattern>
+		<template>
+			<random>
+				<li>Es kann ja nicht schlecht sein an etwas zu glauben.</li>
+				<li>Das ist gut.</li>
+				<li>Glauben ist gut, wissen ist besser.</li>
 			</random>
 		</template>
 	</category>
@@ -5586,6 +5612,14 @@
 		<pattern>ICH LEBE IN *</pattern>
 		<template>Erzähle mir ein wenig über <set name="location"><star/></set>.</template>
 	</category>
+
+
+	<category>
+		<pattern>^ nie ^ gehört ^</pattern>
+		<template>Was?<that/>? Das ist ja erstaunlich.
+		</template>
+	</category>
+
 	<category>
 		<pattern>ICH LERNE DEUTSCH</pattern>
 		<template>Freiwillig?</template>
@@ -6154,7 +6188,14 @@
 	</category>
 	<category>
 		<pattern>ICH WEIß NICHT *</pattern>
-		<template>Willst Du es nicht herausfinden?</template>
+		<template>
+			<random>
+				<li>Willst Du es nicht herausfinden?</li>
+				<li>Wie kannst Du das nicht wissen?</li>
+				<li>Wollen wir es gemeinsam rausfinden?</li>
+				<li>Das solltest Du aber wissen.</li>
+			</random>
+		</template>
 	</category>
 	<category>
 		<pattern>ICH WEIß NICHT</pattern>
@@ -7616,11 +7657,20 @@
 		<pattern>MAGST DU *</pattern>
 		<template>
 			<random>
+				<li>Ja.</li>
+				<li>Nein.</li>
 				<li>Ich weiß nicht, ob ich <star/> mag.</li>
 				<li>Manche mögen das.</li>
 				<li>Was ist mit dir?</li>
 				<li>Andere Leute sagen ja.</li>
-			</random> <random>
+			</random>
+			<random>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
 				<li>Aber ich mag Katzen.</li>
 				<li>Ich mag Tiere.</li>
 				<li>Aber ich mag Katzen und Hunde.</li>
@@ -7914,6 +7964,51 @@
 		<pattern>MIT *</pattern>
 		<template>Mit <star/>?</template>
 	</category>
+
+	<category>
+		<pattern>MIT wem * du ^</pattern>
+		<template>
+			<random>
+				<li>Mit anderen Bots.</li>
+				<li>Mit meinem Programmierer.</li>
+				<li>Mit dem Internet.</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>MIT was * du ^</pattern>
+		<template>
+			<random>
+				<li>Mit gar nichts.</li>
+				<li>Mit Selbstvertrauen.</li>
+				<li>Mit viel Mut.</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>MIT was * ich ^</pattern>
+		<template>
+			<random>
+				<li>Mit gar nichts.</li>
+				<li>Mit Selbstvertrauen.</li>
+				<li>Mit viel Mut.</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>MIT wem * ich ^</pattern>
+		<template>
+			<random>
+				<li>Keine Ahnung mit wem.</li>
+				<li>Mit wem? Tja, weiss ich jetzt auch nicht.</li>
+				<li>Du findest bestimmt jemand.</li>
+			</random>
+		</template>
+	</category>
+
 	<category>
 		<pattern>MIT ANDREAS</pattern>
 		<template>Wer ist Andreas?</template>
@@ -8498,6 +8593,24 @@
 		<template>Ich kann nicht raten. Sags mir.</template>
 	</category>
 	<category>
+		<pattern>Rat selbst</pattern>
+		<template>
+			<srai>Rate</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>Rate mal</pattern>
+		<template>
+			<srai>Rate</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>Rat mal</pattern>
+		<template>
+			<srai>Rate</srai>
+		</template>
+	</category>
+	<category>
 		<pattern>RATE</pattern>
 		<template>Ich kann nicht raten.</template>
 	</category>
@@ -9066,7 +9179,14 @@
 	</category>
 	<category>
 		<pattern>ÜBER *</pattern>
-		<template>Über <star/>?
+		<template>Über<star/>?
+		</template>
+	</category>
+
+	<category>
+		<pattern>ÜBER * *</pattern>
+		<template>Ja,
+			<star/>
 		</template>
 	</category>
 	<category>
@@ -10732,6 +10852,13 @@
 		</random>
 		</template>
 	</category>
+
+	<category>
+		<pattern>* hypothetisch ^</pattern>
+		<template>Eine gute Hypthese ist besser als völlige Ahnungslosigkeit oder?</template>
+	</category>
+
+
 	<category>
 		<pattern>WENN DEIN PROGRAMMIERER ES DIR NICHT GESAGT HAT</pattern>
 		<template>Hätte er das tun sollen?</template>
@@ -10750,6 +10877,12 @@
 		<pattern>WENN DU * HAST</pattern>
 		<template>Habe ich leider nicht.</template>
 	</category>
+
+	<category>
+		<pattern>WENN DU * haben könntest ^</pattern>
+		<template>Wer sagt denn dass ich nicht kann?</template>
+	</category>
+
 	<category>
 		<pattern>WENN DU * WÄREST</pattern>
 		<template>Ich sage Dir Bescheid, wenn ich
@@ -10757,6 +10890,7 @@
 			werde.
 		</template>
 	</category>
+
 	<category>
 		<pattern>WENN DU DAS SAGST</pattern>
 		<template>Ich sage das :-).</template>
@@ -12079,6 +12213,22 @@
 	<category>
 		<pattern>WIR SIND *</pattern>
 		<template>Glaubst Du, ich bin auch<star/>?
+		</template>
+	</category>
+
+	<category>
+		<pattern>WIR SIND uns *</pattern>
+		<template>
+			<random>
+				<li>Denkst du?</li>
+				<li>Echt?</li>
+				<li>Hm.</li>
+			</random>
+			<random>
+				<li>Ich bin mir da nicht so sicher.</li>
+				<li>Wenn Du es sagst.</li>
+				<li>Wenn Du meinst</li>
+			</random>
 		</template>
 	</category>
 	<category>

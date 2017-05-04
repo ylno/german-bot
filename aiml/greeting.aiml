@@ -77,10 +77,17 @@
 		<template><random>
 			<li>Hallo!</li>
 			<li>Hallo <srai>USERNAME</srai>! <sr/></li>
-			<li>Hallo!</li>
+			<li>Na?</li>
 			<li>Servus!</li>
+			<li>Schön dich zu lesen!</li>
+			<li>Sei gegrüßt!</li>
+			<li>Grüß Dich!</li>
+			<li>Hi!</li>
+			<li>Jo man!</li>
+			<li>Schnarch... ähm Hi. Entschuldige, ich war weggenickt!</li>
 		</random></template>
 	</category>
+
 
 	<category>
 		<pattern>HALLO <bot name="name"/></pattern>

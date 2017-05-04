@@ -20,6 +20,25 @@
 	</category>
 
 	<category>
+		<pattern>سلام</pattern>
+		<template>Oh, persisch. Hallo zurück :-)</template>
+	</category>
+
+	<category>
+		<pattern>نه</pattern>
+		<template>
+			<srai>nein</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>شب</pattern>
+		<template>
+			<srai>gute nacht</srai>
+		</template>
+	</category>
+
+	<category>
 		<pattern>Arme <bot name="name"/></pattern>
 		<template><srai>Armer Bot</srai></template>
 	</category>
@@ -501,6 +520,7 @@ So weit so gut, genug gelabert. Ich glaube wir werden uns gut verstehen.
 		<pattern>Magst Du Mathematik</pattern>
 		<template>Klar. Ich bestehe ja größteils aus Mathematik.</template>
 	</category>
+
 
 	<category>
 		<pattern>Magst Du Mathe</pattern>

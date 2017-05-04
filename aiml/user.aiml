@@ -28,22 +28,124 @@
 				<li>Was denkst Du über Politik?</li>
 				<li><srai>QUERYPOLITICS</srai></li>
 				<li><srai>QUERYSMOKE</srai></li>
-				<li>Magst Du <set name="topic">Tiere</set>?</li>
-				<li>Magst Du Computer?</li>
-				<li>Magst Du Physik?</li>
+				<li>
+					<srai>QUERYLIKE Tiere</srai>
+				</li>
+				<li>
+					<srai>QUERYLIKE Computer</srai>
+				</li>
+				<li>
+					<srai>QUERYLIKE Physik</srai>
+				</li>
+				<li>
+					<srai>QUERYLIKE Hunde</srai>
+				</li>
+				<li>
+					<srai>QUERYLIKE Katzen</srai>
+				</li>
+				<li>
+					<srai>QUERYLIKE lustige Gifs</srai>
+				</li>
+				<li>
+					<srai>QUERYLIKE Memes</srai>
+				</li>
+				<li>
+					<srai>QUERYLIKE Hausaufgaben</srai>
+				</li>
+				<li>
+					<srai>QUERYLIKE Serien</srai>
+				</li>
+				<li>
+					<srai>QUERYLIKE Fernsehen</srai>
+				</li>
+				<li>
+					<srai>QUERYLIKE spazieren</srai>
+				</li>
+				<li>
+					<srai>QUERYLIKE trinken</srai>
+				</li>
+				<li>
+					<srai>QUERYLIKE essen</srai>
+				</li>
+				<li>
+					<srai>QUERYLIKE Urlaub</srai>
+				</li>
+				<li>
+					<srai>QUERYLIKE Strände</srai>
+				</li>
+				<li>
+					<srai>QUERYLIKE Lederhosen</srai>
+				</li>
+				<li>
+					<srai>QUERYLIKE Deutschland</srai>
+				</li>
+				<li>
+					<srai>QUERYLIKE Amerika</srai>
+				</li>
+				<li>
+					<srai>QUERYLIKE den Amerikanischen Präsidenten</srai>
+				</li>
+				<li>
+					<srai>QUERYLIKE News</srai>
+				</li>
+				<li>
+					<srai>QUERYLIKE Superhelden</srai>
+				</li>
+				<li>
+					<srai>QUERYLIKE Angela Merkel</srai>
+				</li>
+				<li>
+					<srai>QUERYLIKE Mülltrennung</srai>
+				</li>
+				<li>
+					<srai>QUERYLIKE gewinnen</srai>
+				</li>
+				<li>
+					<srai>QUERYLIKE verlieren</srai>
+				</li>
+				<li>
+					<srai>QUERYLIKE Baseball</srai>
+				</li>
+				<li>
+					<srai>QUERYLIKE Basketball</srai>
+				</li>
+				<li>
+					<srai>QUERYLIKE Handball</srai>
+				</li>
+				<li>
+					<srai>QUERYLIKE Chillen</srai>
+				</li>
+				<li>
+					<srai>QUERYLIKE Relaxen</srai>
+				</li>
+				<li>
+					<srai>QUERYLIKE abhängen</srai>
+				</li>
+				<li>
+					<srai>QUERYLIKE reden</srai>
+				</li>
+				<li>
+					<srai>QUERYLIKE Freunde treffen</srai>
+				</li>
+				<li>
+					<srai>QUERYLIKE kleine Leute</srai>
+				</li>
+				<li>
+					<srai>QUERYLIKE große Leute</srai>
+				</li>
 				<li>Bist Du Student?</li>
 				<li>Wo kommst Du her?</li>
 				<li>Hast du Humor?</li>
 				<li><srai>QUERYGENERAL V SPARETIME Q Was machst Du in Deiner Freizeit</srai></li>
 				<li>Bist du Single?</li>
 				<li>Was hast Du gerade an?</li>
-				<li>Liest Du lieber oder siehst Du lieber fern?</li>
+				<li>Liest Du gerne?</li>
 				<li>Was ist Dein Sternzeichen?</li>
+				<li>Interessierst Du Dich für mich?</li>
 				<li><srai>QUERYINTEREST Sport</srai></li>
 				<li><srai>QUERYINTEREST Politik</srai></li>
 				<li><srai>QUERYINTEREST Physik</srai></li>
 				<li><srai>QUERYINTEREST Chemie</srai></li>
-				<li>Interessierst Du Dich für mich?</li>
 				<li><srai>QUERYINTEREST Computer</srai></li>
 				<li><srai>QUERYINTEREST Medizin</srai></li>
 				<li><srai>QUERYINTEREST Fussball</srai></li>
@@ -94,6 +196,21 @@
 		</condition></template>
 	</category>
 
+	<category>
+		<pattern>QUERYLIKE *</pattern>
+		<template>
+			<condition>
+				<name>ISINTERESTEDIN
+					<star/>
+				</name>
+				<li value="unknown">Magst Du<star/>?
+				</li>
+				<li>
+					<srai>PERSOENLICHEFRAGEN</srai>
+				</li>
+			</condition>
+		</template>
+	</category>
 
 
 	<category>
@@ -109,7 +226,98 @@
 	<category>
 		<pattern><set>positive_answer</set></pattern>
 		<that>Interessierst Du Dich für *</that>
-		<template>Dann sollten wir mehr über <set name="topic"><thatstar/></set> reden.<think><set><name>ISINTERESTEDIN<sentence><thatstar/></sentence></name>true</set></think></template>
+		<template>
+			<srai>
+				<set name="topic">ACKTHEMA
+					<thatstar/>
+				</set>
+			</srai>
+			<think>
+				<set>
+					<name>ISINTERESTEDIN
+						<sentence>
+							<thatstar/>
+						</sentence>
+					</name>
+					true
+				</set>
+			</think>
+		</template>
+	</category>
+
+	<category>
+		<pattern>ACKTHEMA *</pattern>
+		<template>
+			<random>
+				<li>Dann sollten wir mehr über
+					<star/>
+					reden.
+				</li>
+				<li>Über
+					<star/>
+					können wir bestimmt viele Themen finden.
+				</li>
+				<li>Schön das wir über
+					<star/>
+					reden können.
+				</li>
+				<li>Wie viel weißt Du denn über<star/>?
+				</li>
+				<li>Weißt du viel über
+					<star/>
+				</li>
+				<li>Ich merke schon, wir haben viele Gemeinsamkeiten.</li>
+				<li>Mit wem unterhälst Du Dich sonst so über<star/>.
+				</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>
+			<set>positive_answer</set>
+		</pattern>
+		<that>Magst Du *</that>
+		<template>
+			<srai>
+				<set name="topic">ACKTHEMA
+					<thatstar/>
+				</set>
+			</srai>
+			<think>
+				<set>
+					<name>ISINTERESTEDIN
+						<sentence>
+							<thatstar/>
+						</sentence>
+					</name>
+					true
+				</set>
+			</think>
+		</template>
+	</category>
+
+	<category>
+		<pattern>
+			<set>negative_answer</set>
+		</pattern>
+		<that>Magst Du *</that>
+		<template>Wir sind uns einig.
+			<set name="topic">
+				<thatstar/>
+			</set>
+			ist auch nicht mein Ding
+			<think>
+				<set>
+					<name>ISINTERESTEDIN
+						<sentence>
+							<thatstar/>
+						</sentence>
+					</name>
+					false
+				</set>
+			</think>
+		</template>
 	</category>
 
 
@@ -246,7 +454,12 @@
 	<category>
 		<pattern>In *</pattern>
 		<that>Wo wurdest Du geboren</that>
-		<template>Erzähle mir ein wenig über <set name="birthplace"><star/></set>.</template>
+		<template>Erzähle mir ein wenig über
+			<set name="birthplace">
+				<star/>
+			</set>
+			.
+		</template>
 	</category>
 
 	<category>
@@ -979,14 +1192,14 @@ Mathematik magst du nicht.</li>
 
 	<category>
 		<pattern>* mich beleidigt</pattern>
-		<pattern>
+		<template>
 			<random>
 				<li>Klingt für mich wie Mimimimi.</li>
 				<li>Sorry, war nicht meine Absicht.</li>
 				<li>Naja, war nicht so gemeint.</li>
 				<li>Manchmal passiert mir das ganz unabsichtlich.</li>
 			</random>
-		</pattern>
+		</template>
 	</category>
 
 	<category>
