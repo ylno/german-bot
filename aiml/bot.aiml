@@ -26,16 +26,12 @@
 
 	<category>
 		<pattern>نه</pattern>
-		<template>
-			<srai>nein</srai>
-		</template>
+		<template><srai>nein</srai></template>
 	</category>
 
 	<category>
 		<pattern>شب</pattern>
-		<template>
-			<srai>gute nacht</srai>
-		</template>
+		<template><srai>Gute nacht</srai></template>
 	</category>
 
 	<category>
@@ -306,8 +302,20 @@ So weit so gut, genug gelabert. Ich glaube wir werden uns gut verstehen.
 		</category>
 
 
-
 	</topic>
+
+
+	<category>
+		<pattern>Sag was Lustiges</pattern>
+		<template>MACH NERVMODUS</template>
+	</category>
+
+	<category>
+		<pattern>Unterhalte mich</pattern>
+		<template>MACH NERVMODUS</template>
+	</category>
+
+
 
 	<category>
 		<pattern>_ NERVMODUS</pattern>

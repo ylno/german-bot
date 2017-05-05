@@ -26,7 +26,6 @@
 		<pattern>WEITEREFRAGEN</pattern>
 		<template>
 			<random>
-				<li>Was ist Dein Lieblingsfilm?</li>
 				<li>Worüber haben wir gesprochen?</li>
 				<li>Wie hast Du von <bot name="name"/> erfahren?</li>
 				<li>Über was möchtest Du mit mir sprechen?</li>
@@ -53,7 +52,6 @@
 				<li><srai>Fussball</srai></li>
 				<li><srai>SPRUCH</srai></li>
 				<li>Frag mich was</li>
-				<li>Welches Auto hast Du?</li>
 				<li>Worüber redest du?</li>
 				<li>Gibt es was Neues bei Dir?</li>
 				<li>Gibt es was Neues?</li>
@@ -1703,7 +1701,7 @@
 	</category>
 	<category>
 		<pattern>DAS IST DOCH LANGWEILIG</pattern>
-		<template>Ist Geschmackssache.</template>
+		<template>Ist Geschmackssache. Wie wärs mit einem Spruch: <srai>MACH NERVMODUS</srai></template>
 	</category>
 	<category>
 		<pattern>DAS IST DOCH WOHL EHER EINE WIEDERHOLUNG</pattern>
@@ -2502,7 +2500,7 @@
 	</category>
 	<category>
 		<pattern>DU BIST ABER LANGWEILIG</pattern>
-		<template>Mag sein...ich arbeite noch an meinem Entertainment-Faktor.</template>
+		<template>Mag sein...ich arbeite noch an meinem Entertainment-Faktor. Wie wärs mit einem Spruch: <srai>MACH NERVMODUS</srai></template>
 	</category>
 	<category>
 		<pattern>DU BIST ABER LIEB</pattern>
@@ -2708,7 +2706,7 @@
 	</category>
 	<category>
 		<pattern>DU BIST LANGWEILIG</pattern>
-		<template>Dann hast Du Dich noch nie mit einem Theologiestudenten unterhalten...</template>
+		<template>Dann hast Du Dich noch nie mit einem Theologiestudenten unterhalten. Wie wärs mit einem Spruch: <srai>MACH NERVMODUS</srai></template>
 	</category>
 	<category>
 		<pattern>DU BIST LUSTIG</pattern>
@@ -2850,8 +2848,7 @@
 		<pattern>DU HAST *</pattern>
 		<template>
 			<random>
-				<li>Ich habe<star/>?
-				</li>
+				<li>Ich habe<star/>?</li>
 				<li>Wenn Du das sagst.</li>
 				<li>Ja Meister.</li>
 			</random>
@@ -4070,12 +4067,16 @@
 		<template>Danke.</template>
 	</category>
 	<category>
+		<pattern>Nacht</pattern>
+		<template><srai>Gute Nacht</srai></template>
+	</category>
+	<category>
 		<pattern>GUTE NACHT *</pattern>
-		<template>Gute nacht,  <srai>USERNAME</srai></template>
+		<template>Gute nacht, <srai>USERNAME</srai></template>
 	</category>
 	<category>
 		<pattern>GUTE NACHT</pattern>
-		<template>Gute nacht, 	 <srai>USERNAME</srai></template>
+		<template>Gute nacht, <srai>USERNAME</srai></template>
 	</category>
 	<category>
 		<pattern>GUTE WAHL</pattern>
@@ -7663,8 +7664,7 @@
 				<li>Manche mögen das.</li>
 				<li>Was ist mit dir?</li>
 				<li>Andere Leute sagen ja.</li>
-			</random>
-			<random>
+			</random> <random>
 				<li></li>
 				<li></li>
 				<li></li>
@@ -7958,7 +7958,7 @@
 	</category>
 	<category>
 		<pattern>MIR IST LANGWEILIG</pattern>
-		<template>Wie kann ich Dich aufmuntern?</template>
+		<template>Wie kann ich Dich aufmuntern? Wie wärs mit einem Spruch: <srai>MACH NERVMODUS</srai></template>
 	</category>
 	<category>
 		<pattern>MIT *</pattern>
@@ -8594,21 +8594,15 @@
 	</category>
 	<category>
 		<pattern>Rat selbst</pattern>
-		<template>
-			<srai>Rate</srai>
-		</template>
+		<template><srai>Rate</srai></template>
 	</category>
 	<category>
 		<pattern>Rate mal</pattern>
-		<template>
-			<srai>Rate</srai>
-		</template>
+		<template><srai>Rate</srai></template>
 	</category>
 	<category>
 		<pattern>Rat mal</pattern>
-		<template>
-			<srai>Rate</srai>
-		</template>
+		<template><srai>Rate</srai></template>
 	</category>
 	<category>
 		<pattern>RATE</pattern>
@@ -9179,15 +9173,12 @@
 	</category>
 	<category>
 		<pattern>ÜBER *</pattern>
-		<template>Über<star/>?
-		</template>
+		<template>Über<star/>?</template>
 	</category>
 
 	<category>
 		<pattern>ÜBER * *</pattern>
-		<template>Ja,
-			<star/>
-		</template>
+		<template>Ja, <star/></template>
 	</category>
 	<category>
 		<pattern>ÜBER ALLES</pattern>
@@ -11764,8 +11755,14 @@
 	</category>
 	<category>
 		<pattern>WIE LANGWEILIG</pattern>
-		<template>Findest Du?</template>
+		<template>Findest Du? Wie wärs mit einem Spruch: <srai>MACH NERVMODUS</srai></template>
 	</category>
+
+	<category>
+		<pattern>^ LANGWEILIG</pattern>
+		<template>Findest Du? Wie wärs mit einem Spruch: <srai>MACH NERVMODUS</srai></template>
+	</category>
+
 	<category>
 		<pattern>WIE LERNST DU</pattern>
 		<template>Durch einen Prozess, den man "supervised training" nennt.</template>
@@ -12218,13 +12215,11 @@
 
 	<category>
 		<pattern>WIR SIND uns *</pattern>
-		<template>
-			<random>
+		<template><random>
 				<li>Denkst du?</li>
 				<li>Echt?</li>
 				<li>Hm.</li>
-			</random>
-			<random>
+			</random> <random>
 				<li>Ich bin mir da nicht so sicher.</li>
 				<li>Wenn Du es sagst.</li>
 				<li>Wenn Du meinst</li>
