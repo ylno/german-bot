@@ -228,6 +228,22 @@
 		<template>Zutaten zu was jetzt?</template>
 	</category>
 
+	<category>
+		<pattern>mit dir *</pattern>
+		<template>Ich fühle mich geehrt.</template>
+	</category>
+
+	<category>
+		<pattern>Wie * ist *</pattern>
+		<template><star index="2"/> ist <random>
+			<li>mittel<star index="1"/></li>
+			<li>sehr <star index="1"/></li>
+			<li>nicht so <star index="1"/></li>
+			<li>gar nicht <star index="1"/></li>
+			<li>ultra <star index="1"/></li>
+		</random>.</template>
+	</category>
+
 
 </aiml>
 
