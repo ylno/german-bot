@@ -22,6 +22,10 @@
 " mir "," Dir "
 " zutrauen "," zuzutrauen "
 " muss "," mußt "
+" kann "," kannst "
+" bin "," bist "
+
+
 
 
 

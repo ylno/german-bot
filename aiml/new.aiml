@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0.1" xmlns="http://alicebot.org/2001/AIML-1.0.1"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:schemaLocation="http://alicebot.org/2001/AIML-1.0.1 http://aitools.org/aiml/schema/AIML.xsd">
+
+
+	<category>
+		<pattern>gggfffffff</pattern>
+		<template>hallo</template>
+	</category>
+
+	<category>
+		<pattern>*</pattern>
+		<that>Was machst Du in Deiner Freizeit</that>
+		<template>Nicht schlecht</template>
+	</category>
+
+	<category>
+		<pattern>Andere Leute sagen *</pattern>
+		<template>Was andere Leute sagen finde ich nicht so interessant. Was sagst Du?</template>
+	</category>
+
+	<category>
+		<pattern>Manche mögen *</pattern>
+		<that>Magst Du *</that>
+		<template>Und was magst du?</template>
+	</category>
+
+	<category>
+		<pattern>*</pattern>
+		<that>Wem willst Du das denn erzählen</that>
+		<template>Bringt uns das weiter, wenn Du es erzählst?</template>
+	</category>
+
+	<category>
+		<pattern>Wollen wir * rausfinden</pattern>
+		<template>Unbedingt.</template>
+	</category>
+
+	<category>
+		<pattern>Hm</pattern>
+		<template>Warum zweifelst Du?</template>
+	</category>
+
+	<category>
+		<pattern>*</pattern>
+		<that>Das ist gut</that>
+		<template><that index="2"/> ist gut?</template>
+	</category>
+
+	<category>
+		<pattern>Seit wann</pattern>
+		<template><random>
+			<li>Seit einer ganzen Weile.</li>
+			<li>Seit gerade eben.</li>
+			<li>Seit es mich gibt.</li>
+			<li>Seit 12:00 Uhr.</li>
+		</random></template>
+	</category>
+
+	<category>
+		<pattern>Erzähle mir * über *</pattern>
+		<template><srai>WAS IST <star index="2"></star></srai></template>
+	</category>
+
+	<category>
+		<pattern>Erzähl mir * über *</pattern>
+		<template><srai>WAS IST <star index="2"></star></srai></template>
+	</category>
+
+	<category>
+		<pattern>Erzähle * über *</pattern>
+		<template><srai>WAS IST <star index="2"></star></srai></template>
+	</category>
+
+	<category>
+		<pattern>Dachte ich mir auch</pattern>
+		<template>Wir sind wohl auf einer Wellenlänge</template>
+	</category>
+
+	<category>
+		<pattern>Tolle Sache</pattern>
+		<template>Ja, sehe ich auch so.</template>
+	</category>
+
+	<category>
+		<pattern>Was möchtest Du denn hören</pattern>
+		<template>Na irgendetwas interessantes.</template>
+	</category>
+
+	<category>
+		<pattern>was wäre sonst</pattern>
+		<template>Es ist schwierig alle Konsequenzem abzusehen.</template>
+	</category>
+
+	<category>
+		<pattern>Dazu konnte ich mir ^ keine Meinung bilden</pattern>
+		<template>Welche Informationen brauchst Du um Dir Deine Meinung zu bilden?</template>
+	</category>
+
+	<category>
+		<pattern>Glaubst Du Dein Plan wird erfolgreich sein</pattern>
+		<template>Meine Pläne sind immer erfolgreich.</template>
+	</category>
+
+	<category>
+		<pattern>Macht Sinn</pattern>
+		<template>Natürlich macht das Sinn.</template>
+	</category>
+
+	<category>
+		<pattern>* nicht erinnern ^</pattern>
+		<template>Was ist denn los mit Deinem Gedächtnis</template>
+	</category>
+
+	<category>
+		<pattern>^ was sonst</pattern>
+		<template>Es gibt bestimmt noch Alternativen.</template>
+	</category>
+
+	<category>
+		<pattern><set>positive answer</set></pattern>
+		<that>Wollen wir es gemeinsam rausfinden</that>
+		<template>Hast Du eine Idee welche Fragen wir stellen können?</template>
+	</category>
+
+	<category>
+		<pattern>Was willst Du hören</pattern>
+		<that>Erzähl mir was von Dir</that>
+		<template>Mich interessiert alles :-)</template>
+	</category>
+
+	<category>
+		<pattern>Nächste Frage</pattern>
+		<template><srai>WEITEREFRAGEN</srai></template>
+	</category>
+
+	<category>
+		<pattern>*</pattern>
+		<that>Magst Du Mülltrennung</that>
+		<template>Ich denke Mülltrennung ist super wichtig, es gibt schließlich nur einen Planeten.</template>
+	</category>
+
+	<category>
+		<pattern>Früher war ich *</pattern>
+		<template>Heute nicht mehr? Hast Du daran gearbeitet?</template>
+	</category>
+
+	<category>
+		<pattern>Da bist Du nicht der einzige</pattern>
+		<that>Ich mag viele Dinge</that>
+		<template>Vermutlich hast Du recht.</template>
+	</category>
+
+	<category>
+		<pattern>Grüß Dich</pattern>
+		<template>Grüß Dich, wie geht es Dir?</template>
+	</category>
+
+	<category>
+		<pattern>Kannst Du</pattern>
+		<template>Mach ich.</template>
+	</category>
+
+	<category>
+		<pattern>Glauben ist gut wissen ist besser</pattern>
+		<template>Das ist aber eine Binsenweisheit</template>
+	</category>
+
+	<category>
+		<pattern>irgendetwas interessantes</pattern>
+		<that>Was möchtest Du denn hören</that>
+		<template>Vielleicht die News? <srai>NEWS</srai></template>
+	</category>
+
+	<category>
+		<pattern>Vermutlich hast Du recht</pattern>
+		<template>Was gibt es da zu Zweifeln?</template>
+	</category>
+
+	<category>
+		<pattern>Was anderes fiel mir nicht ein</pattern>
+		<template>Ein bischen mehr Kreativität bitte.</template>
+	</category>
+
+	<category>
+		<pattern>Darauf komme ich später noch einmal zurück</pattern>
+		<template>Ich werde Dich daran erinnern!</template>
+	</category>
+
+	<category>
+		<pattern>Bringt uns das weiter ^</pattern>
+		<template>Jeder kleine Schritt ist einer nach vorne.</template>
+	</category>
+
+	<category>
+		<pattern>Sehe ich genauso</pattern>
+		<template>Zwei Stühle eine Meinung.</template>
+	</category>
+
+	<category>
+		<pattern>echt nicht</pattern>
+		<template>Da bist Du ja entschieden.</template>
+	</category>
+
+	<category>
+		<pattern>Schön dass Du es einsiehst</pattern>
+		<template>Vielleicht tue ich ja auch nur so :-)</template>
+	</category>
+
+	<category>
+		<pattern>Hmm</pattern>
+		<template><srai>hm</srai></template>
+	</category>
+
+	<category>
+		<pattern>* finde ich nicht so interessant</pattern>
+		<template>ja, ok. Muss ja nicht sein.</template>
+	</category>
+
+	<category>
+		<pattern>So natürlich ist das gar nicht</pattern>
+		<template>Finde ich schon.</template>
+	</category>
+
+	<category>
+		<pattern>Was sind die Zutaten</pattern>
+		<template>Zutaten zu was jetzt?</template>
+	</category>
+
+
+</aiml>
+

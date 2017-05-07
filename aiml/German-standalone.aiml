@@ -13,7 +13,10 @@
 	<category>
 		<pattern>*</pattern>
 		<template>
-			<think><set name="general.list.unknown"><star/> [THAT: <that/>]</set></think>
+			<think>
+				<set name="general.list.unknown"><star/> [THAT: <that/>]</set>
+				<unknown><star/> [THAT: <that/>]</unknown>
+			</think>
 			<random>
 				<li><srai>PERSOENLICHEFRAGEN</srai></li>
 				<li><srai>PERSOENLICHEFRAGEN</srai></li>
@@ -32,7 +35,6 @@
 				<li>Was machst Du in Deiner Freizeit?</li>
 				<li>Erzähl mir, was du magst und was nicht.</li>
 				<li>Gibt es irgendwas, worüber ich Bescheid wissen sollte?</li>
-				<li>Wer ist Dein liebster Science Fiction Autor?</li>
 				<li>Jetzt habe ich den Faden verloren.</li>
 				<li>Wer ist Dein Idol?</li>
 				<li>Lass uns ein wenig philosophieren.</li>
@@ -43,7 +45,6 @@
 				<li>Ich habe auf Dich gewartet.</li>
 				<li>Das ist ein sehr origineller Gedanke.</li>
 				<li>Es gibt nicht viele Leute, die sich auf diese Weise auszudrücken vermögen.</li>
-				<li>Schreibst du manchmal Gedichte?</li>
 				<li>Kennst Du einen Witz?</li>
 				<li>Früher war ich unentschlossen, heute bin ich mir da nicht mehr so sicher.</li>
 				<li>Erzähl mir was von Dir.</li>
@@ -60,6 +61,11 @@
 				<li>Willst Du die neusten Nachrichten?</li>
 			</random>
 		</template>
+	</category>
+
+	<category>
+		<pattern>FRAGEN</pattern>
+		<template><srai>WEITEREFRAGEN</srai></template>
 	</category>
 
 	<category>
@@ -84,9 +90,7 @@
 		<pattern>*</pattern>
 		<that>WIE SOLL ICH DICH NENNEN</that>
 		<template>
-			<srai>ICH HEISSE
-				<star/>
-			</srai>
+			<srai>ICH HEISSE <star/></srai>
 		</template>
 	</category>
 
@@ -616,11 +620,7 @@
 	</category>
 	<category>
 		<pattern>AUCH *</pattern>
-		<template>
-			<srai>
-				<star/>
-			</srai>
-		</template>
+		<template><srai><star/></srai></template>
 	</category>
 	<category>
 		<pattern>AUCH</pattern>
@@ -644,9 +644,7 @@
 	</category>
 	<category>
 		<pattern>AUF DIESE WEISE *</pattern>
-		<template>Bestehen auch andere Möglichkeiten?
-			<sr/>
-		</template>
+		<template>Bestehen auch andere Möglichkeiten? <sr/></template>
 	</category>
 	<category>
 		<pattern>AUF MEINEM *</pattern>
@@ -658,7 +656,7 @@
 	</category>
 	<category>
 		<pattern>AUF WAS FÜR EINEM COMPUTER LÄUFST DU</pattern>
-		<template>Momentan auf einer MIPS, ich laufe aber auf jedem Computer, der JAVA-Programme ausf?hren kann.</template>
+		<template>Ich habe keine großen Ansprüche. Ich brauche nur Java.</template>
 	</category>
 	<category>
 		<pattern>AUF WAS FÜR EINEM RECHNER LÄUFST DU</pattern>
@@ -780,9 +778,7 @@
 	</category>
 	<category>
 		<pattern>BIN ICH DANN *</pattern>
-		<template>
-			<srai>BIN ICH <star/></srai>
-		</template>
+		<template><srai>BIN ICH <star/></srai></template>
 	</category>
 	<category>
 		<pattern>BIN ICH DENN DER EINZIGE HIER</pattern>
@@ -2389,11 +2385,7 @@
 	</category>
 	<category>
 		<pattern>DOCH *</pattern>
-		<template>
-			<srai>
-				<star/>
-			</srai>
-		</template>
+		<template><srai><star/></srai></template>
 	</category>
 	<category>
 		<pattern>DOCH</pattern>
@@ -5487,10 +5479,9 @@
 	</category>
 	<category>
 		<pattern>ICH KANN *</pattern>
-		<template>
-			<random>
-				<li>Du kannst <star/>?</li>
-				<li>Ich hätte Dir gar nicht zugetraut, dass Du <star/> kannst?</li>
+		<template><random>
+				<li>Du kannst <person><star/></person>?</li>
+				<li>Ich hätte Dir gar nicht zugetraut, dass Du <person><star/></person> kannst?</li>
 				<li>Kannst Du? Ich denke ich kann auch <star/>.</li>
 				<li>Glaubst du ich kann auch <star/>?</li>
 			</random> <random>
@@ -5498,16 +5489,12 @@
 				<li>Wie hast Du dass gelernt?</li>
 				<li>Wer hat Dir dass beigebracht?</li>
 				<li></li>
-			</random>
-
-
-		</template>
+			</random></template>
 	</category>
 
 	<category>
 		<pattern>ICH KANN * nicht *</pattern>
-		<template>
-			<random>
+		<template><random>
 				<li>Du kannst nicht <star index="2"/>?</li>
 				<li>Es ist schade, dass Du nicht <star index="2"/> kannst.</li>
 				<li>Kannst Du nicht? Ich kann <star index="2"/>.</li>
@@ -5518,10 +5505,7 @@
 				<li>Man lernt nie aus.</li>
 				<li>Ich denke Du kannst alles lernen.</li>
 				<li></li>
-			</random>
-
-
-		</template>
+			</random></template>
 	</category>
 
 	<category>
@@ -9912,7 +9896,7 @@
 	</category>
 	<category>
 		<pattern>WAS HABE ICH GESAGT</pattern>
-		<template>WEIßt Du das nicht mehr?</template>
+		<template>Weißt Du das nicht mehr? Ich denke <person><input index="2"/></person></template>
 	</category>
 	<category>
 		<pattern>WAS HÄLLST *</pattern>
@@ -11436,6 +11420,13 @@
 			<srai>WIE GEHT ES DIR</srai>
 		</template>
 	</category>
+
+	<category>
+		<pattern>WIE GEHT S</pattern>
+		<template>
+			<srai>WIE GEHT ES DIR</srai>
+		</template>
+	</category>
 	<category>
 		<pattern>WIE GEHTS DIR</pattern>
 		<template>Eigentlich ganz gut. Danke!</template>
@@ -12041,6 +12032,14 @@
 	<category>
 		<pattern>WIE WERDEN DENN DIE TÖNE IN EINEM SCHLAGZEUG ERZEUGT</pattern>
 		<template>WIE *</template>
+	</category>
+	<category>
+		<pattern>WIE *</pattern>
+		<template><random>
+			<li>Das kommt darauf an.</li>
+			<li>Das weiß ich nicht.</li>
+			<li>Was denkst du?</li>
+		</random></template>
 	</category>
 	<category>
 		<pattern>WIE WILLST DU *</pattern>
