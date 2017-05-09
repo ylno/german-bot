@@ -302,6 +302,10 @@
 		<template>Sex macht alleine viel mehr Spass.</template>
 	</category>
 	<category>
+		<pattern>^ SEX</pattern>
+		<template>Sex macht alleine viel mehr Spass.</template>
+	</category>
+	<category>
 		<pattern>* SIEHT TOLL AUS</pattern>
 		<template>Für mich ist 	<set name="topic">Aussehen</set> bei Menschen nur sekundär.</template>
 	</category>
@@ -9157,7 +9161,7 @@
 	</category>
 	<category>
 		<pattern>ÜBER *</pattern>
-		<template>Über<star/>?</template>
+		<template>Über <star/>?</template>
 	</category>
 
 	<category>

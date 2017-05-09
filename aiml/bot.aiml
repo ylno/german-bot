@@ -91,6 +91,8 @@
 		<template>Klar gehe ich gerne <star/></template>
 	</category>
 
+
+
 	<category>
 		<pattern>START</pattern>
 		<template><srai>HILFE</srai></template>
@@ -100,6 +102,12 @@
 		<pattern>/START</pattern>
 		<template><srai>HILFE</srai></template>
 	</category>
+
+	<category>
+		<pattern>SLASH START</pattern>
+		<template><srai>HILFE</srai></template>
+	</category>
+
 
 	<category>
 		<pattern>Kannst du reden</pattern>
@@ -163,7 +171,7 @@
 
 	<category>
 		<pattern>HILFE</pattern>
-		<template>Mein Name ist <bot name="name"/>. Ich kann mich ganz normal mit Dir unterhalten.
+		<template>Mein Name ist <bot name="name"/>. Ich kann mich ganz normal mit Dir unterhalten.\n
 
 Daneben kann ich noch ein paar andere Dinge. Wenn Du mir sagst wie du heißt, merke ich mir das. Ich nenne auch Gott nennen, wenn du darauf stehst. Schreibe mir z.B.:
 			"Mein Name ist Günter"
